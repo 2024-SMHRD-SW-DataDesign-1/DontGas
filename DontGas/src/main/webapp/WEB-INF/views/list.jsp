@@ -147,7 +147,7 @@
                                     </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">대나무 축산</a></td>
+                                            <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">대나무 축산</a></td>
                                             <td>전라남도 담양군 고서면</td>
                                             <td>010-1111-1111</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/VeryGood.png" alt="매우 좋음"></td>
@@ -282,7 +282,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-        <script src="js/datatables/datatables-simple-demo.js"></script>
-        <script src="js/Darkmode.js"></script>
+        <script src="js/datatables.js"></script>
+        <script src="${pageContext.request.contextPath}/js/darkmode.js"></script>
     </body>
 </html>

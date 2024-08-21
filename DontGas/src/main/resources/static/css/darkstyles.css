@@ -231,3 +231,7 @@
     height:30px;
     margin-right: 5px;
 }
+
+.pighouse_name * {
+    color: rgb(216, 150, 64);
+}
