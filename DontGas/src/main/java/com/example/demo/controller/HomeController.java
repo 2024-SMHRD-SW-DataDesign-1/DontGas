@@ -13,7 +13,7 @@ public class HomeController {
 	// [GET]localhost:8090/myapp/
 	@GetMapping(value="/")
 	public String indexPage() {
-		return "index";
+		return "login";
 	}
 	
 	@GetMapping("/room")

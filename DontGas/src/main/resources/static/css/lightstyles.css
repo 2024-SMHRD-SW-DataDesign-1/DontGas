@@ -1,0 +1,223 @@
+.login-bg{
+    background-color: rgb(236,252,210);
+}
+.login-header{
+    text-align: center;
+    justify-content: center;
+}
+.login-title{
+    color: green;
+    font-weight: 700;
+    font-size: 80px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'NanumSquareRound';
+}
+.login-box{
+    flex: 0 0 auto;
+    width: 60%;
+    height: 100%;
+}
+.login-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(33, 40, 50, 0.125);
+    border-radius: 0.35rem;
+    height: 500px;
+    margin-top: 10rem;
+}
+.login-label{
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+    color: green;
+    transform: translate(96px, 51px);
+    font-size: 1.2em;
+    font-size: 0.875em;
+    font-weight: 700;
+    color: green;
+    transform: translate(144px, 6px);
+    font-family: 'NanumSquareRound';
+}
+
+.login-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(337px, -7px);
+    font-size: 1.2em;
+    color: green;
+    background-color: #cffc91;
+    border-color: none;
+    font-weight: bold;
+
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.875rem 1.125rem;
+    font-size: 1.5rem;
+    border-radius: 0.35rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.login-btn:hover {
+    color: #fff;
+    background-color: #006400;
+    border-color: green;
+}
+
+.login-btn:focus {
+    color: #fff;
+    background-color: #006400;
+    border-color: green;
+    box-shadow: 0 0 0 0.25rem rgba(103, 244, 38, 0.5);
+}
+
+.btn-check:checked + .login-btn, .btn-check:active + .login-btn, .login-btn:active, .login-btn.active, .show > .login-btn.dropdown-toggle {
+    color: #fff;
+    background-color: #006400;
+    border-color: green;
+}
+.btn-check:checked + .login-btn:focus, .btn-check:active + .login-btn:focus, .login-btn:active:focus, .login-btn.active:focus, .show > .login-btn.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(103, 244, 38, 0.5);
+}
+.login-btn:disabled, .login-btn.disabled {
+    color: #fff;
+    background-color: #006400;
+    border-color: green;
+}
+
+.login-form{
+    display: block;
+    width: 41%;
+    transform: translate(228px, -34px);
+    padding: 0.875rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: green;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #006400;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.login-form:focus{
+    color: #69707a;
+    background-color: #fff;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(137, 248, 122, 0.25);
+    }
+.login-form::-webkit-date-and-time-value{
+    height: 1em;
+}
+.login-form::-moz-placeholder{
+    color: #a7aeb8;
+    opacity: 1;
+}
+.login-form:-ms-input-placeholder{
+    color: #a7aeb8;
+    opacity: 1;
+}
+.login-form::placeholder{
+    color: #a7aeb8;
+    opacity: 1;
+}
+.login-form:disabled, .login-form[readonly]{
+    background-color: #e0e5ec;
+    opacity: 1;
+}
+
+
+.copyright-footer{
+    flex: 0 0 auto;
+    width: 50%;
+    font-size: 0.875em;
+    color: green;
+    font-family: 'NanumSquareRound';
+}
+
+
+#modbtn{
+    position: fixed;
+    top: 90%;
+    left: 2%;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.header-icon-custom{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-custom{
+    color: green !important;
+    font-size: 30px !important;
+    font-family: 'NanumSquareRound';
+}
+.topnav-custom{
+    background-color: rgb(236,252,210);
+}
+.sidenav-custom{
+    background-color: #fff;
+}
+
+.page-header-custom{
+    background-color: white;
+}
+
+.page-header-title-custom{
+    color: black !important;
+    font-family: 'NanumSquareRound' !important;
+}
+
+.sidenav-toggle-btn-custom{
+    color: black !important;
+}
+
+.alert-custom{
+    color:rgb(0, 0, 0) !important;
+}
+
+.table-body-custom{
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.search-input-custom{
+    border-width: 2px !important;
+    background-color: aliceblue !important;
+    border-color: green !important;
+    border-style: solid !important;
+    border-radius: 1.2rem !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+.o-level{
+    width: 30px;
+    height: 30px;
+}
+
+.info-page-header-custom{
+    background-color: rgb(236,252,210) !important;
+}
+
+.page-header-subtitle-custom{
+    color: black !important;
+}
