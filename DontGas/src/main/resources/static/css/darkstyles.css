@@ -219,3 +219,15 @@
     width: 30px;
     height: 30px;
 }
+
+.connect{
+    width:30px;
+    height:30px;
+    transform: translate(27px, -1px);
+}
+
+.user{
+    width:30px;
+    height:30px;
+    margin-right: 5px;
+}

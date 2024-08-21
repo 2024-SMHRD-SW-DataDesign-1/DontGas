@@ -11,14 +11,19 @@ import org.springframework.ui.Model;
 public class HomeController {
 	
 	// [GET]localhost:8090/myapp/
-	@GetMapping(value="/")
-	public String indexPage() {
+	@GetMapping(value="/login")
+	public String loginPage() {
 		return "login";
 	}
 	
-	@GetMapping("/room")
-	public String roomPage() {
-		return "room";
+	@GetMapping("/list")
+	public String listPage() {
+		return "list";
+	}
+	
+	@GetMapping("/info")
+	public String infoPage() {
+		return "info";
 	}
 	
 	@GetMapping("/chat/{roomId}")

@@ -14,7 +14,6 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
-
     </head>
     <body class="login-bg">
         <div id="layoutAuthentication">
@@ -41,7 +40,7 @@
                                             </div>
                                             <!-- Form Group (login box)-->
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="login-btn" href="user-management-list.html">Login</a>
+                                                <a class="login-btn" href="list">Login</a>
                                             </div>
                                         </form>
                                     </div>
@@ -52,7 +51,8 @@
                 </main>
             </div>
             
-            <img id="modbtn" src="/DontGas/src/main/resources/static/images/darkpig.png" alt="다크모드 버튼" onclick="toggleDarkMode()">
+            <img id="modbtn" src="${pageContext.request.contextPath}/images/darkpig.png" alt="다크모드 버튼" onclick="toggleDarkMode()"
+            data-light-src="${pageContext.request.contextPath}/images/lightpig.png" data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
 
             <div id="layoutAuthentication_footer">
                 <footer class="footer-admin mt-auto footer-dark">
