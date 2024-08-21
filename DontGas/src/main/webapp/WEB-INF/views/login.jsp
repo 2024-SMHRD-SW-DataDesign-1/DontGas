@@ -52,7 +52,7 @@
                 </main>
             </div>
             
-            <img id="modbtn" src="../resources/static/images/darkpig.png" alt="다크모드 버튼" onclick="toggleDarkMode()">
+            <img id="modbtn" src="/DontGas/src/main/resources/static/images/darkpig.png" alt="다크모드 버튼" onclick="toggleDarkMode()">
 
             <div id="layoutAuthentication_footer">
                 <footer class="footer-admin mt-auto footer-dark">
