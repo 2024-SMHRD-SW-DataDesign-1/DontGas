@@ -77,13 +77,13 @@
                 </li>
                 <!-- User Dropdown-->
                 <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
-                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="${pageContext.request.contextPath}/images/user.png" /></a>
+                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="${pageContext.request.contextPath}/images/user_man1.png" /></a>
                     <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
                         <h6 class="dropdown-header d-flex align-items-center">
-                            <img class="dropdown-user-img" src="${pageContext.request.contextPath}/images/user.png" />
+                            <img class="dropdown-user-img" src="${pageContext.request.contextPath}/images/user_man1.png" />
                             <div class="dropdown-user-details">
-                                <div class="dropdown-user-details-name">Valerie Luna</div>
-                                <div class="dropdown-user-details-email">vluna@aol.com</div>
+                                <div class="dropdown-user-details-name">청년농 포도</div>
+                                <div class="dropdown-user-details-email">podo@pig.com</div>
                             </div>
                         </h6>
                         <div class="dropdown-divider"></div>
@@ -147,7 +147,7 @@
                                     </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">대나무 축산</a></td>
+                                            <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">대나무 축산</a></td>
                                             <td>전라남도 담양군 고서면</td>
                                             <td>010-1111-1111</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/VeryGood.png" alt="매우 좋음"></td>
@@ -282,7 +282,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-        <script src="js/datatables/datatables-simple-demo.js"></script>
-        <script src="js/Darkmode.js"></script>
+        <script src="js/datatables.js"></script>
+        <script src="${pageContext.request.contextPath}/js/darkmode.js"></script>
     </body>
 </html>

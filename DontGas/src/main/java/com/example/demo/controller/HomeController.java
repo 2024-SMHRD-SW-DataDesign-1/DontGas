@@ -10,7 +10,6 @@ import org.springframework.ui.Model;
 @Controller
 public class HomeController {
 	
-	// [GET]localhost:8090/myapp/
 	@GetMapping(value="/login")
 	public String loginPage() {
 		return "login";
@@ -24,11 +23,5 @@ public class HomeController {
 	@GetMapping("/info")
 	public String infoPage() {
 		return "info";
-	}
-	
-	@GetMapping("/chat/{roomId}")
-	public String chatPage(@PathVariable("roomId") String roomId , Model model) {
-		model.addAttribute(roomId);
-		return "chat";
 	}
 }
