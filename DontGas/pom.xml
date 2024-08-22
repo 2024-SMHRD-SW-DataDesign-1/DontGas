@@ -10,9 +10,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>SecurityBasic</artifactId>
+	<artifactId>BootBasic</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SecurityBasic</name>
+	<name>BootBasic</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -73,37 +73,6 @@
 	        <scope>provided</scope>
 	    </dependency>
 	    
-	    <!--web-socket-->
-	    <dependency>
-	        <groupId>org.springframework.boot</groupId>
-	        <artifactId>spring-boot-starter-websocket</artifactId>
-	    </dependency>
-	    
-	    <!-- spring security : 로그인 해야지만 다른 페이지로 이동할 수 있게 -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		
-		<dependency>
-          <groupId>io.jsonwebtoken</groupId>
-          <artifactId>jjwt-api</artifactId>
-          <version>0.11.5</version>
-         </dependency>
-         <dependency>
-          <groupId>io.jsonwebtoken</groupId>
-          <artifactId>jjwt-impl</artifactId>
-          <version>0.11.5</version>
-          <scope>runtime</scope>
-         </dependency>
-         <dependency>
-          <groupId>io.jsonwebtoken</groupId>
-          <artifactId>jjwt-jackson</artifactId>
-          <version>0.11.5</version>
-          <scope>runtime</scope>
-         </dependency>
-
-         
 	</dependencies>
 
 	<build>
