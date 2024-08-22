@@ -19,7 +19,7 @@ public class UserService {
 	// 회원가입
 	public void join(Users users) {
 		
-		users.setPassword(bCrypPasswordEncoder.encode(users.getPassword())); // user의 password를 암호화하여 설정
+//		users.setPassword(bCrypPasswordEncoder.encode(users.getPassword())); // user의 password를 암호화하여 설정
 		users.setRole(Role.ROLE_USER); // 역할을 기본적으로 USER로 설정
 		
 		if(!repository.existsById(users.getUsername())) {

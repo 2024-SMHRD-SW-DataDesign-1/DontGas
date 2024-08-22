@@ -57,14 +57,14 @@ public class SecurityConfig {
 		
 		// 아래는 react 연결 시 추가 내용
 		// 세션 관리 상태 없음으로 구성
-		.sessionManagement(sessionManagement -> sessionManagement.sessionCreationPolicy(
-				SessionCreationPolicy.STATELESS))
-		
-		.formLogin(form -> form.disable()) // 로그인 폼 비활성화
-		.httpBasic(AbstractHttpConfigurer::disable) // HTTP 기반 기본 인증 비활성화
-		
-		.addFilterBefore(new JwtAuthenticationFilter(userDetailService, jwtUtil), UsernamePasswordAuthenticationFilter.class)
-		.addFilterBefore(new JwtExceptionFilter(), JwtAuthenticationFilter.class)
+//		.sessionManagement(sessionManagement -> sessionManagement.sessionCreationPolicy(
+//				SessionCreationPolicy.STATELESS))
+//		
+//		.formLogin(form -> form.disable()) // 로그인 폼 비활성화
+//		.httpBasic(AbstractHttpConfigurer::disable) // HTTP 기반 기본 인증 비활성화
+//		
+//		.addFilterBefore(new JwtAuthenticationFilter(userDetailService, jwtUtil), UsernamePasswordAuthenticationFilter.class)
+//		.addFilterBefore(new JwtExceptionFilter(), JwtAuthenticationFilter.class)
 		// 여기까지 //
 		
 		
@@ -74,7 +74,7 @@ public class SecurityConfig {
 				.requestMatchers("/login").permitAll() // 얘네는 굳이 인증을 하지 않아도 접근을 허용하겠음
 				
 				// 아래는 react 연결 시 수정 사항
-				.requestMatchers("/api/member/*").permitAll() // 얘네는 굳이 인증을 하지 않아도 접근을 허용하겠음
+//				.requestMatchers("/api/member/*").permitAll() // 얘네는 굳이 인증을 하지 않아도 접근을 허용하겠음
 				//
 				
 				.requestMatchers("/admin").hasRole("ADMIN") // 얘는 ADMIN 권한이 있을 경우에만 접근 허용하겠음 (일반 사용자 권한은 보통 USER로 설정)
@@ -82,7 +82,7 @@ public class SecurityConfig {
 		)
 		
 		// react 연결 시 추가
-		.exceptionHandling(exceptionHandling-> exceptionHandling.authenticationEntryPoint(new CustomAuthenticationEntryPoint()))
+//		.exceptionHandling(exceptionHandling-> exceptionHandling.authenticationEntryPoint(new CustomAuthenticationEntryPoint()))
 		
 		
 		// 아래 필터는 react 연결 시에는 필요없어서(기본 폼 사용 X) 주석 처리했음
@@ -125,20 +125,20 @@ public class SecurityConfig {
 	
 	// CORS : Cross-origin resource sharing(교차 출처 리소스 공유)
 	// 도메인 밖의 다른 도메인으로부터 요청할 수 있게 허용
-	@Bean
-    public CorsFilter corsFilter() {
-        CorsConfiguration config = new CorsConfiguration();
-        config.setAllowCredentials(true);
-        config.addAllowedOrigin("http://localhost:3000");// 리액트 서버
-        config.addAllowedHeader("*");
-        config.addAllowedMethod("*");
-
-        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", config); //모든 경로에 대해 CORS 설정
-
-        return new CorsFilter(source);
-    }
-	
+//	@Bean
+//    public CorsFilter corsFilter() {
+//        CorsConfiguration config = new CorsConfiguration();
+//        config.setAllowCredentials(true);
+//        config.addAllowedOrigin("http://localhost:3000");// 리액트 서버
+//        config.addAllowedHeader("*");
+//        config.addAllowedMethod("*");
+//
+//        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+//        source.registerCorsConfiguration("/**", config); //모든 경로에 대해 CORS 설정
+//
+//        return new CorsFilter(source);
+//    }
+//	
 	// -----------------------------------------------------
 	
 	// 로그인 시 사용 -> jwt(web token)
@@ -148,7 +148,7 @@ public class SecurityConfig {
     public AuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
         authenticationProvider.setUserDetailsService(userDetailService);
-        authenticationProvider.setPasswordEncoder(passwordEncoder());
+//        authenticationProvider.setPasswordEncoder(passwordEncoder());
         return authenticationProvider;
     }
 	

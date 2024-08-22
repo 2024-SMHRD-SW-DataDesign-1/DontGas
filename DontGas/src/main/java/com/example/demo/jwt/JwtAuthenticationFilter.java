@@ -39,9 +39,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 			// token의 유효성 검증
 			if(jwtUtil.validateToken(token, request)) {
 				// token에서 Claim 파싱 후 이메일만 반환
-				String email = jwtUtil.getUserId(token);
+				String id = jwtUtil.getUserId(token);
 				
-				UserDetails userDetails =  detailService.loadUserByUsername(email);
+				UserDetails userDetails =  detailService.loadUserByUsername(id);
 				
 				if(userDetails!=null) { // 토큰 발급
 					

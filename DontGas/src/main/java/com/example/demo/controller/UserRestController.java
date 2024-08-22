@@ -32,7 +32,7 @@ public class UserRestController {
 	@Autowired
 	private JwtUtil jwtUtil;
 	
-	@PostMapping("/api/member/login")
+	@PostMapping("/login")
 	public ResponseEntity<String> login(LoginDTO dto) {
 		authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(dto.getId(), dto.getPassword())
@@ -44,9 +44,4 @@ public class UserRestController {
         return ResponseEntity.status(HttpStatus.OK).body(token);
 	}
 	
-	@GetMapping("/test")
-	public String test(){
-
-        return "ok";
-	}
 }
