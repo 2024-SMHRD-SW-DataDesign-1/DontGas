@@ -21,39 +21,54 @@
                 <main>
                     <div class="container-xl px-4">
                         <div class="row justify-content-center">
+                            
+                            
+                             <!-- 로그인 박스 -->
                             <div class="login-box">
-                                <!-- Basic login form-->
                                 <div class="login-card shadow-lg border-0 rounded-lg">
                                     <div class="login-header"><h3 class="login-title">Login</h3></div>
                                     <div class="card-body">
-                                        <!-- Login form-->
+                                    
+                                        <!-- 로그인 폼 -->
                                         <form>
-                                            <!-- Form Group (email address)-->
+                                        
+                                            <!-- 아이디 입력 -->
                                             <div class="mb-3">
                                                 <label class="login-label" for="inputEmailAddress">ID</label>
-                                                <input class="login-form" id="inputEmailAddress" type="text" placeholder="Enter ID" />
+                                                <input class="login-form" id="inputEmailAddress" type="text" placeholder="아이디를 입력하세요" name="username"/>
                                             </div>
-                                            <!-- Form Group (password)-->
+                                            
+                                            <!-- 비밀번호 입력 -->
                                             <div class="mb-3">
                                                 <label class="login-label" for="inputPassword">Password</label>
-                                                <input class="login-form" id="inputPassword" type="password" placeholder="Enter password" />
+                                                <input class="login-form" id="inputPassword" type="password" placeholder="비밀번호를 입력하세요" name="password"/>
                                             </div>
-                                            <!-- Form Group (login box)-->
+                                            
+                                            <!-- 로그인 버튼 -->
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a class="login-btn" href="list">Login</a>
+                                                <input class="login-btn" type="submit" value="Login">
                                             </div>
+                                            
                                         </form>
+                                        
                                     </div>
                                 </div>
                             </div>
+                            
+                            
                         </div>
                     </div>
                 </main>
             </div>
             
+            
+            <!-- 다트모드 버튼 -->
             <img id="modbtn" src="${pageContext.request.contextPath}/images/darkpig.png" alt="다크모드 버튼" onclick="toggleDarkMode()"
             data-light-src="${pageContext.request.contextPath}/images/lightpig.png" data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
 
+
+
+			<!-- Footer -->
             <div id="layoutAuthentication_footer">
                 <footer class="footer-admin mt-auto footer-dark">
                     <div class="container-xl px-4">
@@ -63,6 +78,9 @@
                     </div>
                 </footer>
             </div>
+            
+            
+           
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
