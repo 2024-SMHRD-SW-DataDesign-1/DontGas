@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - SB Admin Pro</title>
+        <title>Don't Gas - Monitoring</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
@@ -17,13 +17,14 @@
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
     </head>
-    <body class="nav-fixed">
+    <body class="nav-fixed body-custom">
         <nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light topnav-custom" id="sidenavAccordion">
             <!-- Sidenav Toggle Button-->
             <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0 sidenav-toggle-btn-custom" id="sidebarToggle"><i data-feather="menu"></i></button>
-            <!-- Navbar Brand-->
+            
+            <!-- 돈사 리스트 보기로 이동-->
             <a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="list">Don't Gas</a>
-            <!-- Navbar Search Input-->
+            <!-- 검색바 -->
             <form class="form-inline me-auto d-none d-lg-block me-3">
                 <div class="input-group input-group-joined input-group-solid search-input-custom">
                     <input class="form-control pe-0" type="search" placeholder="Search" aria-label="Search" />
@@ -82,7 +83,7 @@
                         <h6 class="dropdown-header d-flex align-items-center">
                             <img class="dropdown-user-img" src="${pageContext.request.contextPath}/images/user_man1.png" />
                             <div class="dropdown-user-details">
-                                <div class="dropdown-user-details-name">청년농 포도</div>
+                                <div class="dropdown-user-details-name">포도</div>
                                 <div class="dropdown-user-details-email">podo@pig.com</div>
                             </div>
                         </h6>
