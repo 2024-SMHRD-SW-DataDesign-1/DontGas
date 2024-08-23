@@ -26,6 +26,9 @@
 	src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
 	crossorigin="anonymous"></script>
 </head>
+
+
+
 <body class="nav-fixed body-custom">
 	<nav
 		class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light topnav-custom"
@@ -51,6 +54,9 @@
 				</div>
 			</div>
 		</form>
+		
+		
+		
 		<!-- Navbar Items-->
 		<ul class="navbar-nav align-items-center ms-auto">
 			<!-- Alerts Dropdown-->
@@ -68,6 +74,7 @@
 					<h6 class="dropdown-header dropdown-notifications-header">
 						<i class="me-2" data-feather="bell"></i> Alerts Center
 					</h6>
+					
 					<!-- Example Alert 1-->
 					<a class="dropdown-item dropdown-notifications-item" href="#!">
 						<div class="dropdown-notifications-item-icon bg-warning">
@@ -150,6 +157,10 @@
 			</li>
 		</ul>
 	</nav>
+	
+	
+	
+	
 	<div id="layoutSidenav">
 		<div id="layoutSidenav_nav">
 			<nav class="sidenav shadow-right sidenav-light sidenav-custom">
@@ -363,12 +374,12 @@
 							<div class="card-body">
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="me-3">
-										<div class="text-white-75 small">¿À´Ã ³¯¾¾</div>
+										<div class="text-white-75-custom small">¿À´Ã ³¯¾¾</div>
 										
-										<!-- ÀÌ ºÎºÐÀº ³¯¾¾ µ¥ÀÌÅÍ µé¾î°¡¾ßÇÔ!! -->
+										<!-- ÀÌ ºÎºÐÀº ³¯¾¾ µ¥ÀÌÅÍ µé¾î°¡¾ßÇÔ!! ${} -->
 										<div class="text-lg fw-bold">¸¼À½</div>
 									</div>
-									<!-- ÀÌ ºÎºÐÀº ³¯¾¾ µ¥ÀÌÅÍ ±×¸² ¸ÂÃç¼­ µé¾î°¡¾ßÇÔ!! (ex. ¸¼À½ÀÌ¸é ¸¼À½ ÀÌ¹ÌÁö Ç¥½Ã) -->
+									<!-- ÀÌ ºÎºÐÀº ³¯¾¾ µ¥ÀÌÅÍ ±×¸² ¸ÂÃç¼­ µé¾î°¡¾ßÇÔ!! ${} (ex. ¸¼À½ÀÌ¸é ¸¼À½ ÀÌ¹ÌÁö Ç¥½Ã) -->
 									 <img class=weather src="${pageContext.request.contextPath}/images/Sunny.png">
 								</div>
 							</div>
