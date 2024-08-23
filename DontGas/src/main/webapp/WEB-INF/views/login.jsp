@@ -49,6 +49,11 @@
                                                 <input class="login-btn" type="submit" value="Login">
                                             </div>
                                             
+                                            
+                                            <!--  임시 버튼 -->
+                                            <button><a href="list">list 임시 이동 버튼</a></button>
+                                            <button><a href="info">info 임시 이동 버튼</a></button>
+
                                         </form>
                                         
                                     </div>
