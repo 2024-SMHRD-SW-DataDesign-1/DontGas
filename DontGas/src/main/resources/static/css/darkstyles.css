@@ -177,7 +177,7 @@
 }
 
 .sidenav-custom{
-    background-color: #1d1d1d;
+    background-color: #444444;
 }
 
 .page-header-custom{
@@ -185,8 +185,9 @@
 }
 
 .page-header-title-custom{
-    color: rgb(236, 236, 236) !important;
+    color: #ffffff !important;
     font-family: 'NanumSquareRound' !important;
+    
 }
 
 .sidenav-toggle-btn-custom{
@@ -195,6 +196,7 @@
 
 .alert-custom{
     color:white !important;
+   
 }
 
 .table-body-custom{
@@ -218,6 +220,7 @@
 .o-level{
     width: 30px;
     height: 30px;
+    transform: translate(27px, -1px);
 }
 
 .connect{
@@ -235,3 +238,55 @@
 .pighouse_name * {
     color: rgb(216, 150, 64);
 }
+
+.page-header.page-header-custom {
+    background-color: rgb(95, 95, 95);
+}
+
+.o-level2{
+
+    transform: translate(3px, 19px);
+}
+
+.h-100-custom {
+    height: 100% !important;
+    border: 3px solid #00FF7F;
+    background-color: gray;
+}
+
+.text-primary-custom {
+    --bs-text-opacity: 1;
+    color: white !important;
+  }
+
+
+  .text-gray-700-custom {
+    color: white !important;
+    font-family: 'NanumSquareRound';
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    transform: translate(4px, 18px);
+  }
+
+  .text-white-50-custom {
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-family: 'NanumSquareRound';
+  }
+
+  .text-white-custom{
+    --bs-text-opacity: 1;
+    color: black !important;
+    font-family: 'NanumSquareRound';
+  }
+  
+  .text-white-75-custom {
+    color: black !important;
+    font-family: 'NanumSquareRound';
+  }
+
+  .weather{
+    width: 40px;
+    height: 40px;
+  }

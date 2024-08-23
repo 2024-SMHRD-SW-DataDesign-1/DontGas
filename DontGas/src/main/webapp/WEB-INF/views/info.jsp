@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - SB Admin Pro</title>
+        <title>Don't Gas - Monitoring</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
@@ -17,13 +17,14 @@
         <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
     </head>
-    <body class="nav-fixed">
+    <body class="nav-fixed body-custom">
         <nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light topnav-custom" id="sidenavAccordion">
             <!-- Sidenav Toggle Button-->
             <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0 sidenav-toggle-btn-custom" id="sidebarToggle"><i data-feather="menu"></i></button>
-            <!-- Navbar Brand-->
+            
+            <!-- 돈사 리스트 보기로 이동-->
             <a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="list">Don't Gas</a>
-            <!-- Navbar Search Input-->
+            <!-- 검색바 -->
             <form class="form-inline me-auto d-none d-lg-block me-3">
                 <div class="input-group input-group-joined input-group-solid search-input-custom">
                     <input class="form-control pe-0" type="search" placeholder="Search" aria-label="Search" />
@@ -34,7 +35,7 @@
             <ul class="navbar-nav align-items-center ms-auto">
                 <!-- Alerts Dropdown-->
                 <li class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
-                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle alert-custom" id="navbarDropdownAlerts" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="bell"></i></a>
+                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle alert-custom" id="navbarDropdownAlerts" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="btn-icon" src="${pageContext.request.contextPath}/images/bell.png"></img></a>
                     <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownAlerts">
                         <h6 class="dropdown-header dropdown-notifications-header">
                             <i class="me-2" data-feather="bell"></i>
@@ -75,14 +76,16 @@
                         <a class="dropdown-item dropdown-notifications-footer" href="#!">View All Alerts</a>
                     </div>
                 </li>
-                <!-- User Dropdown-->
+                
+                
+                <!-- 사용자 정보 -->
                 <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
                     <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="${pageContext.request.contextPath}/images/user_man1.png" /></a>
                     <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
                         <h6 class="dropdown-header d-flex align-items-center">
                             <img class="dropdown-user-img" src="${pageContext.request.contextPath}/images/user_man1.png" />
                             <div class="dropdown-user-details">
-                                <div class="dropdown-user-details-name">청년농 포도</div>
+                                <div class="dropdown-user-details-name">포도</div>
                                 <div class="dropdown-user-details-email">podo@pig.com</div>
                             </div>
                         </h6>
@@ -109,32 +112,43 @@
                                 <div class="row align-items-center justify-content-between">
                                     <div class="col-auto mt-4">
                                         <h1 class="page-header-title page-header-title-custom">
-                                            <div class="page-header-icon"><i data-feather="activity"></i></div>
-                                            Dashboard
+                                            <div class="page-header-icon"><img
+                                                src="${pageContext.request.contextPath}/images/monitoring.png"
+                                                width="40px" height="40px"></div>
+                                           돈사 악취 모니터링
                                         </h1>
                                         <div class="page-header-subtitle page-header-subtitle-custom">Example dashboard overview and content summary</div>
                                     </div>
+                                    
+                                    <!-- 날짜 선택 (달력) -->
                                     <div class="col-12 col-xl-auto mt-4">
                                         <div class="input-group input-group-joined border-0" style="width: 16.5rem">
-                                            <span class="input-group-text"><i class="text-primary" data-feather="calendar"></i></span>
+                                            <span class="input-group-text"><img
+                                                src="${pageContext.request.contextPath}/images/calendar.png"
+                                                width="30px" height="30px"></i></span>
                                             <input class="form-control ps-0 pointer" id="litepickerRangePlugin" placeholder="Select date range..." />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+                        
                     </header>
                     <!-- Main page content-->
-                    <div class="container-xl px-4 mt-n10">
+                    <div class="container-xl px-4 mt-n10-custom">
                         <div class="row">
                             <div class="col-xxl-4 col-xl-12 mb-4">
-                                <div class="card h-100">
+                                <div class="card h-100-custom">
                                     <div class="card-body h-100 p-5">
                                         <div class="row align-items-center">
                                             <div class="col-xl-8 col-xxl-12">
                                                 <div class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4">
-                                                    <h1 class="text-primary">Welcome to SB Admin Pro!</h1>
-                                                    <p class="text-gray-700 mb-0">Browse our fully designed UI toolkit! Browse our prebuilt app pages, components, and utilites, and be sure to look at our full documentation!</p>
+                                                    <h1 class="text-primary-custom">황화수소 레벨</h1>
+                                                    <div class="col-xl-4 col-xxl-12 text-center"><img class="o-level2"
+                                                        src="${pageContext.request.contextPath}/images/Soso.png"
+                                                        alt="보통" style="max-width: 26rem" /></div>
+                                            </div>
                                                 </div>
                                             </div>
                                             <div class="col-xl-4 col-xxl-12 text-center"><img class="img-fluid" src="assets/img/illustrations/at-work.svg" style="max-width: 26rem" /></div>

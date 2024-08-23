@@ -212,6 +212,7 @@
 .o-level{
     width: 30px;
     height: 30px;
+    transform: translate(27px, -1px);
 }
 
 .connect{
@@ -237,3 +238,58 @@
 .page-header-subtitle-custom{
     color: black !important;
 }
+
+
+.footer-admin.footer-custom {
+    color: #a7aeb8;
+}
+
+
+.o-level2{
+
+    transform: translate(3px, 19px);
+}
+
+
+.h-100-custom {
+    height: 100% !important;
+    border: 3px solid darkseagreen;
+  
+  }
+
+  .text-primary-custom {
+    --bs-text-opacity: 1;
+    color: black !important;
+  }
+  
+  .text-gray-700-custom {
+    color: black !important;
+    font-family: 'NanumSquareRound';
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    transform: translate(4px, 18px);
+  }
+  
+
+  .text-white-50-custom {
+    --bs-text-opacity: 1;
+    color: black !important;
+    font-family: 'NanumSquareRound';
+  }
+
+  .text-white-custom{
+    --bs-text-opacity: 1;
+    color: black !important;
+    font-family: 'NanumSquareRound';
+  }
+
+  .text-white-75-custom {
+    color: black !important;
+    font-family: 'NanumSquareRound';
+  }
+
+  .weather{
+    width: 40px;
+    height: 40px;
+  }
