@@ -24,4 +24,9 @@ public class HomeController {
 	public String infoPage() {
 		return "info";
 	}
+	
+    @GetMapping("/logout-success")
+    public String logoutSuccess() {
+        return "login";
+    }
 }
