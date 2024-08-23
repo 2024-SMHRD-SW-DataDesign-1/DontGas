@@ -21,6 +21,6 @@ public class MemberController {
     public String logout(HttpSession session, HttpServletRequest request, HttpServletResponse response) {
         session.invalidate(); // 세션 무효화
         new SecurityContextLogoutHandler().logout(request, response, SecurityContextHolder.getContext().getAuthentication());
-        return "redirect:/login"; // 로그인 페이지로 리다이렉트
+        return "redirect:/loginpage"; // 로그인 페이지로 리다이렉트
     }
 }

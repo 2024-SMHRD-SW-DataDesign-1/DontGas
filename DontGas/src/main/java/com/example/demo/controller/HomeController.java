@@ -10,7 +10,7 @@ import org.springframework.ui.Model;
 @Controller
 public class HomeController {
 	
-	@GetMapping(value="/login")
+	@GetMapping(value="/loginpage")
 	public String loginPage() {
 		return "login";
 	}

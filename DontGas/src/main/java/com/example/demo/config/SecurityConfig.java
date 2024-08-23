@@ -30,11 +30,11 @@ public class SecurityConfig {
         http
             .authorizeHttpRequests(authz -> authz
             	.dispatcherTypeMatchers(DispatcherType.FORWARD).permitAll()
-                .requestMatchers("/login", "/css/**", "/images/**", "/js/**").permitAll() // 로그인 페이지와 리소스는 모두 허용
+                .requestMatchers("/loginpage", "/css/**", "/images/**", "/js/**", "/login").permitAll() // 로그인 페이지와 리소스는 모두 허용
                 .anyRequest().authenticated() // 나머지 요청은 인증이 필요함
             )
             .formLogin(form -> form
-                .loginPage("/login") // 로그인 페이지 설정
+                .loginPage("/loginpage") // 로그인 페이지 설정
                 .defaultSuccessUrl("/list", true)
                 .permitAll()
             )
