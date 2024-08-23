@@ -1748,7 +1748,8 @@ progress {
 
   .col-xl-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 60%;
+    transform: translate(351px, -7px)
   }
 
   .col-xl-7 {
@@ -10966,12 +10967,12 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
-.bg-primary {
+.bg-temper {
   --bs-bg-opacity: 1;
   background-color: #f9e1e1;
   width: 320px;
   border-color: red;
-  transform: translate(256px, -74px);
+  transform: translate(32px, -48px);
 }
 
 .bg-secondary {
@@ -10979,11 +10980,11 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-success {
+.bg-windy {
   --bs-bg-opacity: 1;
   background-color: #e9f4ff;
   width: 320px;
-  transform: translate(130px, -74px);
+  transform: translate(59px, -48px);
   border-color: blue;
 }
 
@@ -10992,19 +10993,19 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-warning {
+.bg-humidity {
   --bs-bg-opacity: 1;
   background-color: #cbf9ff;
   width: 320px;
   border-color: cyan;
-  transform: translate(191px, -74px);
+  transform: translate(45px, -48px);
 }
 
-.bg-danger {
+.bg-weather {
   --bs-bg-opacity: 1;
   background-color: #fbf6f0;
   width: 320px;
-  transform: translate(70px, -74px);
+  transform: translate(70px, -48px);
   border-color: #f99103;
 }
 
