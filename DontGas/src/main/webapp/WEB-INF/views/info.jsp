@@ -234,7 +234,7 @@
                                                 class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4">
                                                 <h1 class="text-primary-custom">암모니아 레벨</h1>
                                                 <div class="col-xl-4 col-xxl-12 text-center"><img class="o-level2"
-                                                        src="../dist/assets/img/illustrations/illust_source/VeryBad.png"
+                                                        src="${pageContext.request.contextPath}/images/VeryBad.png"
                                                         alt="매우 나쁨" style="max-width: 26rem" /></div>
                                             </div>
                                         </div>
@@ -257,7 +257,7 @@
                                                 class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4">
                                                 <h1 class="text-primary-custom">메탄 레벨</h1>
                                                 <div class="col-xl-4 col-xxl-12 text-center"><img class="o-level2"
-                                                        src="../dist/assets/img/illustrations/illust_source/Bad.png"
+                                                        src="${pageContext.request.contextPath}/images/Bad.png"
                                                         alt="매우 나쁨" style="max-width: 26rem" /></div>
                                             </div>
                                         </div>
