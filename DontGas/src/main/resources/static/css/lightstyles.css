@@ -295,243 +295,7 @@
   }
 
   
-  
-  
-  .weather-custom{
-     position:relative;
-     display: flex;
-     justify-content: space-between;
-     flex-direction: row;
-     width : 100px;
-     z-index: 100;
-     left:10%;
-     transform: translate(0px, -100px);
-     font-family: 'NanumSquareRound';
-  }
-  
-  .weather-temper-1{
-     position: absolute;
-     top : 20%;
-     display:inline-block;
-     
-     width:200px;
-     height:80px;
-     background-color: #f9e1e1;
-     
-     border:2px;
-     border-style:solid;
-     border-color:red;
-     border-radius : 10px;
-     
-     align-content:center;
-     color:black;
-     font-size: 30px;
-     padding-left: 50px;
-     font-family: 'NanumSquareRound';
-  }
-  
-  .weather-temper-2{
-     position: relative;
-   left:150px;
-     top:10px;
-     z-index: 300;
-     display:inline-block;
-     
-     width:100px;
-     height:100px;
-     background-color: #f9e1e1;
-     
-     border-radius: 100%;
-     border:2px;
-     border-style:solid;
-     border-color:red;
-     
-     text-align:center;
-     align-content:center;
-     color:red;
-     font-size: 30px;
-     font-family: 'NanumSquareRound';
-  }
-  
-  
-   .weather-humidity-1{
-     position: absolute;
-     top : 20%;
-     display:inline-block;
-     
-     width:200px;
-     height:80px;
-     background-color:#cbf9ff;
-     
-     border:2px;
-     border-style:solid;
-     border-color:cyan;
-     border-radius : 10px;
-     
-     align-content:center;
-     color:black;
-     font-size: 30px;
-     padding-left: 50px;
-     font-family: 'NanumSquareRound';
-  }
-  
-  .weather-humidity-2{
-     position: relative;
-   left:150px;
-     top:10px;
-     z-index: 300;
-     display:inline-block;
-     
-     width:100px;
-     height:100px;
-     background-color: #cbf9ff;
-     
-     border-radius: 100%;
-     border:2px;
-     border-style:solid;
-     border-color:cyan;
-     
-     text-align:center;
-     align-content:center;
-     color:black;
-     font-size: 30px;
-     font-family: 'NanumSquareRound';
-  }
-  
-  
-   .weather-winddirect-1{
-     position: absolute;
-     top : 20%;
-     display:inline-block;
-     
-     width:200px;
-     height:80px;
-     background-color: #e9f4ff;
-     
-     border:2px;
-     border-style:solid;
-     border-color:blue;
-     border-radius : 10px;
-     
-     align-content:center;
-     color:black;
-     font-size: 30px;
-     padding-left: 50px;
-     font-family: 'NanumSquareRound';
-  }
-  
-  .weather-winddirect-2{
-     position: relative;
-   left:150px;
-     top:10px;
-     z-index: 300;
-     display:inline-block;
-     
-     width:100px;
-     height:100px;
-     background-color: #e9f4ff;
-     
-     border-radius: 100%;
-     border:2px;
-     border-style:solid;
-     border-color: blue;
-     
-     text-align:center;
-     align-content:center;
-     color:black;
-     font-size: 30px;
-     font-family: 'NanumSquareRound';
-  }
-  
-   .weather-windy-1{
-     position: absolute;
-     top : 20%;
-     display:inline-block;
-     
-     width:200px;
-     height:80px;
-     background-color: #defbba;
-     
-     border:2px;
-     border-style:solid;
-     border-color:green;
-     border-radius : 10px;
-     
-     align-content:center;
-     color:black;
-     font-size: 30px;
-     padding-left: 50px;
-     font-family: 'NanumSquareRound';
-  }
-  
-  .weather-windy-2{
-     position: relative;
-   left:150px;
-     top:10px;
-     z-index: 300;
-     display:inline-block;
-     
-     width:100px;
-     height:100px;
-     background-color: #defbba;
-     
-     border-radius: 100%;
-     border:2px;
-     border-style:solid;
-     border-color:green;
-     
-     text-align:center;
-     align-content:center;
-     color:black;
-     font-size: 30px;
-     font-family: 'NanumSquareRound';
-  }
-  
-   .weather-info-1{
-     position: absolute;
-     top : 20%;
-     display:inline-block;
-     
-     width:200px;
-     height:80px;
-     background-color: white;
-     
-     border:2px;
-     border-style:solid;
-     border-color:orange;
-     border-radius : 10px;
-     
-     align-content:center;
-     color:black;
-     font-size: 30px;
-     padding-left: 50px;
-     font-family: 'NanumSquareRound';
-  }
-  
-  .weather-info-2{
-     position: relative;
-   left:150px;
-     top:10px;
-     z-index: 300;
-     display:inline-block;
-     
-     width:100px;
-     height:100px;
-     background-color: white;
-     
-     border-radius: 100%;
-     border:2px;
-     border-style:solid;
-     border-color:orange;
-     
-     text-align:center;
-     align-content:center;
-     color:black;
-     font-size: 30px;
-     font-family: 'NanumSquareRound';
-  }
-  
-  
+ 
   .weather-container {
   display: flex;
   justify-content: space-between;
@@ -569,6 +333,7 @@
 	background-color: #f9e1e1;
 	color : red;
 	border-color: red;
+	transform: translate(-236px, -50px);
 	 }
 	 
 	 
@@ -576,6 +341,7 @@
 	background-color: #cbf9ff; 
 	color: black;
 	border-color: cyan;
+	transform: translate(-174px, -50px);
 	
 	}
 .wind-dir { 
@@ -583,19 +349,21 @@
 	background-color: #e9f4ff;
 	color : black;
 	border-color: blue;
-	
+	transform: translate(-109px, -50px);
 	}
 	
 .wind-speed { 
 	background-color: #defbba; 
 	color : black;
 	border-color:green;
+	transform: translate(-43px, -50px);
 	
 	}
 .weather-info { 
 	background-color: white;
 	color : black;
 	border-color:orange;
+	transform: translate(20px, -50px);
 
 }
   
