@@ -20175,6 +20175,7 @@ s
 .page-header .page-header-content .page-header-subtitle {
   font-size: 1.15rem;
   margin-top: 0.25rem;
+  font-family:'NanumSquareRound';
 }
 .page-header .page-header-search .input-group-joined {
   border-color: transparent;
@@ -21082,4 +21083,11 @@ pre[class*=language-] {
 .token.variable {
   color: #ff6666;
 }
+
+.table-head-custom{
+	font-family: 'NanumSquareRound';
+	
+}
+
+
 

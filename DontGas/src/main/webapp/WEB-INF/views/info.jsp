@@ -168,7 +168,7 @@
 			</nav>
 		</div>
 		<div id="layoutSidenav_content">
-		<!-- header 대시보드 -->
+			<!-- header 대시보드 -->
 			<main class="main-custom">
 				<header
 					class="page-header page-header-custom pb-10 info-page-header-custom">
@@ -182,10 +182,12 @@
 												src="${pageContext.request.contextPath}/images/monitoring.png"
 												width="40px" height="40px">
 										</div>
+
 										돈사 악취 모니터링
 									</h1>
-									<div class="page-header-subtitle page-header-subtitle-custom">Example
-										dashboard overview and content summary</div>
+									<!-- 양돈장 이름 - 돈사1 or 2 순으로 데이터 넣기 -->
+									<div class="page-header-subtitle page-header-subtitle-custom">
+										대나무 축산 돈사1</div>
 								</div>
 
 
@@ -195,7 +197,7 @@
 
 
 				</header>
-				
+
 				<!-- 모니터링 메인 콘텐츠 시작점 -->
 				<div class="container-xl px-4 mt-n10-custom">
 					<div class="row">
@@ -289,6 +291,41 @@
 
 
 				<!-- 실시간 기상 정보 시작점 -->
+				<div class="weather-custom">
+					<div class="weather-temper-1">기온</div>
+					<div class="weather-temper-2">30℃</div>
+				</div>
+
+
+				<div class="weather-custom">
+					<div class="weather-humidity-1">습도</div>
+					<div class="weather-humidity-2">70%</div>
+				</div>
+
+
+				<div class="weather-custom">
+					<div class="weather-winddirect-1">풍향</div>
+					<div class="weather-winddirect-2">
+						<img class="weather"
+							src="${pageContext.request.contextPath}/images/illust_direction/direction_NE.png" width=50px height=50px></img>
+					</div>
+				</div>
+
+
+				<div class="weather-custom">
+					<div class="weather-windy-1">풍속</div>
+					<div class="weather-windy-2">5 m/s</div>
+				</div>
+
+
+				<div class="weather-custom">
+					<div class="weather-info-1">날씨</div>
+					<div class="weather-info-2"><img class=weather
+										src="${pageContext.request.contextPath}/images/Sunny.png"></img></div>
+				</div>
+
+
+
 
 				<div class="row">
 					<!-- 실시간 기상 정보 - 기온 -->
@@ -296,6 +333,7 @@
 						<div class="card bg-temper text-white h-100">
 							<div class="card-body">
 								<div class="d-flex justify-content-between align-items-center">
+
 									<div class="me-3">
 										<div class="text-white-75-custom small">기온</div>
 
