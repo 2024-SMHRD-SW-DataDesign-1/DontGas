@@ -1749,7 +1749,7 @@ progress {
   .col-xl-6 {
     flex: 0 0 auto;
     width: 60%;
-    transform: translate(351px, -7px)
+    
   }
 
   .col-xl-7 {
@@ -9449,6 +9449,12 @@ textarea.form-control-lg {
 
 .border-0 {
   border: 0 !important;
+  
+}
+
+.border-0-calendar {
+  border: 0 !important;
+  transform: translate(319px, -38px);
 }
 
 .border-top {
@@ -10059,6 +10065,8 @@ textarea.form-control-lg {
   margin-top: 1.5rem !important;
 }
 
+
+
 .mt-5 {
   margin-top: 2.5rem !important;
 }
@@ -10131,6 +10139,11 @@ textarea.form-control-lg {
 .mb-4 {
   margin-bottom: 1.5rem !important;
 }
+
+.chart-custom{
+	transform: translate(320px, 10px);
+}
+
 
 .mb-5 {
   margin-bottom: 2.5rem !important;
@@ -18535,7 +18548,9 @@ s
   font-weight: 500;
 }
 .card:not([class*=bg-]) .card-header {
-  color: #0061f2;
+  color: black;
+  font-family:'NanumSquareRound';
+  border-color: green;
 }
 
 .card.bg-dark .card-header,
@@ -20922,6 +20937,7 @@ pre[class*=language-] {
 }
 
 .token.atrule {
+
   color: #c792ea;
 }
 
@@ -21066,3 +21082,4 @@ pre[class*=language-] {
 .token.variable {
   color: #ff6666;
 }
+

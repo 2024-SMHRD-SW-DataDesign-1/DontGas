@@ -168,6 +168,7 @@
 			</nav>
 		</div>
 		<div id="layoutSidenav_content">
+		<!-- header 대시보드 -->
 			<main class="main-custom">
 				<header
 					class="page-header page-header-custom pb-10 info-page-header-custom">
@@ -187,23 +188,14 @@
 										dashboard overview and content summary</div>
 								</div>
 
-								<!-- 날짜 선택 (달력) -->
-								<div class="col-12 col-xl-auto mt-4">
-									<div class="input-group input-group-joined border-0"
-										style="width: 18rem">
-										<span class="input-group-text"><img
-											src="${pageContext.request.contextPath}/images/calendar.png"
-											width="30px" height="30px"></span> <input
-											class="form-control ps-0 pointer" id="litepickerRangePlugin"
-											placeholder="Select date range..." />
-									</div>
-								</div>
+
 							</div>
 						</div>
 					</div>
 
 
 				</header>
+				
 				<!-- 모니터링 메인 콘텐츠 시작점 -->
 				<div class="container-xl px-4 mt-n10-custom">
 					<div class="row">
@@ -297,7 +289,7 @@
 
 
 				<!-- 실시간 기상 정보 시작점 -->
-				
+
 				<div class="row">
 					<!-- 실시간 기상 정보 - 기온 -->
 					<div class="col-lg-6 col-xl-3 mb-4">
@@ -386,14 +378,24 @@
 				</div>
 				<!-- 실시간 기상 정보 끝점 -->
 
+				<!-- 날짜 선택 (달력) -->
+				<div class="col-12 col-xl-auto mt-4">
+					<div class="input-group input-group-joined border-0-calendar"
+						style="width: 18rem">
+						<span class="input-group-text"><img
+							src="${pageContext.request.contextPath}/images/calendar.png"
+							width="30px" height="30px"></span> <input
+							class="form-control ps-0 pointer" id="litepickerRangePlugin"
+							placeholder="Select date range..." />
+					</div>
+				</div>
 
-
-				<!-- 차트 들어갈 부분 -->
+				<!-- 차트 들어갈 부분 (아래 날짜 칸에 선택한 날짜 들어가게끔 넣기)-->
 				<div class="row">
-					<div class="col-xl-6 mb-4">
+					<div class="col-xl-6 mb-4 chart-custom">
 						<div class="card card-header-actions h-100">
 							<div class="card-header">
-								Earnings Breakdown
+								2024.08.19 ~ 2024.08.26 악취 요소별 추이
 								<div class="dropdown no-caret">
 									<button
 										class="btn btn-transparent-dark btn-icon dropdown-toggle"
@@ -421,30 +423,32 @@
 							</div>
 						</div>
 					</div>
-					
-				</div> <!-- row 끝 -->
-		</main>
 
-	<!--  다크 모드  -->
-	<img id="modbtn"
-		src="${pageContext.request.contextPath}/images/darkpig.png"
-		alt="다크모드 버튼" onclick="toggleDarkMode()"
-		data-light-src="${pageContext.request.contextPath}/images/lightpig.png"
-		data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
+				</div>
+				<!-- row 끝 -->
+			</main>
 
-	<!--  footer  -->
-	<footer class="footer-admin mt-auto footer-custom">
-		<div class="container-xl px-4">
-			<div class="row">
-				<div class="copyright-footer">Copyright &copy; Don't Gas 2024</div>
-			</div>
-		</div>
-	</footer>
+			<!--  다크 모드  -->
+			<img id="modbtn"
+				src="${pageContext.request.contextPath}/images/darkpig.png"
+				alt="다크모드 버튼" onclick="toggleDarkMode()"
+				data-light-src="${pageContext.request.contextPath}/images/lightpig.png"
+				data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
+
+			<!--  footer  -->
+			<footer class="footer-admin mt-auto footer-custom">
+				<div class="container-xl px-4">
+					<div class="row">
+						<div class="copyright-footer">Copyright &copy; Don't Gas
+							2024</div>
+					</div>
+				</div>
+			</footer>
 
 		</div>
 		<!-- layoutSidenav content 끝 -->
 	</div>
-	
+
 	<!-- layoutSidenav 끝 -->
 
 
