@@ -312,18 +312,23 @@
   margin-right: 10px;
   font-weight: bold;
   font-family: 'NanumSquareRound';
+  width: 150px;
+  height: 61px;
+  font-size: 25px;
+  align-content: center;
 }
 
 .value {
   background-color: #fff;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   font-family: 'NanumSquareRound';
+  font-size: 25px;
 }
 
 .temp {
