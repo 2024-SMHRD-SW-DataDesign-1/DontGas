@@ -290,47 +290,43 @@
 
 
 				<!-- 실시간 기상 정보 시작점 -->
-						<div
-							class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4 weather-custom">
-							<div class="weather-temper-1">기온</div>
-							<div class="weather-temper-2">30℃</div>
-						</div>
 
+				<div class="weather-container">
+					<div class="weather-item temp">
+						<span class="label">기온</span> 
+						<span class="value">30°C</span>
+					</div>
+					
+					<div class="weather-item humidity">
+						<span class="label">습도</span> 
+						<span class="value">70%</span>
+					</div>
+					
+					<div class="weather-item wind-dir">
+						<span class="label">풍향</span> 
+						<span class="value"><img class="weather"
+							src="${pageContext.request.contextPath}/images/illust_direction/direction_NE.png"
+							width=50px height=50px></img></span>
+					</div>
+					
+					<div class="weather-item wind-speed">
+						<span class="label">풍속</span> 
+						<span class="value">5m/s</span>
+					</div>
+					
+					<div class="weather-item weather-info">
+						<span class="label">날씨</span> 
+						<span class="value"><img class=weather
+							src="${pageContext.request.contextPath}/images/Sunny.png"></img></span>
+					</div>
+					
+				</div>
 
-						<div
-							class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4 weather-custom">
-							<div class="weather-humidity-1">습도</div>
-							<div class="weather-humidity-2">70%</div>
-						</div>
+				<div class="row">
+					<!-- 실시간 기상 정보 - 기온 -->
 
+				</div>
 
-						<div
-							class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4 weather-custom">
-							<div class="weather-winddirect-1">풍향</div>
-							<div class="weather-winddirect-2">
-								<img class="weather"
-									src="${pageContext.request.contextPath}/images/illust_direction/direction_NE.png"
-									width=50px height=50px></img>
-							</div>
-						</div>
-
-
-						<div
-							class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4 weather-custom">
-							<div class="weather-windy-1">풍속</div>
-							<div class="weather-windy-2">5 m/s</div>
-						</div>
-
-
-						<div
-							class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4 weather-custom">
-							<div class="weather-info-1">날씨</div>
-							<div class="weather-info-2">
-								<img class=weather
-									src="${pageContext.request.contextPath}/images/Sunny.png"></img>
-							</div>
-						</div>
-				
 				<!-- 실시간 기상 정보 끝점 -->
 
 				<!-- 날짜 선택 (달력) -->
