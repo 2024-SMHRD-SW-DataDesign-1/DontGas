@@ -148,7 +148,7 @@
 						</div>
 					</h6>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="login">
+					<a class="dropdown-item" href="loginpage">
 						<div class="dropdown-item-icon">
 							<i data-feather="log-out"></i>
 						</div> Logout
@@ -168,7 +168,7 @@
 			</nav>
 		</div>
 		<div id="layoutSidenav_content">
-		<!-- header 대시보드 -->
+			<!-- header 대시보드 -->
 			<main class="main-custom">
 				<header
 					class="page-header page-header-custom pb-10 info-page-header-custom">
@@ -195,7 +195,7 @@
 
 
 				</header>
-				
+
 				<!-- 모니터링 메인 콘텐츠 시작점 -->
 				<div class="container-xl px-4 mt-n10-custom">
 					<div class="row">
@@ -292,20 +292,26 @@
 
 				<div class="row">
 					<!-- 실시간 기상 정보 - 기온 -->
+
 					<div class="col-lg-6 col-xl-3 mb-4">
 						<div class="card bg-temper text-white h-100">
 							<div class="card-body">
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="me-3">
+
+
 										<div class="text-white-75-custom small">기온</div>
 
 										<!-- 이 부분은 기온 데이터 들어가야함!!  -->
-										<div class="text-lg fw-bold">30℃</div>
+										<div id="temp" class="text-lg fw-bold">-℃</div>
 
 									</div>
 									<img class="feather-xl text-white-50-custom"
 										src="${pageContext.request.contextPath}/images/temperature.png"></img>
 								</div>
+
+
+
 							</div>
 
 						</div>
@@ -470,5 +476,6 @@
 		crossorigin="anonymous"></script>
 	<script src="js/litepicker.js"></script>
 	<script src="${pageContext.request.contextPath}/js/darkmode.js"></script>
+	<script src="${pageContext.request.contextPath}/js/weather.js"></script>
 </body>
 </html>
