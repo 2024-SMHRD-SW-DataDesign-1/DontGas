@@ -9454,7 +9454,7 @@ textarea.form-control-lg {
 
 .border-0-calendar {
   border: 0 !important;
-  transform: translate(319px, -38px);
+  transform: translate(862px, 69px);
 }
 
 .border-top {
@@ -10141,7 +10141,9 @@ textarea.form-control-lg {
 }
 
 .chart-custom{
-	transform: translate(320px, 10px);
+	transform: translate(145px, 10px);
+	width: 700px;
+	
 }
 
 
