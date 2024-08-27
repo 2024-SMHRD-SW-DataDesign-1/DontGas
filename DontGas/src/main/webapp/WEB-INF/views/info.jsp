@@ -43,6 +43,7 @@
 		<!-- 돈사 리스트 보기로 이동-->
 		<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="list">Don't
 			Gas</a>
+			
 		<!-- 검색바 -->
 		<form class="form-inline me-auto d-none d-lg-block me-3">
 			<div
@@ -59,7 +60,8 @@
 
 		<!-- Navbar Items-->
 		<ul class="navbar-nav align-items-center ms-auto">
-			<!-- Alerts Dropdown-->
+		
+			<!--알림 정보 drop-down-->
 			<li
 				class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
 				<a
@@ -71,60 +73,58 @@
 				<div
 					class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
 					aria-labelledby="navbarDropdownAlerts">
-					<h6 class="dropdown-header dropdown-notifications-header">
-						<i class="me-2" data-feather="bell"></i> Alerts Center
+					<h6 class="dropdown-header alert-header">
+						<i class="me-2" data-feather="bell"></i> 알림 정보
 					</h6>
 
-					<!-- Example Alert 1-->
+					<!-- 악취 레벨 알림 -->
 					<a class="dropdown-item dropdown-notifications-item" href="#!">
-						<div class="dropdown-notifications-item-icon bg-warning">
-							<i data-feather="activity"></i>
+						<div class="dropdown-notifications-item-icon alert-bad">
+							<img src="${pageContext.request.contextPath}/images/alert_bad.png" width="40px" height="40px">
 						</div>
 						<div class="dropdown-notifications-item-content">
-							<div class="dropdown-notifications-item-content-details">December
-								29, 2021</div>
-							<div class="dropdown-notifications-item-content-text">This
-								is an alert message. It's nothing serious, but it requires your
-								attention.</div>
+							<div class="dropdown-notifications-item-content-details">악취 레벨 나쁨/매우 나쁨</div>
+							<div class="dropdown-notifications-item-content-text">
+							악취 레벨 나쁨 : 3개
+							</br>
+							악취 레벨 매우 나쁨 : 2개 
+							</div>
 						</div>
 					</a>
-					<!-- Example Alert 2-->
+					<!-- 센서 연결 현황 알림 -->
 					<a class="dropdown-item dropdown-notifications-item" href="#!">
-						<div class="dropdown-notifications-item-icon bg-info">
-							<i data-feather="bar-chart"></i>
+						<div class="dropdown-notifications-item-icon alert-sensor">
+							<img src="${pageContext.request.contextPath}/images/alert_sensor.png" width="40px" height="40px">
 						</div>
 						<div class="dropdown-notifications-item-content">
-							<div class="dropdown-notifications-item-content-details">December
-								22, 2021</div>
-							<div class="dropdown-notifications-item-content-text">A new
-								monthly report is ready. Click here to view!</div>
+							<div class="dropdown-notifications-item-content-details">연결 안 된 돈사 정보</div>
+							<div class="dropdown-notifications-item-content-text">
+							현재 센서 연결이 2개이상 안 된 돈사는 5개입니다. 
+							</br>
+							센서 확인해주세요.
+							</div>
 						</div>
 					</a>
-					<!-- Example Alert 3-->
+					<!-- 다운받은 리포트 알림 -->
 					<a class="dropdown-item dropdown-notifications-item" href="#!">
-						<div class="dropdown-notifications-item-icon bg-danger">
-							<i class="fas fa-exclamation-triangle"></i>
+						<div class="dropdown-notifications-item-icon alert-report">
+							<img src="${pageContext.request.contextPath}/images/report.png" width="40px" height="40px">
 						</div>
 						<div class="dropdown-notifications-item-content">
-							<div class="dropdown-notifications-item-content-details">December
-								8, 2021</div>
-							<div class="dropdown-notifications-item-content-text">Critical
-								system failure, systems shutting down.</div>
+							<div class="dropdown-notifications-item-content-details">다운받은 리포트 현황</div>
+							<div class="dropdown-notifications-item-content-text">최근 일주일간 받은 리포트는 총 5개입니다.</div>
 						</div>
 					</a>
-					<!-- Example Alert 4-->
+					<!-- 축산환경 관리원 데이터 전송 알림 -->
 					<a class="dropdown-item dropdown-notifications-item" href="#!">
-						<div class="dropdown-notifications-item-icon bg-success">
-							<i data-feather="user-plus"></i>
+						<div class="dropdown-notifications-item-icon alert-fowarding">
+							<img src="${pageContext.request.contextPath}/images/forwarding.png" width="40px" height="40px">
 						</div>
 						<div class="dropdown-notifications-item-content">
-							<div class="dropdown-notifications-item-content-details">December
-								2, 2021</div>
-							<div class="dropdown-notifications-item-content-text">New
-								user request. Woody has requested access to the organization.</div>
+							<div class="dropdown-notifications-item-content-details">축산환경관리원에 데이터 전송</div>
+							<div class="dropdown-notifications-item-content-text">데이터 전송은 csv 메뉴를 확인해주세요.</div>
 						</div>
-					</a> <a class="dropdown-item dropdown-notifications-footer" href="#!">View
-						All Alerts</a>
+					</a> <a class="dropdown-item dropdown-notifications-footer" href="#!">더 많은 알림 확인</a>
 				</div>
 			</li>
 
@@ -168,6 +168,7 @@
 			</nav>
 		</div>
 		<div id="layoutSidenav_content">
+		
 			<!-- header 대시보드 -->
 			<main class="main-custom">
 				<header
@@ -176,6 +177,8 @@
 						<div class="page-header-content pt-4">
 							<div class="row align-items-center justify-content-between">
 								<div class="col-auto mt-4">
+
+									<!-- 양돈장 이름 -->
 									<h1 class="page-header-title page-header-title-custom">
 										<div class="page-header-icon">
 											<img
@@ -183,11 +186,21 @@
 												width="40px" height="40px">
 										</div>
 
-										돈사 악취 모니터링
+										대나무 축산 돈사1
 									</h1>
-									<!-- 양돈장 이름 - 돈사1 or 2 순으로 데이터 넣기 -->
+									<!-- 양돈장 전화번호 데이터 넣기 -->
 									<div class="page-header-subtitle page-header-subtitle-custom">
-										대나무 축산 돈사1</div>
+										<img
+											src="${pageContext.request.contextPath}/images/contact.png"
+											width="30px" height="30px"> 010-1111-1111
+									</div>
+									<!-- 양돈장 주소 넣기-->
+									<div class="page-header-subtitle page-header-subtitle-custom">
+										<img
+											src="${pageContext.request.contextPath}/images/address.png"
+											width="30px" height="30px"> 전라남도 담양군 고서면
+									</div>
+
 								</div>
 
 
@@ -294,35 +307,37 @@
 
 
 				<div class="weather-container">
+					<!-- 실시간 기상 정보 - 기온 -->
 					<div class="weather-item temp">
-						<span class="label">기온</span> 
-						<span class="value"><span id="temp">-</span>°C</span>
+						<span class="label">기온</span> <span class="value"><span
+							id="temp">-</span>°C</span>
 					</div>
-					
+					<!-- 실시간 기상 정보 - 습도 -->
 					<div class="weather-item humidity">
-						<span class="label">습도</span> 
-						<span class="value"><span id="hum">-</span>%</span>
+						<span class="label">습도</span> <span class="value"><span
+							id="hum">-</span>%</span>
 					</div>
-					
+					<!-- 실시간 기상 정보 - 풍향 -->
 					<div class="weather-item wind-dir">
-						<span class="label">풍향</span> 
-						<span class="value"><img id="winddir" src="${pageContext.request.contextPath}/images/illust_direction/direction_South.png" alt="Wind Direction Icon"></span>
+						<span class="label">풍향</span> <span class="value"><img
+							id="winddir"
+							src="${pageContext.request.contextPath}/images/illust_direction/direction_South.png"
+							alt="Wind Direction Icon"></span>
 					</div>
-					
+					<!-- 실시간 기상 정보 - 풍속 -->
 					<div class="weather-item wind-speed">
-						<span class="label">풍속</span> 
-						<span class="value"><span id="windspeed">-</span>m/s</span>
+						<span class="label">풍속</span> <span class="value"><span
+							id="windspeed">-</span>m/s</span>
 					</div>
-					
+					<!-- 실시간 기상 정보 - 날씨 -->
 					<div class="weather-item weather-info">
-						<span class="label">날씨</span> 
-						<span class="value"><img id="weather"
-							src=""></img></span>
+						<span class="label">날씨</span> <span class="value"><img
+							id="weather" src=""></img></span>
 					</div>
-					
+
 				</div>
-				
-				
+
+
 
 
 

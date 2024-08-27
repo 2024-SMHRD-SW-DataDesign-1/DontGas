@@ -187,12 +187,13 @@
 
 .page-header-title-custom{
     color: #ffffff !important;
-    transform : translate(59px, 10px);
+   
     
 }
 
 .page-header-subtitle-custom {
 	color:  #ffffff !important;
+	transform: translate(56px, 10px);
 }
 
 .sidenav-toggle-btn-custom{
