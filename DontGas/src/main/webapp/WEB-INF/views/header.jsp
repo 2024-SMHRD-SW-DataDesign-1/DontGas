@@ -70,7 +70,7 @@
 						<div class="dropdown-notifications-item-content-details">연결
 							안 된 돈사 정보</div>
 						<div class="dropdown-notifications-item-content-text">
-							현재 센서 연결이 2개이상 안 된 돈사는 5개입니다. </br> 센서 확인해주세요.
+							센서 미연결 2개이상 돈사 : 5개 </br> 센서 확인해주세요.
 						</div>
 					</div>
 				</a>
