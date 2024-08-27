@@ -2158,6 +2158,7 @@ progress {
   color: #69707a;
   vertical-align: top;
   border-color: #e0e5ec;
+  font-family: 'NanumSquareRound';
 }
 .table > :not(caption) > * > *, .dataTable-table > :not(caption) > * > * {
   padding: 0.75rem 0.75rem;
@@ -20746,6 +20747,7 @@ s
 /* TABLE */
 .dataTable-table {
   border-collapse: collapse;
+  font-family: 'NanumSquareRound';
 }
 
 .dataTable-table > tbody > tr > td,
@@ -20785,6 +20787,7 @@ s
   position: relative;
   width: 100%;
   padding-right: 1rem;
+  font-family: 'NanumSquareRound';
 }
 
 .dataTable-sorter::before,

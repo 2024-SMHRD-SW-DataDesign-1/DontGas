@@ -171,7 +171,7 @@
 .navbar-custom{
     color: #00FF7F !important;
     font-size: 30px !important;
-    font-family: 'NanumSquareRound';
+    font-family:'NanumSquareRound';
 }
 .topnav-custom{
     background-color: rgb(37, 37, 37);
@@ -207,6 +207,7 @@
 .table-body-custom{
     background-color: rgb(37, 37, 37) !important;
     color: rgb(216, 150, 64) !important;
+    font-family: 'NanumSquareRound';
 }
 
 .body-custom{

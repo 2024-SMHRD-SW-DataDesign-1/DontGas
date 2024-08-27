@@ -198,6 +198,7 @@
 .table-body-custom{
     background-color: rgb(255, 255, 255) !important;
     color: rgb(0, 0, 0) !important;
+    font-family: 'NanumSquareRound';
 }
 
 .search-input-custom{
