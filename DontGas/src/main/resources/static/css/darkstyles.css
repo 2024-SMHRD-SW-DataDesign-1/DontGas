@@ -229,10 +229,22 @@
     transform: translate(27px, -1px);
 }
 
-.connect{
-    width:30px;
-    height:30px;
-    transform: translate(27px, -1px);
+.connect-1 {
+    width:20px;
+    height:20px;
+    transform: translate(6px, -1px);
+}
+
+.connect-2 {
+    width:20px;
+    height:20px;
+    transform: translate(9px, -1px);
+}
+
+.connect-3 {
+    width:20px;
+    height:20px;
+    transform: translate(12px, -1px);
 }
 
 .user{
