@@ -30,146 +30,22 @@
 
 
 <body class="nav-fixed body-custom">
-	<nav
-		class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light topnav-custom"
-		id="sidenavAccordion">
-		<!-- Sidenav Toggle Button-->
-		<button
-			class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0 sidenav-toggle-btn-custom"
-			id="sidebarToggle">
-			<i data-feather="menu"></i>
-		</button>
 
-		<!-- 돈사 리스트 보기로 이동-->
-		<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="list">Don't
-			Gas</a>
-		<!-- 검색바 -->
-		<form class="form-inline me-auto d-none d-lg-block me-3">
-			<div
-				class="input-group input-group-joined input-group-solid search-input-custom">
-				<input class="form-control pe-0" type="search" placeholder="Search"
-					aria-label="Search" />
-				<div class="input-group-text">
-					<i data-feather="search"></i>
-				</div>
-			</div>
-		</form>
-
-
-
-		<!-- Navbar Items-->
-		<ul class="navbar-nav align-items-center ms-auto">
-			<!-- Alerts Dropdown-->
-			<li
-				class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
-				<a
-				class="btn btn-icon btn-transparent-dark dropdown-toggle alert-custom"
-				id="navbarDropdownAlerts" href="javascript:void(0);" role="button"
-				data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-					class="btn-icon"
-					src="${pageContext.request.contextPath}/images/bell.png"></img></a>
-				<div
-					class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
-					aria-labelledby="navbarDropdownAlerts">
-					<h6 class="dropdown-header dropdown-notifications-header">
-						<i class="me-2" data-feather="bell"></i> Alerts Center
-					</h6>
-
-					<!-- Example Alert 1-->
-					<a class="dropdown-item dropdown-notifications-item" href="#!">
-						<div class="dropdown-notifications-item-icon bg-warning">
-							<i data-feather="activity"></i>
-						</div>
-						<div class="dropdown-notifications-item-content">
-							<div class="dropdown-notifications-item-content-details">December
-								29, 2021</div>
-							<div class="dropdown-notifications-item-content-text">This
-								is an alert message. It's nothing serious, but it requires your
-								attention.</div>
-						</div>
-					</a>
-					<!-- Example Alert 2-->
-					<a class="dropdown-item dropdown-notifications-item" href="#!">
-						<div class="dropdown-notifications-item-icon bg-info">
-							<i data-feather="bar-chart"></i>
-						</div>
-						<div class="dropdown-notifications-item-content">
-							<div class="dropdown-notifications-item-content-details">December
-								22, 2021</div>
-							<div class="dropdown-notifications-item-content-text">A new
-								monthly report is ready. Click here to view!</div>
-						</div>
-					</a>
-					<!-- Example Alert 3-->
-					<a class="dropdown-item dropdown-notifications-item" href="#!">
-						<div class="dropdown-notifications-item-icon bg-danger">
-							<i class="fas fa-exclamation-triangle"></i>
-						</div>
-						<div class="dropdown-notifications-item-content">
-							<div class="dropdown-notifications-item-content-details">December
-								8, 2021</div>
-							<div class="dropdown-notifications-item-content-text">Critical
-								system failure, systems shutting down.</div>
-						</div>
-					</a>
-					<!-- Example Alert 4-->
-					<a class="dropdown-item dropdown-notifications-item" href="#!">
-						<div class="dropdown-notifications-item-icon bg-success">
-							<i data-feather="user-plus"></i>
-						</div>
-						<div class="dropdown-notifications-item-content">
-							<div class="dropdown-notifications-item-content-details">December
-								2, 2021</div>
-							<div class="dropdown-notifications-item-content-text">New
-								user request. Woody has requested access to the organization.</div>
-						</div>
-					</a> <a class="dropdown-item dropdown-notifications-footer" href="#!">View
-						All Alerts</a>
-				</div>
-			</li>
-
-
-			<!-- 사용자 정보 -->
-			<li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
-				<a class="btn btn-icon btn-transparent-dark dropdown-toggle"
-				id="navbarDropdownUserImage" href="javascript:void(0);"
-				role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false"><img class="img-fluid"
-					src="${pageContext.request.contextPath}/images/user_man1.png" /></a>
-				<div
-					class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
-					aria-labelledby="navbarDropdownUserImage">
-					<h6 class="dropdown-header d-flex align-items-center">
-						<img class="dropdown-user-img"
-							src="${pageContext.request.contextPath}/images/user_man1.png" />
-						<div class="dropdown-user-details">
-							<div class="dropdown-user-details-name">포도</div>
-							<div class="dropdown-user-details-email">podo@pig.com</div>
-						</div>
-					</h6>
-					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="loginpage">
-						<div class="dropdown-item-icon">
-							<i data-feather="log-out"></i>
-						</div> Logout
-					</a>
-				</div>
-			</li>
-		</ul>
-	</nav>
+	<!-- 헤더 -->
+	<%@ include file="header.jsp" %>
 	
-	
-	<jsp:include page="sidenav.jsp" />
 
 
 
 
 	<div id="layoutSidenav">
-		<div id="layoutSidenav_nav">
-			<nav class="sidenav shadow-right sidenav-light sidenav-custom">
+	
+	
+		<!-- 사이드 메뉴 -->
+		<%@ include file="sidenav.jsp" %>
 
-			</nav>
-		</div>
+		
+		
 		<div id="layoutSidenav_content">
 			<!-- header 대시보드 -->
 			<main class="main-custom">
@@ -385,22 +261,7 @@
 				<!-- row 끝 -->
 			</main>
 
-			<!--  다크 모드  -->
-			<img id="modbtn"
-				src="${pageContext.request.contextPath}/images/darkpig.png"
-				alt="다크모드 버튼" onclick="toggleDarkMode()"
-				data-light-src="${pageContext.request.contextPath}/images/lightpig.png"
-				data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
-
-			<!--  footer  -->
-			<footer class="footer-admin mt-auto footer-custom">
-				<div class="container-xl px-4">
-					<div class="row">
-						<div class="copyright-footer">Copyright &copy; Don't Gas
-							2024</div>
-					</div>
-				</div>
-			</footer>
+			<%@ include file="footer.jsp" %>
 
 		</div>
 		<!-- layoutSidenav content 끝 -->
