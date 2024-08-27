@@ -138,6 +138,7 @@
                                             <th>연락처</th>
                                             <th>악취 상태</th>
                                             <th>연결 상태</th>
+                                            <th>연결 시각</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -147,6 +148,7 @@
                                             <th>연락처</th>
                                             <th>악취 상태</th>
                                             <th>연결 상태</th>
+                                            <th>연결 시각</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -156,6 +158,7 @@
                                             <td>010-1111-1111</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/VeryGood.png" alt="매우 좋음"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>10분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">성민 양돈장</a></td>
@@ -163,6 +166,7 @@
                                             <td>010-2222-2222</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Soso.png" alt="보통"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>2분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">고라양돈장</a></td>
@@ -170,6 +174,7 @@
                                             <td>010-1234-5678</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Soso.png" alt="보통"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>25분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">동흥양돈장</a></td>
@@ -177,6 +182,7 @@
                                             <td>010-3333-6699</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Good.png" alt="좋음"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_X.png" alt="연결 안 됨"></td>
+                                            <td>37분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">희복양돈장</a></td>
@@ -184,6 +190,7 @@
                                             <td>010-1378-8789</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/VeryGood.png" alt="매우 좋음"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_X.png" alt="연결 안 됨"></td>
+                                            <td>43분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">금산양돈장</a></td>
@@ -191,6 +198,7 @@
                                             <td>010-4444-5555</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Good.png" alt="좋음"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>16분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">귀산 양돈장</a></td>
@@ -198,6 +206,7 @@
                                             <td>010-6787-9494</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Soso.png" alt="보통"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>3분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">덕유 농장</a></td>
@@ -205,6 +214,7 @@
                                             <td>010-2121-5898</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Bad.png" alt="나쁨"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>7분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">비젼축산양돈장</a></td>
@@ -212,6 +222,7 @@
                                             <td>010-8912-0789</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Soso.png" alt="보통"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_X.png" alt="연결 안 됨"></td>
+                                            <td>50분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">샛터양돈장</a></td>
@@ -219,6 +230,7 @@
                                             <td>010-7777-8888</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Soso.png" alt="보통"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_X.png" alt="연결 안 됨"></td>
+                                            <td>36분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">행안양돈장</a></td>
@@ -226,6 +238,7 @@
                                             <td>010-0000-3333</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/VeryBad.png" alt="매우 나쁨"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_X.png" alt="연결 안 됨"></td>
+                                            <td>44분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">해리양돈장</a></td>
@@ -233,6 +246,7 @@
                                             <td>010-5555-55555</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Soso.png" alt="보통"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>20분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">선화양돈장</a></td>
@@ -240,6 +254,7 @@
                                             <td>010-7777-6556</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Bad.png" alt="나쁨"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>26분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">대농농원돈사</a></td>
@@ -247,6 +262,7 @@
                                             <td>010-7979-1004</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/VeryGood.png" alt="매우 좋음"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>13분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">보송농장</a></td>
@@ -254,6 +270,7 @@
                                             <td>010-4869-1369</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/VeryGood.png" alt="매우 좋음"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>8분 전</td>
                                         </tr>
                                         <tr class="table-head-custom">
                                             <td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png"><a href="info">국립축산과학원 돈사4</a></td>
@@ -261,6 +278,7 @@
                                             <td>010-2468-1357</td>
                                             <td><img class="o-level" src="${pageContext.request.contextPath}/images/Good.png" alt="좋음"></td>
                                             <td><img class="connect" src="${pageContext.request.contextPath}/images/connect_O.png" alt="연결됨"></td>
+                                            <td>28분 전</td>
                                         </tr>
                                         <tr>
                                             

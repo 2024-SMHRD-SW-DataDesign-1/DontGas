@@ -171,7 +171,7 @@
 .navbar-custom{
     color: #00FF7F !important;
     font-size: 30px !important;
-    font-family: 'NanumSquareRound';
+    font-family:'NanumSquareRound';
 }
 .topnav-custom{
     background-color: rgb(37, 37, 37);
@@ -187,8 +187,12 @@
 
 .page-header-title-custom{
     color: #ffffff !important;
-    font-family: 'NanumSquareRound' !important;
+    transform : translate(59px, 10px);
     
+}
+
+.page-header-subtitle-custom {
+	color:  #ffffff !important;
 }
 
 .sidenav-toggle-btn-custom{
@@ -203,6 +207,7 @@
 .table-body-custom{
     background-color: rgb(37, 37, 37) !important;
     color: rgb(216, 150, 64) !important;
+    font-family: 'NanumSquareRound';
 }
 
 .body-custom{
@@ -242,6 +247,12 @@
 
 .page-header.page-header-custom {
     background-color: rgb(95, 95, 95);
+    width: 100%;
+}
+
+.info-page-header-custom{
+    background-color:  rgb(95, 95, 95) !important;
+    width: 100%;
 }
 
 .o-level2{
@@ -333,39 +344,39 @@
 
 .temp {
 	background-color: #f9e1e1;
-	color : red;
-	border-color: red;
-	transform: translate(-236px, -50px);
+	color : black;
+	border: 2px solid red;
+	transform: translate(-334px, -50px);
 	 }
 	 
 	 
 .humidity { 
 	background-color: #cbf9ff; 
 	color: black;
-	border-color: cyan;
-	transform: translate(-174px, -50px);
+	border:2px solid cyan;
+	transform: translate(-283px, -50px);
 	
 	}
 .wind-dir { 
 	
 	background-color: #e9f4ff;
 	color : black;
-	border-color: blue;
-	transform: translate(-109px, -50px);
+	border:2px solid blue;
+	transform: translate(-223px, -50px);
 	}
 	
 .wind-speed { 
 	background-color: #defbba; 
 	color : black;
-	border-color:green;
-	transform: translate(-43px, -50px);
-	
+	transform: translate(-163px, -50px);
+	border: 2px solid green;
 	}
+	
 .weather-info { 
 	background-color: white;
 	color : black;
-	border-color:orange;
-	transform: translate(20px, -50px);
+	transform: translate(-100px, -50px);
+	border: 2px solid orange;
 
 }
   
