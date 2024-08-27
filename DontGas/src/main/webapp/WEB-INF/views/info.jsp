@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
+<meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -183,11 +183,12 @@
 												width="40px" height="40px">
 										</div>
 
-										돈사 악취 모니터링
+										대나무 축산 돈사1
 									</h1>
 									<!-- 양돈장 이름 - 돈사1 or 2 순으로 데이터 넣기 -->
 									<div class="page-header-subtitle page-header-subtitle-custom">
-										대나무 축산 돈사1</div>
+										전라남도 담양군 고서면 <br> 010-1111-1111
+									</div>
 								</div>
 
 
@@ -288,20 +289,17 @@
 
 
 
-
-
 				<!-- 실시간 기상 정보 시작점 -->
-
 
 				<div class="weather-container">
 					<div class="weather-item temp">
 						<span class="label">기온</span> 
-						<span class="value">30°C</span>
+						<span class="value"><span id="temp">-</span>°C</span>
 					</div>
 					
 					<div class="weather-item humidity">
 						<span class="label">습도</span> 
-						<span class="value">70%</span>
+						<span class="value"><span id="hum">-</span>%</span>
 					</div>
 					
 					<div class="weather-item wind-dir">
@@ -323,15 +321,12 @@
 					</div>
 					
 				</div>
-				
-				
-
-
 
 				<div class="row">
 					<!-- 실시간 기상 정보 - 기온 -->
 
 				</div>
+
 				<!-- 실시간 기상 정보 끝점 -->
 
 				<!-- 날짜 선택 (달력) -->
@@ -424,7 +419,7 @@
 	<script src="js/datatables.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"
 		crossorigin="anonymous"></script>
-	<script src="js/litepicker.js"></script>
+	<script src="${pageContext.request.contextPath}/js/litepicker.js"></script>
 	<script src="${pageContext.request.contextPath}/js/darkmode.js"></script>
 	<script src="${pageContext.request.contextPath}/js/weather.js"></script>
 </body>
