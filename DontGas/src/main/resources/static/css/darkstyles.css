@@ -279,6 +279,13 @@
     background-color: gray;
 }
 
+ .card:not([class*=bg-]) .card-header-custom {
+  color: wheat;
+  font-family:'NanumSquareRound';
+  border-color: green;
+}
+
+
 .text-primary-custom {
     --bs-text-opacity: 1;
     color: white !important;

@@ -277,6 +277,12 @@
     border: 3px solid darkseagreen;
   
   }
+  
+  .card:not([class*=bg-]) .card-header-custom {
+  color: black;
+  font-family:'NanumSquareRound';
+  border-color: green;
+}
 
   .text-primary-custom {
     --bs-text-opacity: 1;
@@ -405,8 +411,6 @@
 	font-size: 18px;
 	cursor: pointer;
 	color: black !important;
-	border-style: solid;
-	border-color: #f0f0f0;
 	text-align: center;
 	display: inline-block !important;
 }

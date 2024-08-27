@@ -244,7 +244,7 @@
 				<div class="row">
 					<div class="col-xl-6 mb-4 chart-custom">
 						<div class="card card-header-actions h-100-custom">
-							<div class="card-header">
+							<div class="card-header card-header-custom">
 								2024.08.19 ~ 2024.08.26 악취 요소별 추이
 								<div class="dropdown no-caret">
 									<button
