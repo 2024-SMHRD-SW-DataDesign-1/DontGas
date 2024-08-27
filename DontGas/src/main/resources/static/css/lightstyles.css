@@ -233,10 +233,12 @@
 
 .info-page-header-custom{
     background-color: rgb(236,252,210) !important;
+    width: 100%;
 }
 
 .page-header-subtitle-custom{
     color: black !important;
+    transform : translate(59px, 10px);
 }
 
 
@@ -336,39 +338,39 @@
 
 .temp {
 	background-color: #f9e1e1;
-	color : red;
-	border-color: red;
-	transform: translate(-236px, -50px);
+	color : black;
+	border: 2px solid red;
+	transform: translate(-334px, -50px);
 	 }
 	 
 	 
 .humidity { 
 	background-color: #cbf9ff; 
 	color: black;
-	border-color: cyan;
-	transform: translate(-174px, -50px);
+	border:2px solid cyan;
+	transform: translate(-283px, -50px);
 	
 	}
 .wind-dir { 
 	
 	background-color: #e9f4ff;
 	color : black;
-	border-color: blue;
-	transform: translate(-109px, -50px);
+	border:2px solid blue;
+	transform: translate(-223px, -50px);
 	}
 	
 .wind-speed { 
 	background-color: #defbba; 
 	color : black;
-	border-color:green;
-	transform: translate(-43px, -50px);
-	
+	transform: translate(-163px, -50px);
+	border: 2px solid green;
 	}
+	
 .weather-info { 
 	background-color: white;
 	color : black;
-	border-color:orange;
-	transform: translate(20px, -50px);
+	transform: translate(-100px, -50px);
+	border: 2px solid orange;
 
 }
   
