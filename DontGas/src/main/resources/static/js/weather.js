@@ -10,14 +10,23 @@ async function getWeather() {
                 // Convert temperature from Kelvin to Celsius
                 const temp = parseInt(data.main.temp - 273.15);
                 const humidity = data.main.humidity;
+                const windspeed =data.wind['speed'];
+                const clouds = data.clouds['all'];
+                const winddir = data.wind['deg'];
+
+
+
 
                 // Update the DOM with the temperature
                 document.getElementById('temp').textContent = `${temp}`;
                 document.getElementById('hum').textContent = `${humidity}`;
+                document.getElementById('windspeed').textContent = `${windspeed}`;
+                document.getElementById('clouds').textContent = `${clouds}`;
+                document.getElementById('winddir').textContent = `${winddir}`;
+
                 
             } catch (error) {
                 console.error('Error fetching the weather data:', error);
-                document.getElementById('temp').textContent = 'Error fetching data';
             }
         }
 

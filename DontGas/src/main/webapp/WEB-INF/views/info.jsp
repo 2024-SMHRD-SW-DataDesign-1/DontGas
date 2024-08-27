@@ -304,20 +304,17 @@
 					
 					<div class="weather-item wind-dir">
 						<span class="label">Ç³Çâ</span> 
-						<span class="value"><img class="weather"
-							src="${pageContext.request.contextPath}/images/illust_direction/direction_NE.png"
-							width=50px height=50px></img></span>
+						<span class="value"><span id='winddir'>-</span></span>
 					</div>
 					
 					<div class="weather-item wind-speed">
 						<span class="label">Ç³¼Ó</span> 
-						<span class="value">5m/s</span>
+						<span class="value"><span id='windspeed'>-</span>m/s</span>
 					</div>
 					
 					<div class="weather-item weather-info">
 						<span class="label">³¯¾¾</span> 
-						<span class="value"><img class=weather
-							src="${pageContext.request.contextPath}/images/Sunny.png"></img></span>
+						<span class="value"><span id='clouds'>-</span></span>
 					</div>
 					
 				</div>
