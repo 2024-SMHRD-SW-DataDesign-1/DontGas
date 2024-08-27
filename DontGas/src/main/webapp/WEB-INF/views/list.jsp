@@ -25,6 +25,7 @@
 </head>
 
 <body class="nav-fixed body-custom">
+<<<<<<< HEAD
 	<nav
 		class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light topnav-custom"
 		id="sidenavAccordion">
@@ -134,43 +135,15 @@
 					</a> <a class="dropdown-item dropdown-notifications-footer" href="#!">더 많은 알림 확인</a>
 				</div>
 			</li>
+=======
+	
+	<!-- 헤더 -->
+	<%@ include file="header.jsp" %>
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 
 
-			<!-- header user 클릭 시 뜨는 사용자 표시 -->
-			<li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
-				<a class="btn btn-icon btn-transparent-dark dropdown-toggle"
-				id="navbarDropdownUserImage" href="javascript:void(0);"
-				role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-				aria-expanded="false"><img class="img-fluid"
-					src="${pageContext.request.contextPath}/images/user_man1.png" /></a>
-				<div
-					class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
-					aria-labelledby="navbarDropdownUserImage">
-					<h6 class="dropdown-header d-flex align-items-center">
-						<img class="dropdown-user-img"
-							src="${pageContext.request.contextPath}/images/user_man1.png" />
-						<div class="dropdown-user-details">
-							<div class="dropdown-user-details-name">포도</div>
-							<div class="dropdown-user-details-email">podo@pig.com</div>
-						</div>
-					</h6>
-					<div class="dropdown-divider"></div>
-					<form action="logout" method="get" style="display: inline;">
-						<button type="submit" class="dropdown-item">
-							<div class="dropdown-item-icon">
-								<i data-feather="log-out"></i>
-							</div>
-							Logout
-						</button>
-					</form>
-				</div>
-			</li>
-		</ul>
-	</nav>
-
-
-	<!-- 사이드 메뉴 -->
 	<div id="layoutSidenav">
+<<<<<<< HEAD
 		<div id="layoutSidenav_nav">
 			<nav class="sidenav shadow-right sidenav-light sidenav-custom">
 				<div class="sidenav-menu">
@@ -182,9 +155,14 @@
 				</div>
 			</nav>
 		</div>
+=======
+	
+		<!-- 사이드 메뉴 -->
+		<%@ include file="sidenav.jsp" %>
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 		
-		
-		
+
+
 		<div id="layoutSidenav_content">
 			<main>
 				<header
@@ -497,49 +475,17 @@
 						</div>
 					</div>
 				</div>
-				
-				
-				
-				<!-- 리포트 다운로드 모달창 -->
-				<div class="modal fade" id="exampleModalLg" tabindex="-1"
-					role="dialog" aria-labelledby="myLargeModalLabel"
-					aria-hidden="true">
-					<div class="modal-dialog modal-lg" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Large Modal</h5>
-								<button class="btn-close" type="button" data-bs-dismiss="modal"
-									aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<p>This is an example of a large modal.</p>
-							</div>
-							<div class="modal-footer">
-								<button class="btn btn-primary" type="button"
-									data-bs-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				
-				
+
+
+
+
+
+
+
 			</main>
-
-			<img id="modbtn"
-				src="${pageContext.request.contextPath}/images/darkpig.png"
-				alt="다크모드 버튼" onclick="toggleDarkMode()"
-				data-light-src="${pageContext.request.contextPath}/images/lightpig.png"
-				data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
-
-			<footer class="footer-admin mt-auto footer-light">
-				<div class="container-xl px-4">
-					<div class="row">
-						<div class="copyright-footer">Copyright &copy; Don't Gas
-							2024</div>
-					</div>
-				</div>
-			</footer>
+			
+			<!-- footer -->
+			<%@ include file="footer.jsp" %>
 		</div>
 	</div>
 	<script

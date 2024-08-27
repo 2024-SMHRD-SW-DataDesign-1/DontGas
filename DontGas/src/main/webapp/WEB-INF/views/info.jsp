@@ -30,16 +30,8 @@
 
 
 <body class="nav-fixed body-custom">
-	<nav
-		class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light topnav-custom"
-		id="sidenavAccordion">
-		<!-- Sidenav Toggle Button-->
-		<button
-			class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0 sidenav-toggle-btn-custom"
-			id="sidebarToggle">
-			<i data-feather="menu"></i>
-		</button>
 
+<<<<<<< HEAD
 		<!-- 돈사 리스트 보기로 이동-->
 		<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="list">Don't
 			Gas</a>
@@ -157,16 +149,23 @@
 			</li>
 		</ul>
 	</nav>
+=======
+	<!-- 헤더 -->
+	<%@ include file="header.jsp" %>
+	
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 
 
 
 
 	<div id="layoutSidenav">
-		<div id="layoutSidenav_nav">
-			<nav class="sidenav shadow-right sidenav-light sidenav-custom">
+	
+	
+		<!-- 사이드 메뉴 -->
+		<%@ include file="sidenav.jsp" %>
 
-			</nav>
-		</div>
+		
+		
 		<div id="layoutSidenav_content">
 		
 			<!-- header 대시보드 -->
@@ -397,22 +396,7 @@
 				<!-- row 끝 -->
 			</main>
 
-			<!--  다크 모드  -->
-			<img id="modbtn"
-				src="${pageContext.request.contextPath}/images/darkpig.png"
-				alt="다크모드 버튼" onclick="toggleDarkMode()"
-				data-light-src="${pageContext.request.contextPath}/images/lightpig.png"
-				data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
-
-			<!--  footer  -->
-			<footer class="footer-admin mt-auto footer-custom">
-				<div class="container-xl px-4">
-					<div class="row">
-						<div class="copyright-footer">Copyright &copy; Don't Gas
-							2024</div>
-					</div>
-				</div>
-			</footer>
+			<%@ include file="footer.jsp" %>
 
 		</div>
 		<!-- layoutSidenav content 끝 -->

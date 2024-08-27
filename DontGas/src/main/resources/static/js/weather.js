@@ -10,7 +10,7 @@ async function getWeather() {
                 // Convert temperature from Kelvin to Celsius
                 const temp = parseInt(data.main.temp - 273.15);
                 const humidity = data.main.humidity;
-                const windspeed =data.wind['speed'];
+                const windspeed =data.wind['speed'].toFixed(1);
                 const weather_icon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
                 const winddir = data.wind['deg'];
 
