@@ -371,7 +371,7 @@
 	background-color: #f9e1e1;
 	color : black;
 	border: 2px solid red;
-	transform: translate(-358px, -50px);
+	transform: translate(-358px, -80px);
 	 }
 	 
 	 
@@ -379,7 +379,7 @@
 	background-color: #cbf9ff; 
 	color: black;
 	border:2px solid cyan;
-	transform: translate(-308px, -50px);
+	transform: translate(-308px, -80px);
 	
 	}
 .wind-dir { 
@@ -387,20 +387,20 @@
 	background-color: #e9f4ff;
 	color : black;
 	border:2px solid blue;
-	transform: translate(-258px, -50px);
+	transform: translate(-258px, -80px);
 	}
 	
 .wind-speed { 
 	background-color: #defbba; 
 	color : black;
-	transform: translate(-208px, -50px);
+	transform: translate(-208px, -80px);
 	border: 2px solid green;
 	}
 	
 .weather-info { 
 	background-color: white;
 	color : black;
-	transform: translate(-158px, -50px);
+	transform: translate(-158px, -80px);
 	border: 2px solid orange;
 
 }
