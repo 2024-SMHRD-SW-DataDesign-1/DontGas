@@ -14,6 +14,9 @@ async function getWeather() {
                 // Update the DOM with the temperature
                 document.getElementById('temp').textContent = `${temp}`;
                 document.getElementById('hum').textContent = `${humidity}`;
+                document.getElementById('temp').textContent = `${temp}`;
+                document.getElementById('hum').textContent = `${humidity}`;
+                document.getElementById('temp').textContent = `${temp}`;
                 
             } catch (error) {
                 console.error('Error fetching the weather data:', error);
