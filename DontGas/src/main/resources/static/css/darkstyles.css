@@ -355,6 +355,7 @@
   height: 61px;
   font-size: 25px;
   align-content: center;
+  transform: translate(52px, 0px);
 }
 
 .value {
