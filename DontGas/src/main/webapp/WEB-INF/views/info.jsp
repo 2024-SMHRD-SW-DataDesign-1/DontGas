@@ -185,7 +185,7 @@
 					
 					<div class="weather-item wind-dir">
 						<span class="label">Ç³Çâ</span> 
-						<span class="value"></span>
+						<span class="value"><img id="winddir" src="${pageContext.request.contextPath}/images/illust_direction/direction_South.png" alt="Wind Direction Icon"></span>
 					</div>
 					
 					<div class="weather-item wind-speed">
