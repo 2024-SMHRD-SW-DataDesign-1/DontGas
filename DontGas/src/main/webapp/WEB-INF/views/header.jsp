@@ -24,7 +24,8 @@
 			</div>
 		</div>
 	</form>
-	<!-- user, alerts, csv 다운 버튼 부분 -->
+	
+	<!-- 사용자, 알림 정보 drop-down 부분 -->
 
 	<ul class="navbar-nav align-items-center ms-auto">
 
@@ -97,7 +98,7 @@
 						<div class="dropdown-notifications-item-content-details">축산환경관리원에
 							데이터 전송</div>
 						<div class="dropdown-notifications-item-content-text">데이터
-							전송은 csv 메뉴를 확인해주세요.</div>
+							전송은 메뉴를 확인해주세요.</div>
 					</div>
 				</a> <a class="dropdown-item dropdown-notifications-footer" href="#!">더
 					많은 알림 확인</a>
