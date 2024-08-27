@@ -501,6 +501,8 @@ legend + * {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  border-radius: 10px;
+  border: 3px solid greenyellow;
 }
 
 /* rtl:raw:

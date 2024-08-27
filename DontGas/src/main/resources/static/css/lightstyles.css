@@ -217,8 +217,8 @@
 }
 
 .connect{
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
     transform: translate(27px, -1px);
 }
 
@@ -226,6 +226,13 @@
     width:30px;
     height:30px;
     margin-right: 5px;
+}
+
+[type=search] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield;
+  border-radius : 10px;
+  border: 3px solid greenyellow;
 }
 
 .pighouse_name * {
