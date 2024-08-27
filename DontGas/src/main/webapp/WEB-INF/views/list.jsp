@@ -25,16 +25,19 @@
 </head>
 
 <body class="nav-fixed body-custom">
+
 	
 	<!-- 헤더 -->
 	<%@ include file="header.jsp" %>
 
 
+
 	<div id="layoutSidenav">
+
 	
 		<!-- 사이드 메뉴 -->
 		<%@ include file="sidenav.jsp" %>
-		
+
 
 
 		<div id="layoutSidenav_content">
@@ -343,6 +346,7 @@
 
 									</tr>
 									<tr>
+								
 								</tbody>
 							</table>
 						</div>

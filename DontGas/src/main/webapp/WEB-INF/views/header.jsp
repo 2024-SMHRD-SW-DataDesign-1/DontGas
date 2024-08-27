@@ -28,7 +28,7 @@
 
 	<ul class="navbar-nav align-items-center ms-auto">
 
-		<!-- Alerts Dropdown (종모양)-->
+		<!--알림 정보 drop-down-->
 		<li
 			class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
 			<a
@@ -40,59 +40,67 @@
 			<div
 				class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
 				aria-labelledby="navbarDropdownAlerts">
-				<h6 class="dropdown-header dropdown-notifications-header">
+				<h6 class="dropdown-header alert-header">
 					<i class="me-2" data-feather="bell"></i> 알림 정보
 				</h6>
-				<!-- Example Alert 1-->
+
+				<!-- 악취 레벨 알림 -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
-					<div class="dropdown-notifications-item-icon bg-warning">
-						<i data-feather="activity"></i>
+					<div class="dropdown-notifications-item-icon alert-bad">
+						<img src="${pageContext.request.contextPath}/images/alert_bad.png"
+							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
-						<div class="dropdown-notifications-item-content-details">December
-							29, 2021</div>
-						<div class="dropdown-notifications-item-content-text">This
-							is an alert message. It's nothing serious, but it requires your
-							attention.</div>
+						<div class="dropdown-notifications-item-content-details">악취
+							레벨 나쁨/매우 나쁨</div>
+						<div class="dropdown-notifications-item-content-text">
+							악취 레벨 나쁨 : 3개 </br> 악취 레벨 매우 나쁨 : 2개
+						</div>
 					</div>
 				</a>
-				<!-- Example Alert 2-->
+				<!-- 센서 연결 현황 알림 -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
-					<div class="dropdown-notifications-item-icon bg-info">
-						<i data-feather="bar-chart"></i>
+					<div class="dropdown-notifications-item-icon alert-sensor">
+						<img
+							src="${pageContext.request.contextPath}/images/alert_sensor.png"
+							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
-						<div class="dropdown-notifications-item-content-details">December
-							22, 2021</div>
-						<div class="dropdown-notifications-item-content-text">A new
-							monthly report is ready. Click here to view!</div>
+						<div class="dropdown-notifications-item-content-details">연결
+							안 된 돈사 정보</div>
+						<div class="dropdown-notifications-item-content-text">
+							현재 센서 연결이 2개이상 안 된 돈사는 5개입니다. </br> 센서 확인해주세요.
+						</div>
 					</div>
 				</a>
-				<!-- Example Alert 3-->
+				<!-- 다운받은 리포트 알림 -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
-					<div class="dropdown-notifications-item-icon bg-danger">
-						<i class="fas fa-exclamation-triangle"></i>
+					<div class="dropdown-notifications-item-icon alert-report">
+						<img src="${pageContext.request.contextPath}/images/report.png"
+							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
-						<div class="dropdown-notifications-item-content-details">December
-							8, 2021</div>
-						<div class="dropdown-notifications-item-content-text">Critical
-							system failure, systems shutting down.</div>
+						<div class="dropdown-notifications-item-content-details">다운받은
+							리포트 현황</div>
+						<div class="dropdown-notifications-item-content-text">최근
+							일주일간 받은 리포트는 총 5개입니다.</div>
 					</div>
 				</a>
-				<!-- Example Alert 4-->
+				<!-- 축산환경 관리원 데이터 전송 알림 -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
-					<div class="dropdown-notifications-item-icon bg-success">
-						<i data-feather="user-plus"></i>
+					<div class="dropdown-notifications-item-icon alert-fowarding">
+						<img
+							src="${pageContext.request.contextPath}/images/forwarding.png"
+							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
-						<div class="dropdown-notifications-item-content-details">December
-							2, 2021</div>
-						<div class="dropdown-notifications-item-content-text">New
-							user request. Woody has requested access to the organization.</div>
+						<div class="dropdown-notifications-item-content-details">축산환경관리원에
+							데이터 전송</div>
+						<div class="dropdown-notifications-item-content-text">데이터
+							전송은 csv 메뉴를 확인해주세요.</div>
 					</div>
-				</a> <a class="dropdown-item dropdown-notifications-footer" href="#!">View
-					All Alerts</a>
+				</a> <a class="dropdown-item dropdown-notifications-footer" href="#!">더
+					많은 알림 확인</a>
 			</div>
 		</li>
 

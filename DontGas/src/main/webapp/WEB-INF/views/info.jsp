@@ -31,9 +31,11 @@
 
 <body class="nav-fixed body-custom">
 
+
 	<!-- 헤더 -->
 	<%@ include file="header.jsp" %>
 	
+
 
 
 
@@ -47,6 +49,7 @@
 		
 		
 		<div id="layoutSidenav_content">
+		
 			<!-- header 대시보드 -->
 			<main class="main-custom">
 				<header
@@ -55,6 +58,8 @@
 						<div class="page-header-content pt-4">
 							<div class="row align-items-center justify-content-between">
 								<div class="col-auto mt-4">
+
+									<!-- 양돈장 이름 -->
 									<h1 class="page-header-title page-header-title-custom">
 										<div class="page-header-icon">
 											<img
@@ -62,11 +67,21 @@
 												width="40px" height="40px">
 										</div>
 
-										돈사 악취 모니터링
+										대나무 축산 돈사1
 									</h1>
-									<!-- 양돈장 이름 - 돈사1 or 2 순으로 데이터 넣기 -->
+									<!-- 양돈장 전화번호 데이터 넣기 -->
 									<div class="page-header-subtitle page-header-subtitle-custom">
-										대나무 축산 돈사1</div>
+										<img
+											src="${pageContext.request.contextPath}/images/contact.png"
+											width="30px" height="30px"> 010-1111-1111
+									</div>
+									<!-- 양돈장 주소 넣기-->
+									<div class="page-header-subtitle page-header-subtitle-custom">
+										<img
+											src="${pageContext.request.contextPath}/images/address.png"
+											width="30px" height="30px"> 전라남도 담양군 고서면
+									</div>
+
 								</div>
 
 
@@ -173,35 +188,37 @@
 
 
 				<div class="weather-container">
+					<!-- 실시간 기상 정보 - 기온 -->
 					<div class="weather-item temp">
-						<span class="label">기온</span> 
-						<span class="value"><span id="temp">-</span>°C</span>
+						<span class="label">기온</span> <span class="value"><span
+							id="temp">-</span>°C</span>
 					</div>
-					
+					<!-- 실시간 기상 정보 - 습도 -->
 					<div class="weather-item humidity">
-						<span class="label">습도</span> 
-						<span class="value"><span id="hum">-</span>%</span>
+						<span class="label">습도</span> <span class="value"><span
+							id="hum">-</span>%</span>
 					</div>
-					
+					<!-- 실시간 기상 정보 - 풍향 -->
 					<div class="weather-item wind-dir">
-						<span class="label">풍향</span> 
-						<span class="value"><img id="winddir" src="${pageContext.request.contextPath}/images/illust_direction/direction_South.png" alt="Wind Direction Icon"></span>
+						<span class="label">풍향</span> <span class="value"><img
+							id="winddir"
+							src="${pageContext.request.contextPath}/images/illust_direction/direction_South.png"
+							alt="Wind Direction Icon"></span>
 					</div>
-					
+					<!-- 실시간 기상 정보 - 풍속 -->
 					<div class="weather-item wind-speed">
-						<span class="label">풍속</span> 
-						<span class="value"><span id="windspeed">-</span>m/s</span>
+						<span class="label">풍속</span> <span class="value"><span
+							id="windspeed">-</span>m/s</span>
 					</div>
-					
+					<!-- 실시간 기상 정보 - 날씨 -->
 					<div class="weather-item weather-info">
-						<span class="label">날씨</span> 
-						<span class="value"><img id="weather"
-							src=""></img></span>
+						<span class="label">날씨</span> <span class="value"><img
+							id="weather" src=""></img></span>
 					</div>
-					
+
 				</div>
-				
-				
+
+
 
 
 
