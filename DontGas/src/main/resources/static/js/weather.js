@@ -12,7 +12,7 @@ async function getWeather() {
                 const humidity = data.main.humidity;
                 const windspeed =data.wind['speed'];
                 const clouds = data.clouds['all'];
-                const winddir = data.wind['deg'];
+                const windDirection = data.wind['deg'];
 
 
 
@@ -22,7 +22,7 @@ async function getWeather() {
                 document.getElementById('hum').textContent = `${humidity}`;
                 document.getElementById('windspeed').textContent = `${windspeed}`;
                 document.getElementById('clouds').textContent = `${clouds}`;
-                document.getElementById('winddir').textContent = `${winddir}`;
+                document.getElementById('windDirection').textContent = `${windDirection}`;
 
                 
             } catch (error) {
