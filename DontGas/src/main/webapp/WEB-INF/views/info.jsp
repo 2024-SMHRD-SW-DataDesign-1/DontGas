@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
+<meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -294,12 +294,12 @@
 				<div class="weather-container">
 					<div class="weather-item temp">
 						<span class="label">기온</span> 
-						<span class="value">30°C</span>
+						<span class="value"><span id="temp">-</span>°C</span>
 					</div>
 					
 					<div class="weather-item humidity">
 						<span class="label">습도</span> 
-						<span class="value">70%</span>
+						<span class="value"><span id="hum">-</span>%</span>
 					</div>
 					
 					<div class="weather-item wind-dir">
@@ -419,7 +419,7 @@
 	<script src="js/datatables.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"
 		crossorigin="anonymous"></script>
-	<script src="js/litepicker.js"></script>
+	<script src="${pageContext.request.contextPath}/js/litepicker.js"></script>
 	<script src="${pageContext.request.contextPath}/js/darkmode.js"></script>
 	<script src="${pageContext.request.contextPath}/js/weather.js"></script>
 </body>
