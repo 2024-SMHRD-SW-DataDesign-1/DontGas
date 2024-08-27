@@ -394,5 +394,16 @@
 
 }
   
- 
+
+.sidemenu-custom{
+	margin-top : 20px;
+	font-size: 18px;
+	cursor: pointer;
+	color: black !important;
+	border-style: solid;
+	border-color: #f0f0f0;
+	text-align: center;
+	display: inline-block !important;
+}
+
   
