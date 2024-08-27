@@ -333,7 +333,11 @@
   height:110px;
 }
 
-
+ #winddir{
+  	width: 40px;
+  	height: 40px;
+  }
+  
 
 .label {
   margin-right: 10px;

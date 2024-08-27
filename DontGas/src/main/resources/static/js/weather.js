@@ -12,12 +12,14 @@ async function getWeather() {
                 const humidity = data.main.humidity;
                 const windspeed =data.wind['speed'];
                 const weather_icon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+                const winddir = data.wind['deg'];
 
                 // Update the DOM with the temperature
                 document.getElementById('temp').textContent = `${temp}`;
                 document.getElementById('hum').textContent = `${humidity}`;
                 document.getElementById('windspeed').textContent = `${windspeed}`;
                 document.getElementById('weather').src = `${weather_icon}`;
+                document.getElementById('winddir').style.transform = `rotate(${winddir}deg)`;
 
 
                 
