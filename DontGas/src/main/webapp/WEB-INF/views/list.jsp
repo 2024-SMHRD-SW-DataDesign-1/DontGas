@@ -51,17 +51,8 @@
 		<!-- user, alerts, csv 다운 버튼 부분 -->
 
 		<ul class="navbar-nav align-items-center ms-auto">
-			<!-- csv 파일 다운 버튼 -->
-			<li
-				class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
-				<a
-				class="btn btn-icon btn-transparent-dark dropdown-toggle alert-custom"
-				id="navbarDropdownAlerts" href="javascript:void(0);" role="button"
-				data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-					class="btn-icon"
-					src="${pageContext.request.contextPath}/images/csv-download.png"></img></a>
 
-				<!-- Alerts Dropdown (종모양)-->
+			<!-- Alerts Dropdown (종모양)-->
 			<li
 				class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
 				<a
@@ -163,22 +154,26 @@
 	</nav>
 
 
-	<!-- 사이드 메뉴 -->
 	<div id="layoutSidenav">
+	
+	<!-- 사이드 메뉴 -->
 		<div id="layoutSidenav_nav">
 			<nav class="sidenav shadow-right sidenav-light sidenav-custom">
 				<div class="sidenav-menu">
 					<div class="nav accordion" id="accordionSidenav">
-						<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
-							data-bs-target="#exampleModalLg" aria-expanded="false"
-							aria-controls="collapseDashboards">엑셀 다운로드</p>
+						<p class="nav-link collapsed sidemenu-custom"
+							data-bs-toggle="modal" data-bs-target="#exampleModalLg"
+							aria-expanded="false" aria-controls="collapseDashboards">
+							csv 다운로드
+							<img class="btn-icon" src="${pageContext.request.contextPath}/images/csv-download.png"></img>
+						</p>
 					</div>
 				</div>
 			</nav>
 		</div>
 		
-		
-		
+
+
 		<div id="layoutSidenav_content">
 			<main>
 				<header
@@ -490,9 +485,9 @@
 						</div>
 					</div>
 				</div>
-				
-				
-				
+
+
+
 				<!-- 리포트 다운로드 모달창 -->
 				<div class="modal fade" id="exampleModalLg" tabindex="-1"
 					role="dialog" aria-labelledby="myLargeModalLabel"
@@ -514,9 +509,9 @@
 						</div>
 					</div>
 				</div>
-				
-				
-				
+
+
+
 			</main>
 
 			<img id="modbtn"

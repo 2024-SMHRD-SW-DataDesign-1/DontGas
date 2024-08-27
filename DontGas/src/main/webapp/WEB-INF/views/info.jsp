@@ -157,6 +157,9 @@
 			</li>
 		</ul>
 	</nav>
+	
+	
+	<jsp:include page="sidenav.jsp" />
 
 
 
