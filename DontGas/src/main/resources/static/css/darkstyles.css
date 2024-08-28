@@ -418,4 +418,10 @@
 	display: inline-block !important;
 }
  
-  
+#dateRange{
+	margin-top: 1em;
+}
+
+.sortingLabel{
+	display: none;
+}

@@ -102,8 +102,7 @@ window.addEventListener('DOMContentLoaded', event => {
 				let endDate = picker.getEndDate();
 				picker.on('selected', (startDate, endDate) => {
 					if (startDate) {
-						document.getElementById('startDate').textContent = startDate.format('YYYY. MM. DD');
-						document.getElementById('endDate').textContent = endDate.format('YYYY. MM. DD');
+						document.getElementById('dateRange').textContent = "(" + startDate.format('YYYY. MM. DD')  + " ~ " +  endDate.format('YYYY. MM. DD') + ")";
 					}
 				});
 			}

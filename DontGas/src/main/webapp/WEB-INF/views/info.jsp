@@ -244,7 +244,8 @@
 					<div class="col-xl-6 mb-4 chart-custom">
 						<div class="card card-header-actions h-100-custom">
 							<div class="card-header card-header-custom">
-								악취 요소별 추이 (<p id="startDate">-</p> ~ <p id="endDate">-</p>)
+								악취 요소별 추이 &nbsp;
+								<p id="dateRange"> </p>
 							</div>
 							<div class="card-body">
 								<div class="chart-area">
@@ -257,8 +258,11 @@
 				</div>
 				<!-- row 끝 -->
 			</main>
-
+			
+			
+			<!--  Footer -->
 			<%@ include file="footer.jsp" %>
+			
 
 		</div>
 		<!-- layoutSidenav content 끝 -->

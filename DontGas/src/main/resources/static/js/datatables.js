@@ -3,12 +3,20 @@ window.addEventListener('DOMContentLoaded', event => {
     const datatablesSimple = document.getElementById('datatablesSimple');
     if (datatablesSimple) {
         new simpleDatatables.DataTable(datatablesSimple, {
+			searchable: false,
 			labels: {
-           		perPage: "",
+           		perPage: "개 씩 보기",
                 info: "{start} - {end} / {rows}"
             },
+            sortable: {
+            customSort: (a, b, column) => {
+
+                // 기본 한국어 로케일을 사용하여 다른 열에 대해 정렬
+                return a.localeCompare(b, 'ko', { sensitivity: 'base' });
+            }
+        },
             columns: [
-			    { select: [2, 3, 4], sortable: false }, // 정렬 비활성화
+			    { select: [2], sortable: false }, // 정렬 비활성화
 			]
 		});
     }
@@ -29,4 +37,5 @@ window.addEventListener('DOMContentLoaded', event => {
 		    }
 		});
     }
+    
 });

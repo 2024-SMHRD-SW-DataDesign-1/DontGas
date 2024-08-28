@@ -420,10 +420,10 @@
 	display: inline-block !important;
 }
 
-#startDate{
+#dateRange{
 	margin-top: 1em;
 }
 
-#endDate{
-	margin-top: 1em;
+.sortingLabel{
+	display: none;
 }
