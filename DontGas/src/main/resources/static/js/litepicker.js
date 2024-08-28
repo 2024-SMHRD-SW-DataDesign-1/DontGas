@@ -47,10 +47,12 @@ window.addEventListener('DOMContentLoaded', event => {
             startDate: new Date(),
             endDate: new Date(),
             singleMode: false,
-            numberOfMonths: 2,
-            numberOfColumns: 2,
-            format: 'MMM DD, YYYY',
-            plugins: ['ranges']
+            numberOfMonths: 4,
+            numberOfColumns: 4,
+            format: 'YYYY, MM DD',
+            plugins: ['ranges'],
+            lang : "ko"
         });
+
     }
 });
