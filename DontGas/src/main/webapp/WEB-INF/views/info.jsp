@@ -62,7 +62,7 @@
 								<div class="col-auto mt-4">
 
 									<!-- 양돈장 이름 -->
-									<h1 class="page-header-title page-header-title-custom">
+									<h1 class="page-header-title page-header-title-custom-info">
 										<div class="page-header-icon">
 											<img
 												src="${pageContext.request.contextPath}/images/monitoring.png"
