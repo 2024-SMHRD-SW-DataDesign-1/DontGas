@@ -48,7 +48,7 @@
 						<div class="page-header-content">
 							<div class="row align-items-center justify-content-between pt-3">
 								<div class="col-auto mb-3">
-									<h1 class="page-header-title page-header-title-custom">
+									<h1 class="page-header-title page-header-title-custom-list">
 										<div class="page-header-icon">
 											<img class="header-icon-custom"
 												src="${pageContext.request.contextPath}/images/pigslist.png">
@@ -71,11 +71,11 @@
 							<table id="datatablesSimple">
 								<thead>
 									<tr class="table-head-custom">
-										<th>악취 상태</th>
-										<th>돈사명</th>
-										<th>연결 상태</th>
-										<th>주소</th>
-										<th>연락처</th>
+										<th class="stink-custom">악취 상태</th>
+										<th class="pighouse-custom">돈사명</th>
+										<th class="connecting-custom">연결 상태</th>
+										<th class="address-custom">주소</th>
+										<th class="contact-custom">연락처</th>
 									</tr>
 								</thead>
 								<tfoot>

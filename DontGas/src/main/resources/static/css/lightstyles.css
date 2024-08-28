@@ -203,10 +203,18 @@
 	background-color: white;
 }
 
-.page-header-title-custom {
+.page-header-title-custom-list {
 	color: black !important;
 	font-family: 'NanumSquareRound' !important;
 }
+
+
+.page-header-title-custom-info {
+	color: black !important;
+	font-family: 'NanumSquareRound' !important;
+}
+
+
 
 .sidenav-toggle-btn-custom {
 	color: black !important;
@@ -445,6 +453,8 @@
 	display: none;
 }
 
+
+
 /* 모바일 화면 대응 */
 @media ( max-width : 768px) {
 	
@@ -509,12 +519,64 @@
 	}
 	
 	/*돈사 리스트 화면*/
+	.page-header-title-custom-list {
+		color: black !important;
+		font-family: 'NanumSquareRound' !important;
+		transform: translate(5px, 6px);
+	}
+	
+	.stink-custom{
+		
+		width: 16.37678%;
+	
+	}
+	.pighouse-custom{
+	
+		width: 26.067908%;
+	
+	}
+	.connecting-custom{
+		
+		width: 16.829135%;
+	
+	}
 
-
+	.adderess-custom{
+	
+		width: 28.449069%;
+	
+	}
+	
+	.contact-custom{
+	
+		width:20.277108%;
+	}
+	
+	.connect-1{
+	
+		width: 20px;
+    	height: 20px;
+    	transform: translate(0px, -1px);
+    
+    }
+    
+    .connect-2{
+    	width: 20px;
+    	height: 20px;
+    	transform: translate(3px, -1px);
+    
+    }
+    
+    
+    .connect-3 {
+    	width: 20px;
+   	 	height: 20px;
+    	transform: translate(5px, -1px);
+	}
 
 
 	/*info 페이지*/
-	.page-header-title-custom {
+	.page-header-title-custom-info {
 		color: black !important;
 		font-family: 'NanumSquareRound' !important;
 		transform: translate(158px, -23px);
