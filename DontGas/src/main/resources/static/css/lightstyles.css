@@ -464,6 +464,7 @@
 	}
 	.login-title {
 		font-size: 40px;
+		transform: translate(0px, 17px);
 	}
 	.login-form {
 		width: 80%;
@@ -474,7 +475,76 @@
 		transform: translate(0, 0);
 		margin: 1rem auto;
 		display: block;
+		font-size: 1.1em;
 	}
+	.login-label{
+		
+		font-size: 1em;
+		transform: translate(35px, -5px);
+		
+	}
+	
+	
+		/*돈사 리스트 화면*/
+	.page-header-title-custom-list {
+		color: black !important;
+		font-family: 'NanumSquareRound' !important;
+		transform: translate(5px, 6px);
+	}
+	
+	
+	/*테이블 헤더 사이즈 조정 - 수정중*/
+	.stink-custom{
+		
+		width: 16.37678%;
+	
+	}
+	.pighouse-custom{
+	
+		width: 26.067908%;
+	
+	}
+	.connecting-custom{
+		
+		width: 16.829135%;
+	
+	}
+
+	.adderess-custom{
+	
+		width: 28.449069%;
+	
+	}
+	
+	.contact-custom{
+	
+		width:20.277108%;
+	}
+	
+	/*연결 상태 위치 조정*/
+	.connect-1{
+	
+		width: 20px;
+    	height: 20px;
+    	transform: translate(0px, -1px);
+    
+    }
+    
+    .connect-2{
+    	width: 20px;
+    	height: 20px;
+    	transform: translate(3px, -1px);
+    
+    }
+    
+    
+    .connect-3 {
+    	width: 20px;
+   	 	height: 20px;
+    	transform: translate(5px, -1px);
+	}
+
+	
 	.weather-label {
 		font-size: 18px;
 		transform: translate(0, 0);
@@ -485,12 +555,37 @@
 		font-size: 20px;
 	}
 
-	/* 기타 필요한 모바일 화면에 맞춘 수정 */
+
+
+
+
+	/*다크모드&라이트모드 버튼, footer*/
+	#modbtn{
+	
+		position: fixed;
+    	top: 90%;
+    	left: 2%;
+    	cursor: pointer;
+    	z-index: 10000;
+    	
+	}
+	
+	.copyright-footer{
+	
+		flex: 0 0 auto;
+    	width: 56%;
+    	font-size: 0.875em;
+    	color: green;
+    	font-family: 'NanumSquareRound';
+    	transform:translate(87px, -19px);
+	
+	}
 
 }
+/* 모바일 환경 반응형 css 끝점 */
 
 
-/* 태블릿 화면 대응 - ipad pro 기준 */
+/* 태블릿 화면 대응 - ipad pro 기준 시작점 */
 
 @media ( min-width : 769px) and (max-width: 1024px) {
 	
@@ -524,7 +619,7 @@
 		font-family: 'NanumSquareRound' !important;
 		transform: translate(5px, 6px);
 	}
-	
+	/*테이블 헤더 사이즈 조정*/
 	.stink-custom{
 		
 		width: 16.37678%;
@@ -551,7 +646,7 @@
 	
 		width:20.277108%;
 	}
-	
+	/*연결 상태 위치 조정*/
 	.connect-1{
 	
 		width: 20px;
@@ -661,7 +756,7 @@
 	/* 꺾은 선 차트 및 캘린더 */
 	.border-0-calendar {
 		border: 0 !important;
-		transform: translate(141px, 15px);
+		transform: translate(141px, 33px);
 	}
 	.chart-custom {
 		transform: translate(35px, 151px);
@@ -685,3 +780,4 @@
 	}
 	
 }
+/* 태블릿 환경 반응형 css 끝점 */
