@@ -90,9 +90,8 @@
 								<tbody>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=1
-											src="${pageContext.request.contextPath}/images/VeryGood.png">
-											<p class="sortingLabel">1</p></td>
+										<td data-order="1"><img class="o-level"
+											src="${pageContext.request.contextPath}/images/VeryGood.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png">
 											<a href="info">´ë³ª¹« Ãà»ê</a></td>
@@ -108,9 +107,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=3
-											src="${pageContext.request.contextPath}/images/Soso.png">
-											<p class="sortingLabel">3</p></td>
+										<td data-order="3"><img class="o-level"
+											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png">
 											<a href="info">¼º¹Î ¾çµ·Àå</a></td>
@@ -125,9 +123,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=3
-											src="${pageContext.request.contextPath}/images/Soso.png">
-											<p class="sortingLabel">3</p></td>
+										<td data-order="3"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">°í¶ó¾çµ·Àå</a></td>
@@ -142,9 +139,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=2
-											src="${pageContext.request.contextPath}/images/Good.png">
-											<p class="sortingLabel">2</p></td>
+										<td data-order="2"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/Good.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">µ¿Èï¾çµ·Àå</a></td>
@@ -159,9 +155,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=1
-											src="${pageContext.request.contextPath}/images/VeryGood.png">
-											<p class="sortingLabel">1</p></td>
+										<td data-order="1"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/VeryGood.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">Èñº¹¾çµ·Àå</a></td>
@@ -176,9 +171,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=2
-											src="${pageContext.request.contextPath}/images/Good.png">
-											<p class="sortingLabel">2</p></td>
+										<td data-order="2"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/Good.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">±Ý»ê¾çµ·Àå</a></td>
@@ -193,9 +187,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=3
-											src="${pageContext.request.contextPath}/images/Soso.png">
-											<p class="sortingLabel">3</p></td>
+										<td data-order="3"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">±Í»ê ¾çµ·Àå</a></td>
@@ -210,9 +203,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=4
-											src="${pageContext.request.contextPath}/images/Bad.png">
-											<p class="sortingLabel">4</p></td>
+										<td data-order="4"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/Bad.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">´öÀ¯ ³óÀå</a></td>
@@ -227,9 +219,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=3
-											src="${pageContext.request.contextPath}/images/Soso.png">
-											<p class="sortingLabel">3</p></td>
+										<td data-order="3"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">ºñÁ¯Ãà»ê¾çµ·Àå</a></td>
@@ -244,9 +235,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=3
-											src="${pageContext.request.contextPath}/images/Soso.png">
-											<p class="sortingLabel">3</p></td>
+										<td data-order="3"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">»ûÅÍ¾çµ·Àå</a></td>
@@ -261,9 +251,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=5
-											src="${pageContext.request.contextPath}/images/VeryBad.png">
-											<p class="sortingLabel">5</p></td>
+										<td data-order="5"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/VeryBad.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">Çà¾È¾çµ·Àå</a></td>
@@ -278,9 +267,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=3
-											src="${pageContext.request.contextPath}/images/Soso.png">
-											<p class="sortingLabel">3</p></td>
+										<td data-order="3"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">ÇØ¸®¾çµ·Àå</a></td>
@@ -295,9 +283,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=4
-											src="${pageContext.request.contextPath}/images/Bad.png">
-											<p class="sortingLabel">4</p></td>
+										<td data-order="4"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/Bad.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">¼±È­¾çµ·Àå</a></td>
@@ -312,9 +299,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=1
-											src="${pageContext.request.contextPath}/images/VeryGood.png">
-											<p class="sortingLabel">1</p></td>
+										<td data-order="1"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/VeryGood.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">´ë³ó³ó¿øµ·»ç</a></td>
@@ -329,9 +315,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=1
-											src="${pageContext.request.contextPath}/images/VeryGood.png">
-											<p class="sortingLabel">1</p></td>
+										<td data-order="1"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/VeryGood.png"></td>
 										<td class="pighouse_name"><img class=user
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">º¸¼Û³óÀå</a></td>
@@ -346,9 +331,8 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td><img class="o-level" data-order=2
-											src="${pageContext.request.contextPath}/images/Good.png">
-											<p class="sortingLabel">2</p></td>
+										<td data-order="2"><img class="o-level" 
+											src="${pageContext.request.contextPath}/images/Good.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
 											href="info">±¹¸³Ãà»ê°úÇÐ¿ø µ·»ç4</a></td>

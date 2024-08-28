@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.dontgas.dontgas.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,8 +25,8 @@ public class HomeController {
 		return "info";
 	}
 	
-    @GetMapping("/logout-success")
-    public String logoutSuccess() {
-        return "login";
-    }
+//    @GetMapping("/logout-success")
+//    public String logoutSuccess() {
+//        return "login";
+//    }
 }
