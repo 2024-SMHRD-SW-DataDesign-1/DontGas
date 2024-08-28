@@ -425,3 +425,172 @@
 .sortingLabel{
 	display: none;
 }
+
+ 
+ 
+ /* 태블릿 화면 대응 - ipad pro 기준 */
+
+@media ( min-width : 769px) and (max-width: 1024px) {
+	
+	/*로그인 폼*/
+	.login-box {
+		width: 75%;
+	}
+	.login-title {
+		font-size: 60px;
+	}
+	.login-form {
+		width: 47%;
+		transform: translate(0, 0);
+		margin: 0 auto;
+	}
+	.login-btn {
+		transform: translate(0, 0);
+		margin: 1rem auto;
+		display: block;
+	}
+	.login-label{
+		
+    transform: translate(190px, -5px);
+    font-size: 1.3em;
+	
+	}
+	
+	/*돈사 리스트 화면*/
+
+
+
+
+	/*info 페이지*/
+	.page-header-title-custom {
+		color: black !important;
+		font-family: 'NanumSquareRound' !important;
+		transform: translate(158px, -23px);
+	}
+	
+	.page-header-subtitle-custom {
+		color: black !important;
+		transform: translate(212px, -8px);
+	}
+	
+	.h-100-custom {
+		height: 100% !important;
+		border: 3px solid darkseagreen;
+		width: 67%;
+		transform: translate(107px, -89px);
+	}
+	
+	/* 기상 정보 css */
+	
+	.weather-item {
+		display: flex;
+    	align-items: center;
+    	padding: 5px 10px;
+    	border-radius: 20px;
+    	width: 1000px;
+    	height: 90px;
+	}
+	
+	.weather-label {
+		font-size: 25px;
+		margin-right: 10px;
+    	font-weight: bold;
+    	font-family: 'NanumSquareRound';
+    	width: 131px;
+    	height: 61px;
+    	align-content: center;
+    	transform: translate(52px, 0px);
+	}
+	
+	.weather-value {
+		width: 70px;
+		height: 70px;
+		font-size: 22px;
+		background-color: #fff;
+		border-radius:50%;
+		display: flex;
+		align-items:center;
+		justify-content:center;
+		font-weight: bold;
+		font-family: 'NanumSquareRound';
+		
+		
+	}
+	
+	.temp {
+    background-color: #f9e1e1;
+    color: black;
+    border: 2px solid red;
+    transform: translate(8px, -86px);
+	}
+	
+	.humidity {
+    background-color: #cbf9ff;
+    color: black;
+    border: 2px solid cyan;
+    transform: translate(28px, -86px);
+	}
+	
+	.wind-dir {
+    background-color: #e9f4ff;
+    color: black;
+    border: 2px solid blue;
+    transform: translate(47px, -86px);
+	}
+	
+	.wind-speed {
+    background-color: #defbba;
+    color: black;
+    transform: translate(-587px, 19px);
+    border: 2px solid green;
+	}
+	
+	.weather-info {
+    background-color: white;
+    color: black;
+    transform: translate(-551px, 19px);
+    border: 2px solid orange;
+	}
+
+	/* 꺾은 선 차트 및 캘린더 */
+	.border-0-calendar {
+		border: 0 !important;
+		transform: translate(141px, 15px);
+	}
+	.chart-custom {
+		transform: translate(35px, 151px);
+		width: 700px;
+	}
+	
+	
+	/*다크모드&라이트모드 버튼, footer*/
+	#modbtn{
+	
+		position: fixed;
+    	top: 90%;
+    	left: 2%;
+    	cursor: pointer;
+    	z-index: 10000;
+    	transform: translate(10px, 53px);
+	}
+	
+	.copyright-footer{
+	
+		flex: 0 0 auto;
+    	width: 50%;
+    	font-size: 0.875em;
+    	color: #00FF7F;
+    	font-family: 'NanumSquareRound';
+    	transform: translate(115px, 10px);
+	
+	}
+	
+	
+	.footer-admin.footer-light {
+    color: #00FF7F;
+    transform: translate(10px, 25px);
+	}
+	
+
+	
+}

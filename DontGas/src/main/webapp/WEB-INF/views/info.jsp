@@ -25,6 +25,8 @@
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
 	crossorigin="anonymous"></script>
+	
+
 </head>
 
 
@@ -190,29 +192,50 @@
 				<div class="weather-container">
 					<!-- 실시간 기상 정보 - 기온 -->
 					<div class="weather-item temp">
+<<<<<<< HEAD
+						<span class="weather-label">���</span> <span class="weather-value"><span
+							id="temp">-</span>��C</span>
+=======
 						<span class="label">기온</span> <span class="value"><span
 							id="temp">-</span>°C</span>
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 					</div>
 					<!-- 실시간 기상 정보 - 습도 -->
 					<div class="weather-item humidity">
+<<<<<<< HEAD
+						<span class="weather-label">����</span> <span class="weather-value"><span
+=======
 						<span class="label">습도</span> <span class="value"><span
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 							id="hum">-</span>%</span>
 					</div>
 					<!-- 실시간 기상 정보 - 풍향 -->
 					<div class="weather-item wind-dir">
+<<<<<<< HEAD
+						<span class="weather-label">ǳ��</span> <span class="weather-value"><img
+=======
 						<span class="label">풍향</span> <span class="value"><img
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 							id="winddir"
 							src="${pageContext.request.contextPath}/images/illust_direction/direction_South.png"
 							alt="Wind Direction Icon"></span>
 					</div>
 					<!-- 실시간 기상 정보 - 풍속 -->
 					<div class="weather-item wind-speed">
+<<<<<<< HEAD
+						<span class="weather-label">ǳ��</span> <span class="weather-value"><span
+=======
 						<span class="label">풍속</span> <span class="value"><span
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 							id="windspeed">-</span>m/s</span>
 					</div>
 					<!-- 실시간 기상 정보 - 날씨 -->
 					<div class="weather-item weather-info">
+<<<<<<< HEAD
+						<span class="weather-label">����</span> <span class="weather-value"><img
+=======
 						<span class="label">날씨</span> <span class="value"><img
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 							id="weather" src=""></img></span>
 					</div>
 
