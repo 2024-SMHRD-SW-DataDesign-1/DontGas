@@ -13,17 +13,7 @@
 	<!-- Navbar Brand-->
 	<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="list">Don't
 		Gas</a>
-	<!-- 돈사 필터링 부분 -->
-	<form class="form-inline me-auto d-none d-lg-block me-3">
-		<div
-			class="input-group input-group-joined input-group-solid search-input-custom">
-			<input class="form-control pe-0" type="search" placeholder="Search"
-				aria-label="Search" />
-			<div class="input-group-text">
-				<i data-feather="search"></i>
-			</div>
-		</div>
-	</form>
+	
 	
 	<!-- 사용자, 알림 정보 drop-down 부분 -->
 

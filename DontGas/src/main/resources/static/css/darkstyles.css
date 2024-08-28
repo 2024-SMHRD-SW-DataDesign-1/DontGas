@@ -350,7 +350,7 @@
   }
   
 
-.label {
+.weather-label {
   margin-right: 10px;
   font-weight: bold;
   font-family: 'NanumSquareRound';
@@ -361,7 +361,7 @@
   transform: translate(52px, 0px);
 }
 
-.value {
+.weather-value {
   background-color: #fff;
   border-radius: 50%;
   width: 90px;
@@ -429,13 +429,91 @@
 	display: none;
 }
 
+
+/* 모바일 화면 대응 시작점*/
+@media ( max-width : 768px) {
+	
+	/*로그인 화면 설정값*/
+	.login-box {
+		width: 90%;
+		margin-top: 5rem;
+	}
+	.login-title {
+		font-size: 40px;
+		transform: translate(0px, 17px);
+	}
+	.login-form {
+		width: 80%;
+		transform: translate(0, 0);
+		margin: 0 auto;
+	}
+	
+	.login-label{
+		
+		font-size: 1em;
+		transform: translate(35px, -5px);
+		
+	}
+	.login-btn {
+		transform: translate(0, 0);
+		margin: 1rem auto;
+		display: block;
+		font-size: 1.1em;
+	}
+	
+	
+		/*돈사 리스트 화면*/
+	.page-header-title-custom-list {
+		color: white !important;
+		font-family: 'NanumSquareRound' !important;
+		transform: translate(5px, 6px);
+	}
+	
+	
+	.weather-label {
+		font-size: 18px;
+		transform: translate(0, 0);
+	}
+	.weather-value {
+		width: 60px;
+		height: 60px;
+		font-size: 20px;
+	}
+
+	
+	
+	/*다크모드&라이트모드 버튼, footer*/
+	#modbtn{
+	
+		position: fixed;
+    	top: 90%;
+    	left: 2%;
+    	cursor: pointer;
+    	z-index: 10000;
+    	
+	}
+	
+	.copyright-footer{
+	
+		flex: 0 0 auto;
+    	width: 56%;
+    	font-size: 0.875em;
+    	color: #00FF7F;
+    	font-family: 'NanumSquareRound';
+    	transform:translate(87px, -19px);
+	
+	}
+
+}
  
- 
- /* 태블릿 화면 대응 - ipad pro 기준 */
+/* 모바일 환경 반응형 css 끝점 */
+
+
+/* 태블릿 화면 대응 - ipad pro 기준 시작점 */
 
 @media ( min-width : 769px) and (max-width: 1024px) {
 	
-	/*로그인 폼*/
+	/*로그인 화면 설정값*/
 	.login-box {
 		width: 75%;
 	}
@@ -461,7 +539,7 @@
 	
 	/*돈사 리스트 화면*/
 	.page-header-title-custom-list {
-		color: black !important;
+		color: white !important;
 		font-family: 'NanumSquareRound' !important;
 		transform: translate(5px, 6px);
 	}
@@ -522,19 +600,19 @@
 
 	/*info 페이지*/
 	.page-header-title-custom-info {
-		color: black !important;
+		color: white !important;
 		font-family: 'NanumSquareRound' !important;
 		transform: translate(158px, -23px);
 	}
 	
 	.page-header-subtitle-custom {
-		color: black !important;
+		color: white !important;
 		transform: translate(212px, -8px);
 	}
 	
 	.h-100-custom {
 		height: 100% !important;
-		border: 3px solid darkseagreen;
+		border: 3px solid #00FF7F;
 		width: 67%;
 		transform: translate(107px, -89px);
 	}
@@ -614,7 +692,7 @@
 	/* 꺾은 선 차트 및 캘린더 */
 	.border-0-calendar {
 		border: 0 !important;
-		transform: translate(141px, 15px);
+		transform: translate(141px, 33px);
 	}
 	.chart-custom {
 		transform: translate(35px, 151px);
@@ -640,7 +718,7 @@
     	font-size: 0.875em;
     	color: #00FF7F;
     	font-family: 'NanumSquareRound';
-    	transform: translate(115px, 10px);
+    	
 	
 	}
 	
@@ -653,3 +731,5 @@
 
 	
 }
+
+/* 태블릿 환경 반응형 css 끝점 */
