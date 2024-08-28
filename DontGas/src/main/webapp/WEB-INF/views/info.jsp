@@ -25,6 +25,8 @@
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
 	crossorigin="anonymous"></script>
+	
+
 </head>
 
 
@@ -190,29 +192,29 @@
 				<div class="weather-container">
 					<!-- 실시간 기상 정보 - 기온 -->
 					<div class="weather-item temp">
-						<span class="label">기온</span> <span class="value"><span
+						<span class="weather-label">기온</span> <span class="weather-value"><span
 							id="temp">-</span>°C</span>
 					</div>
 					<!-- 실시간 기상 정보 - 습도 -->
 					<div class="weather-item humidity">
-						<span class="label">습도</span> <span class="value"><span
+						<span class="weather-label">습도</span> <span class="weather-value"><span
 							id="hum">-</span>%</span>
 					</div>
 					<!-- 실시간 기상 정보 - 풍향 -->
 					<div class="weather-item wind-dir">
-						<span class="label">풍향</span> <span class="value"><img
+						<span class="weather-label">풍향</span> <span class="weather-value"><img
 							id="winddir"
 							src="${pageContext.request.contextPath}/images/illust_direction/direction_South.png"
 							alt="Wind Direction Icon"></span>
 					</div>
 					<!-- 실시간 기상 정보 - 풍속 -->
 					<div class="weather-item wind-speed">
-						<span class="label">풍속</span> <span class="value"><span
+						<span class="weather-label">풍속</span> <span class="weather-value"><span
 							id="windspeed">-</span>m/s</span>
 					</div>
 					<!-- 실시간 기상 정보 - 날씨 -->
 					<div class="weather-item weather-info">
-						<span class="label">날씨</span> <span class="value"><img
+						<span class="weather-label">날씨</span> <span class="weather-value"><img
 							id="weather" src=""></img></span>
 					</div>
 

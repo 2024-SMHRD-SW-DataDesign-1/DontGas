@@ -75,7 +75,9 @@
 										<th>주소</th>
 										<th>연락처</th>
 										<th>악취 상태</th>
-										<th>연결 상태</th>
+										<th>연결 상태
+										
+										</th>
 									</tr>
 								</thead>
 								<tfoot>
