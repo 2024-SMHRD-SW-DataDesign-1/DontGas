@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 
 <img id="modbtn"
 	src="${pageContext.request.contextPath}/images/darkpig.png"
-	alt="´ÙÅ©¸ðµå ¹öÆ°" onclick="toggleDarkMode()"
+	alt="ë‹¤í¬ëª¨ë“œ ë²„íŠ¼" onclick="toggleDarkMode()"
 	data-light-src="${pageContext.request.contextPath}/images/lightpig.png"
 	data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
 

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 
 <nav
 	class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light topnav-custom"
@@ -13,7 +13,7 @@
 	<!-- Navbar Brand-->
 	<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="list">Don't
 		Gas</a>
-	<!-- µ·»ç ÇÊÅÍ¸µ ºÎºÐ -->
+	<!-- ëˆì‚¬ í•„í„°ë§ ë¶€ë¶„ -->
 	<form class="form-inline me-auto d-none d-lg-block me-3">
 		<div
 			class="input-group input-group-joined input-group-solid search-input-custom">
@@ -25,11 +25,11 @@
 		</div>
 	</form>
 	
-	<!-- »ç¿ëÀÚ, ¾Ë¸² Á¤º¸ drop-down ºÎºÐ -->
+	<!-- ì‚¬ìš©ìž, ì•Œë¦¼ ì •ë³´ drop-down ë¶€ë¶„ -->
 
 	<ul class="navbar-nav align-items-center ms-auto">
 
-		<!--¾Ë¸² Á¤º¸ drop-down-->
+		<!--ì•Œë¦¼ ì •ë³´ drop-down-->
 		<li
 			class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
 			<a
@@ -42,24 +42,24 @@
 				class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
 				aria-labelledby="navbarDropdownAlerts">
 				<h6 class="dropdown-header alert-header">
-					<i class="me-2" data-feather="bell"></i> ¾Ë¸² Á¤º¸
+					<i class="me-2" data-feather="bell"></i> ì•Œë¦¼ ì •ë³´
 				</h6>
 
-				<!-- ¾ÇÃë ·¹º§ ¾Ë¸² -->
+				<!-- ì•…ì·¨ ë ˆë²¨ ì•Œë¦¼ -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<div class="dropdown-notifications-item-icon alert-bad">
 						<img src="${pageContext.request.contextPath}/images/alert_bad.png"
 							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
-						<div class="dropdown-notifications-item-content-details">¾ÇÃë
-							·¹º§ ³ª»Ý/¸Å¿ì ³ª»Ý</div>
+						<div class="dropdown-notifications-item-content-details">ì•…ì·¨
+							ë ˆë²¨ ë‚˜ì¨/ë§¤ìš° ë‚˜ì¨</div>
 						<div class="dropdown-notifications-item-content-text">
-							¾ÇÃë ·¹º§ ³ª»Ý : 3°³ </br> ¾ÇÃë ·¹º§ ¸Å¿ì ³ª»Ý : 2°³
+							ì•…ì·¨ ë ˆë²¨ ë‚˜ì¨ : 3ê°œ </br> ì•…ì·¨ ë ˆë²¨ ë§¤ìš° ë‚˜ì¨ : 2ê°œ
 						</div>
 					</div>
 				</a>
-				<!-- ¼¾¼­ ¿¬°á ÇöÈ² ¾Ë¸² -->
+				<!-- ì„¼ì„œ ì—°ê²° í˜„í™© ì•Œë¦¼ -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<div class="dropdown-notifications-item-icon alert-sensor">
 						<img
@@ -67,27 +67,27 @@
 							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
-						<div class="dropdown-notifications-item-content-details">¿¬°á
-							¾È µÈ µ·»ç Á¤º¸</div>
+						<div class="dropdown-notifications-item-content-details">ì—°ê²°
+							ì•ˆ ëœ ëˆì‚¬ ì •ë³´</div>
 						<div class="dropdown-notifications-item-content-text">
-							¼¾¼­ ¹Ì¿¬°á 2°³ÀÌ»ó µ·»ç : 5°³ </br> ¼¾¼­ È®ÀÎÇØÁÖ¼¼¿ä.
+							ì„¼ì„œ ë¯¸ì—°ê²° 2ê°œì´ìƒ ëˆì‚¬ : 5ê°œ </br> ì„¼ì„œ í™•ì¸í•´ì£¼ì„¸ìš”.
 						</div>
 					</div>
 				</a>
-				<!-- ´Ù¿î¹ÞÀº ¸®Æ÷Æ® ¾Ë¸² -->
+				<!-- ë‹¤ìš´ë°›ì€ ë¦¬í¬íŠ¸ ì•Œë¦¼ -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<div class="dropdown-notifications-item-icon alert-report">
 						<img src="${pageContext.request.contextPath}/images/report.png"
 							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
-						<div class="dropdown-notifications-item-content-details">´Ù¿î¹ÞÀº
-							¸®Æ÷Æ® ÇöÈ²</div>
-						<div class="dropdown-notifications-item-content-text">ÃÖ±Ù
-							ÀÏÁÖÀÏ°£ ¹ÞÀº ¸®Æ÷Æ®´Â ÃÑ 5°³ÀÔ´Ï´Ù.</div>
+						<div class="dropdown-notifications-item-content-details">ë‹¤ìš´ë°›ì€
+							ë¦¬í¬íŠ¸ í˜„í™©</div>
+						<div class="dropdown-notifications-item-content-text">ìµœê·¼
+							ì¼ì£¼ì¼ê°„ ë°›ì€ ë¦¬í¬íŠ¸ëŠ” ì´ 5ê°œìž…ë‹ˆë‹¤.</div>
 					</div>
 				</a>
-				<!-- Ãà»êÈ¯°æ °ü¸®¿ø µ¥ÀÌÅÍ Àü¼Û ¾Ë¸² -->
+				<!-- ì¶•ì‚°í™˜ê²½ ê´€ë¦¬ì› ë°ì´í„° ì „ì†¡ ì•Œë¦¼ -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<div class="dropdown-notifications-item-icon alert-fowarding">
 						<img
@@ -95,18 +95,18 @@
 							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
-						<div class="dropdown-notifications-item-content-details">Ãà»êÈ¯°æ°ü¸®¿ø¿¡
-							µ¥ÀÌÅÍ Àü¼Û</div>
-						<div class="dropdown-notifications-item-content-text">µ¥ÀÌÅÍ
-							Àü¼ÛÀº ¸Þ´º¸¦ È®ÀÎÇØÁÖ¼¼¿ä.</div>
+						<div class="dropdown-notifications-item-content-details">ì¶•ì‚°í™˜ê²½ê´€ë¦¬ì›ì—
+							ë°ì´í„° ì „ì†¡</div>
+						<div class="dropdown-notifications-item-content-text">ë°ì´í„°
+							ì „ì†¡ì€ ë©”ë‰´ë¥¼ í™•ì¸í•´ì£¼ì„¸ìš”.</div>
 					</div>
-				</a> <a class="dropdown-item dropdown-notifications-footer" href="#!">´õ
-					¸¹Àº ¾Ë¸² È®ÀÎ</a>
+				</a> <a class="dropdown-item dropdown-notifications-footer" href="#!">ë”
+					ë§Žì€ ì•Œë¦¼ í™•ì¸</a>
 			</div>
 		</li>
 
 
-		<!-- header user Å¬¸¯ ½Ã ¶ß´Â »ç¿ëÀÚ Ç¥½Ã -->
+		<!-- header user í´ë¦­ ì‹œ ëœ¨ëŠ” ì‚¬ìš©ìž í‘œì‹œ -->
 		<li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
 			<a class="btn btn-icon btn-transparent-dark dropdown-toggle"
 			id="navbarDropdownUserImage" href="javascript:void(0);" role="button"
@@ -120,7 +120,7 @@
 					<img class="dropdown-user-img"
 						src="${pageContext.request.contextPath}/images/user_man1.png" />
 					<div class="dropdown-user-details">
-						<div class="dropdown-user-details-name">Æ÷µµ</div>
+						<div class="dropdown-user-details-name">í¬ë„</div>
 						<div class="dropdown-user-details-email">podo@pig.com</div>
 					</div>
 				</h6>
