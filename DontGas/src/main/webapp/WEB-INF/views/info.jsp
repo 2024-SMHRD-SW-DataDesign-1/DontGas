@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +34,7 @@
 <body class="nav-fixed body-custom">
 
 
-	<!-- «Ï¥ı -->
+	<!-- Ìó§Îçî -->
 	<%@ include file="header.jsp" %>
 	
 
@@ -45,14 +45,14 @@
 	<div id="layoutSidenav">
 	
 	
-		<!-- ªÁ¿ÃµÂ ∏ﬁ¥∫ -->
+		<!-- ÏÇ¨Ïù¥Îìú Î©îÎâ¥ -->
 		<%@ include file="sidenav.jsp" %>
 
 		
 		
 		<div id="layoutSidenav_content">
 		
-			<!-- header ¥ÎΩ√∫∏µÂ -->
+			<!-- header ÎåÄÏãúÎ≥¥Îìú -->
 			<main class="main-custom">
 				<header
 					class="page-header page-header-custom pb-10 info-page-header-custom">
@@ -61,7 +61,7 @@
 							<div class="row align-items-center justify-content-between">
 								<div class="col-auto mt-4">
 
-									<!-- æÁµ∑¿Â ¿Ã∏ß -->
+									<!-- ÏñëÎèàÏû• Ïù¥Î¶Ñ -->
 									<h1 class="page-header-title page-header-title-custom">
 										<div class="page-header-icon">
 											<img
@@ -69,19 +69,19 @@
 												width="40px" height="40px">
 										</div>
 
-										¥Î≥™π´ √‡ªÍ µ∑ªÁ1
+										ÎåÄÎÇòÎ¨¥ Ï∂ïÏÇ∞ ÎèàÏÇ¨1
 									</h1>
-									<!-- æÁµ∑¿Â ¿¸»≠π¯»£ µ•¿Ã≈Õ ≥÷±‚ -->
+									<!-- ÏñëÎèàÏû• Ï†ÑÌôîÎ≤àÌò∏ Îç∞Ïù¥ÌÑ∞ ÎÑ£Í∏∞ -->
 									<div class="page-header-subtitle page-header-subtitle-custom">
 										<img
 											src="${pageContext.request.contextPath}/images/contact.png"
 											width="30px" height="30px"> 010-1111-1111
 									</div>
-									<!-- æÁµ∑¿Â ¡÷º“ ≥÷±‚-->
+									<!-- ÏñëÎèàÏû• Ï£ºÏÜå ÎÑ£Í∏∞-->
 									<div class="page-header-subtitle page-header-subtitle-custom">
 										<img
 											src="${pageContext.request.contextPath}/images/address.png"
-											width="30px" height="30px"> ¿¸∂Û≥≤µµ ¥„æÁ±∫ ∞Ìº≠∏È
+											width="30px" height="30px"> Ï†ÑÎùºÎÇ®ÎèÑ Îã¥ÏñëÍµ∞ Í≥†ÏÑúÎ©¥
 									</div>
 
 								</div>
@@ -94,11 +94,11 @@
 
 				</header>
 
-				<!-- ∏¥œ≈Õ∏µ ∏ﬁ¿Œ ƒ‹≈Ÿ√˜ Ω√¿€¡° -->
+				<!-- Î™®ÎãàÌÑ∞ÎßÅ Î©îÏù∏ ÏΩòÌÖêÏ∏† ÏãúÏûëÏ†ê -->
 				<div class="container-xl px-4 mt-n10-custom">
 					<div class="row">
 
-						<!-- ∏¥œ≈Õ∏µ ∏ﬁ¿Œ ƒ‹≈Ÿ√˜ 1 - »≤»≠ºˆº“ ∑π∫ß -->
+						<!-- Î™®ÎãàÌÑ∞ÎßÅ Î©îÏù∏ ÏΩòÌÖêÏ∏† 1 - Ìô©ÌôîÏàòÏÜå Î†àÎ≤® -->
 						<div class="col-xxl-4 col-xl-12 mb-4">
 							<div class="card h-100-custom">
 								<div class="card-body h-100 p-5">
@@ -106,26 +106,26 @@
 										<div class="col-xl-8 col-xxl-12">
 											<div
 												class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4">
-												<h1 class="text-primary-custom">»≤»≠ºˆº“ ∑π∫ß</h1>
+												<h1 class="text-primary-custom">Ìô©ÌôîÏàòÏÜå Î†àÎ≤®</h1>
 												<div class="col-xl-4 col-xxl-12 text-center">
 													<img class="o-level2"
 														src="${pageContext.request.contextPath}/images/Soso.png"
-														alt="∫∏≈Î" style="max-width: 26rem" />
+														alt="Î≥¥ÌÜµ" style="max-width: 26rem" />
 												</div>
 											</div>
 										</div>
 
-										<!-- ºˆƒ°, ªÛ≈¬ µ•¿Ã≈Õ µÈæÓ∞• ¿⁄∏Æ  -->
+										<!-- ÏàòÏπò, ÏÉÅÌÉú Îç∞Ïù¥ÌÑ∞ Îì§Ïñ¥Í∞à ÏûêÎ¶¨  -->
 										<div>
 											<p class="text-gray-700-custom mb-0">1 ppm</p>
-											<p class="text-gray-700-custom mb-0">∫∏≈Î</p>
+											<p class="text-gray-700-custom mb-0">Î≥¥ÌÜµ</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<!-- ∏¥œ≈Õ∏µ ∏ﬁ¿Œ ƒ‹≈Ÿ√˜ 2 - æœ∏¥œæ∆ ∑π∫ß -->
+						<!-- Î™®ÎãàÌÑ∞ÎßÅ Î©îÏù∏ ÏΩòÌÖêÏ∏† 2 - ÏïîÎ™®ÎãàÏïÑ Î†àÎ≤® -->
 
 						<div class="col-xxl-4 col-xl-12 mb-4">
 							<div class="card h-100-custom">
@@ -134,25 +134,25 @@
 										<div class="col-xl-8 col-xxl-12">
 											<div
 												class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4">
-												<h1 class="text-primary-custom">æœ∏¥œæ∆ ∑π∫ß</h1>
+												<h1 class="text-primary-custom">ÏïîÎ™®ÎãàÏïÑ Î†àÎ≤®</h1>
 												<div class="col-xl-4 col-xxl-12 text-center">
 													<img class="o-level2"
 														src="${pageContext.request.contextPath}/images/VeryBad.png"
-														alt="∏≈øÏ ≥™ª›" style="max-width: 26rem" />
+														alt="Îß§Ïö∞ ÎÇòÏÅ®" style="max-width: 26rem" />
 												</div>
 											</div>
 										</div>
-										<!-- ºˆƒ°, ªÛ≈¬ µ•¿Ã≈Õ µÈæÓ∞• ¿⁄∏Æ  -->
+										<!-- ÏàòÏπò, ÏÉÅÌÉú Îç∞Ïù¥ÌÑ∞ Îì§Ïñ¥Í∞à ÏûêÎ¶¨  -->
 										<div>
 											<p class="text-gray-700-custom mb-0">2 ppm</p>
-											<p class="text-gray-700-custom mb-0">∏≈øÏ ≥™ª›</p>
+											<p class="text-gray-700-custom mb-0">Îß§Ïö∞ ÎÇòÏÅ®</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<!-- ∏¥œ≈Õ∏µ ∏ﬁ¿Œ ƒ‹≈Ÿ√˜ 3 - ∏ﬁ≈∫ ∑π∫ß -->
+						<!-- Î™®ÎãàÌÑ∞ÎßÅ Î©îÏù∏ ÏΩòÌÖêÏ∏† 3 - Î©îÌÉÑ Î†àÎ≤® -->
 						<div class="col-xxl-4 col-xl-12 mb-4">
 							<div class="card h-100-custom">
 								<div class="card-body h-100 p-5">
@@ -160,19 +160,19 @@
 										<div class="col-xl-8 col-xxl-12">
 											<div
 												class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4">
-												<h1 class="text-primary-custom">∏ﬁ≈∫ ∑π∫ß</h1>
+												<h1 class="text-primary-custom">Î©îÌÉÑ Î†àÎ≤®</h1>
 												<div class="col-xl-4 col-xxl-12 text-center">
 													<img class="o-level2"
 														src="${pageContext.request.contextPath}/images/Bad.png"
-														alt="≥™ª›" style="max-width: 26rem" />
+														alt="ÎÇòÏÅ®" style="max-width: 26rem" />
 												</div>
 											</div>
 										</div>
-										<!-- ºˆƒ°, ªÛ≈¬ µ•¿Ã≈Õ µÈæÓ∞• ¿⁄∏Æ  -->
+										<!-- ÏàòÏπò, ÏÉÅÌÉú Îç∞Ïù¥ÌÑ∞ Îì§Ïñ¥Í∞à ÏûêÎ¶¨  -->
 										<div>
 
 											<p class="text-gray-700-custom mb-0">1.5 ppb</p>
-											<p class="text-gray-700-custom mb-0">≥™ª›</p>
+											<p class="text-gray-700-custom mb-0">ÎÇòÏÅ®</p>
 										</div>
 									</div>
 								</div>
@@ -180,41 +180,62 @@
 						</div>
 					</div>
 				</div>
-				<!-- ∏ﬁ¿Œ ƒ‹≈Ÿ√˜ ≥°¡° -->
+				<!-- Î©îÏù∏ ÏΩòÌÖêÏ∏† ÎÅùÏ†ê -->
 
 
 
 
 
-				<!-- Ω«Ω√∞£ ±‚ªÛ ¡§∫∏ Ω√¿€¡° -->
+				<!-- Ïã§ÏãúÍ∞Ñ Í∏∞ÏÉÅ Ï†ïÎ≥¥ ÏãúÏûëÏ†ê -->
 
 
 				<div class="weather-container">
-					<!-- Ω«Ω√∞£ ±‚ªÛ ¡§∫∏ - ±‚ø¬ -->
+					<!-- Ïã§ÏãúÍ∞Ñ Í∏∞ÏÉÅ Ï†ïÎ≥¥ - Í∏∞Ïò® -->
 					<div class="weather-item temp">
+<<<<<<< HEAD
 						<span class="weather-label">±‚ø¬</span> <span class="weather-value"><span
 							id="temp">-</span>°∆C</span>
+=======
+						<span class="label">Í∏∞Ïò®</span> <span class="value"><span
+							id="temp">-</span>¬∞C</span>
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 					</div>
-					<!-- Ω«Ω√∞£ ±‚ªÛ ¡§∫∏ - Ω¿µµ -->
+					<!-- Ïã§ÏãúÍ∞Ñ Í∏∞ÏÉÅ Ï†ïÎ≥¥ - ÏäµÎèÑ -->
 					<div class="weather-item humidity">
+<<<<<<< HEAD
 						<span class="weather-label">Ω¿µµ</span> <span class="weather-value"><span
+=======
+						<span class="label">ÏäµÎèÑ</span> <span class="value"><span
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 							id="hum">-</span>%</span>
 					</div>
-					<!-- Ω«Ω√∞£ ±‚ªÛ ¡§∫∏ - «≥«‚ -->
+					<!-- Ïã§ÏãúÍ∞Ñ Í∏∞ÏÉÅ Ï†ïÎ≥¥ - ÌíçÌñ• -->
 					<div class="weather-item wind-dir">
+<<<<<<< HEAD
 						<span class="weather-label">«≥«‚</span> <span class="weather-value"><img
+=======
+						<span class="label">ÌíçÌñ•</span> <span class="value"><img
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 							id="winddir"
 							src="${pageContext.request.contextPath}/images/illust_direction/direction_South.png"
 							alt="Wind Direction Icon"></span>
 					</div>
-					<!-- Ω«Ω√∞£ ±‚ªÛ ¡§∫∏ - «≥º” -->
+					<!-- Ïã§ÏãúÍ∞Ñ Í∏∞ÏÉÅ Ï†ïÎ≥¥ - ÌíçÏÜç -->
 					<div class="weather-item wind-speed">
+<<<<<<< HEAD
 						<span class="weather-label">«≥º”</span> <span class="weather-value"><span
+=======
+						<span class="label">ÌíçÏÜç</span> <span class="value"><span
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 							id="windspeed">-</span>m/s</span>
 					</div>
-					<!-- Ω«Ω√∞£ ±‚ªÛ ¡§∫∏ - ≥Øææ -->
+					<!-- Ïã§ÏãúÍ∞Ñ Í∏∞ÏÉÅ Ï†ïÎ≥¥ - ÎÇ†Ïî® -->
 					<div class="weather-item weather-info">
+<<<<<<< HEAD
 						<span class="weather-label">≥Øææ</span> <span class="weather-value"><img
+=======
+						<span class="label">ÎÇ†Ïî®</span> <span class="value"><img
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 							id="weather" src=""></img></span>
 					</div>
 
@@ -225,48 +246,28 @@
 
 
 				<div class="row">
-					<!-- Ω«Ω√∞£ ±‚ªÛ ¡§∫∏ - ±‚ø¬ -->
+					<!-- Ïã§ÏãúÍ∞Ñ Í∏∞ÏÉÅ Ï†ïÎ≥¥ - Í∏∞Ïò® -->
 
 				</div>
-				<!-- Ω«Ω√∞£ ±‚ªÛ ¡§∫∏ ≥°¡° -->
+				<!-- Ïã§ÏãúÍ∞Ñ Í∏∞ÏÉÅ Ï†ïÎ≥¥ ÎÅùÏ†ê -->
 
-				<!-- ≥Ø¬• º±≈√ (¥ﬁ∑¬) -->
+				<!-- ÎÇ†Ïßú ÏÑ†ÌÉù (Îã¨Î†•) -->
 				<div class="col-12 col-xl-auto mt-4">
 					<div class="input-group input-group-joined border-0-calendar"
 						style="width: 18rem">
-						<span class="input-group-text"><img
-							src="${pageContext.request.contextPath}/images/calendar.png"
-							width="30px" height="30px"></span> <input
-							class="form-control ps-0 pointer" id="litepickerRangePlugin"
-							placeholder="Select date range..." />
+						<span class="input-group-text">
+							<img src="${pageContext.request.contextPath}/images/calendar.png" width="30px" height="30px">
+						</span>
+						<input class="form-control ps-0 pointer" id="datePicker" />
 					</div>
 				</div>
 
-				<!-- ¬˜∆Æ µÈæÓ∞• ∫Œ∫– (æ∆∑° ≥Ø¬• ƒ≠ø° º±≈√«— ≥Ø¬• µÈæÓ∞°∞‘≤˚ ≥÷±‚)-->
+				<!-- Ï∞®Ìä∏ Îì§Ïñ¥Í∞à Î∂ÄÎ∂Ñ (ÏïÑÎûò ÎÇ†Ïßú Ïπ∏Ïóê ÏÑ†ÌÉùÌïú ÎÇ†Ïßú Îì§Ïñ¥Í∞ÄÍ≤åÎÅî ÎÑ£Í∏∞)-->
 				<div class="row">
 					<div class="col-xl-6 mb-4 chart-custom">
 						<div class="card card-header-actions h-100-custom">
 							<div class="card-header card-header-custom">
-								<span id="startDate">2024.08.19</span> ~ 2024.08.26 æ«√Î ø‰º“∫∞ √ﬂ¿Ã
-								<div class="dropdown no-caret">
-									<button
-										class="btn btn-transparent-dark btn-icon dropdown-toggle"
-										id="areaChartDropdownExample" type="button"
-										data-bs-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<i class="text-gray-500" data-feather="more-vertical"></i>
-									</button>
-									<div
-										class="dropdown-menu dropdown-menu-end animated--fade-in-up"
-										aria-labelledby="areaChartDropdownExample">
-										<a class="dropdown-item" href="#!">Last 12 Months</a> <a
-											class="dropdown-item" href="#!">Last 30 Days</a> <a
-											class="dropdown-item" href="#!">Last 7 Days</a> <a
-											class="dropdown-item" href="#!">This Month</a>
-										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#!">Custom Range</a>
-									</div>
-								</div>
+								ÏïÖÏ∑® ÏöîÏÜåÎ≥Ñ Ï∂îÏù¥ (<p id="startDate">-</p> ~ <p id="endDate">-</p>)
 							</div>
 							<div class="card-body">
 								<div class="chart-area">
@@ -277,16 +278,16 @@
 					</div>
 
 				</div>
-				<!-- row ≥° -->
+				<!-- row ÎÅù -->
 			</main>
 
 			<%@ include file="footer.jsp" %>
 
 		</div>
-		<!-- layoutSidenav content ≥° -->
+		<!-- layoutSidenav content ÎÅù -->
 	</div>
 
-	<!-- layoutSidenav ≥° -->
+	<!-- layoutSidenav ÎÅù -->
 
 
 
