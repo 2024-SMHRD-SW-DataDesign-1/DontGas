@@ -3,13 +3,19 @@ window.addEventListener('DOMContentLoaded', event => {
     const datatablesSimple = document.getElementById('datatablesSimple');
     if (datatablesSimple) {
         new simpleDatatables.DataTable(datatablesSimple, {
-			searchable: false,
+			searchable: true,
 			labels: {
            		perPage: "개 씩 보기",
                 info: "{start} - {end} / {rows}"
             },
             sortable: {
             customSort: (a, b, column) => {
+				
+				if(column===0){
+					const orderA = a.querySelector('.sortingLabel').textContent;
+	                const orderB = b.querySelector('.sortingLabel').textContent;
+	                return orderA - orderB;
+				}
 
                 // 기본 한국어 로케일을 사용하여 다른 열에 대해 정렬
                 return a.localeCompare(b, 'ko', { sensitivity: 'base' });
