@@ -198,9 +198,13 @@
 	background-color: #fff;
 }
 
+.center-sort{
+	text-align: center;
+}
+
 /* csv 다운로드 모달창 체크박스, 버튼 css*/
 .form-check-input-custom {
-	margin-left: 33%
+	margin-left: 9%;
 }
 
 .btn-primary-custom {
@@ -240,9 +244,7 @@
 	font-family: 'NanumSquareRound';
 }
 
-.center-sort {
-	text-align: center;
-}
+
 
 /* span태그 위치 option */
 .tooltip-link {
