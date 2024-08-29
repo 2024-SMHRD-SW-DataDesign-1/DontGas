@@ -348,7 +348,7 @@
 .o-level {
 	width: 30px;
 	height: 30px;
-	margin-left: 41%;
+	margin-left: 34%;
 }
 
 /*연결 상태 이미지 (황화수소 - 암모니아 - 메탄 순)*/
@@ -554,6 +554,44 @@
 
 /*화면 최소화 반응형 css 시작점*/
 @media (min-width : 500px) and (max-width:766px){
+	/*로그인 폼*/
+	.login-box {
+		width: 75%;
+	}
+	.login-title {
+		font-size: 60px;
+	}
+	.login-form {
+		width: 85%;
+		transform: translate(3px, -14px);
+		margin: 0 auto;
+	}
+	.login-btn {
+		transform: translate(0, -18px);
+		margin: 1rem auto;
+		display: block;
+		font-size: 20px;
+	}
+	.login-label {
+		transform: translate(107px, -16px);
+		font-size: 0.875em;
+		font-weight:700;
+		
+	}
+	
+	.login-label-id{
+		margin-left: 11%;
+	}
+	
+	.login-label-pw{
+		margin-left: 3%;
+	}
+	
+	/*다크모드&라이트모드 버튼, footer*/
+	.copyright-footer{
+		margin-left: 16%;
+		margin-bottom: 10%;
+	}
 	
 	
 	/*리스트 화면*/
@@ -680,6 +718,8 @@
 }
 
 
+
+/*------------경계선-------------*/
 
 /* 태블릿 화면 대응 - ipad pro 기준 시작점 */
 
