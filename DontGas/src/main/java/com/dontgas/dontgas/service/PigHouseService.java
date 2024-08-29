@@ -6,4 +6,6 @@ import com.dontgas.dontgas.entity.PigHouse;
 
 public interface PigHouseService {
 	List<PigHouse> getAllPigHouses();
+
+	PigHouse getPigHouseById(Long id);
 }

@@ -11,7 +11,7 @@
 		<i data-feather="menu"></i>
 	</button>
 	<!-- Navbar Brand-->
-	<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="list">Don't
+	<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="${pageContext.request.contextPath}/list">Don't
 		Gas</a>
 	
 	

@@ -18,4 +18,9 @@ public class PigHouseServiceImpl implements PigHouseService  {
 	public List<PigHouse> getAllPigHouses() {
 		 return pigHouseRepository.findAll();
 	}
+	
+	@Override
+    public PigHouse getPigHouseById(Long id) {
+        return pigHouseRepository.findById(id).orElse(null);
+    }
 }

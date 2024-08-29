@@ -16,8 +16,8 @@
 <link
 	href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"
 	rel="stylesheet" />
-<link href="css/styles.css" rel="stylesheet" />
-<link href="css/lightstyles.css" rel="stylesheet" id="theme-style" />
+<link href="${pageContext.request.contextPath}/css/styles.css" rel="stylesheet" />
+<link href="${pageContext.request.contextPath}/css/lightstyles.css" rel="stylesheet" id="theme-style" />
 <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
 <script data-search-pseudo-elements defer
 	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
@@ -69,19 +69,19 @@
 												width="40px" height="40px">
 										</div>
 
-										대나무 축산 돈사1
+										${pigHouse.phouseName}
 									</h1>
 									<!-- 양돈장 전화번호 데이터 넣기 -->
 									<div class="page-header-subtitle page-header-subtitle-custom">
 										<img
 											src="${pageContext.request.contextPath}/images/contact.png"
-											width="30px" height="30px"> 010-1111-1111
+											width="30px" height="30px"> ${pigHouse.farmer.farmerPhoneNumber}
 									</div>
 									<!-- 양돈장 주소 넣기-->
 									<div class="page-header-subtitle page-header-subtitle-custom">
 										<img
 											src="${pageContext.request.contextPath}/images/address.png"
-											width="30px" height="30px"> 전라남도 담양군 고서면
+											width="30px" height="30px"> ${pigHouse.phouseAddress}
 									</div>
 
 								</div>
@@ -291,18 +291,18 @@
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		crossorigin="anonymous"></script>
-	<script src="js/scripts.js"></script>
+	<script src="${pageContext.request.contextPath}/js/scripts.js"></script>
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
 		crossorigin="anonymous"></script>
-	<script src="assets/demo/chart-area-demo.js"></script>
-	<script src="assets/demo/chart-bar-demo.js"></script>
+	<script src="${pageContext.request.contextPath}assets/demo/chart-area-demo.js"></script>
+	<script src="${pageContext.request.contextPath}assets/demo/chart-bar-demo.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
 		crossorigin="anonymous"></script>
-	<script src="js/datatables.js"></script>
+	<script src="${pageContext.request.contextPath}/js/datatables.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"
 		crossorigin="anonymous"></script>
-	<script src="js/litepicker.js"></script>
+	<script src="${pageContext.request.contextPath}/js/litepicker.js"></script>
 	<script src="${pageContext.request.contextPath}/js/darkmode.js"></script>
 	<script src="${pageContext.request.contextPath}/js/weather.js"></script>
 </body>
