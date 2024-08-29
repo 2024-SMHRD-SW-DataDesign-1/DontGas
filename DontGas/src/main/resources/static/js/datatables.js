@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', event => {
 	if (datatablesSimple) {
 		new simpleDatatables.DataTable(datatablesSimple, {
 			searchable: true,
+			sortable : true,
 			labels: {
 				perPage: "개 씩 보기",
 				info: "{start} - {end} / {rows}"

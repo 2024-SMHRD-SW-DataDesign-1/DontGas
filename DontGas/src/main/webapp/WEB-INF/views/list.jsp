@@ -73,20 +73,14 @@
 									<tr class="table-head-custom">
 										<th class="stink-custom">악취 상태</th>
 										<th class="pighouse-custom">돈사명</th>
-										<th class="connecting-custom">연결 상태</th>
+										<th class="connecting-custom">연결 상태 <img src="${pageContext.request.contextPath}/images/question.png" width="20px" height="20px"></th>
 										<th class="address-custom">주소</th>
 										<th class="contact-custom">연락처</th>
 									</tr>
+									
+									
 								</thead>
-								<tfoot>
-									<tr class="table-head-custom">
-										<th>악취 상태</th>
-										<th>돈사명</th>
-										<th>연결 상태</th>
-										<th>주소</th>
-										<th>연락처</th>
-									</tr>
-								</tfoot>
+								
 								<tbody>
 
 									<tr class="table-head-custom">
@@ -97,11 +91,10 @@
 											<a href="info">대나무 축산</a></td>
 										<td><img class="connect-1"
 											src="${pageContext.request.contextPath}/images/connect_o.png">
-											<img class="connect-2"
+										<img class="connect-2"
 											src="${pageContext.request.contextPath}/images/connect_x.png">
-											<img class="connect-3"
-											src="${pageContext.request.contextPath}/images/connect_o.png">
-										</td>
+										<img class="connect-3"
+											src="${pageContext.request.contextPath}/images/connect_o.png"></td>
 										<td>전라남도 담양군 고서면</td>
 										<td>010-1111-1111</td>
 									</tr>
@@ -261,7 +254,7 @@
 											<img class="connect-2"
 											src="${pageContext.request.contextPath}/images/connect_x.png">
 											<img class="connect-3"
-											src="${pageContext.request.contextPath}/images/connect_x.png"></td>
+											src="${pageContext.request.contextPath}/images/connect_x.png">
 										<td>전북 부안군 행안면 대초리</td>
 										<td>010-0000-3333</td>
 									</tr>
@@ -279,7 +272,7 @@
 											<img class="connect-3"
 											src="${pageContext.request.contextPath}/images/connect_o.png"></td>
 										<td>전북 고창군 해리면</td>
-										<td>010-5555-55555</td>
+										<td>010-5555-5555</td>
 									</tr>
 
 									<tr class="table-head-custom">
