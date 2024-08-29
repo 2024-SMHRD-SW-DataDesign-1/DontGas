@@ -718,56 +718,38 @@
 	
 	
 	/*테이블 헤더 사이즈 조정*/
-	.stink-custom{
-		
-		width: 19%;
-	
+	.stink-custom {
+		width: 18%;
 	}
-	.pighouse-custom{
-	
+	.pighouse-custom {
+		width: 26%;
+	}
+	.connecting-custom {
+		width: 21.037037037037038%;
+	}
+	.adderess-custom {
 		width: 21%;
-	
 	}
-	.connecting-custom{
-		
-		width: 21%;
-	
-	}
-
-	.adderess-custom{
-	
-		width: 21%;
-	
-	}
-	
-	.contact-custom{
-	
-		width:16%;
+	.contact-custom {
+		width: 16%;
 	}
 	
 	/*연결 상태 위치 조정*/
-	.connect-1{
-	
+	.connect-1 {
 		width: 20px;
-    	height: 20px;
-    	transform: translate(0px, -1px);
-    
-    }
-    
-    .connect-2{
-    	width: 20px;
-    	height: 20px;
-    	transform: translate(3px, -1px);
-    
-    }
-    
-    
-    .connect-3 {
-    	width: 20px;
-   	 	height: 20px;
-    	transform: translate(5px, -1px);
+		height: 20px;
+		margin-left:9%
 	}
-
+	.connect-2 {
+		width: 20px;
+		height: 20px;
+		margin-left:4%
+	}
+	.connect-3 {
+		width: 20px;
+		height: 20px;
+		margin-left:4%
+	}
 
 
 	/*info 페이지*/
