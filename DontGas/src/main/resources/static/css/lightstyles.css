@@ -199,6 +199,20 @@
 	background-color: #fff;
 }
 
+/* csv 다운로드 모달창 체크박스, 버튼 css*/
+.form-check-input-custom{
+	
+	margin-left: 33%
+}
+
+.btn-primary-custom{
+	
+	background-color: green;
+	border-color:yellowgreen;
+	color: white;
+	font-family:'NanumSquareRound';
+	
+}
 .page-header-custom {
 	background-color: white;
 }
@@ -219,6 +233,9 @@
 .sidenav-toggle-btn-custom {
 	color: black !important;
 }
+
+
+
 
 /*알림*/
 .alert-custom {

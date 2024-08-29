@@ -168,6 +168,7 @@
     height: 50px;
 }
 
+/* header, nav */
 .navbar-custom{
     color: #00FF7F !important;
     font-size: 30px !important;
@@ -203,6 +204,21 @@
     color: white !important;
 }
 
+/* csv 다운로드 모달창 체크박스, 버튼 css*/
+.form-check-input-custom{
+	
+	margin-left: 33%
+}
+
+.btn-primary-custom{
+	
+	background-color: green;
+	border-color:yellowgreen;
+	color: white;
+	font-family:'NanumSquareRound';
+}
+
+/*알림*/
 .alert-custom{
     color:white !important;
    
