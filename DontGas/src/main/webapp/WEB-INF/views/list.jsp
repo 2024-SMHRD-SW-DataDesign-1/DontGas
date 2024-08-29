@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="EUC-KR"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,15 +74,42 @@
 									<tr class="table-head-custom">
 										<th class="stink-custom">악취 상태</th>
 										<th class="pighouse-custom">돈사명</th>
-										<th class="connecting-custom">연결 상태 <img src="${pageContext.request.contextPath}/images/question1.png" width="20px" height="20px"></th>
+										<th class="connecting-custom">연결 상태 <img
+											src="${pageContext.request.contextPath}/images/question1.png"
+											width="20px" height="20px"></th>
 										<th class="address-custom">주소</th>
 										<th class="contact-custom">연락처</th>
 									</tr>
-									
-									
+
+
 								</thead>
-								
+
 								<tbody>
+
+									<c:forEach var="pigHouse" items="${pigHouseList}">
+										<tr>
+											<td data-order="1">
+												<img class="o-level" src="${pageContext.request.contextPath}/images/VeryGood.png">
+											</td>
+
+											<td class="pighouse_name">
+												<img class="user" src="${pageContext.request.contextPath}/images/user.png">
+												<a href="info/${pigHouse.phouseId}">${pigHouse.phouseName}</a>
+											</td>
+
+											<td><img class="connect-1"
+												src="${pageContext.request.contextPath}/images/connect_o.png">
+												<img class="connect-2"
+												src="${pageContext.request.contextPath}/images/connect_x.png">
+												<img class="connect-3"
+												src="${pageContext.request.contextPath}/images/connect_o.png">
+											</td>
+
+											<td>${pigHouse.phouseAddress}</td>
+
+											<td>${pigHouse.farmer.farmerPhoneNumber}</td>
+										</tr>
+									</c:forEach>
 
 									<tr class="table-head-custom">
 										<td data-order="1"><img class="o-level"
@@ -91,9 +119,9 @@
 											<a href="info">대나무 축산</a></td>
 										<td><img class="connect-1"
 											src="${pageContext.request.contextPath}/images/connect_o.png">
-										<img class="connect-2"
+											<img class="connect-2"
 											src="${pageContext.request.contextPath}/images/connect_x.png">
-										<img class="connect-3"
+											<img class="connect-3"
 											src="${pageContext.request.contextPath}/images/connect_o.png"></td>
 										<td>전라남도 담양군 고서면</td>
 										<td>010-1111-1111</td>
@@ -116,7 +144,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="3"><img class="o-level" 
+										<td data-order="3"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -132,7 +160,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="2"><img class="o-level" 
+										<td data-order="2"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/Good.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -148,7 +176,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="1"><img class="o-level" 
+										<td data-order="1"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/VeryGood.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -164,7 +192,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="2"><img class="o-level" 
+										<td data-order="2"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/Good.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -180,7 +208,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="3"><img class="o-level" 
+										<td data-order="3"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -196,7 +224,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="4"><img class="o-level" 
+										<td data-order="4"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/Bad.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -212,7 +240,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="3"><img class="o-level" 
+										<td data-order="3"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -228,7 +256,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="3"><img class="o-level" 
+										<td data-order="3"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -244,7 +272,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="5"><img class="o-level" 
+										<td data-order="5"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/VeryBad.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -260,7 +288,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="3"><img class="o-level" 
+										<td data-order="3"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/Soso.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -276,7 +304,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="4"><img class="o-level" 
+										<td data-order="4"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/Bad.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -292,7 +320,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="1"><img class="o-level" 
+										<td data-order="1"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/VeryGood.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -308,7 +336,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="1"><img class="o-level" 
+										<td data-order="1"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/VeryGood.png"></td>
 										<td class="pighouse_name"><img class=user
 											src="${pageContext.request.contextPath}/images/user.png"><a
@@ -324,7 +352,7 @@
 									</tr>
 
 									<tr class="table-head-custom">
-										<td data-order="2"><img class="o-level" 
+										<td data-order="2"><img class="o-level"
 											src="${pageContext.request.contextPath}/images/Good.png"></td>
 										<td class="pighouse_name"><img class="user"
 											src="${pageContext.request.contextPath}/images/user.png"><a

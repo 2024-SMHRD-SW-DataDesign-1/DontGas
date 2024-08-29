@@ -15,10 +15,10 @@ public class HomeController {
 		return "login";
 	}
 	
-	@GetMapping("/list")
-	public String listPage() {
-		return "list";
-	}
+//	@GetMapping("/list")
+//	public String listPage() {
+//		return "list";
+//	}
 	
 	@GetMapping("/info")
 	public String infoPage() {
