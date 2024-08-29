@@ -73,7 +73,7 @@
 									<tr class="table-head-custom">
 										<th class="stink-custom">악취 상태</th>
 										<th class="pighouse-custom">돈사명</th>
-										<th class="connecting-custom">연결 상태 <img src="${pageContext.request.contextPath}/images/question.png" width="20px" height="20px"></th>
+										<th class="connecting-custom">연결 상태 <img src="${pageContext.request.contextPath}/images/question1.png" width="20px" height="20px"></th>
 										<th class="address-custom">주소</th>
 										<th class="contact-custom">연락처</th>
 									</tr>
