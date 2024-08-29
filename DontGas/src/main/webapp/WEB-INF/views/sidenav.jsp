@@ -35,8 +35,8 @@
 								<thead>
 									<tr class="table-head-custom">
 										<th>돈사명</th>
-										<th>주소</th>
-										<th>다운로드 선택</th>
+										<th style=text-align:center>주소</th>
+										<th style=text-align:center>다운로드 선택</th>
 									</tr>
 								</thead>
 								<tbody>

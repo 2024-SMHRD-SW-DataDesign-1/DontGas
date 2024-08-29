@@ -198,9 +198,13 @@
 	background-color: #fff;
 }
 
+.center-sort{
+	text-align: center;
+}
+
 /* csv 다운로드 모달창 체크박스, 버튼 css*/
 .form-check-input-custom {
-	margin-left: 33%
+	margin-left: 9%;
 }
 
 .btn-primary-custom {
@@ -240,9 +244,7 @@
 	font-family: 'NanumSquareRound';
 }
 
-.center-sort {
-	text-align: center;
-}
+
 
 /* span태그 위치 option */
 .tooltip-link {
@@ -675,13 +677,13 @@
 	}
 	/*테이블 헤더 사이즈 조정*/
 	.stink-custom {
-		width: 19%;
+		width: 18%;
 	}
 	.pighouse-custom {
-		width: 21%;
+		width: 26%;
 	}
 	.connecting-custom {
-		width: 21%;
+		width: 21.037037037037038%;
 	}
 	.adderess-custom {
 		width: 21%;
@@ -689,21 +691,22 @@
 	.contact-custom {
 		width: 16%;
 	}
+	
 	/*연결 상태 위치 조정*/
 	.connect-1 {
 		width: 20px;
 		height: 20px;
-		transform: translate(0px, -1px);
+		margin-left:9%
 	}
 	.connect-2 {
 		width: 20px;
 		height: 20px;
-		transform: translate(3px, -1px);
+		margin-left:4%
 	}
 	.connect-3 {
 		width: 20px;
 		height: 20px;
-		transform: translate(5px, -1px);
+		margin-left:4%
 	}
 
 	/*info 페이지*/
