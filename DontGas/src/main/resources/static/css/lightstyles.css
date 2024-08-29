@@ -162,7 +162,6 @@
 }
 
 /* 공통 footer*/
-
 .copyright-footer {
 	flex: 0 0 auto;
 	width: 50%;
@@ -200,19 +199,17 @@
 }
 
 /* csv 다운로드 모달창 체크박스, 버튼 css*/
-.form-check-input-custom{
-	
+.form-check-input-custom {
 	margin-left: 33%
 }
 
-.btn-primary-custom{
-	
+.btn-primary-custom {
 	background-color: green;
-	border-color:yellowgreen;
+	border-color: yellowgreen;
 	color: white;
-	font-family:'NanumSquareRound';
-	
+	font-family: 'NanumSquareRound';
 }
+
 .page-header-custom {
 	background-color: white;
 }
@@ -222,98 +219,87 @@
 	font-family: 'NanumSquareRound' !important;
 }
 
-
 .page-header-title-custom-info {
 	color: black !important;
 	font-family: 'NanumSquareRound' !important;
 }
 
-
-
 .sidenav-toggle-btn-custom {
 	color: black !important;
 }
-
-
-
 
 /*알림*/
 .alert-custom {
 	color: rgb(0, 0, 0) !important;
 }
 
-
 /*돈사 리스트 화면 */
-
 .table-body-custom {
 	background-color: rgb(255, 255, 255) !important;
 	color: rgb(0, 0, 0) !important;
 	font-family: 'NanumSquareRound';
 }
 
-.center-sort{
+.center-sort {
 	text-align: center;
 }
 
 /* span태그 위치 option */
-.tooltip-link{
-  position: absolute;
-  left: -6%;
-  top: 26%;
+.tooltip-link {
+	position: absolute;
+	left: -6%;
+	top: 26%;
 }
 
 /* span태그 option */
-.tooltip-link{
-    position: relative;
-    border-radius: 10px;
-    padding: 10px;
-    box-sizing: border-box;
+.tooltip-link {
+	position: relative;
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
 }
-
 
 /* 툴팁 option */
 .tooltip-link[data-tooltip]:not([data-tooltip=""])::before {
-    content: attr(data-tooltip);
-    position: absolute;
-    background-color:#FFEFD5;
-    color: black;
-    padding: 10px 7px;
-    border-radius: 10px;
-    max-width: 300px;
-    width: 215px;
-    left: 25%;
-    bottom: 120%;
-    opacity: 0;
-    transition: all 0.5s linear;
+	content: attr(data-tooltip);
+	position: absolute;
+	background-color: #FFEFD5;
+	color: black;
+	padding: 10px 7px;
+	border-radius: 10px; max-width : 300px;
+	width: 215px;
+	left: 25%;
+	bottom: 120%;
+	opacity: 0;
+	transition: all 0.5s linear;
+	max-width: 300px;
 }
 
 /* 툴팁 말풍선 방향 팁 추가 */
 .tooltip-link[data-tooltip]:not([data-tooltip=""])::after {
-    content: '';
-    border-width: 6px;
-    border-style: solid;
-    border-color: transparent;
-    border-top-color: #FFEFD5;
-    width: 0;
-    height: 0;
-    display: inline-block;
-    position: absolute;
-    left: 56%;
-    bottom: 90%;
-    transform: translate(-50%, 0);
-    opacity: 0;
-    transition: all 0.5s linear;
+	content: '';
+	border-width: 6px;
+	border-style: solid;
+	border-color: transparent;
+	border-top-color: #FFEFD5;
+	width: 0;
+	height: 0;
+	display: inline-block;
+	position: absolute;
+	left: 56%;
+	bottom: 90%;
+	transform: translate(-50%, 0);
+	opacity: 0;
+	transition: all 0.5s linear;
 }
 
-.tooltip-link:hover[data-tooltip]:not([data-tooltip=""])::before
-, .tooltip-link:hover[data-tooltip]:not([data-tooltip=""])::after {
-    opacity: 1;
+.tooltip-link:hover[data-tooltip]:not([data-tooltip=""])::before,
+	.tooltip-link:hover[data-tooltip]:not([data-tooltip=""])::after {
+	opacity: 1;
 }
 
-.connecting-sort{
-	
+.connecting-sort {
 	align-items: center;
-	
 }
 
 .search-input-custom {
@@ -325,36 +311,26 @@
 	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 		!important;
 }
-	/*테이블 헤더 사이즈 조정*/
-	.stink-custom{
-		
-		width: 12.775653%;
-	
-	}
-	.pighouse-custom{
-	
-		width: 16.792862%;
-	
-	}
-	.connecting-custom{
-		
-		width: 12.369025%;
-	
-	}
+/*테이블 헤더 사이즈 조정*/
+.stink-custom {
+	width: 12.775653%;
+}
 
-	.adderess-custom{
-	
-		width: 30.952836%;
-	
-	}
-	
-	.contact-custom{
-	
-		width: 20.080943%;
+.pighouse-custom {
+	width: 16.792862%;
+}
 
-	}
-	
+.connecting-custom {
+	width: 12.369025%;
+}
 
+.adderess-custom {
+	width: 30.952836%;
+}
+
+.contact-custom {
+	width: 20.080943%;
+}
 
 /*악취 레벨 이미지*/
 .o-level {
@@ -395,7 +371,6 @@
 	border-radius: 10px;
 	border: 3px solid greenyellow;
 }
-
 
 .pighouse_name * {
 	color: black;
@@ -557,190 +532,119 @@
 	display: inline-block !important;
 }
 
-
-#dateRange{
+#dateRange {
 	margin-top: 1em;
 }
 
-.sortingLabel{
+.sortingLabel {
 	display: none;
 }
 
+/*웹 화면 css 끝점*/
+
+/*----------------경계선----------------*/
 
 /*화면 최소화 반응형 css*/
-@media (min-width : 500px) and (max-width:766px){
-	
-	
-	.border-0-calendar{
-	
-		border: 0 !important;
-    	transform: translate(48px, -30px);
-	
+@media ( min-width : 500px) and (max-width:766px) {
+	/*리스트 화면*/
+	/*테이블 헤더 사이즈 조정*/
+	.stink-custom {
+		width: 12%;
 	}
-	
-	.chart-custom{
-	
+	.pighouse-custom {
+		width: 16%;
+	}
+	.connecting-custom {
+		width: 13%;
+	}
+	.adderess-custom {
+		width: 37%;
+	}
+	.contact-custom {
+		width: 20%;
+	}
+
+	/*연결 상태 이미지 (황화수소 - 암모니아 - 메탄 순)*/
+	.connect-1 {
+		width: 20px;
+		height: 20px;
+		margin-left: 3%;
+	}
+	.connect-2 {
+		width: 20px;
+		height: 20px;
+		margin-left: 4%;
+	}
+	.connect-3 {
+		width: 20px;
+		height: 20px;
+		margin-left: 4%;
+	}
+
+	/*info 화면*/
+	.border-0-calendar {
+		border: 0 !important;
+		transform: translate(48px, -30px);
+	}
+	.chart-custom {
 		transform: translate(48px, -17px);
 		width: 82%
-	
 	}
-	
-	.weather-item{
-	
+	.weather-item {
 		display: flex;
-    	align-items: center;
-    	padding: 5px 10px;
-    	border-radius: 20px;
-    	width: 1000px;
-   		height: 63px;
-	
-	
-	
-	
+		align-items: center;
+		padding: 5px 10px;
+		border-radius: 20px;
+		width: 1000px;
+		height: 63px;
 	}
-	.weather-label{
-	
-		margin-right: 10px;
-    	font-weight: bold;
-    	font-family: 'NanumSquareRound';
-    	width: 106px;
-    	height: 61px;
-		align-content: center;
-	
-	}
-	
-	.weather-value{
-	
-		width: 45px;
-        height: 45px;
-        font-size: 15px;
-	
-	}
-	
-	.temp {
-    background-color: #f9e1e1;
-    color: black;
-    border: 2px solid red;
-    transform: translate(-139px, -12px);
-	}
-	
-	.humidity {
-    background-color: #cbf9ff;
-    color: black;
-    border: 2px solid cyan;
-    transform: translate(-134px, -12px);
-	}
-	
-	.wind-dir {
-    background-color: #e9f4ff;
-    color: black;
-    border: 2px solid blue;
-    transform: translate(-127px, -12px);
-	}
-	
-	.wind-speed {
-    background-color: #defbba;
-    color: black;
-    transform: translate(-121px, -12px);
-    border: 2px solid green;
-	}
-	
-	.weather-info {
-    background-color: white;
-    color: black;
-    transform: translate(-116px, -12px);
-    border: 2px solid orange;
-	}
-	
-	
-	
-	
-}
-
-/*웹 화면 css 끝점*/
-/* 모바일 화면 대응 */
-@media ( max-width : 768px) {
-	
-	.login-box {
-		width: 90%;
-		margin-top: 5rem;
-	}
-	.login-title {
-		font-size: 40px;
-		transform: translate(0px, 17px);
-	}
-	.login-form {
-		width: 80%;
-		transform: translate(0, 0);
-		margin: 0 auto;
-	}
-	.login-btn {
-		transform: translate(0, 0);
-		margin: 1rem auto;
-		display: block;
-		font-size: 1.1em;
-	}
-	.login-label{
-		
-		font-size: 1em;
-		transform: translate(35px, -5px);
-		
-	}
-	
-	
-		/*돈사 리스트 화면*/
-	.page-header-title-custom-list {
-		color: black !important;
-		font-family: 'NanumSquareRound' !important;
-		transform: translate(5px, 6px);
-	}
-	
-	
-	
 	.weather-label {
-		font-size: 18px;
-		transform: translate(0, 0);
+		margin-right: 10px;
+		font-weight: bold;
+		font-family: 'NanumSquareRound';
+		width: 106px;
+		height: 61px;
+		align-content: center;
 	}
 	.weather-value {
-		width: 60px;
-		height: 60px;
-		font-size: 20px;
+		width: 45px;
+		height: 45px;
+		font-size: 15px;
 	}
-
-
-
-
-
-	/*다크모드&라이트모드 버튼, footer*/
-	#modbtn{
-	
-		position: fixed;
-    	top: 90%;
-    	left: 2%;
-    	cursor: pointer;
-    	z-index: 10000;
-    	
+	.temp {
+		background-color: #f9e1e1;
+		color: black;
+		border: 2px solid red;
+		transform: translate(-139px, -12px);
 	}
-	
-	.copyright-footer{
-	
-		flex: 0 0 auto;
-    	width: 56%;
-    	font-size: 0.875em;
-    	color: green;
-    	font-family: 'NanumSquareRound';
-    	transform:translate(87px, -19px);
-	
+	.humidity {
+		background-color: #cbf9ff;
+		color: black;
+		border: 2px solid cyan;
+		transform: translate(-134px, -12px);
 	}
-
+	.wind-dir {
+		background-color: #e9f4ff;
+		color: black;
+		border: 2px solid blue;
+		transform: translate(-127px, -12px);
+	}
+	.wind-speed {
+		background-color: #defbba;
+		color: black;
+		transform: translate(-121px, -12px);
+		border: 2px solid green;
+	}
+	.weather-info {
+		background-color: white;
+		color: black;
+		transform: translate(-116px, -12px);
+		border: 2px solid orange;
+	}
 }
-/* 모바일 환경 반응형 css 끝점 */
-
 
 /* 태블릿 화면 대응 - ipad pro 기준 시작점 */
-
 @media ( min-width : 769px) and (max-width: 1024px) {
-	
 	/*로그인 폼*/
 	.login-box {
 		width: 75%;
@@ -758,13 +662,11 @@
 		margin: 1rem auto;
 		display: block;
 	}
-	.login-label{
-		
-    transform: translate(190px, -5px);
-    font-size: 1.3em;
-	
+	.login-label {
+		transform: translate(190px, -5px);
+		font-size: 1.3em;
 	}
-	
+
 	/*돈사 리스트 화면*/
 	.page-header-title-custom-list {
 		color: black !important;
@@ -772,55 +674,37 @@
 		transform: translate(5px, 6px);
 	}
 	/*테이블 헤더 사이즈 조정*/
-	.stink-custom{
-		
-		width: 16.37678%;
-	
+	.stink-custom {
+		width: 19%;
 	}
-	.pighouse-custom{
-	
-		width: 26.067908%;
-	
+	.pighouse-custom {
+		width: 21%;
 	}
-	.connecting-custom{
-		
-		width: 16.829135%;
-	
+	.connecting-custom {
+		width: 21%;
 	}
-
-	.adderess-custom{
-	
-		width: 28.449069%;
-	
+	.adderess-custom {
+		width: 21%;
 	}
-	
-	.contact-custom{
-	
-		width:20.277108%;
+	.contact-custom {
+		width: 16%;
 	}
 	/*연결 상태 위치 조정*/
-	.connect-1{
-	
+	.connect-1 {
 		width: 20px;
-    	height: 20px;
-    	transform: translate(0px, -1px);
-    
-    }
-    
-    .connect-2{
-    	width: 20px;
-    	height: 20px;
-    	transform: translate(3px, -1px);
-    
-    }
-    
-    
-    .connect-3 {
-    	width: 20px;
-   	 	height: 20px;
-    	transform: translate(5px, -1px);
+		height: 20px;
+		transform: translate(0px, -1px);
 	}
-
+	.connect-2 {
+		width: 20px;
+		height: 20px;
+		transform: translate(3px, -1px);
+	}
+	.connect-3 {
+		width: 20px;
+		height: 20px;
+		transform: translate(5px, -1px);
+	}
 
 	/*info 페이지*/
 	.page-header-title-custom-info {
@@ -828,81 +712,70 @@
 		font-family: 'NanumSquareRound' !important;
 		transform: translate(158px, -23px);
 	}
-	
 	.page-header-subtitle-custom {
 		color: black !important;
 		transform: translate(212px, -8px);
 	}
-	
 	.h-100-custom {
 		height: 100% !important;
 		border: 3px solid darkseagreen;
 		width: 67%;
 		transform: translate(107px, -89px);
 	}
-	
+
 	/* 기상 정보 css */
-	
 	.weather-item {
 		display: flex;
-    	align-items: center;
-    	padding: 5px 10px;
-    	border-radius: 20px;
-    	width: 1000px;
-    	height: 90px;
+		align-items: center;
+		padding: 5px 10px;
+		border-radius: 20px;
+		width: 1000px;
+		height: 90px;
 	}
-	
 	.weather-label {
 		font-size: 25px;
 		margin-right: 10px;
-    	font-weight: bold;
-    	font-family: 'NanumSquareRound';
-    	width: 131px;
-    	height: 61px;
-    	align-content: center;
-    	transform: translate(52px, 0px);
+		font-weight: bold;
+		font-family: 'NanumSquareRound';
+		width: 131px;
+		height: 61px;
+		align-content: center;
+		transform: translate(52px, 0px);
 	}
-	
 	.weather-value {
 		width: 70px;
 		height: 70px;
 		font-size: 22px;
-		
 	}
-	
 	.temp {
-    background-color: #f9e1e1;
-    color: black;
-    border: 2px solid red;
-    transform: translate(8px, -86px);
+		background-color: #f9e1e1;
+		color: black;
+		border: 2px solid red;
+		transform: translate(8px, -86px);
 	}
-	
 	.humidity {
-    background-color: #cbf9ff;
-    color: black;
-    border: 2px solid cyan;
-    transform: translate(28px, -86px);
+		background-color: #cbf9ff;
+		color: black;
+		border: 2px solid cyan;
+		transform: translate(28px, -86px);
 	}
-	
 	.wind-dir {
-    background-color: #e9f4ff;
-    color: black;
-    border: 2px solid blue;
-    transform: translate(47px, -86px);
+		background-color: #e9f4ff;
+		color: black;
+		border: 2px solid blue;
+		transform: translate(47px, -86px);
 	}
-	
 	.wind-speed {
-    background-color: #defbba;
-    color: black;
-    transform: translate(-587px, 19px);
-    border: 2px solid green;
+		background-color: #defbba;
+		color: black;
+		transform: translate(-587px, 19px);
+		border: 2px solid green;
 	}
-	
 	.weather-info {
-    background-color: white;
-    color: black;
-    transform: translate(-551px, 19px);
-    border: 2px solid orange;
+		background-color: white;
+		color: black;
+		transform: translate(-551px, 19px);
+		border: 2px solid orange;
 	}
 
 	/* 꺾은 선 차트 및 캘린더 */
@@ -914,22 +787,19 @@
 		transform: translate(35px, 151px);
 		width: 700px;
 	}
-	
-	
+
 	/*다크모드&라이트모드 버튼*/
-	#modbtn{
+	#modbtn {
 		position: fixed;
-    	top: 90%;
-    	left: 2%;
-    	cursor: pointer;
-    	z-index: 10000;
-    	transform: translate(10px, 53px);
+		top: 90%;
+		left: 2%;
+		cursor: pointer;
+		z-index: 10000;
+		transform: translate(10px, 53px);
 	}
-	
 	.footer-admin.footer-light {
-    color: #a7aeb8;
-    transform: translate(10px, 25px);
+		color: #a7aeb8;
+		transform: translate(10px, 25px);
 	}
-	
 }
 /* 태블릿 환경 반응형 css 끝점 */
