@@ -2681,6 +2681,8 @@ textarea.form-control-lg {
   -webkit-print-color-adjust: exact;
           color-adjust: exact;
 }
+
+
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
 }
@@ -20762,18 +20764,20 @@ s
 
 .dataTable-table > thead > tr > th {
   vertical-align: bottom;
-  text-align: left;
+  text-align: center !important; 
   border-bottom: none;
 }
 
-.dataTable-table > tfoot > tr > th {
-  vertical-align: bottom;
-  text-align: left;
+.datatable-sorter{
+	text-align: center !important;
 }
+
+
 
 .dataTable-table th {
   vertical-align: bottom;
-  text-align: left;
+  text-align: center;
+  
 }
 
 .dataTable-table th a {

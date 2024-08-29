@@ -199,6 +199,20 @@
 	background-color: #fff;
 }
 
+/* csv 다운로드 모달창 체크박스, 버튼 css*/
+.form-check-input-custom{
+	
+	margin-left: 33%
+}
+
+.btn-primary-custom{
+	
+	background-color: green;
+	border-color:yellowgreen;
+	color: white;
+	font-family:'NanumSquareRound';
+	
+}
 .page-header-custom {
 	background-color: white;
 }
@@ -220,6 +234,9 @@
 	color: black !important;
 }
 
+
+
+
 /*알림*/
 .alert-custom {
 	color: rgb(0, 0, 0) !important;
@@ -227,12 +244,77 @@
 
 
 /*돈사 리스트 화면 */
+
 .table-body-custom {
 	background-color: rgb(255, 255, 255) !important;
 	color: rgb(0, 0, 0) !important;
 	font-family: 'NanumSquareRound';
 }
 
+.center-sort{
+	text-align: center;
+}
+
+/* span태그 위치 option */
+.tooltip-link{
+  position: absolute;
+  left: -6%;
+  top: 26%;
+}
+
+/* span태그 option */
+.tooltip-link{
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* 툴팁 option */
+.tooltip-link[data-tooltip]:not([data-tooltip=""])::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color:#FFEFD5;
+    color: black;
+    padding: 10px 7px;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 215px;
+    left: 25%;
+    bottom: 120%;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+/* 툴팁 말풍선 방향 팁 추가 */
+.tooltip-link[data-tooltip]:not([data-tooltip=""])::after {
+    content: '';
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #FFEFD5;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    left: 56%;
+    bottom: 90%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+.tooltip-link:hover[data-tooltip]:not([data-tooltip=""])::before
+, .tooltip-link:hover[data-tooltip]:not([data-tooltip=""])::after {
+    opacity: 1;
+}
+
+.connecting-sort{
+	
+	align-items: center;
+	
+}
 
 .search-input-custom {
 	border-width: 2px !important;
@@ -243,30 +325,61 @@
 	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 		!important;
 }
+	/*테이블 헤더 사이즈 조정*/
+	.stink-custom{
+		
+		width: 12.775653%;
+	
+	}
+	.pighouse-custom{
+	
+		width: 16.792862%;
+	
+	}
+	.connecting-custom{
+		
+		width: 12.369025%;
+	
+	}
+
+	.adderess-custom{
+	
+		width: 30.952836%;
+	
+	}
+	
+	.contact-custom{
+	
+		width: 20.080943%;
+
+	}
+	
+
 
 /*악취 레벨 이미지*/
 .o-level {
 	width: 30px;
 	height: 30px;
-	transform: translate(27px, -1px);
+	margin-left: 41%;
 }
+
 /*연결 상태 이미지 (황화수소 - 암모니아 - 메탄 순)*/
 .connect-1 {
 	width: 20px;
 	height: 20px;
-	transform: translate(6px, -1px);
+	margin-left: 14%
 }
 
 .connect-2 {
 	width: 20px;
 	height: 20px;
-	transform: translate(9px, -1px);
+	margin-left: 4%
 }
 
 .connect-3 {
 	width: 20px;
 	height: 20px;
-	transform: translate(12px, -1px);
+	margin-left: 4%
 }
 
 /* 사용자 이미지, 필터링 검색바 */
