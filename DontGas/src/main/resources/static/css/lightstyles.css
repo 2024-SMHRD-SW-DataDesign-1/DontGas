@@ -454,7 +454,97 @@
 }
 
 
+/*화면 최소화 반응형 css*/
+@media (min-width : 500px) and (max-width:766px){
+	
+	
+	.border-0-calendar{
+	
+		border: 0 !important;
+    	transform: translate(48px, -30px);
+	
+	}
+	
+	.chart-custom{
+	
+		transform: translate(48px, -17px);
+		width: 82%
+	
+	}
+	
+	.weather-item{
+	
+		display: flex;
+    	align-items: center;
+    	padding: 5px 10px;
+    	border-radius: 20px;
+    	width: 1000px;
+   		height: 63px;
+	
+	
+	
+	
+	}
+	.weather-label{
+	
+		margin-right: 10px;
+    	font-weight: bold;
+    	font-family: 'NanumSquareRound';
+    	width: 106px;
+    	height: 61px;
+		align-content: center;
+	
+	}
+	
+	.weather-value{
+	
+		width: 45px;
+        height: 45px;
+        font-size: 15px;
+	
+	}
+	
+	.temp {
+    background-color: #f9e1e1;
+    color: black;
+    border: 2px solid red;
+    transform: translate(-139px, -12px);
+	}
+	
+	.humidity {
+    background-color: #cbf9ff;
+    color: black;
+    border: 2px solid cyan;
+    transform: translate(-134px, -12px);
+	}
+	
+	.wind-dir {
+    background-color: #e9f4ff;
+    color: black;
+    border: 2px solid blue;
+    transform: translate(-127px, -12px);
+	}
+	
+	.wind-speed {
+    background-color: #defbba;
+    color: black;
+    transform: translate(-121px, -12px);
+    border: 2px solid green;
+	}
+	
+	.weather-info {
+    background-color: white;
+    color: black;
+    transform: translate(-116px, -12px);
+    border: 2px solid orange;
+	}
+	
+	
+	
+	
+}
 
+/*웹 화면 css 끝점*/
 /* 모바일 화면 대응 */
 @media ( max-width : 768px) {
 	
@@ -493,57 +583,6 @@
 	}
 	
 	
-	/*테이블 헤더 사이즈 조정 - 수정중*/
-	.stink-custom{
-		
-		width: 16.37678%;
-	
-	}
-	.pighouse-custom{
-	
-		width: 26.067908%;
-	
-	}
-	.connecting-custom{
-		
-		width: 16.829135%;
-	
-	}
-
-	.adderess-custom{
-	
-		width: 28.449069%;
-	
-	}
-	
-	.contact-custom{
-	
-		width:20.277108%;
-	}
-	
-	/*연결 상태 위치 조정*/
-	.connect-1{
-	
-		width: 20px;
-    	height: 20px;
-    	transform: translate(0px, -1px);
-    
-    }
-    
-    .connect-2{
-    	width: 20px;
-    	height: 20px;
-    	transform: translate(3px, -1px);
-    
-    }
-    
-    
-    .connect-3 {
-    	width: 20px;
-   	 	height: 20px;
-    	transform: translate(5px, -1px);
-	}
-
 	
 	.weather-label {
 		font-size: 18px;
