@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!-- 사이드메뉴 -->
 <div id="layoutSidenav_nav">
@@ -41,7 +42,7 @@
 								</thead>
 								<tbody>
 								
-									<c:forEach var="pigHouse" items="${pigHouseList}">
+									<c:forEach var="pigHouse" items="${sessionScope.pigHouseList}">
 										<tr>
 
 											<td class="pighouse_name">

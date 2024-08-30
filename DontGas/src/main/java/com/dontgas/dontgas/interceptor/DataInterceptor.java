@@ -23,11 +23,11 @@ public class DataInterceptor implements HandlerInterceptor {
         // DB에서 데이터 조회
         List<PigHouse> data = pigHouseService.getAllPigHouses();
         
-        // request에 데이터 저장
-        request.setAttribute("pigHouseList", data);
+//        // request에 데이터 저장
+//        request.setAttribute("pigHouseList", data);
         
-        // Session에 저장하고 싶다면 다음과 같이 사용
-        // request.getSession().setAttribute("myData", data);
+         // Session에 데이터 저장
+         request.getSession().setAttribute("pigHouseList", data);
 
         return true; // 다음 인터셉터나 컨트롤러로 요청을 진행
     }
