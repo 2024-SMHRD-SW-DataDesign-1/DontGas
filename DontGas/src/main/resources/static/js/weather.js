@@ -1,6 +1,5 @@
-async function getWeather() {
+async function getWeather(city) {
             const apiKey = '603aa562f93c1b6e5fb4e7596aa820d5';
-            const city = 'gwangju';
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
             try {
@@ -29,4 +28,4 @@ async function getWeather() {
         }
 
         // Call the function to get weather data when the page loads
-        getWeather();
+        getWeather(city);
