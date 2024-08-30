@@ -26,6 +26,9 @@
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
 	crossorigin="anonymous"></script>
+<script>
+	var city = "${pigHouse.phouseDistrict}";
+</script>
 	
 
 </head>
