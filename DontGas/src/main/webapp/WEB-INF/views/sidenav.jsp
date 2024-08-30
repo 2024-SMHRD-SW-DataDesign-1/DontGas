@@ -11,7 +11,7 @@
 					data-bs-target="#Modal" aria-expanded="false"
 					aria-controls="collapseDashboards">
 					csv 다운로드 <img class="btn-icon"
-						src="${pageContext.request.contextPath}/images/csv-download.png"></img>
+						src="/images/csv-download.png"></img>
 				</p>
 			</div>
 		</div>
@@ -46,7 +46,7 @@
 										<tr>
 
 											<td class="pighouse_name">
-												<img class="user" src="${pageContext.request.contextPath}/images/user.png">
+												<img class="user" src="/images/user.png">
 												<a href="info/${pigHouse.phouseId}">${pigHouse.phouseName}</a>
 											</td>
 

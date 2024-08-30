@@ -138,6 +138,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
 		crossorigin="anonymous"></script>
 	<script src="js/datatables.js"></script>
-	<script src="${pageContext.request.contextPath}/js/darkmode.js"></script>
+	<script src="/js/darkmode.js"></script>
 </body>
 </html>

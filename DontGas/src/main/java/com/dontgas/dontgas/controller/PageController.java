@@ -20,10 +20,10 @@ public class PageController {
 		return "list";
 	}
 	
-	@GetMapping("/info")
-	public String infoPage() {
-		return "info";
-	}
+//	@GetMapping("/info")
+//	public String infoPage() {
+//		return "info";
+//	}
 	
 //    @GetMapping("/logout-success")
 //    public String logoutSuccess() {

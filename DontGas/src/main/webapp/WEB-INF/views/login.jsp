@@ -67,8 +67,8 @@
             
             
             <!-- 다트모드 버튼 -->
-            <img id="modbtn" src="${pageContext.request.contextPath}/images/darkpig.png" alt="다크모드 버튼" onclick="toggleDarkMode()"
-            data-light-src="${pageContext.request.contextPath}/images/lightpig.png" data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
+            <img id="modbtn" src="/images/darkpig.png" alt="다크모드 버튼" onclick="toggleDarkMode()"
+            data-light-src="/images/lightpig.png" data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
 
 
 
@@ -89,6 +89,6 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-        <script src="${pageContext.request.contextPath}/js/darkmode.js"></script>
+        <script src="/js/darkmode.js"></script>
     </body>
 </html>

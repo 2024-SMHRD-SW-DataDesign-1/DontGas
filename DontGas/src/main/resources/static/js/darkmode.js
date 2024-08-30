@@ -6,10 +6,10 @@ function toggleDarkMode() {
     const head = document.head;
 
     if (isDark) {
-        existingLink.href = 'css/lightstyles.css';
+        existingLink.href = '/css/lightstyles.css';
         image.src = image.getAttribute('data-dark-src');
     } else {
-        existingLink.href = 'css/darkstyles.css';
+        existingLink.href = '/css/darkstyles.css';
         image.src = image.getAttribute('data-light-src');
     }
 

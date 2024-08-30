@@ -4,8 +4,8 @@
 <img id="modbtn"
 	src="${pageContext.request.contextPath}/images/darkpig.png"
 	alt="다크모드 버튼" onclick="toggleDarkMode()"
-	data-light-src="${pageContext.request.contextPath}/images/lightpig.png"
-	data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
+	data-light-src="/images/lightpig.png"
+	data-dark-src="/images/darkpig.png">
 
 <footer class="footer-admin mt-auto footer-light">
 	<div class="container-xl px-4">
