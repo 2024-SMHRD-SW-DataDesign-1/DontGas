@@ -29,6 +29,9 @@
 <script>
 	var city = "${pigHouse.phouseDistrict}";
 </script>
+<script>
+	var phouseId = "${pigHouse.phouseId}";
+</script>
 	
 
 </head>
