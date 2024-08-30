@@ -44,6 +44,9 @@
                                                 <input class="login-form" id="inputPassword" type="password" placeholder="비밀번호를 입력하세요" name="accPw"/>
                                             </div>
                                             
+                                            <!-- CSRF 토큰 -->
+                                            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+                                            
                                             <!-- 로그인 버튼 -->
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <input class="login-btn" type="submit" value="Login">

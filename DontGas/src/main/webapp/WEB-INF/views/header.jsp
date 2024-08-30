@@ -115,7 +115,7 @@
 					</div>
 				</h6>
 				<div class="dropdown-divider"></div>
-				<form action="logout" method="get" style="display: inline;">
+				<form action="/logout" method="get" style="display: inline;">
 					<button type="submit" class="dropdown-item">
 						<div class="dropdown-item-icon">
 							<i data-feather="log-out"></i>
