@@ -118,7 +118,7 @@
 
 										<!-- 수치, 상태 데이터 들어갈 자리  -->
 										<div>
-											<p class="text-gray-700-custom mb-0">1 ppm</p>
+											<p class="text-gray-700-custom mb-0">0.2 ppm</p>
 											<p class="text-gray-700-custom mb-0">보통</p>
 										</div>
 									</div>
@@ -138,15 +138,15 @@
 												<h1 class="text-primary-custom">암모니아 레벨</h1>
 												<div class="col-xl-4 col-xxl-12 text-center">
 													<img class="o-level2"
-														src="${pageContext.request.contextPath}/images/VeryBad.png"
-														alt="매우 나쁨" style="max-width: 26rem" />
+														src="${pageContext.request.contextPath}/images/Good.png"
+														alt="좋음" style="max-width: 26rem" />
 												</div>
 											</div>
 										</div>
 										<!-- 수치, 상태 데이터 들어갈 자리  -->
 										<div>
-											<p class="text-gray-700-custom mb-0">2 ppm</p>
-											<p class="text-gray-700-custom mb-0">매우 나쁨</p>
+											<p class="text-gray-700-custom mb-0">8 ppm</p>
+											<p class="text-gray-700-custom mb-0">좋음</p>
 										</div>
 									</div>
 								</div>
