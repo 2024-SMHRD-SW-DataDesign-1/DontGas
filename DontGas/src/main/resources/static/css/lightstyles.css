@@ -527,11 +527,17 @@
 
 .sidemenu-custom {
 	margin-top: 20px;
-	font-size: 18px;
+	font-size: 17px;
 	cursor: pointer;
 	color: black !important;
 	text-align: center;
 	display: inline-block !important;
+}
+
+.btn-icon-sheet{
+	border-radius:0%;
+	width: 30px;
+	height: 30px;
 }
 
 #dateRange {
