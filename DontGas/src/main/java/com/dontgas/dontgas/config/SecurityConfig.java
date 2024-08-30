@@ -8,6 +8,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.savedrequest.NullRequestCache;
 
+import com.dontgas.dontgas.component.CustomAuthenticationSuccessHandler;
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
@@ -18,6 +20,13 @@ public class SecurityConfig {
 
 	    return new BCryptPasswordEncoder();
 	}
+	
+	private final CustomAuthenticationSuccessHandler successHandler;
+
+    public SecurityConfig(CustomAuthenticationSuccessHandler successHandler) {
+        this.successHandler = successHandler;
+    }
+	
 	
 	@Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
@@ -30,8 +39,8 @@ public class SecurityConfig {
 		
         http	// 인가 관련 설정
             .authorizeHttpRequests((auth) -> auth
-                    .requestMatchers("/", "/login", "/loginProc", "/list", "/info", "/info/**").permitAll()	// login 페이지는 로그인 없이 접근 가능
-//                    .requestMatchers("/list", "/info", "/info/**").hasRole("ADMIN")	// list, info 페이지는 ADMIN 권한이 있는 계정으로 로그인 해야 접근 가능
+                    .requestMatchers("/", "/login", "/loginProc").permitAll()	// login 페이지는 로그인 없이 접근 가능
+                    .requestMatchers("/list", "/info", "/info/**").hasRole("ADMIN")	// list, info 페이지는 ADMIN 권한이 있는 계정으로 로그인 해야 접근 가능
                     .anyRequest().permitAll()	// 그 외 나머지 경로는 권한 상관 없이 로그인만 되어 있으면 접근 가능
             );
         
@@ -40,7 +49,8 @@ public class SecurityConfig {
 	        		.usernameParameter("accId") // username 파라미터 이름 변경
 	                .passwordParameter("accPw") // password 파라미터 이름 변경
 	        		.loginProcessingUrl("/loginProc")	// 로그인 처리 시 경로를 설정
-	                .defaultSuccessUrl("/list")	// 로그인 성공 시 list 페이지로 이동
+	        		.successHandler(successHandler)	// 로그인 성공 시 호출할 핸들러
+//	                .defaultSuccessUrl("/list")	// 로그인 성공 시 list 페이지로 이동, 지금은 CustomAuthenticationSuccessHandler 클래스에서 .sendRedirect()로 대체됨
 	                .permitAll()
 	        );
 

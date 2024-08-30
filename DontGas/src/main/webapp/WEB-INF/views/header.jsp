@@ -110,7 +110,7 @@
 					<img class="dropdown-user-img"
 						src="/images/user_man1.png" />
 					<div class="dropdown-user-details">
-						<div class="dropdown-user-details-name">포도</div>
+						<div class="dropdown-user-details-name"><%= session.getAttribute("accName") %></div>
 						<div class="dropdown-user-details-email">podo@pig.com</div>
 					</div>
 				</h6>
