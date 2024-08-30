@@ -30,8 +30,8 @@ public class SecurityConfig {
 		
         http	// 인가 관련 설정
             .authorizeHttpRequests((auth) -> auth
-                    .requestMatchers("/", "/login", "/loginProc").permitAll()	// login 페이지는 로그인 없이 접근 가능
-                    .requestMatchers("/list", "/info", "/info/**").hasRole("ADMIN")	// list, info 페이지는 ADMIN 권한이 있는 계정으로 로그인 해야 접근 가능
+                    .requestMatchers("/", "/login", "/loginProc", "/list", "/info", "/info/**").permitAll()	// login 페이지는 로그인 없이 접근 가능
+//                    .requestMatchers("/list", "/info", "/info/**").hasRole("ADMIN")	// list, info 페이지는 ADMIN 권한이 있는 계정으로 로그인 해야 접근 가능
                     .anyRequest().permitAll()	// 그 외 나머지 경로는 권한 상관 없이 로그인만 되어 있으면 접근 가능
             );
         
