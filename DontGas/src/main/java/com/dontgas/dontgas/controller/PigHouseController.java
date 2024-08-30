@@ -17,12 +17,12 @@ public class PigHouseController {
     @Autowired
     private PigHouseService pigHouseService;
 
-    @GetMapping("/list")
-    public String listPigHouses(Model model) {
-        List<PigHouse> pigHouseList = pigHouseService.getAllPigHouses();
-        model.addAttribute("pigHouseList", pigHouseList);
-        return "list";
-    }
+//    @GetMapping("/list")
+//    public String listPigHouses(Model model) {
+//        List<PigHouse> pigHouseList = pigHouseService.getAllPigHouses();
+//        model.addAttribute("pigHouseList", pigHouseList);
+//        return "list";
+//    }
     
     @GetMapping("/info/{id}")
     public String getPigHouseById(@PathVariable Long id, Model model) {

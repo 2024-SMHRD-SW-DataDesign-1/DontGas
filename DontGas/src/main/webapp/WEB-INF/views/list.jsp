@@ -87,7 +87,7 @@
 
 								<tbody>
 
-									<c:forEach var="pigHouse" items="${pigHouseList}">
+									<c:forEach var="pigHouse" items="${sessionScope.pigHouseList}">
 										<tr>
 											<td data-order="1">
 												<img class="o-level" src="${pageContext.request.contextPath}/images/VeryGood.png">
