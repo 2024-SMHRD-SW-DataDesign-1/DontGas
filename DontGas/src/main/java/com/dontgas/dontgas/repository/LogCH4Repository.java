@@ -11,7 +11,5 @@ import com.dontgas.dontgas.entity.PigHouse;
 @Repository
 public interface LogCH4Repository extends JpaRepository<LogCH4, Long> {
 	
-	@Query("SELECT c FROM LogCH4 c WHERE c.phouseId = :id")
-    LogCH4 findByPhouseId(@Param("id") Long id);
 	
 }
