@@ -10,7 +10,6 @@
 				<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
 					data-bs-target="#Modal" aria-expanded="false"
 					aria-controls="collapseDashboards">
-					
 					리포트 다운로드 <img class="btn-icon-sheet"
 						src="/images/sheet.png"></img>
 				</p>
