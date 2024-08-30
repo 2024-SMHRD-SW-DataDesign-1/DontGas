@@ -11,7 +11,7 @@
 		<i data-feather="menu"></i>
 	</button>
 	<!-- Navbar Brand-->
-	<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="${pageContext.request.contextPath}/list">Don't
+	<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="/list">Don't
 		Gas</a>
 	
 	
@@ -27,7 +27,7 @@
 			id="navbarDropdownAlerts" href="javascript:void(0);" role="button"
 			data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
 				class="btn-icon"
-				src="${pageContext.request.contextPath}/images/bell.png"></img></a>
+				src="/images/bell.png"></img></a>
 			<div
 				class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
 				aria-labelledby="navbarDropdownAlerts">
@@ -38,7 +38,7 @@
 				<!-- 악취 레벨 알림 -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<div class="dropdown-notifications-item-icon alert-bad">
-						<img src="${pageContext.request.contextPath}/images/alert_bad.png"
+						<img src="/images/alert_bad.png"
 							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
@@ -53,7 +53,7 @@
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<div class="dropdown-notifications-item-icon alert-sensor">
 						<img
-							src="${pageContext.request.contextPath}/images/alert_sensor.png"
+							src="/images/alert_sensor.png"
 							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
@@ -67,7 +67,7 @@
 				<!-- 다운받은 리포트 알림 -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<div class="dropdown-notifications-item-icon alert-report">
-						<img src="${pageContext.request.contextPath}/images/report.png"
+						<img src="/images/report.png"
 							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
@@ -81,7 +81,7 @@
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<div class="dropdown-notifications-item-icon alert-fowarding">
 						<img
-							src="${pageContext.request.contextPath}/images/forwarding.png"
+							src="/images/forwarding.png"
 							width="40px" height="40px">
 					</div>
 					<div class="dropdown-notifications-item-content">
@@ -102,13 +102,13 @@
 			id="navbarDropdownUserImage" href="javascript:void(0);" role="button"
 			data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
 				class="img-fluid"
-				src="${pageContext.request.contextPath}/images/user_man1.png" /></a>
+				src="/images/user_man1.png" /></a>
 			<div
 				class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
 				aria-labelledby="navbarDropdownUserImage">
 				<h6 class="dropdown-header d-flex align-items-center">
 					<img class="dropdown-user-img"
-						src="${pageContext.request.contextPath}/images/user_man1.png" />
+						src="/images/user_man1.png" />
 					<div class="dropdown-user-details">
 						<div class="dropdown-user-details-name">포도</div>
 						<div class="dropdown-user-details-email">podo@pig.com</div>

@@ -10,8 +10,13 @@
 				<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
 					data-bs-target="#Modal" aria-expanded="false"
 					aria-controls="collapseDashboards">
+<<<<<<< HEAD
 					리포트 다운로드 <img class="btn-icon-sheet"
 						src="${pageContext.request.contextPath}/images/sheet.png"></img>
+=======
+					csv 다운로드 <img class="btn-icon"
+						src="/images/csv-download.png"></img>
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 				</p>
 			</div>
 			
@@ -49,7 +54,7 @@
 										<tr>
 
 											<td class="pighouse_name">
-												<img class="user" src="${pageContext.request.contextPath}/images/user.png">
+												<img class="user" src="/images/user.png">
 												<a href="info/${pigHouse.phouseId}">${pigHouse.phouseName}</a>
 											</td>
 

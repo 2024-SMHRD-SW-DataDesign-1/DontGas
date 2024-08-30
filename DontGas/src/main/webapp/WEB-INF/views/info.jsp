@@ -17,8 +17,8 @@
 <link
 	href="https://cdn.jsdelivr.net/npm/litepicker/dist/css/litepicker.css"
 	rel="stylesheet" />
-<link href="${pageContext.request.contextPath}/css/styles.css" rel="stylesheet" />
-<link href="${pageContext.request.contextPath}/css/lightstyles.css" rel="stylesheet" id="theme-style" />
+<link href="/css/styles.css" rel="stylesheet" />
+<link href="/css/lightstyles.css" rel="stylesheet" id="theme-style" />
 <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
 <script data-search-pseudo-elements defer
 	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
@@ -33,7 +33,7 @@
 
 
 <body class="nav-fixed body-custom">
-
+	
 
 	<!-- 헤더 -->
 	<%@ include file="header.jsp" %>
@@ -66,7 +66,7 @@
 									<h1 class="page-header-title page-header-title-custom-info">
 										<div class="page-header-icon">
 											<img
-												src="${pageContext.request.contextPath}/images/monitoring.png"
+												src="/images/monitoring.png"
 												width="40px" height="40px">
 										</div>
 
@@ -75,13 +75,13 @@
 									<!-- 양돈장 전화번호 데이터 넣기 -->
 									<div class="page-header-subtitle page-header-subtitle-custom">
 										<img
-											src="${pageContext.request.contextPath}/images/contact.png"
+											src="/images/contact.png"
 											width="30px" height="30px"> ${pigHouse.farmer.farmerPhoneNumber}
 									</div>
 									<!-- 양돈장 주소 넣기-->
 									<div class="page-header-subtitle page-header-subtitle-custom">
 										<img
-											src="${pageContext.request.contextPath}/images/address.png"
+											src="/images/address.png"
 											width="30px" height="30px"> ${pigHouse.phouseAddress}
 									</div>
 
@@ -98,7 +98,7 @@
 				<!-- 모니터링 메인 콘텐츠 시작점 -->
 				<div class="container-xl px-4 mt-n10-custom">
 					<div class="row">
-
+						
 						<!-- 모니터링 메인 콘텐츠 1 - 황화수소 레벨 -->
 						<div class="col-xxl-4 col-xl-12 mb-4">
 							<div class="card h-100-custom">
@@ -110,7 +110,7 @@
 												<h1 class="text-primary-custom">황화수소 레벨</h1>
 												<div class="col-xl-4 col-xxl-12 text-center">
 													<img class="o-level2"
-														src="${pageContext.request.contextPath}/images/Soso.png"
+														src="/images/Soso.png"
 														alt="보통" style="max-width: 26rem" />
 												</div>
 											</div>
@@ -138,7 +138,7 @@
 												<h1 class="text-primary-custom">암모니아 레벨</h1>
 												<div class="col-xl-4 col-xxl-12 text-center">
 													<img class="o-level2"
-														src="${pageContext.request.contextPath}/images/Good.png"
+														src="/images/Good.png"
 														alt="좋음" style="max-width: 26rem" />
 												</div>
 											</div>
@@ -164,7 +164,7 @@
 												<h1 class="text-primary-custom">메탄 레벨</h1>
 												<div class="col-xl-4 col-xxl-12 text-center">
 													<img class="o-level2"
-														src="${pageContext.request.contextPath}/images/Bad.png"
+														src="/images/Bad.png"
 														alt="나쁨" style="max-width: 26rem" />
 												</div>
 											</div>
@@ -214,7 +214,7 @@
 						
 						<span class="weather-label">풍향</span> <span class="weather-value"><img
 							id="winddir"
-							src="${pageContext.request.contextPath}/images/illust_direction/direction_South.png"
+							src="/images/illust_direction/direction_South.png"
 							alt="Wind Direction Icon"></span>
 					</div>
 					<!-- 실시간 기상 정보 - 풍속 -->
@@ -249,7 +249,7 @@
 					<div class="input-group input-group-joined border-0-calendar"
 						style="width: 18rem">
 						<span class="input-group-text">
-							<img src="${pageContext.request.contextPath}/images/calendar.png" width="30px" height="30px">
+							<img src="/images/calendar.png" width="30px" height="30px">
 						</span>
 						<input class="form-control ps-0 pointer" id="datePicker" />
 					</div>
@@ -292,19 +292,19 @@
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		crossorigin="anonymous"></script>
-	<script src="${pageContext.request.contextPath}/js/scripts.js"></script>
+	<script src="/js/scripts.js"></script>
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
 		crossorigin="anonymous"></script>
-	<script src="${pageContext.request.contextPath}assets/demo/chart-area-demo.js"></script>
-	<script src="${pageContext.request.contextPath}assets/demo/chart-bar-demo.js"></script>
+	<script src="/assets/demo/chart-area-demo.js"></script>
+	<script src="/assets/demo/chart-bar-demo.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
 		crossorigin="anonymous"></script>
-	<script src="${pageContext.request.contextPath}/js/datatables.js"></script>
+	<script src="/js/datatables.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"
 		crossorigin="anonymous"></script>
-	<script src="${pageContext.request.contextPath}/js/litepicker.js"></script>
-	<script src="${pageContext.request.contextPath}/js/darkmode.js"></script>
-	<script src="${pageContext.request.contextPath}/js/weather.js"></script>
+	<script src="/js/litepicker.js"></script>
+	<script src="/js/darkmode.js"></script>
+	<script src="/js/weather.js"></script>
 </body>
 </html>
