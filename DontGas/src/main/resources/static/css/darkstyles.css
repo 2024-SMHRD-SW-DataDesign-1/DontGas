@@ -539,7 +539,13 @@
 	text-align: center;
 	display: inline-block !important;
 }
- 
+
+.btn-icon-sheet{
+	border-radius:0%;
+	width: 30px;
+	height: 30px;
+}
+
 #dateRange{
 	margin-top: 1em;
 }

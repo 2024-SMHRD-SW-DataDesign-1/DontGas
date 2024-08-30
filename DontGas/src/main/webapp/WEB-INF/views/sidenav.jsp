@@ -10,8 +10,13 @@
 				<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
 					data-bs-target="#Modal" aria-expanded="false"
 					aria-controls="collapseDashboards">
+<<<<<<< HEAD
+					리포트 다운로드 <img class="btn-icon-sheet"
+						src="${pageContext.request.contextPath}/images/sheet.png"></img>
+=======
 					csv 다운로드 <img class="btn-icon"
 						src="/images/csv-download.png"></img>
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 				</p>
 			</div>
 			
@@ -27,7 +32,7 @@
 	<div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title">CSV 다운로드</h5>
+				<h5 class="modal-title">데이터 리포트 다운로드</h5>
 				<button class="btn-close" type="button" data-bs-dismiss="modal"
 					aria-label="Close"></button>
 			</div>
@@ -39,7 +44,8 @@
 									<tr class="table-head-custom">
 										<th>돈사명</th>
 										<th style=text-align:center>주소</th>
-										<th style=text-align:center>다운로드 선택</th>
+										<th style=text-align:center>csv 파일 다운로드</th>
+										<th style=text-align:center>리포트 다운로드</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -55,6 +61,7 @@
 											<td class="center-sort">${pigHouse.phouseAddress}</td>
 
 											<td class="center-sort"><input class="form-check-input-custom" type="checkbox" value=""></td>
+											<td class="center-sort"><input class="form-check-input-custom" type="checkbox" value=""></td>
 										</tr>
 									</c:forEach>
 								
@@ -64,6 +71,7 @@
 					</div>
 			</div>
 			<div class="modal-footer">
+				
 				<button class="btn btn-primary-custom" type="button" data-bs-dismiss="modal">다운로드</button>
 				<button class="btn btn-primary-custom" type="button" data-bs-dismiss="modal">닫기</button>
 			</div>
