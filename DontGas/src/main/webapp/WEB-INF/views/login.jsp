@@ -1,8 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,125 +26,46 @@
 			<main>
 				<div class="container-xl px-4">
 					<div class="row justify-content-center">
-=======
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Don't Gas - Login</title>
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/lightstyles.css" rel="stylesheet" id="theme-style"/>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
-    </head>
-    <body class="login-bg">
-        <div id="layoutAuthentication">
-            <div id="layoutAuthentication_content">
-                <main>
-                    <div class="container-xl px-4">
-                        <div class="row justify-content-center">
-                            
-                            
-                             <!-- ∑Œ±◊¿Œ π⁄Ω∫ -->
-                            <div class="login-box">
-                                <div class="login-card shadow-lg border-0 rounded-lg">
-                                    <div class="login-header"><h3 class="login-title">Login</h3></div>
-                                    <div class="card-body">
-                                    
-                                        <!-- ∑Œ±◊¿Œ ∆˚ -->
-                                        <form action="/loginProc" method="post" name = "loginForm">
-                                        
-                                            <!-- æ∆¿Ãµ ¿‘∑¬ -->
-                                            <div class="mb-3">
-                                                <label class="login-label login-label-id" for="inputId">ID</label>
-                                                <input class="login-form" id="inputId" type="text" placeholder="æ∆¿Ãµ∏¶ ¿‘∑¬«œººø‰" name="accId"/>
-                                            </div>
-                                            
-                                            <!-- ∫Òπ–π¯»£ ¿‘∑¬ -->
-                                            <div class="mb-3">
-                                                <label class="login-label login-label-pw" for="inputPassword">Password</label>
-                                                <input class="login-form" id="inputPassword" type="password" placeholder="∫Òπ–π¯»£∏¶ ¿‘∑¬«œººø‰" name="accPw"/>
-                                            </div>
-                                            
-                                            <!-- CSRF ≈‰≈´ -->
-                                            <input type="hidden" name="_csrf" value="${_csrf.token}"/>
-                                            
-                                            <!-- ∑Œ±◊¿Œ πˆ∆∞ -->
-                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <input class="login-btn" type="submit" value="Login">
-                                            </div>
-                                            
-                                            <!--  ¿”Ω√ πˆ∆∞ -->
-                                            <button><a href="list">list ¿”Ω√ ¿Ãµø πˆ∆∞</a></button>
-                                            <button><a href="info">info ¿”Ω√ ¿Ãµø πˆ∆∞</a></button>
-
-                                        </form>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                </main>
-            </div>
-            
-            
-            <!-- ¥Ÿ∆Æ∏µÂ πˆ∆∞ -->
-            <img id="modbtn" src="/images/darkpig.png" alt="¥Ÿ≈©∏µÂ πˆ∆∞" onclick="toggleDarkMode()"
-            data-light-src="/images/lightpig.png" data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
->>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
-
-
 
 						<div>
-							<h3 class="login-title-1">µ∑ªÁ æ«√Î ∏¥œ≈Õ∏µ Don't Gas</h3>
-							<img class=pig-icon src="/images/pig.png" >
+							<h3 class="login-title-1">ÎèàÏÇ¨ ÏïÖÏ∑® Î™®ÎãàÌÑ∞ÎßÅ Don't Gas</h3>
+							<img class=pig-icon src="/images/pig.png">
 						</div>
-						<!-- ∑Œ±◊¿Œ π⁄Ω∫ -->
+						<!-- Î°úÍ∑∏Ïù∏ Î∞ïÏä§ -->
 						<div class="login-box">
 							<div class="login-card shadow-lg border-0 rounded-lg">
 								<div class="login-header">
-
-
 									<h3 class="login-title-2">Login</h3>
 								</div>
 								<div class="card-body">
 
-									<!-- ∑Œ±◊¿Œ ∆˚ -->
+									<!-- Î°úÍ∑∏Ïù∏ Ìèº -->
 									<form action="/loginProc" method="post" name="loginForm">
 
-										<!-- æ∆¿Ãµ ¿‘∑¬ -->
+										<!-- ÏïÑÏù¥Îîî ÏûÖÎ†• -->
 										<div class="mb-3">
 											<label class="login-label login-label-id" for="inputId">ID</label>
 											<input class="login-form" id="inputId" type="text"
-												placeholder="æ∆¿Ãµ∏¶ ¿‘∑¬«œººø‰" name="accId" />
+												placeholder="ÏïÑÏù¥ÎîîÎ•º ÏûÖÎ†•ÌïòÏÑ∏Ïöî" name="accId" />
 										</div>
 
-										<!-- ∫Òπ–π¯»£ ¿‘∑¬ -->
+										<!-- ÎπÑÎ∞ÄÎ≤àÌò∏ ÏûÖÎ†• -->
 										<div class="mb-3">
 											<label class="login-label login-label-pw" for="inputPassword">Password</label>
 											<input class="login-form" id="inputPassword" type="password"
-												placeholder="∫Òπ–π¯»£∏¶ ¿‘∑¬«œººø‰" name="accPw" />
+												placeholder="ÎπÑÎ∞ÄÎ≤àÌò∏Î•º ÏûÖÎ†•ÌïòÏÑ∏Ïöî" name="accPw" />
 										</div>
 
-										<!-- ∑Œ±◊¿Œ πˆ∆∞ -->
+										<!-- CSRF ÌÜ†ÌÅ∞ -->
+										<input type="hidden" name="_csrf" value="${_csrf.token}" />
+
+										<!-- Î°úÍ∑∏Ïù∏ Î≤ÑÌäº -->
 										<div
 											class="d-flex align-items-center justify-content-between mt-4 mb-0">
 											<input class="login-btn" type="submit" value="Login">
 										</div>
 
-										<!--  ¿”Ω√ πˆ∆∞ -->
-										<button>
-											<a href="list">list ¿”Ω√ ¿Ãµø πˆ∆∞</a>
-										</button>
-										<button>
-											<a href="info">info ¿”Ω√ ¿Ãµø πˆ∆∞</a>
-										</button>
+
 
 									</form>
 
@@ -157,29 +77,13 @@
 					</div>
 				</div>
 			</main>
+
+
 		</div>
 
 
-		<!-- ¥Ÿ∆Æ∏µÂ πˆ∆∞ -->
-		<img id="modbtn" src="/images/darkpig.png" alt="¥Ÿ≈©∏µÂ πˆ∆∞"
-			onclick="toggleDarkMode()" data-light-src="/images/lightpig.png"
-			data-dark-src="${pageContext.request.contextPath}/images/darkpig.png">
-
-
-
-		<!-- Footer -->
-		<div id="layoutAuthentication_footer">
-			<footer class="footer-admin mt-auto footer-dark">
-				<div class="container-xl px-4">
-					<div class="row">
-						<div class="copyright-footer">Copyright &copy; Don't Gas
-							2024</div>
-					</div>
-				</div>
-			</footer>
-		</div>
-
-
+		<!-- footer -->
+		<%@ include file="footer.jsp"%>
 
 	</div>
 
