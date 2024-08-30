@@ -30,18 +30,18 @@
                                     <div class="card-body">
                                     
                                         <!-- 로그인 폼 -->
-                                        <form action="/login" method="post">
+                                        <form action="/loginProc" method="post" name = "loginForm">
                                         
                                             <!-- 아이디 입력 -->
                                             <div class="mb-3">
-                                                <label class="login-label login-label-id" for="inputEmailAddress">ID</label>
-                                                <input class="login-form" id="inputEmailAddress" type="text" placeholder="아이디를 입력하세요" name="username"/>
+                                                <label class="login-label login-label-id" for="inputId">ID</label>
+                                                <input class="login-form" id="inputId" type="text" placeholder="아이디를 입력하세요" name="accId"/>
                                             </div>
                                             
                                             <!-- 비밀번호 입력 -->
                                             <div class="mb-3">
                                                 <label class="login-label login-label-pw" for="inputPassword">Password</label>
-                                                <input class="login-form" id="inputPassword" type="password" placeholder="비밀번호를 입력하세요" name="password"/>
+                                                <input class="login-form" id="inputPassword" type="password" placeholder="비밀번호를 입력하세요" name="accPw"/>
                                             </div>
                                             
                                             <!-- 로그인 버튼 -->
