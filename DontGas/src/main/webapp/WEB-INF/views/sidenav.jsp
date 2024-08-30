@@ -10,13 +10,11 @@
 				<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
 					data-bs-target="#Modal" aria-expanded="false"
 					aria-controls="collapseDashboards">
-<<<<<<< HEAD
+
 					리포트 다운로드 <img class="btn-icon-sheet"
 						src="${pageContext.request.contextPath}/images/sheet.png"></img>
-=======
-					csv 다운로드 <img class="btn-icon"
-						src="/images/csv-download.png"></img>
->>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
+
+					
 				</p>
 			</div>
 			
