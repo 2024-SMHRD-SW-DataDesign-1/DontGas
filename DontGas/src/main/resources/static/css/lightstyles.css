@@ -584,7 +584,14 @@
 	/*다크모드&라이트모드 버튼, footer*/
 	.copyright-footer{
 		margin-left: 16%;
-		margin-bottom: 10%;
+		margin-bottom: -9%;
+	}
+	
+	#modbtn{
+	
+		transform: translate(10px, 36px);
+    	width: 50px;
+	
 	}
 	
 	
@@ -625,11 +632,12 @@
 
 	/*info 화면*/
 	.border-0-calendar {
+		width: 16rem;
 		border: 0 !important;
-		transform: translate(48px, -30px);
+		transform: translate(48px, 33px);
 	}
 	.chart-custom {
-		transform: translate(48px, -17px);
+		transform: translate(48px, 42px);
 		width: 82%
 	}
 	.weather-item {
@@ -637,14 +645,16 @@
 		align-items: center;
 		padding: 5px 10px;
 		border-radius: 20px;
-		width: 1000px;
-		height: 63px;
+		width: 146px;
+		height: 58px;
 	}
 	.weather-label {
 		margin-right: 10px;
+		margin-left: -11%;
 		font-weight: bold;
 		font-family: 'NanumSquareRound';
-		width: 106px;
+		font-size: 16px;
+		width: 86px;
 		height: 61px;
 		align-content: center;
 	}
@@ -657,32 +667,35 @@
 		background-color: #f9e1e1;
 		color: black;
 		border: 2px solid red;
-		transform: translate(-139px, -12px);
+		transform: translate(18px, -12px);
 	}
 	.humidity {
 		background-color: #cbf9ff;
 		color: black;
 		border: 2px solid cyan;
-		transform: translate(-134px, -12px);
+		transform: translate(21px, -12px);
 	}
 	.wind-dir {
 		background-color: #e9f4ff;
 		color: black;
 		border: 2px solid blue;
-		transform: translate(-127px, -12px);
+		transform: translate(24px, -12px);
 	}
 	.wind-speed {
 		background-color: #defbba;
 		color: black;
-		transform: translate(-121px, -12px);
+		transform: translate(-341px, 50px);
 		border: 2px solid green;
 	}
 	.weather-info {
 		background-color: white;
 		color: black;
-		transform: translate(-116px, -12px);
+		transform: translate(-335px, 50px);
 		border: 2px solid orange;
 	}
+	
+	
+	
 }
 
 
