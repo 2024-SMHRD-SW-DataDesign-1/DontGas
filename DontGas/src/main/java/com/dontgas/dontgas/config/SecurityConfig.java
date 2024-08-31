@@ -10,8 +10,11 @@ import org.springframework.security.web.savedrequest.NullRequestCache;
 
 import com.dontgas.dontgas.component.CustomAuthenticationSuccessHandler;
 
+import lombok.RequiredArgsConstructor;
+
 @Configuration
 @EnableWebSecurity
+@RequiredArgsConstructor
 public class SecurityConfig {
 	
 	// 로그인 시, 입력받은 비밀번호를 BCrypt 암호화(단방향 해쉬로 변환)하는 역할 
@@ -21,12 +24,8 @@ public class SecurityConfig {
 	    return new BCryptPasswordEncoder();
 	}
 	
+	// formLogin 설정 중 로그인 성공 시 호출할 핸들러 객체 생성
 	private final CustomAuthenticationSuccessHandler successHandler;
-
-    public SecurityConfig(CustomAuthenticationSuccessHandler successHandler) {
-        this.successHandler = successHandler;
-    }
-	
 	
 	@Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
@@ -49,7 +48,7 @@ public class SecurityConfig {
 	        		.usernameParameter("accId") // username 파라미터 이름 변경
 	                .passwordParameter("accPw") // password 파라미터 이름 변경
 	        		.loginProcessingUrl("/loginProc")	// 로그인 처리 시 경로를 설정
-	        		.successHandler(successHandler)	// 로그인 성공 시 호출할 핸들러
+	        		.successHandler(successHandler)	// 로그인 성공 시 호출할 핸들러를 설정
 //	                .defaultSuccessUrl("/list")	// 로그인 성공 시 list 페이지로 이동, 지금은 CustomAuthenticationSuccessHandler 클래스에서 .sendRedirect()로 대체됨
 	                .permitAll()
 	        );

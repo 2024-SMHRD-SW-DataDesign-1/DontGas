@@ -1,7 +1,6 @@
 package com.dontgas.dontgas.component;
 
 import java.io.IOException;
-import java.time.LocalDateTime;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
@@ -22,14 +21,15 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
 			Authentication authentication) throws IOException, ServletException {
 		
+		// authentication.getPrincipal()로 반환되는 값은
+		// CustomAccountDetails 클래스에서 지정한 Getter 메서드의 반환값임(지금은 accId - 계정 ID, accPw - 계정 비밀번호, accName - 계정명)
+		// 반환된 값을 accDetails에 대입
 		CustomAccountDetails accDetails = (CustomAccountDetails) authentication.getPrincipal();
+
+		// accDetails 내의 계정명 값을 accName에 대입
 		String accName = accDetails.getName();
-		LocalDateTime accLoginLately = accDetails.getAccLoginLately();
 		
-		System.out.println(accLoginLately);
-		System.out.println(LocalDateTime.now());
-		
-		// 세션에 유저명 저장
+		// 세션에 계정명 저장
         HttpSession session = request.getSession();
         session.setAttribute("accName", accName);
         

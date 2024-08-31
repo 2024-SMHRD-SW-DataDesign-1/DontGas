@@ -1,6 +1,5 @@
 package com.dontgas.dontgas.dto;
 
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -48,10 +47,6 @@ public class CustomAccountDetails implements UserDetails {
 
     public String getName() {	// 계정명(acc_name)의 Getter
     	return accEntity.getAccName();
-    }
-    
-    public LocalDateTime getAccLoginLately() {	// 로그인한 계정의 최근 로그인 시각
-    	return accEntity.getAccLoginLately();
     }
     
     @Override
