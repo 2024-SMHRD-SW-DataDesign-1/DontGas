@@ -1,3 +1,14 @@
+/* 웹 화면 기준*/
+
+/*폰트*/
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* 로그인 화면*/
 .login-bg{
     background-color: rgb(29, 29, 29);
 }
@@ -12,7 +23,7 @@
 	font-size: 49px;
 	margin-top: 4.5rem;
 	margin-bottom: -10.5rem;
-	font-family: 'NanumSquareRound';
+	font-family: 'Paperlogy-8ExtraBold';
 	margin-left: 20%;
 	float: left;
 }
@@ -27,11 +38,11 @@
 }
 .login-title-2 {
 	color: #00FF7F;
-	font-weight: 700;
+	font-weight: 900;
 	font-size: 80px;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
-	font-family: 'NanumSquareRound';
+	font-family: 'Paperlogy-8ExtraBold';
 }
 .login-box{
     flex: 0 0 auto;
@@ -192,7 +203,7 @@
 .navbar-custom{
     color: #00FF7F !important;
     font-size: 30px !important;
-    font-family:'NanumSquareRound';
+    font-family:Paperlogy-8ExtraBold';
 }
 .topnav-custom{
     background-color: rgb(37, 37, 37);
