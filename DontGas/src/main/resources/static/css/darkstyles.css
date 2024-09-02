@@ -225,12 +225,21 @@
 .fw-500 {
     font-weight: 700 !important;
     font-family: 'NanumSquareRound';
-    color: black;
+    color: white;
 }
 
 .imoticon{
 	width: 30px;
 	height: 30px;
+	margin-right: 6%;
+}
+
+.feather-edit{
+	color: orange;
+}
+
+.feather-trash-2{
+	color: orange;
 }
 
 .page-header-custom{

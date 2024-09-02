@@ -244,6 +244,7 @@
 .imoticon{
 	width: 30px;
 	height: 30px;
+	margin-right: 6%;
 }
 .center-sort{
 	text-align: center;
@@ -601,6 +602,13 @@
     margin-right: 4%;
 }
 
+.feather-edit{
+	color: black;
+}
+
+.feather-trash-2{
+	color: black;
+}
 
 #dateRange {
 	margin-top: 1em;

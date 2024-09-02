@@ -60,20 +60,20 @@
 			class="nav-item dropdown no-caret d-none d-sm-block me-3 dropdown-notifications">
 			<a class="btn btn-icon btn-transparent-dark dropdown-toggle"
 			id="navbarDropdownMessages" href="javascript:void(0);" role="button"
-			data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-				data-feather="mail"></i></a>
+			data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<img src="/images/mail2.png" width="28px" height="28px"> </a>
 			<div
 				class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
 				aria-labelledby="navbarDropdownMessages">
 				<h6 class="dropdown-header dropdown-notifications-header">
-					<i class="me-2" data-feather="mail"></i> 게시글 알림
+					<img src="/images/mail2.png" width="28px" height="28px"> 게시글 알림
 				</h6>
 
 
 				<!-- Message 1  -->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<img class="imoticon"
-					src="/images/user_joyrich.png" />
+					src="/images/joyrich.png" />
 					<div class="dropdown-notifications-item-content">
 						<div class="dropdown-notifications-item-content-text">
 							안녕하세요. 포도님. 돈사 악취 관리는 생애주기별로 확인이 가능합니다. 
