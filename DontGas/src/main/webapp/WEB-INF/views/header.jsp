@@ -61,12 +61,12 @@
 			<a class="btn btn-icon btn-transparent-dark dropdown-toggle"
 			id="navbarDropdownMessages" href="javascript:void(0);" role="button"
 			data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			<img src="/images/mail2.png" width="28px" height="28px"> </a>
+			<img src="/images/mail2.png" width="20px" height="20px"> </a>
 			<div
 				class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
 				aria-labelledby="navbarDropdownMessages">
-				<h6 class="dropdown-header dropdown-notifications-header">
-					<img src="/images/mail2.png" width="28px" height="28px"> 게시글 알림
+				<h6 class="dropdown-header dropdown-notifications-header" style="color:black;">
+					<img src="/images/mail2.png" width="20px" height="20px" style="margin-right: 6%;">  게시글 알림
 				</h6>
 
 
