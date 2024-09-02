@@ -41,11 +41,14 @@ public class CustomAccountDetails implements UserDetails {
     }
 
     @Override
-    public String getUsername() { // UserDetails에 있는 메서드라서 메서드명을 바꾸지 못함. Id Getter 역할.
+    public String getUsername() {	// UserDetails에 있는 메서드라서 메서드명을 바꾸지 못함. Id Getter 역할.
         return accEntity.getAccId();
     }
 
-
+    public String getName() {	// 계정명(acc_name)의 Getter
+    	return accEntity.getAccName();
+    }
+    
     @Override
     public boolean isAccountNonExpired() {
         return true;
