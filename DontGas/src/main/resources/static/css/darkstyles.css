@@ -565,6 +565,7 @@
 .sidemenu-custom{
 	margin-top : 20px;
 	font-size: 18px;
+	font-family:'NanumSquareRound';
 	cursor: pointer;
 	color: white !important;
 	text-align: center;
@@ -575,6 +576,17 @@
 	border-radius:0%;
 	width: 30px;
 	height: 30px;
+	margin-left: 6%;
+    margin-right: 2%;
+}
+
+
+.btn-icon-board{
+	border-radius:0%;
+	width: 30px;
+	height: 30px;
+	margin-left: -27%;
+    margin-right: 4%;
 }
 
 #dateRange{

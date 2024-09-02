@@ -10,11 +10,19 @@
 				<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
 					data-bs-target="#Modal" aria-expanded="false"
 					aria-controls="collapseDashboards">
-					리포트 다운로드 <img class="btn-icon-sheet"
+					 <img class="btn-icon-sheet"
 						src="/images/sheet.png"></img>
+					리포트 다운로드 
 				</p>
 			</div>
 			
+			<div class="nav accordion" id="accordionSidenav">
+				<a class="nav-link collapsed sidemenu-custom" href="">
+					<img class="btn-icon-board"
+						src="/images/billboard.png"></img>
+					게시판 
+				</a>
+			</div>
 			
 		</div>
 	</nav>

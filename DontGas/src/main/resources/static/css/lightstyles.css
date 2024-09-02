@@ -560,13 +560,26 @@
 	color: black !important;
 	text-align: center;
 	display: inline-block !important;
+	font-family: 'NanumSquareRound';
 }
 
 .btn-icon-sheet{
 	border-radius:0%;
 	width: 30px;
 	height: 30px;
+	margin-left: 6%;
+    margin-right: 2%;
 }
+
+
+.btn-icon-board{
+	border-radius:0%;
+	width: 30px;
+	height: 30px;
+	margin-left: -27%;
+    margin-right: 4%;
+}
+
 
 #dateRange {
 	margin-top: 1em;
