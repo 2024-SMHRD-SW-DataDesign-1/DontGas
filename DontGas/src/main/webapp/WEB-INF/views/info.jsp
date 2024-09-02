@@ -121,7 +121,8 @@
 
 										<!-- 수치, 상태 데이터 들어갈 자리  -->
 										<div>
-											<p class="text-gray-700-custom mb-0">0.2 ppm</p>
+											
+											<p class="text-gray-700-custom mb-0"></p>
 											<p class="text-gray-700-custom mb-0">보통</p>
 										</div>
 									</div>

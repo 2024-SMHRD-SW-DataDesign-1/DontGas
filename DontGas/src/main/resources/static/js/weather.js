@@ -29,3 +29,5 @@ async function getWeather(city) {
 
         // Call the function to get weather data when the page loads
         getWeather(city);
+        
+        // 예측 : https://api.openweathermap.org/data/2.5/forecast?q=Jeju&appid=603aa562f93c1b6e5fb4e7596aa820d5

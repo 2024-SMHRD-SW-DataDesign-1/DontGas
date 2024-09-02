@@ -2,6 +2,9 @@ package com.dontgas.dontgas.entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -34,15 +37,19 @@ public class PigHouse {
     
     @ManyToOne
     @JoinColumn(name = "farmer_id", nullable = false)
+    @JsonBackReference
     private Farmer farmer;
 
     @OneToMany(mappedBy = "pigHouse", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonManagedReference
     private List<LogCH4> logCH4List;
 
     @OneToMany(mappedBy = "pigHouse", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonManagedReference
     private List<LogH2S> logH2SList;
 
     @OneToMany(mappedBy = "pigHouse", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JsonManagedReference
     private List<LogNH3> logNH3List;
 
  // 기본 생성자

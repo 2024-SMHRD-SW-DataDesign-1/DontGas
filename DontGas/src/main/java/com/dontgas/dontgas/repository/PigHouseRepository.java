@@ -12,6 +12,6 @@ import com.dontgas.dontgas.entity.PigHouse;
 @Repository
 public interface PigHouseRepository extends JpaRepository<PigHouse, Long> {
 	
-	@Query("SELECT p FROM PigHouse p WHERE p.phouseId = :id")
+	@Query("SELECT p FROM PigHouse p LEFT JOIN FETCH p.farmer WHERE p.phouseId = :id")
     PigHouse findByPhouseId(@Param("id") Long id);
 }

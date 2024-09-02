@@ -1,5 +1,7 @@
 package com.dontgas.dontgas.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,6 +25,7 @@ public class LogNH3 {
 
     @ManyToOne
     @JoinColumn(name = "phouse_id", nullable = false)
+    @JsonBackReference
     private PigHouse pigHouse;
 
     // Getters and Setters
