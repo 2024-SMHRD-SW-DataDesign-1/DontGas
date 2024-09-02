@@ -20,6 +20,11 @@ public class PageController {
 		return "list";
 	}
 	
+	@GetMapping("/postlist")
+	public String postlistPage() {
+		return "postlist";
+	}
+	
 //	@GetMapping("/info")
 //	public String infoPage() {
 //		return "info";

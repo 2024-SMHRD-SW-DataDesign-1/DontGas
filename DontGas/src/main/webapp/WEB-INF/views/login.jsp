@@ -29,7 +29,7 @@
 
 						<div>
 							<h3 class="login-title-1">돈사 악취 모니터링 Don't Gas</h3>
-							<img class=pig-icon src="/images/pig.png">
+							<img class=pig-icon src="/images/pigpig.png">
 						</div>
 						<!-- 로그인 박스 -->
 						<div class="login-box">
