@@ -25,6 +25,12 @@ public class PageController {
 		return "postlist";
 	}
 	
+	
+	@GetMapping("/createpost")
+	public String createpostPage() {
+		return "createpost";
+	}
+	
 //	@GetMapping("/info")
 //	public String infoPage() {
 //		return "info";
