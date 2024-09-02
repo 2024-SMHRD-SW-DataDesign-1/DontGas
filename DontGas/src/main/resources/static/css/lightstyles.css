@@ -235,6 +235,7 @@
 	background-color: #fff;
 }
 
+/* 게시판 관련 css*/
 .fw-500 {
     font-weight: 700 !important;
     font-family: 'NanumSquareRound';
@@ -246,6 +247,15 @@
 	height: 30px;
 	margin-right: 6%;
 }
+
+
+.post-button-custom{
+	background: greenyellow;
+    color: black;
+    font-size: 14px;
+    font-family: 'NanumSquareRound';
+}
+
 .center-sort{
 	text-align: center;
 }
@@ -575,7 +585,7 @@
 
 .sidemenu-custom {
 	margin-top: 20px;
-	font-size: 17px;
+	font-size: 16px;
 	cursor: pointer;
 	color: black !important;
 	text-align: center;

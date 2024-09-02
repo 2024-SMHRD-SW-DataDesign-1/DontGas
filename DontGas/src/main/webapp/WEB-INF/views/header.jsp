@@ -14,6 +14,9 @@
 	<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="/list">Don't
 		Gas</a><img class="pigpig" src="/images/pigpig.png" width="40px" height="40px">
 
+	
+
+
 
 	<!-- 사용자, 알림 정보 drop-down 부분 -->
 
@@ -24,7 +27,7 @@
 			class="nav-link dropdown-toggle" id="navbarDropdownDocs"
 			href="javascript:void(0);" role="button" data-bs-toggle="dropdown"
 			aria-haspopup="true" aria-expanded="false">
-				<div class="fw-500">게시글 댓글 알림</div> <img class="imoticon"src="/images/commentcheck.png">
+				<div class="fw-500">게시글 댓글 알림</div> <img class="imoticon"src="/images/comment.png">
 				
 		</a>
 			<div
