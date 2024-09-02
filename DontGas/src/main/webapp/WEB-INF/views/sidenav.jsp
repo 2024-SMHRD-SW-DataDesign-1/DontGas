@@ -17,7 +17,7 @@
 			</div>
 			
 			<div class="nav accordion" id="accordionSidenav">
-				<a class="nav-link collapsed sidemenu-custom" href="postlist" style="transform:translate(4px, -27px);">
+				<a class="nav-link collapsed sidemenu-custom" href="/postlist" style="transform:translate(4px, -27px);">
 					<img class="btn-icon-board"
 						src="/images/billboard.png"></img>
 					게시판 
