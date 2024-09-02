@@ -1,3 +1,14 @@
+/* 웹 화면 기준*/
+
+/*폰트*/
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* 로그인 화면*/
 .login-bg{
     background-color: rgb(29, 29, 29);
 }
@@ -5,13 +16,42 @@
     text-align: center;
     justify-content: center;
 }
-.login-title{
-    color: #00FF7F;
-    font-weight: 700;
-    font-size: 80px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-family: 'NanumSquareRound';
+
+.login-title-1 {
+	color:  #00FF7F;
+	font-weight: 700;
+	font-size: 46px;
+	margin-top: 4.5rem;
+	margin-bottom: -10.5rem;
+	font-family: 'Paperlogy-8ExtraBold';
+	margin-left: 20%;
+	float: left;
+}
+
+.pig-icon{
+	width: 70px;
+	height:70px;
+	margin-left: 64%;
+	margin-top: 3%;
+    margin-bottom: -10%;
+	
+}
+
+.pigpig{
+	
+	width: 40px;
+	height: 40px;
+	margin-left: -1%;
+	
+}
+
+.login-title-2 {
+	color: #00FF7F;
+	font-weight: 900;
+	font-size: 80px;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	font-family: 'Paperlogy-8ExtraBold';
 }
 .login-box{
     flex: 0 0 auto;
@@ -172,7 +212,7 @@
 .navbar-custom{
     color: #00FF7F !important;
     font-size: 30px !important;
-    font-family:'NanumSquareRound';
+    font-family:Paperlogy-8ExtraBold';
 }
 .topnav-custom{
     background-color: rgb(37, 37, 37);
@@ -180,6 +220,35 @@
 
 .sidenav-custom{
     background-color: #444444;
+}
+
+/* 게시판 관련 css*/
+
+.fw-500 {
+    font-weight: 700 !important;
+    font-family: 'NanumSquareRound';
+    color: white;
+}
+
+.imoticon{
+	width: 30px;
+	height: 30px;
+	margin-right: 6%;
+}
+
+.post-button-custom{
+	background: greenyellow;
+    color: black;
+    font-size: 14px;
+    font-family: 'NanumSquareRound';
+}
+
+.feather-edit{
+	color: orange;
+}
+
+.feather-trash-2{
+	color: orange;
 }
 
 .page-header-custom{
@@ -533,7 +602,8 @@
  
 .sidemenu-custom{
 	margin-top : 20px;
-	font-size: 18px;
+	font-size: 16px;
+	font-family:'NanumSquareRound';
 	cursor: pointer;
 	color: white !important;
 	text-align: center;
@@ -544,6 +614,17 @@
 	border-radius:0%;
 	width: 30px;
 	height: 30px;
+	margin-left: 6%;
+    margin-right: 2%;
+}
+
+
+.btn-icon-board{
+	border-radius:0%;
+	width: 30px;
+	height: 30px;
+	margin-left: -27%;
+    margin-right: 4%;
 }
 
 #dateRange{

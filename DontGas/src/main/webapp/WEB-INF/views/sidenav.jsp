@@ -10,11 +10,19 @@
 				<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
 					data-bs-target="#Modal" aria-expanded="false"
 					aria-controls="collapseDashboards">
-					리포트 다운로드 <img class="btn-icon-sheet"
+					 <img class="btn-icon-sheet"
 						src="/images/sheet.png"></img>
+					리포트 다운로드 
 				</p>
 			</div>
 			
+			<div class="nav accordion" id="accordionSidenav">
+				<a class="nav-link collapsed sidemenu-custom" href="/postlist" style="transform:translate(4px, -27px);">
+					<img class="btn-icon-board"
+						src="/images/billboard.png"></img>
+					게시판 
+				</a>
+			</div>
 			
 		</div>
 	</nav>
@@ -37,10 +45,10 @@
 							<table id="datatablesModal">
 								<thead>
 									<tr class="table-head-custom">
-										<th>돈사명</th>
-										<th style=text-align:center>주소</th>
-										<th style=text-align:center>csv 파일 다운로드</th>
-										<th style=text-align:center>리포트 다운로드</th>
+										<th style=text-align:center width="24%">돈사명</th>
+										<th style=text-align:center width="24%">주소</th>
+										<th style=text-align:center width="22%">csv 파일 다운로드</th>
+										<th style=text-align:center width="20%">리포트 다운로드</th>
 									</tr>
 								</thead>
 								<tbody>
