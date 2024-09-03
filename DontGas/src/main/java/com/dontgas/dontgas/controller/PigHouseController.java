@@ -35,6 +35,9 @@ public class PigHouseController {
     public String listPigHouses(HttpSession session) {
         List<PigHouse> pigHouseList = pigHouseService.getAllPigHouses();
         session.setAttribute("pigHouseList", pigHouseList);
+        
+        List<LogEntity> logResultsNow = logService.getLogResultsNow();
+        session.setAttribute("logResultsNow", logResultsNow);
         return "list";
     }
 

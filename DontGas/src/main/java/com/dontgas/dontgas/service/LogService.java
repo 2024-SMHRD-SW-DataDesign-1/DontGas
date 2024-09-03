@@ -21,4 +21,8 @@ public class LogService {
 	public List<LogEntity> getLogResultsById(Long id) {
 		return logRepository.findByPhouseId(id);
 	}
+	
+	public List<LogEntity> getLogResultsNow() {
+		return logRepository.findLogResultsNow();
+	}
 }

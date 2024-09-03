@@ -15,4 +15,7 @@ public interface LogRepository extends JpaRepository<LogEntity, String> {
 	
 	@Query(name = "LogEntity.findByPhouseId", nativeQuery = true)
 	List<LogEntity> findByPhouseId(@Param("phouseId") Long id);
+	
+	@Query(name = "LogEntity.findLogResultsNow", nativeQuery = true)
+	List<LogEntity> findLogResultsNow();
 }

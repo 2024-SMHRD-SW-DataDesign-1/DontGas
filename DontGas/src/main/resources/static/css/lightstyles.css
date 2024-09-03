@@ -961,3 +961,27 @@
 	}
 }
 /* 태블릿 환경 반응형 css 끝점 */
+
+
+
+.head-info{
+	height: 10%;
+	width: 20%;
+	margin-left: 30px;
+}
+
+.head-info img{
+	width: 30px;
+}
+
+.head-connect-info-td{
+	padding-left:20px;
+}
+
+.head-connect-info-td img{
+	width: 25px;
+}
+
+.head-info td{
+	text-align: center;
+}

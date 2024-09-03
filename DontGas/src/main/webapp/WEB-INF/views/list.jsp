@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="EUC-KR"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +16,7 @@
 	rel="stylesheet" />
 <link href="css/styles.css" rel="stylesheet" />
 <link href="css/lightstyles.css" rel="stylesheet" id="theme-style" />
-<link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+<link rel="icon" type="image/x-icon" href="/images/pigpig.png" />
 <script data-search-pseudo-elements defer
 	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
 	crossorigin="anonymous"></script>
@@ -51,8 +51,7 @@
 								<div class="col-auto mb-3">
 									<h1 class="page-header-title page-header-title-custom-list">
 										<div class="page-header-icon">
-											<img class="header-icon-custom"
-												src="${pageContext.request.contextPath}/images/pigslist.png">
+											<img class="header-icon-custom" src="/images/pigslist.png">
 										</div>
 										돈사 리스트
 									</h1>
@@ -74,45 +73,87 @@
 									<tr class="table-head-custom">
 										<th class="stink-custom">악취 상태</th>
 										<th class="pighouse-custom">돈사명</th>
-										<th class="connecting-custom">
-										<span class="tooltip-link" data-tooltip="황화수소-암모니아-메탄 순서">연결 상태 
-										<img src="${pageContext.request.contextPath}/images/question1.png" width="20px" height="20px">
+										<th class="connecting-custom"><span class="tooltip-link"
+											data-tooltip="황화수소-암모니아-메탄 순서">연결 상태 <img
+												src="${pageContext.request.contextPath}/images/question1.png"
+												width="20px" height="20px">
 										</span></th>
 										<th class="address-custom">주소</th>
 										<th class="contact-custom">연락처</th>
 									</tr>
-
-
 								</thead>
 
 								<tbody>
-
-									<c:forEach var="pigHouse" items="${sessionScope.pigHouseList}">
+									<c:forEach var="log" items="${sessionScope.logResultsNow}">
 										<tr>
-											<td data-order="1">
-												<img class="o-level" src="${pageContext.request.contextPath}/images/VeryGood.png">
-											</td>
+											
+											<c:forEach var="phouse" items="${sessionScope.pigHouseList}">
+												<c:if test="${phouse.phouseId == log.phouseId}">
+													<c:set var="pigHouse" value="${phouse}" />
+												</c:if>
+											</c:forEach>
+											
 
-											<td class="pighouse_name">
-												<img class="user" src="${pageContext.request.contextPath}/images/user.png">
-												<a href="info/${pigHouse.phouseId}">${pigHouse.phouseName}</a>
-											</td>
+											<c:set var="h2sLevel">
+												<c:choose>
+													<c:when test="${log.h2sValue >= 1.8}">VeryBad</c:when>
+													<c:when test="${log.h2sValue >= 0.5}">Bad</c:when>
+													<c:when test="${log.h2sValue >= 0.1}">Soso</c:when>
+													<c:when test="${log.h2sValue >= 0.07}">Good</c:when>
+													<c:otherwise>VeryGood</c:otherwise>
+												</c:choose>
+											</c:set>
 
+											<c:set var="nh3Level">
+												<c:choose>
+													<c:when test="${log.nh3Value >= 50}">VeryBad</c:when>
+													<c:when test="${log.nh3Value >= 20}">Bad</c:when>
+													<c:when test="${log.nh3Value >= 10}">Soso</c:when>
+													<c:when test="${log.nh3Value >= 5}">Good</c:when>
+													<c:otherwise>VeryGood</c:otherwise>
+												</c:choose>
+											</c:set>
+
+											<c:set var="highestLevel">
+												<c:choose>
+													
+													<c:when
+														test="${h2sLevel == 'VeryBad' || nh3Level == 'VeryBad'}">VeryBad</c:when>
+													<c:when test="${h2sLevel == 'Bad' || nh3Level == 'Bad'}">Bad</c:when>
+													<c:when test="${h2sLevel == 'Soso' || nh3Level == 'Soso'}">Soso</c:when>
+													<c:when test="${h2sLevel == 'Good' || nh3Level == 'Good'}">Good</c:when>
+													<c:otherwise>VeryGood</c:otherwise>
+												</c:choose>
+											</c:set>
+
+											<c:set var="dataOrder">
+												<c:choose>
+													<c:when test="${highestLevel == 'VeryBad'}">5</c:when>
+													<c:when test="${highestLevel == 'Bad'}">4</c:when>
+													<c:when test="${highestLevel == 'Soso'}">3</c:when>
+													<c:when test="${highestLevel == 'Good'}">2</c:when>
+													<c:otherwise>1</c:otherwise>
+												</c:choose>
+											</c:set>
+
+											<td data-order="${dataOrder}"><img class="o-level"
+												src="/images/${highestLevel}.png" alt="${highestLevel}">
+											</td>
+											<td class="pighouse_name"><img class="user" src="${pageContext.request.contextPath}/images/user.png">
+											<a href="info/${pigHouse.phouseId}"><c:out value="${pigHouse.phouseName}" /></a>
+											</td>
 											<td class="connecting-sort"><img class="connect-1"
-												src="${pageContext.request.contextPath}/images/connect_o.png">
-												<img class="connect-2"
-												src="${pageContext.request.contextPath}/images/connect_x.png">
-												<img class="connect-3"
-												src="${pageContext.request.contextPath}/images/connect_o.png">
-											</td>
+			                                    src="${pageContext.request.contextPath}/images/connect_o.png">
+			                                    <img class="connect-2"
+			                                    src="${pageContext.request.contextPath}/images/connect_x.png">
+			                                    <img class="connect-3"
+			                                    src="${pageContext.request.contextPath}/images/connect_o.png">
+			                                 </td>
 
-											<td class="center-sort">${pigHouse.phouseAddress}</td>
-
-											<td class="center-sort">${pigHouse.farmer.farmerPhoneNumber}</td>
+											<td class="center-sort"><c:out value="${pigHouse.phouseAddress}" /></td>
+											<td class="center-sort"><c:out value="${pigHouse.farmer.farmerPhoneNumber}" /></td>
 										</tr>
 									</c:forEach>
-
-									
 								</tbody>
 							</table>
 						</div>

@@ -47,6 +47,21 @@ import lombok.Setter;
 	    resultSetMapping = "LogResultMapping"
 	)
 
+@NamedNativeQuery(
+	    name = "LogEntity.findLogResultsNow",
+	    query = "select UUID() as virtual_id, h.phouse_id, h.h2s_insert_time as insert_time, h.h2s_value, n.nh3_value, c.ch4_value " +
+	            "from tb_log_h2s h " +
+	            "inner join tb_log_nh3 n on h.h2s_insert_time = n.nh3_insert_time and h.phouse_id = n.phouse_id " +
+	            "inner join tb_log_ch4 c on h.h2s_insert_time = c.ch4_insert_time and h.phouse_id = c.phouse_id " +
+	            "where h.h2s_insert_time = (" +
+	            "   select max(h2s_insert_time) " +
+	            "   from tb_log_h2s " +
+	            "   where phouse_id = h.phouse_id" +
+	            ") " +
+	            "order by h.phouse_id asc",
+	    resultSetMapping = "LogResultMapping"
+	)
+
 @Getter
 @Setter
 public class LogEntity {

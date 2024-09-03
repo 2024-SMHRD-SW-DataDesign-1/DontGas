@@ -19,7 +19,7 @@
 	rel="stylesheet" />
 <link href="/css/styles.css" rel="stylesheet" />
 <link href="/css/lightstyles.css" rel="stylesheet" id="theme-style" />
-<link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+<link rel="icon" type="image/x-icon" href="/images/pigpig.png" />
 <script data-search-pseudo-elements defer
 	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
 	crossorigin="anonymous"></script>
@@ -115,8 +115,7 @@
 						<!-- 현재 logdata를 변수에 저장 -->
 						<c:set var="latestLog" value="${null}" scope="page" />
 
-						<c:forEach var="logResult" items="${logResults}"
-							varStatus="status">
+						<c:forEach var="logResult" items="${logResults}" varStatus="status">
 							<c:if test="${status.first}">
 								<c:set var="latestLog" value="${logResult}" />
 							</c:if>
@@ -235,19 +234,19 @@
 														</c:when>
 
 														<c:when
-															test="${latestLog.nh3Value ge 5 && latestLog.h2sValue lt 10}">
+															test="${latestLog.nh3Value ge 5 && latestLog.nh3Value lt 10}">
 															<c:set var="imageUrl" value="/images/Good.png" />
 															<c:set var="statusText" value="좋음" />
 														</c:when>
 
 														<c:when
-															test="${latestLog.nh3Value ge 10 && latestLog.h2sValue lt 20}">
+															test="${latestLog.nh3Value ge 10 && latestLog.nh3Value lt 20}">
 															<c:set var="imageUrl" value="/images/Soso.png" />
 															<c:set var="statusText" value="보통" />
 														</c:when>
 
 														<c:when
-															test="${latestLog.nh3Value ge 20 && latestLog.h2sValue lt 50}">
+															test="${latestLog.nh3Value ge 20 && latestLog.nh3Value lt 50}">
 															<c:set var="imageUrl" value="/images/Bad.png" />
 															<c:set var="statusText" value="나쁨" />
 														</c:when>

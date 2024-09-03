@@ -12,7 +12,7 @@
 <title>Don't Gas - Login</title>
 <link href="css/styles.css" rel="stylesheet" />
 <link href="css/lightstyles.css" rel="stylesheet" id="theme-style" />
-<link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+<link rel="icon" type="image/x-icon" href="/images/pigpig.png" />
 <script data-search-pseudo-elements defer
 	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
 	crossorigin="anonymous"></script>
