@@ -33,14 +33,17 @@ window.addEventListener('DOMContentLoaded', event => {
 		new simpleDatatables.DataTable(datatablesModal, {
 			perPage: Number.MAX_SAFE_INTEGER,  // 한 페이지에 표시할 항목 수
 			perPageSelect: "",
-			sortable: false,
+			sortable: true,
 			searchable: false,
 			info: false,
 			labels: {
 				perPage: "",
 				info: "",
 				noRows: "데이터가 없습니다."
-			}
+			},
+			columns:[{
+					select: [0, 1, 2, 3], sortable: false
+			}]
 		});
 	}
 

@@ -39,7 +39,7 @@ var odorChart = new Chart(ctx, {
         labels: [],
         datasets: [ 
             {
-                label: 'H2S Value',
+                label: '황화수소',
                 lineTension: 0.3,
                 backgroundColor: 'rgba(0, 97, 242, 0.05)',
                 borderColor: 'rgba(0, 97, 242, 1)',
@@ -54,7 +54,7 @@ var odorChart = new Chart(ctx, {
                 data: []  // H2S Values
             },
             {
-                label: 'NH3 Value',
+                label: '암모니아',
                 lineTension: 0.3,
                 backgroundColor: 'rgba(255, 193, 7, 0.05)',
                 borderColor: 'rgba(255, 193, 7, 1)',
@@ -69,7 +69,7 @@ var odorChart = new Chart(ctx, {
                 data: []  // NH3 Values
             },
             {
-                label: 'CH4 Value',
+                label: '메탄',
                 lineTension: 0.3,
                 backgroundColor: 'rgba(40, 167, 69, 0.05)',
                 borderColor: 'rgba(40, 167, 69, 1)',
@@ -147,7 +147,7 @@ var odorChart = new Chart(ctx, {
                 label: function(tooltipItem, chart) {
                     var datasetLabel =
                         chart.datasets[tooltipItem.datasetIndex].label || "";
-                    return datasetLabel + ": $" + number_format(tooltipItem.yLabel);
+                    return datasetLabel + ": " + number_format(tooltipItem.yLabel) + "ppm";
                 }
             }
         }
