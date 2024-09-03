@@ -740,9 +740,10 @@
 	.border-0-calendar{
 		width: 16rem;
 		border: 0 !important;
-    	transform: translate(48px, 33px);
+    	transform: translate(862px, 28px);
 	
 	}
+	
 	
 	.chart-custom{
 	
@@ -1035,3 +1036,24 @@
 }
 
 /* 태블릿 환경 반응형 css 끝점 */
+
+/*차트 체크박스 css*/
+
+
+	.checkbox1{
+		font-family: 'NanumSquareRound' !important;
+		color : blue !important;
+		transform: translate(10px, 10px);
+	}
+	
+	.checkbox2{
+		font-family: 'NanumSquareRound' !important;
+		color : #DAA520	 !important;
+		transform: translate(-102px, 42px);
+	}
+	
+	.checkbox3{
+		font-family: 'NanumSquareRound' !important;
+		color : green ;
+		transform: translate(-216px, 71px);
+	}

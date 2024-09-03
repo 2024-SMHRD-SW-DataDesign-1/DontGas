@@ -375,11 +375,17 @@
 						</span>
 						<input class="form-control ps-0 pointer" id="datePicker" />
 					</div>
+					
+					<div class=calendar-checkbox>
 					<div class="input-group input-group-joined border-0-calendar">
-						<label><input type="checkbox" id="h2sCheckbox" checked> H2S Value</label>
-						<label><input type="checkbox" id="nh3Checkbox" checked> NH3 Value</label>
-						<label><input type="checkbox" id="ch4Checkbox" checked> CH4 Value</label>
+					
+						<label class=checkbox1><input type="checkbox" id="h2sCheckbox" checked> H2S 황화수소</label>
+						<label class=checkbox2><input type="checkbox" id="nh3Checkbox" checked> NH3 암모니아</label>
+						<label class=checkbox3><input type="checkbox" id="ch4Checkbox" checked> CH4 메탄</label>
+						
 					</div>
+					</div>
+					
 				</div>
 
 				<!-- 차트 들어갈 부분 (아래 날짜 칸에 선택한 날짜 들어가게끔 넣기)-->
