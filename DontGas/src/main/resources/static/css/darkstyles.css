@@ -292,12 +292,51 @@
 	font-family:'NanumSquareRound';
 }
 
+
+.sidemenu-custom{
+	margin-top : 20px;
+	font-size: 16px;
+	font-family:'NanumSquareRound';
+	cursor: pointer;
+	color: white !important;
+	text-align: center;
+	display: inline-block !important;
+}
+
+.btn-icon-sheet{
+	border-radius:0%;
+	width: 30px;
+	height: 30px;
+	margin-left: 6%;
+    margin-right: 2%;
+}
+
+
+.btn-icon-board{
+	border-radius:0%;
+	width: 30px;
+	height: 30px;
+	margin-left: -27%;
+    margin-right: 4%;
+}
+
+.btn-outline-green{
+	font-family: 'NanumSquareRound';
+	font-size: 15px;
+	font-weight: bolder;
+	width: 200px;
+    border-radius: 26px;
+    border: 2px solid;
+    margin-left: 12%;
+}
+
+
+
 /*알림*/
 .alert-custom{
     color:white !important;
    
 }
-
 
 /*돈사 리스트 화면 */
 .table-body-custom{
@@ -600,32 +639,6 @@
 
 }
  
-.sidemenu-custom{
-	margin-top : 20px;
-	font-size: 16px;
-	font-family:'NanumSquareRound';
-	cursor: pointer;
-	color: white !important;
-	text-align: center;
-	display: inline-block !important;
-}
-
-.btn-icon-sheet{
-	border-radius:0%;
-	width: 30px;
-	height: 30px;
-	margin-left: 6%;
-    margin-right: 2%;
-}
-
-
-.btn-icon-board{
-	border-radius:0%;
-	width: 30px;
-	height: 30px;
-	margin-left: -27%;
-    margin-right: 4%;
-}
 
 #dateRange{
 	margin-top: 1em;

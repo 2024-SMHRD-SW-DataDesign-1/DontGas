@@ -71,25 +71,25 @@
 								<div class="card-header">게시글 제목</div>
 								<div class="card-body">
 									<input class="form-control" id="postTitleInput" type="text"
-										placeholder="Enter your post title..." />
+										placeholder="제목을 입력해주세요" />
 								</div>
 							</div>
 							<div class="card card-header-actions mb-4">
 								<div class="card-header">
 									미리보기 <i class="text-muted" data-feather="info"
 										data-bs-toggle="tooltip" data-bs-placement="left"
-										title="The post preview text shows below the post title, and is the post summary on blog pages."></i>
+										title="게시물 미리보기 텍스트는 게시물 제목 아래에 표시됩니다!"></i>
 								</div>
 								<div class="card-body">
 									<textarea class="lh-base form-control" type="text"
-										placeholder="Enter your post preview text..." rows="4"></textarea>
+										placeholder="게시글 미리보기" rows="4"></textarea>
 								</div>
 							</div>
 							<div class="card card-header-actions mb-4 mb-lg-0">
 								<div class="card-header">
 									게시글 내용 <i class="text-muted" data-feather="info"
 										data-bs-toggle="tooltip" data-bs-placement="left"
-										title="Markdown is supported within the post content editor."></i>
+										title="게시물 콘텐츠 편집기에서는 마크다운이 지원됩니다."></i>
 								</div>
 								<div class="card-body">
 									<textarea id="postEditor">
@@ -99,19 +99,18 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="card card-header-actions">
+							<div class="card card-header-actions" style="width:300px">
 								<div class="card-header">
 									게시글 업로드 <i class="text-muted" data-feather="info"
 										data-bs-toggle="tooltip" data-bs-placement="left"
-										title="After submitting, your post will be published once it is approved by a moderator."></i>
+										title="업로드 후, 관리자가 게시물을 승인하면 게시물이 게시됩니다."></i>
 								</div>
 								<div class="card-body">
 									<div class="d-grid mb-3">
-										<button class="fw-500 btn btn-primary-soft text-primary">임시
-											저장</button>
+										<button class="btn btn-outline-green" type="button">임시 저장</button>
 									</div>
 									<div class="d-grid">
-										<button class="fw-500 btn btn-primary">업로드하기</button>
+									<button class="btn btn-outline-green" type="button">업로드 하기</button>
 									</div>
 								</div>
 							</div>

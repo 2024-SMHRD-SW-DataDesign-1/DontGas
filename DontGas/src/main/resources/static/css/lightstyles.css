@@ -272,6 +272,18 @@
 	font-family: 'NanumSquareRound';
 }
 
+.btn-outline-green{
+	font-family: 'NanumSquareRound';
+	font-size: 15px;
+	font-weight: bolder;
+	width: 200px;
+    border-radius: 26px;
+    border: 2px solid;
+    margin-left: 12%;
+}
+
+
+
 .page-header-custom {
 	background-color: white;
 }
