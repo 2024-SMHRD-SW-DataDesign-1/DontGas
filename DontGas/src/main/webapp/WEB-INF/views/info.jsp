@@ -235,19 +235,19 @@
 														</c:when>
 
 														<c:when
-															test="${latestLog.nh3Value ge 5 && latestLog.h2sValue lt 10}">
+															test="${latestLog.nh3Value ge 5 && latestLog.nh3Value lt 10}">
 															<c:set var="imageUrl" value="/images/Good.png" />
 															<c:set var="statusText" value="좋음" />
 														</c:when>
 
 														<c:when
-															test="${latestLog.nh3Value ge 10 && latestLog.h2sValue lt 20}">
+															test="${latestLog.nh3Value ge 10 && latestLog.nh3Value lt 20}">
 															<c:set var="imageUrl" value="/images/Soso.png" />
 															<c:set var="statusText" value="보통" />
 														</c:when>
 
 														<c:when
-															test="${latestLog.nh3Value ge 20 && latestLog.h2sValue lt 50}">
+															test="${latestLog.nh3Value ge 20 && latestLog.nh3Value lt 50}">
 															<c:set var="imageUrl" value="/images/Bad.png" />
 															<c:set var="statusText" value="나쁨" />
 														</c:when>
