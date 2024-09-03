@@ -13,6 +13,7 @@
 	<!-- Navbar Brand-->
 	<a class="navbar-brand pe-3 ps-4 ps-lg-2 navbar-custom" href="/list">Don't
 		Gas</a><img class="pigpig" src="/images/pigpig.png" width="40px" height="40px">
+<<<<<<< HEAD
 	<div>
 		<table class="head-info">
 			<thead>
@@ -32,6 +33,29 @@
 		</table>
 	</div>
 	
+=======
+
+
+	<!-- header 악취 레벨 심함 정도, 센서 미연결 -->
+	<div>
+      <table class="head-info">
+         <thead>
+            <tr>
+               <td><img src="/images/VeryBad.png"/></td>
+               <td><img src="/images/Bad.png"/></td>
+               <td class="head-connect-info-td"><img src="/images/nosensor.png" /></td>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td class="head-VeryBad-info">1</td>
+               <td class="head-Bad-info">3</td>
+               <td class="head-connect-info-td head-connect-info">4</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas
 
 
 

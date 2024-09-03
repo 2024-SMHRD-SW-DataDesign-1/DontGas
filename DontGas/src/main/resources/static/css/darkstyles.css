@@ -208,6 +208,29 @@
     height: 50px;
 }
 
+.head-info{
+   height: 10%;
+   width: 20%;
+   margin-left: 30px;
+}
+
+.head-info img{
+   width: 30px;
+}
+
+.head-connect-info-td{
+    padding-left:6px;
+}
+
+.head-connect-info-td img{
+   width: 25px;
+}
+
+.head-info td{
+   text-align: center;
+   font-family: 'NanumSquareRound';
+}
+
 /* header, nav */
 .navbar-custom{
     color: #00FF7F !important;
@@ -740,9 +763,10 @@
 	.border-0-calendar{
 		width: 16rem;
 		border: 0 !important;
-    	transform: translate(48px, 33px);
+    	transform: translate(862px, 29px);
 	
 	}
+	
 	
 	.chart-custom{
 	
@@ -1058,3 +1082,24 @@
 .head-info td{
 	text-align: center;
 }
+
+/*차트 체크박스 css*/
+
+
+	.checkbox1{
+		font-family: 'NanumSquareRound' !important;
+		color : blue !important;
+		transform: translate(10px, 10px);
+	}
+	
+	.checkbox2{
+		font-family: 'NanumSquareRound' !important;
+		color : #DAA520	 !important;
+		transform: translate(-102px, 42px);
+	}
+	
+	.checkbox3{
+		font-family: 'NanumSquareRound' !important;
+		color : green ;
+		transform: translate(-216px, 71px);
+	}

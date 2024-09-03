@@ -221,6 +221,31 @@
 	height: 50px;
 }
 
+.head-info{
+   height: 10%;
+   width: 20%;
+   margin-left: 30px;
+}
+
+.head-info img{
+   width: 30px;
+}
+
+.head-connect-info-td{
+   padding-left:6px;
+   
+}
+
+.head-connect-info-td img{
+   width: 25px;
+   
+}
+
+.head-info td{
+   text-align: center;
+   font-family: 'NanumSquareRound';
+}
+
 .navbar-custom {
 	color: green !important;
 	font-size: 30px !important;
@@ -729,15 +754,38 @@
 	}
 
 	/*info 화면*/
+	
+	
+	
+	/*달력 및 요소별 그래프 체크박스, 차트*/
 	.border-0-calendar {
 		width: 16rem;
 		border: 0 !important;
-		transform: translate(48px, 33px);
+		transform: translate(862px, 29px);
+		
 	}
+	.checkbox1{
+		font-family: 'NanumSquareRound' !important;
+		color : blue !important;
+	}
+	
+	.checkbox2{
+		font-family: 'NanumSquareRound' !important;
+		color : yellow !important;
+	}
+	
+	.checkbox3{
+		font-family: 'NanumSquareRound' !important;
+		color : green ;
+	}
+	
 	.chart-custom {
 		transform: translate(48px, 42px);
 		width: 82%
+		
 	}
+	
+	/*날씨 관련*/
 	.weather-item {
 		display: flex;
 		align-items: center;
@@ -963,7 +1011,6 @@
 /* 태블릿 환경 반응형 css 끝점 */
 
 
-
 .head-info{
 	height: 10%;
 	width: 20%;
@@ -985,3 +1032,20 @@
 .head-info td{
 	text-align: center;
 }
+	.checkbox1{
+		font-family: 'NanumSquareRound' !important;
+		color : blue !important;
+		transform: translate(10px, 10px);
+	}
+	
+	.checkbox2{
+		font-family: 'NanumSquareRound' !important;
+		color : #DAA520	 !important;
+		transform: translate(-102px, 42px);
+	}
+	
+	.checkbox3{
+		font-family: 'NanumSquareRound' !important;
+		color : green ;
+		transform: translate(-216px, 71px);
+	}
