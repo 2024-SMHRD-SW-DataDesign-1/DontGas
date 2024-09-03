@@ -30,6 +30,20 @@
 	var city = "${pigHouse.phouseDistrict}";
 </script>
 
+<script>
+	var logResultsJson = [
+		<c:forEach var="log" items="${logResults}">
+			{
+				"insertTime": "${log.insertTime}",
+				"h2sValue": "${log.h2sValue}",
+				"nh3Value": "${log.nh3Value}",
+				"ch4Value": "${log.ch4Value}"
+			}
+			<c:if test="${!loop.last}">,</c:if>
+		</c:forEach>
+	];
+</script>
+
 </head>
 
 
@@ -372,7 +386,7 @@
 							</div>
 							<div class="card-body">
 								<div class="chart-area">
-									<canvas id="myAreaChart" width="100%" height="30"></canvas>
+									<canvas id="odorChart-area" width="100%" height="30"></canvas>
 								</div>
 							</div>
 						</div>
@@ -403,8 +417,6 @@
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
 		crossorigin="anonymous"></script>
-	<script src="/assets/demo/chart-area-demo.js"></script>
-	<script src="/assets/demo/chart-bar-demo.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
 		crossorigin="anonymous"></script>
 	<script src="/js/datatables.js"></script>
@@ -413,5 +425,6 @@
 	<script src="/js/litepicker.js"></script>
 	<script src="/js/darkmode.js"></script>
 	<script src="/js/weather.js"></script>
+	<script src="/js/odorChart.js"></script>
 </body>
 </html>

@@ -103,6 +103,7 @@ window.addEventListener('DOMContentLoaded', event => {
 				picker.on('selected', (startDate, endDate) => {
 					if (startDate) {
 						document.getElementById('dateRange').textContent = "(" + startDate.format('YYYY. MM. DD')  + " ~ " +  endDate.format('YYYY. MM. DD') + ")";
+						updateChart(startDate.format('YYYY. MM. DD'), endDate.format('YYYY. MM. DD'), logResultsJson);
 					}
 				});
 			}
