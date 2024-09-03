@@ -122,7 +122,13 @@
 										<!-- 수치, 상태 데이터 들어갈 자리  -->
 										<div>
 											
-											<p class="text-gray-700-custom mb-0"></p>
+											<%-- 최신 데이터를 찾기 위한 JSTL 루프 --%>
+											<c:forEach var="logResult" items="${logResults}" varStatus="status">
+											    <%-- 첫 번째 요소(최신 데이터)일 때만 출력 --%>
+											    <c:if test="${status.first}">
+											        <p class="text-gray-700-custom mb-0">${logResult.h2sValue} ppm</p>
+											    </c:if>
+											</c:forEach>
 											<p class="text-gray-700-custom mb-0">보통</p>
 										</div>
 									</div>
@@ -149,7 +155,12 @@
 										</div>
 										<!-- 수치, 상태 데이터 들어갈 자리  -->
 										<div>
-											<p class="text-gray-700-custom mb-0">8 ppm</p>
+											<c:forEach var="logResult" items="${logResults}" varStatus="status">
+											    <%-- 첫 번째 요소(최신 데이터)일 때만 출력 --%>
+											    <c:if test="${status.first}">
+											        <p class="text-gray-700-custom mb-0">${logResult.nh3Value} ppm</p>
+											    </c:if>
+											</c:forEach>
 											<p class="text-gray-700-custom mb-0">좋음</p>
 										</div>
 									</div>
@@ -175,8 +186,12 @@
 										</div>
 										<!-- 수치, 상태 데이터 들어갈 자리  -->
 										<div>
-
-											<p class="text-gray-700-custom mb-0">1.5 ppb</p>
+											<c:forEach var="logResult" items="${logResults}" varStatus="status">
+											    <%-- 첫 번째 요소(최신 데이터)일 때만 출력 --%>
+											    <c:if test="${status.first}">
+											        <p class="text-gray-700-custom mb-0">${logResult.ch4Value} ppb</p>
+											    </c:if>
+											</c:forEach>
 											<p class="text-gray-700-custom mb-0">나쁨</p>
 										</div>
 									</div>

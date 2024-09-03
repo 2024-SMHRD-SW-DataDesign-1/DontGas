@@ -40,17 +40,17 @@ public class PigHouse {
     @JsonBackReference
     private Farmer farmer;
 
-    @OneToMany(mappedBy = "pigHouse", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JsonManagedReference
-    private List<LogCH4> logCH4List;
-
-    @OneToMany(mappedBy = "pigHouse", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JsonManagedReference
-    private List<LogH2S> logH2SList;
-
-    @OneToMany(mappedBy = "pigHouse", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JsonManagedReference
-    private List<LogNH3> logNH3List;
+//    @OneToMany(mappedBy = "pigHouse", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+//    @JsonManagedReference
+//    private List<LogCH4> logCH4List;
+//
+//    @OneToMany(mappedBy = "pigHouse", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+//    @JsonManagedReference
+//    private List<LogH2S> logH2SList;
+//
+//    @OneToMany(mappedBy = "pigHouse", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+//    @JsonManagedReference
+//    private List<LogNH3> logNH3List;
 
  // 기본 생성자
     public PigHouse() {}
@@ -96,27 +96,27 @@ public class PigHouse {
         this.farmer = farmer;
     }
 
-    public List<LogCH4> getLogCh4s() {
-        return logCH4List;
-    }
-
-    public void setLogCh4s(List<LogCH4> logCh4s) {
-        this.logCH4List = logCh4s;
-    }
-
-    public List<LogH2S> getLogH2s() {
-        return logH2SList;
-    }
-
-    public void setLogH2s(List<LogH2S> logH2s) {
-        this.logH2SList = logH2s;
-    }
-
-    public List<LogNH3> getLogNh3s() {
-        return logNH3List;
-    }
-
-    public void setLogNh3s(List<LogNH3> logNh3s) {
-        this.logNH3List = logNh3s;
-    }
+//    public List<LogCH4> getLogCh4s() {
+//        return logCH4List;
+//    }
+//
+//    public void setLogCh4s(List<LogCH4> logCh4s) {
+//        this.logCH4List = logCh4s;
+//    }
+//
+//    public List<LogH2S> getLogH2s() {
+//        return logH2SList;
+//    }
+//
+//    public void setLogH2s(List<LogH2S> logH2s) {
+//        this.logH2SList = logH2s;
+//    }
+//
+//    public List<LogNH3> getLogNh3s() {
+//        return logNH3List;
+//    }
+//
+//    public void setLogNh3s(List<LogNH3> logNh3s) {
+//        this.logNH3List = logNh3s;
+//    }
 }

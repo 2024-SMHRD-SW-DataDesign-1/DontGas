@@ -13,6 +13,8 @@ import com.dontgas.dontgas.entity.PigHouse;
 import com.dontgas.dontgas.service.LogService;
 import com.dontgas.dontgas.service.PigHouseService;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class PigHouseController {
 
@@ -28,6 +30,14 @@ public class PigHouseController {
 //        model.addAttribute("pigHouseList", pigHouseList);
 //        return "list";
 //    }
+    
+    @GetMapping("/list")
+    public String listPigHouses(HttpSession session) {
+        List<PigHouse> pigHouseList = pigHouseService.getAllPigHouses();
+        session.setAttribute("pigHouseList", pigHouseList);
+        return "list";
+    }
+
     
     @GetMapping("/info/{id}")
     public String getPigHouseById(@PathVariable Long id, Model model) {
