@@ -372,7 +372,13 @@
 						style="width: 18rem">
 						<span class="input-group-text"> <img
 							src="/images/calendar.png" width="30px" height="30px">
-						</span> <input class="form-control ps-0 pointer" id="datePicker" />
+						</span>
+						<input class="form-control ps-0 pointer" id="datePicker" />
+					</div>
+					<div class="input-group input-group-joined border-0-calendar">
+						<label><input type="checkbox" id="h2sCheckbox" checked> H2S Value</label>
+						<label><input type="checkbox" id="nh3Checkbox" checked> NH3 Value</label>
+						<label><input type="checkbox" id="ch4Checkbox" checked> CH4 Value</label>
 					</div>
 				</div>
 

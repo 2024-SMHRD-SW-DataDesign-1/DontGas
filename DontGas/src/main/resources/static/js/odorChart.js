@@ -182,8 +182,11 @@ function updateChart(startDate, endDate, logResultsJson) {
         const ch4Values = filteredResults.map(log => log.ch4Value);
 		
         odorChart.data.labels = labels;
-        odorChart.data.datasets[0].data = h2sValues;
-        odorChart.data.datasets[1].data = nh3Values;
-        odorChart.data.datasets[2].data = ch4Values;
+		odorChart.data.datasets[0].data = document.getElementById('h2sCheckbox').checked ? h2sValues : [];
+    	odorChart.data.datasets[1].data = document.getElementById('nh3Checkbox').checked ? nh3Values : [];
+   		odorChart.data.datasets[2].data = document.getElementById('ch4Checkbox').checked ? ch4Values : [];
+   		document.getElementById('h2sCheckbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
+        document.getElementById('nh3Checkbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
+        document.getElementById('ch4Checkbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
         odorChart.update();
 }
