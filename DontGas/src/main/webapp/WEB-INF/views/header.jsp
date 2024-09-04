@@ -93,11 +93,7 @@
 	<ul class="navbar-nav align-items-center ms-auto">
 
 		<!-- 게시글 관련 기능 dummy Dropdown-->
-		<li class="nav-item dropdown no-caret d-none d-md-block me-3"><a
-			class="nav-link dropdown-toggle" id="navbarDropdownDocs"
-			href="javascript:void(0);" role="button" data-bs-toggle="dropdown"
-			aria-haspopup="true" aria-expanded="false">
-				<div class="fw-500">게시글 댓글 알림</div> <img class="imoticon"src="/images/comment.png">
+		
 				
 		</a>
 			<div
@@ -139,7 +135,7 @@
 				class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up"
 				aria-labelledby="navbarDropdownMessages">
 				<h6 class="dropdown-header dropdown-notifications-header" style="color:black;">
-					<img src="/images/mail2.png" width="20px" height="20px" style="margin-right: 6%;">  게시글 알림
+					<img src="/images/mail2.png" width="20px" height="20px" style="margin-right: 6%;">  덧글 알림
 				</h6>
 
 
@@ -149,41 +145,34 @@
 					src="/images/joyrich.png" />
 					<div class="dropdown-notifications-item-content">
 						<div class="dropdown-notifications-item-content-text">
+						저희 자돈 돈사 악취가 고민입니다.. 에 달린 답글
 							안녕하세요. 포도님. 돈사 악취 관리는 생애주기별로 확인이 가능합니다. 
 							Don't Gas 홈페이지 생애주기별 관리 메뉴를 보시면 관리하기 수월하실거에요!</div>
 						<div class="dropdown-notifications-item-content-details">
 							흥부자· 58분전</div>
 					</div>
 				</a>
+				
 				<!-- Message 2-->
-				<a class="dropdown-item dropdown-notifications-item" href="#!">
-					<img class="imoticon"
-					src="/images/user_seongmin.png" />
-					<div class="dropdown-notifications-item-content">
-						<div class="dropdown-notifications-item-content-text">
-						금주 기상 예보 확인하시어 돈사 관리에 유의해주세요!</div>
-						<div class="dropdown-notifications-item-content-details">김성민
-							 · 2일전</div>
-					</div>
-				</a>
-				<!-- Message 3-->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<img class="imoticon"
 					src="/images/user_peach.png" />
 					<div class="dropdown-notifications-item-content">
 						<div class="dropdown-notifications-item-content-text">
-						안녕하세요 포도님. 요즘 돈사 악취 민원은 어떠신가요?
-						저희 양돈장은 지난달 보다 민원이 2건 줄었습니다 :)</div>
+						저희 자돈 돈사 악취가 고민입니다.. 에 달린 답글
+						안녕하세요 포도님. 돈사 악취 민원으로 고생이 많으시네요
+						</div>
 						<div class="dropdown-notifications-item-content-details">복숭아 · 3시간 전</div>
 					</div>
 				</a>
-				<!-- Message 4-->
+				<!-- Message 3-->
 				<a class="dropdown-item dropdown-notifications-item" href="#!">
 					<img class="imoticon"
 					src="/images/user_watermelon.png" />
 					<div class="dropdown-notifications-item-content">
 						<div class="dropdown-notifications-item-content-text">
-						금주 주말에 비 예보가 있다고 합니다! 날이 맑을 때 미리 분변 건조해주세요.</div>
+						저희 자돈 돈사 악취가 고민입니다.. 에 달린 답글
+						날이 맑을 때 미리 분변 건조해주세요.</div>
 						<div class="dropdown-notifications-item-content-details">반짝이는 워터멜론 · 3일전</div>
 					</div>
 				</a>
@@ -276,7 +265,7 @@
 					<img class="dropdown-user-img" src="/images/user_man1.png" />
 					<div class="dropdown-user-details">
 						<div class="dropdown-user-details-name"><%=session.getAttribute("accName")%></div>
-						<div class="dropdown-user-details-email">podo@pig.com</div>
+						
 					</div>
 				</h6>
 				<div class="dropdown-divider"></div>

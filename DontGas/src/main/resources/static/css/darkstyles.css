@@ -283,8 +283,16 @@
 	color: orange;
 }
 
-.page-header-custom {
-	background-color: rgb(54, 54, 54);
+.mb-4{
+	background-color : rgb(37, 37, 37) !important;
+	color: orange;
+}
+
+
+
+.page-header-custom{
+    background-color: rgb(54, 54, 54);
+    
 }
 
 .page-header-title-custom-list {
@@ -517,10 +525,28 @@
 	background-color: gray;
 }
 
-.card:not([class*=bg-]) .card-header-custom {
+
+ .card:not([class*=bg-]) .card-header-custom {
+  color: wheat;
+  font-family:'NanumSquareRound';
+  border-color: #00FF7F;
+
+}
+
+.card-header{
+	 color: wheat;
+	background-color:  rgb(95, 95, 95) !important;
+	border-color: #00FF7F;
+}
+
+.card-body{
+	background-color:  rgb(95, 95, 95) !important;
+	
+}
+.card-header-actions{
 	color: wheat;
-	font-family: 'NanumSquareRound';
-	border-color: green;
+  	font-family:'NanumSquareRound';
+  	background-color:  rgb(95, 95, 95) !important;
 }
 
 .text-primary-custom {
@@ -647,6 +673,16 @@
 .sortingLabel {
 	display: none;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*----------------경계선----------------*/
 
