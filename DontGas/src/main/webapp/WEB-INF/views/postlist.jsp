@@ -89,7 +89,7 @@
 										<td style="text-align:center;"><div class="badge bg-gray-200 text-dark">악취 고민</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
-											href="blog-management-edit-post.html"><i
+											href="/editpost"><i
 												data-feather="edit"></i></a> <a
 											class="btn btn-datatable btn-icon btn-transparent-dark"
 											href="#!"><i data-feather="trash-2"></i></a></td>
@@ -100,7 +100,7 @@
 										<td style="text-align:center;"><div class="badge bg-yellow-soft text-yellow">제품 추천</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
-											href="blog-management-edit-post.html"><i
+											href="/editpost"><i
 												data-feather="edit"></i></a> <a
 											class="btn btn-datatable btn-icon btn-transparent-dark"
 											href="#!"><i data-feather="trash-2"></i></a></td>
@@ -111,7 +111,7 @@
 										<td style="text-align:center;"><div class="badge bg-green-soft text-blue">기상 관련</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
-											href="blog-management-edit-post.html"><i
+											href="/editpost"><i
 												data-feather="edit"></i></a> <a
 											class="btn btn-datatable btn-icon btn-transparent-dark"
 											href="#!"><i data-feather="trash-2"></i></a></td>
@@ -122,7 +122,7 @@
 										<td style="text-align:center;"><div class="badge bg-green-soft text-green">스마트팜</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
-											href="blog-management-edit-post.html"><i
+											href="/editpost"><i
 												data-feather="edit"></i></a> <a
 											class="btn btn-datatable btn-icon btn-transparent-dark"
 											href="#!"><i data-feather="trash-2"></i></a></td>
@@ -133,7 +133,7 @@
 										<td style="text-align:center;"><div class="badge bg-green-soft text-dark">악취 고민</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
-											href="blog-management-edit-post.html"><i
+											href="/editpost"><i
 												data-feather="edit"></i></a> <a
 											class="btn btn-datatable btn-icon btn-transparent-dark"
 											href="#!"><i data-feather="trash-2"></i></a></td>
@@ -144,7 +144,7 @@
 										<td style="text-align:center;"><div class="badge bg-green-soft text-red">Don't Gas 사용법</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
-											href="blog-management-edit-post.html"><i
+											href="/editpost"><i
 												data-feather="edit"></i></a> <a
 											class="btn btn-datatable btn-icon btn-transparent-dark"
 											href="#!"><i data-feather="trash-2"></i></a></td>
@@ -155,7 +155,7 @@
 										<td style="text-align:center;"><div class="badge bg-green-soft text-red">Don't Gas 사용법</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
-											href="blog-management-edit-post.html"><i
+											href="/editpost"><i
 												data-feather="edit"></i></a> <a
 											class="btn btn-datatable btn-icon btn-transparent-dark"
 											href="#!"><i data-feather="trash-2"></i></a></td>
