@@ -666,6 +666,20 @@
 	border: 2px solid orange;
 }
 
+/*info 페이지 차트 부분*/
+.chart-custom{
+	
+	transform: translate(353px, -79px);
+    width: 500px;
+}
+
+.border-0-calendar {
+    border: 0 !important;
+    transform: translate(10px, 5px);
+    width: 18rem;
+}
+
+
 #dateRange {
 	margin-top: 1em;
 }
@@ -1046,7 +1060,7 @@
 .checkbox3 {
 	font-family: 'NanumSquareRound' !important;
 	color: green;
-	transform: translate(-216px, 71px);
+	transform: translate(11px, 49px);
 }
 
 .card-default {
