@@ -52,7 +52,7 @@ public class PigHouse {
 //    @JsonManagedReference
 //    private List<LogNH3> logNH3List;
 
- // 기본 생성자
+    // 기본 생성자
     public PigHouse() {}
 
     // Getter와 Setter

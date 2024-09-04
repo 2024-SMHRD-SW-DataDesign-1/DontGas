@@ -43,7 +43,6 @@
 		</c:forEach>
 	];
 </script>
-
 </head>
 
 
@@ -126,6 +125,11 @@
 						<!-- 모니터링 메인 콘텐츠 1 - 황화수소 레벨 -->
 						<div class="col-xxl-4 col-xl-12 mb-4">
 							<div class="card h-100-custom">
+							<div class="${latestLog.h2sValue == null ? 'card-null' : 'card-default'}">
+								<h1 class="no-data-text">
+									No Data
+								</h1>
+							</div>
 								<div class="card-body h-100 p-5">
 									<div class="row align-items-center">
 										<div class="col-xl-8 col-xxl-12">
@@ -203,6 +207,11 @@
 
 						<div class="col-xxl-4 col-xl-12 mb-4">
 							<div class="card h-100-custom">
+								<div class="${latestLog.nh3Value == null ? 'card-null' : 'card-default'}">
+									<h1 class="no-data-text">
+										No Data
+									</h1>
+								</div>
 								<div class="card-body h-100 p-5">
 									<div class="row align-items-center">
 										<div class="col-xl-8 col-xxl-12">
@@ -275,10 +284,15 @@
 								</div>
 							</div>
 						</div>
-
-						<!-- 모니터링 메인 콘텐츠 3 - 메탄 레벨 -->
+				
+				<!-- 모니터링 메인 콘텐츠 3 - 메탄 레벨 -->
 						<div class="col-xxl-4 col-xl-12 mb-4">
 							<div class="card h-100-custom">
+							<div class="${latestLog.ch4Value == null ? 'card-null' : 'card-default'}">
+								<h1 class="no-data-text">
+									No Data
+								</h1>
+							</div>
 								<div class="card-body h-100 p-5">
 									<div class="row align-items-center">
 										<div class="col-xl-8 col-xxl-12">
@@ -286,23 +300,67 @@
 												class="text-center text-xl-start text-xxl-center mb-4 mb-xl-0 mb-xxl-4">
 												<h1 class="text-primary-custom">메탄 레벨</h1>
 												<div class="col-xl-4 col-xxl-12 text-center">
-													<img class="o-level2" src="/images/Bad.png" alt="나쁨"
+
+													<!-- 악취 레벨 기준 -->
+													<!--
+													// 메탄
+													
+													-->
+
+													<!-- 기본 이미지 URL 및 텍스트 -->
+													<c:set var="imageUrl" value="/images/Soso.png" scope="page" />
+													<c:set var="statusText" value="보통" scope="page" />
+
+													<!-- h2sValue에 따라 이미지 URL 및 텍스트 설정 -->
+													<c:choose>
+
+														<c:when test="${latestLog.ch4Value lt 0.07}">
+															<c:set var="imageUrl" value="/images/VeryGood.png" />
+															<c:set var="statusText" value="매우 좋음" />
+														</c:when>
+
+														<c:when
+															test="${latestLog.ch4Value ge 0.07 && latestLog.ch4Value lt 0.1}">
+															<c:set var="imageUrl" value="/images/Good.png" />
+															<c:set var="statusText" value="좋음" />
+														</c:when>
+
+														<c:when
+															test="${latestLog.ch4Value ge 0.1 && latestLog.ch4Value lt 0.5}">
+															<c:set var="imageUrl" value="/images/Soso.png" />
+															<c:set var="statusText" value="보통" />
+														</c:when>
+
+														<c:when
+															test="${latestLog.ch4Value ge 0.5 && latestLog.ch4Value lt 1.8}">
+															<c:set var="imageUrl" value="/images/Bad.png" />
+															<c:set var="statusText" value="나쁨" />
+														</c:when>
+
+														<c:when test="${latestLog.ch4Value ge 1.8}">
+															<c:set var="imageUrl" value="/images/VeryBad.png" />
+															<c:set var="statusText" value="매우 나쁨" />
+														</c:when>
+
+													</c:choose>
+
+													<!-- 이미지 출력 -->
+													<img class="o-level2" src="${imageUrl}" alt="악취 레벨 이미지"
 														style="max-width: 26rem" />
+
 												</div>
 											</div>
 										</div>
+
 										<!-- 수치, 상태 데이터 들어갈 자리  -->
 										<div>
-											<p class="text-gray-700-custom mb-0">${latestLog.ch4Value}
-												ppb</p>
-											<p class="text-gray-700-custom mb-0">나쁨</p>
+											<p class="text-gray-700-custom mb-0">${latestLog.ch4Value} ppb</p>
+											<p class="text-gray-700-custom mb-0">${statusText}</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
 				<!-- 메인 콘텐츠 끝점 -->
 
 
@@ -434,8 +492,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"
 		crossorigin="anonymous"></script>
 	<script src="/js/litepicker.js"></script>
-	<script src="/js/darkmode.js"></script>
 	<script src="/js/weather.js"></script>
 	<script src="/js/odorChart.js"></script>
+	<script src="/js/darkmode.js"></script>
 </body>
 </html>

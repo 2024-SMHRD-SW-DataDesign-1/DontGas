@@ -29,4 +29,29 @@
 //    private PigHouse pigHouse;
 //
 //    // Getters and Setters
+//    public LogH2S() {}
+//    
+//    public Long getH2sLogIdx() {
+//        return h2sLogIdx;
+//    }
+//
+//    public void setH2sLogIdx(Long h2sLogIdx) {
+//        this.h2sLogIdx = h2sLogIdx;
+//    }
+//
+//    public Double getH2sValue() {
+//        return h2sValue;
+//    }
+//
+//    public void setH2sValue(Double h2sValue) {
+//        this.h2sValue = h2sValue;
+//    }
+//
+//    public PigHouse getPigHouse() {
+//        return pigHouse;
+//    }
+//
+//    public void setPigHouse(PigHouse phouseId) {
+//        this.pigHouse = phouseId;
+//    }
 //}

@@ -15,7 +15,7 @@
 	href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css"
 	rel="stylesheet" />
 <link href="css/styles.css" rel="stylesheet" />
-<link href="css/lightstyles.css" rel="stylesheet" id="theme-style" />
+<link href="/css/lightstyles.css" rel="stylesheet" id="theme-style" />
 <link rel="icon" type="image/x-icon" href="/images/pigpig.png" />
 <script data-search-pseudo-elements defer
 	src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
@@ -73,9 +73,9 @@
 									<tr class="table-head-custom">
 										<th class="stink-custom">악취 상태</th>
 										<th class="pighouse-custom">돈사명</th>
-										<th class="connecting-custom"><span class="tooltip-link"
-											data-tooltip="황화수소-암모니아-메탄 순서">연결 상태 <img
-												src="${pageContext.request.contextPath}/images/question1.png"
+										<th class="connecting-custom">연결 상태 <img class="tooltip-link"
+											data-tooltip="황화수소-암모니아-메탄 순서"
+												src="/images/question1.png"
 												width="20px" height="20px">
 										</span></th>
 										<th class="address-custom">주소</th>
@@ -95,6 +95,7 @@
 													<c:set var="pigHouse" value="${phouse}" />
 												</c:if>
 											</c:forEach>
+											
 
 											<!-- 악취 레벨 결정 알고리즘 -->
 											<c:set var="h2sLevel">
@@ -258,6 +259,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest"
 		crossorigin="anonymous"></script>
 	<script src="js/datatables.js"></script>
-	<script src="/js/darkmode.js"></script>
+	<script src="js/darkmode.js"></script>
 </body>
 </html>

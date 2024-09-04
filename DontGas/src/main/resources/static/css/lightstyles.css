@@ -2,10 +2,12 @@
 
 /*폰트*/
 @font-face {
-    font-family: 'Paperlogy-8ExtraBold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
+	font-family: 'Paperlogy-8ExtraBold';
+	src:
+		url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2')
+		format('woff2');
+	font-weight: 800;
+	font-style: normal;
 }
 
 /* 로그인 화면*/
@@ -29,23 +31,19 @@
 	float: left;
 }
 
-.pig-icon{
+.pig-icon {
 	width: 50px;
-	height:50px;
+	height: 50px;
 	margin-left: 64%;
 	margin-top: 3%;
-    margin-bottom: -10%;
-	
+	margin-bottom: -10%;
 }
 
-.pigpig{
-	
+.pigpig {
 	width: 40px;
 	height: 40px;
 	margin-left: -1%;
-	
 }
-
 
 .login-title-2 {
 	color: green;
@@ -221,29 +219,27 @@
 	height: 50px;
 }
 
-.head-info{
-   height: 10%;
-   width: 20%;
-   margin-left: 30px;
+.head-info {
+	height: 10%;
+	width: 20%;
+	margin-left: 30px;
 }
 
-.head-info img{
-   width: 30px;
+.head-info img {
+	width: 30px;
 }
 
-.head-connect-info-td{
-   padding-left:8px !important;
-   
+.head-connect-info-td {
+	padding-left: 8px !important;
 }
 
-.head-connect-info-td img{
-   width: 25px;
-   
+.head-connect-info-td img {
+	width: 25px;
 }
 
-.head-info td{
-   text-align: center;
-   font-family: 'NanumSquareRound';
+.head-info td {
+	text-align: center;
+	font-family: 'NanumSquareRound';
 }
 
 .navbar-custom {
@@ -262,26 +258,25 @@
 
 /* 게시판 관련 css*/
 .fw-500 {
-    font-weight: 700 !important;
-    font-family: 'NanumSquareRound';
-    color: black;
+	font-weight: 700 !important;
+	font-family: 'NanumSquareRound';
+	color: black;
 }
 
-.imoticon{
+.imoticon {
 	width: 30px;
 	height: 30px;
 	margin-right: 6%;
 }
 
-
-.post-button-custom{
+.post-button-custom {
 	background: greenyellow;
-    color: black;
-    font-size: 14px;
-    font-family: 'NanumSquareRound';
+	color: black;
+	font-size: 14px;
+	font-family: 'NanumSquareRound';
 }
 
-.center-sort{
+.center-sort {
 	text-align: center;
 }
 
@@ -297,17 +292,15 @@
 	font-family: 'NanumSquareRound';
 }
 
-.btn-outline-green{
+.btn-outline-green {
 	font-family: 'NanumSquareRound';
 	font-size: 15px;
 	font-weight: bolder;
 	width: 200px;
-    border-radius: 26px;
-    border: 2px solid;
-    margin-left: 12%;
+	border-radius: 26px;
+	border: 2px solid;
+	margin-left: 12%;
 }
-
-
 
 .page-header-custom {
 	background-color: white;
@@ -339,8 +332,6 @@
 	font-family: 'NanumSquareRound';
 }
 
-
-
 /* span태그 위치 option */
 .tooltip-link {
 	position: absolute;
@@ -363,7 +354,8 @@
 	background-color: #FFEFD5;
 	color: black;
 	padding: 10px 7px;
-	border-radius: 10px; max-width : 300px;
+	border-radius: 10px;
+	max-width: 300px;
 	width: 215px;
 	left: 25%;
 	bottom: 120%;
@@ -630,30 +622,27 @@
 	font-family: 'NanumSquareRound';
 }
 
-
-
-.btn-icon-sheet{
-	border-radius:0%;
+.btn-icon-sheet {
+	border-radius: 0%;
 	width: 30px;
 	height: 30px;
 	margin-left: 6%;
-    margin-right: 2%;
+	margin-right: 2%;
 }
 
-
-.btn-icon-board{
-	border-radius:0%;
+.btn-icon-board {
+	border-radius: 0%;
 	width: 30px;
 	height: 30px;
 	margin-left: -27%;
-    margin-right: 4%;
+	margin-right: 4%;
 }
 
-.feather-edit{
+.feather-edit {
 	color: black;
 }
 
-.feather-trash-2{
+.feather-trash-2 {
 	color: black;
 }
 
@@ -671,7 +660,6 @@
 
 /*화면 최소화 반응형 css*/
 @media ( min-width : 500px) and (max-width:766px) {
-	
 	/*로그인 폼*/
 	.login-box {
 		width: 75%;
@@ -693,31 +681,25 @@
 	.login-label {
 		transform: translate(107px, -16px);
 		font-size: 0.875em;
-		font-weight:700;
-		
+		font-weight: 700;
 	}
-	
-	.login-label-id{
+	.login-label-id {
 		margin-left: 11%;
 	}
-	.login-label-pw{
+	.login-label-pw {
 		margin-left: 3%;
 	}
-	
+
 	/*다크모드&라이트모드 버튼, footer*/
-	.copyright-footer{
+	.copyright-footer {
 		margin-left: 16%;
 		margin-bottom: -9%;
 	}
-	
-	#modbtn{
-	
+	#modbtn {
 		transform: translate(10px, 36px);
-    	width: 50px;
-	
+		width: 50px;
 	}
-	
-	
+
 	/*리스트 화면*/
 	/*테이블 헤더 사이즈 조정*/
 	.stink-custom {
@@ -754,37 +736,30 @@
 	}
 
 	/*info 화면*/
-	
-	
-	
+
 	/*달력 및 요소별 그래프 체크박스, 차트*/
 	.border-0-calendar {
 		width: 16rem;
 		border: 0 !important;
 		transform: translate(862px, 29px);
-		
 	}
-	.checkbox1{
+	.checkbox1 {
 		font-family: 'NanumSquareRound' !important;
-		color : blue !important;
+		color: blue !important;
 	}
-	
-	.checkbox2{
+	.checkbox2 {
 		font-family: 'NanumSquareRound' !important;
-		color : yellow !important;
+		color: yellow !important;
 	}
-	
-	.checkbox3{
+	.checkbox3 {
 		font-family: 'NanumSquareRound' !important;
-		color : green ;
+		color: green;
 	}
-	
 	.chart-custom {
 		transform: translate(48px, 42px);
 		width: 82%
-		
 	}
-	
+
 	/*날씨 관련*/
 	.weather-item {
 		display: flex;
@@ -839,12 +814,7 @@
 		transform: translate(-335px, 50px);
 		border: 2px solid orange;
 	}
-	
-	
-	
 }
-
-
 
 /*------------경계선-------------*/
 
@@ -894,22 +864,22 @@
 	.contact-custom {
 		width: 16%;
 	}
-	
+
 	/*연결 상태 위치 조정*/
 	.connect-1 {
 		width: 20px;
 		height: 20px;
-		margin-left:9%
+		margin-left: 9%
 	}
 	.connect-2 {
 		width: 20px;
 		height: 20px;
-		margin-left:4%
+		margin-left: 4%
 	}
 	.connect-3 {
 		width: 20px;
 		height: 20px;
-		margin-left:4%
+		margin-left: 4%
 	}
 
 	/*info 페이지*/
@@ -1009,43 +979,67 @@
 	}
 }
 /* 태블릿 환경 반응형 css 끝점 */
-
-
-.head-info{
+.head-info {
 	height: 10%;
 	width: 20%;
 	margin-left: 30px;
 }
 
-.head-info img{
+.head-info img {
 	width: 30px;
 }
 
-.head-connect-info-td{
-	padding-left:20px;
+.head-connect-info-td {
+	padding-left: 20px;
 }
 
-.head-connect-info-td img{
+.head-connect-info-td img {
 	width: 25px;
 }
 
-.head-info td{
+.head-info td {
 	text-align: center;
 }
-	.checkbox1{
-		font-family: 'NanumSquareRound' !important;
-		color : blue !important;
-		transform: translate(10px, 10px);
-	}
+
+.checkbox1 {
+	font-family: 'NanumSquareRound' !important;
+	color: blue !important;
+	transform: translate(10px, 10px);
+}
+
+.checkbox2 {
+	font-family: 'NanumSquareRound' !important;
+	color: #DAA520 !important;
+	transform: translate(-102px, 42px);
+}
+
+.checkbox3 {
+	font-family: 'NanumSquareRound' !important;
+	color: green;
+	transform: translate(-216px, 71px);
+}
+
+.card-default {
+	background-color: #ffffff;
+	opacity: 1;
+}
+
+.card-null {
 	
-	.checkbox2{
-		font-family: 'NanumSquareRound' !important;
-		color : #DAA520	 !important;
-		transform: translate(-102px, 42px);
-	}
+	background-color: black;
+	opacity: 0.9;
 	
-	.checkbox3{
-		font-family: 'NanumSquareRound' !important;
-		color : green ;
-		transform: translate(-216px, 71px);
-	}
+	position: absolute;
+   	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	z-index: 10000;
+	
+	align-content: center;
+}
+
+.no-data-text{
+	text-align: center;
+	color: white;
+}

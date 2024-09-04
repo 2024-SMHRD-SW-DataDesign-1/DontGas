@@ -18,4 +18,13 @@ public interface LogRepository extends JpaRepository<LogEntity, String> {
 	
 	@Query(name = "LogEntity.findLogResultsNow", nativeQuery = true)
 	List<LogEntity> findLogResultsNow();
+	
+//	@Query(name = "LogEntity.findH2SNullTime", nativeQuery = true)
+//	List<LogEntity> findH2SNullTime();
+//	
+//	@Query(name = "LogEntity.findNH3NullTime", nativeQuery = true)
+//	List<LogEntity> findNH3NullTime();
+//	
+//	@Query(name = "LogEntity.findCH4NullTime", nativeQuery = true)
+//	List<LogEntity> findCH4NullTime();
 }

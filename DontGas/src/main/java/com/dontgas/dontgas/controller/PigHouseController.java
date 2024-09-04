@@ -21,6 +21,9 @@ public class PigHouseController {
     @Autowired
     private PigHouseService pigHouseService;
     
+//    @Autowired
+//    private LogH2SService h2sService;
+    
     @Autowired
     private LogService logService;
 
@@ -38,6 +41,19 @@ public class PigHouseController {
         
         List<LogEntity> logResultsNow = logService.getLogResultsNow();
         session.setAttribute("logResultsNow", logResultsNow);
+        
+//        List<LogEntity> logResultsH2SNull = logService.getLogResultsH2SNull();
+//        session.setAttribute("logResultsH2SNull", logResultsH2SNull);
+//        
+//        List<LogEntity> logResultsNH3Null = logService.getLogResultsNH3Null();
+//        session.setAttribute("logResultsNH3Null", logResultsNH3Null);
+//        
+//        List<LogEntity> logResultsCH4Null = logService.getLogResultsCH4Null();
+//        session.setAttribute("logResultsCH4Null", logResultsCH4Null);
+        
+//        List<Object[]> h2sNullTime = h2sService.getH2SNullTime();
+//        session.setAttribute("h2sNullTime", h2sNullTime);
+        
         return "list";
     }
 
