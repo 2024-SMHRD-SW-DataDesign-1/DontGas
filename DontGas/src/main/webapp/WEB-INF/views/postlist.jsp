@@ -75,17 +75,19 @@
 							<table id="datatablesSimple">
 								<thead>
 									<tr class="table-head-custom">
-										<th style="width:55%">게시글 제목</th>
+										<th style="width:45%">게시글 목록</th>
+										<th style="width:15%">작성자</th>
 										<th style="width:15%">게시 날짜</th>
 										<th style="width:14%">게시글 종류</th>
-										<th style="width:13%">수정 및 삭제</th>
+										<th style="width:11%">수정 및 삭제</th>
 									</tr>
 								</thead>
 								
 								<tbody>
 									<tr>
 										<td>저희 자돈 돈사 악취가 고민입니다..</td>
-										<td style="text-align:center;">2024.09.02</td>
+										<td style="text-align:center;">포도</td>
+										<td style="text-align:center;">2024.09.08</td>
 										<td style="text-align:center;"><div class="badge bg-gray-200 text-dark">악취 고민</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
@@ -96,7 +98,8 @@
 									</tr>
 									<tr>
 										<td>돼지 급이기 추천 받습니다.</td>
-										<td style="text-align:center;">2024.09.08</td>
+										<td style="text-align:center;">롯샌</td>
+										<td style="text-align:center;">2024.09.07</td>
 										<td style="text-align:center;"><div class="badge bg-yellow-soft text-yellow">제품 추천</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
@@ -107,7 +110,8 @@
 									</tr>
 									<tr>
 										<td>이번에 일본쪽에 태풍이 온다던데, 우리나라는 괜찮나요?</td>
-										<td style="text-align:center;">2024.08.31</td>
+										<td style="text-align:center;">김성민</td>
+										<td style="text-align:center;">2024.09.06</td>
 										<td style="text-align:center;"><div class="badge bg-green-soft text-blue">기상 관련</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
@@ -118,7 +122,8 @@
 									</tr>
 									<tr>
 										<td>스마트팜 전시회 관련 안내</td>
-										<td style="text-align:center;">2024.09.01</td>
+										<td style="text-align:center;">김성민</td>
+										<td style="text-align:center;">2024.09.02</td>
 										<td style="text-align:center;"><div class="badge bg-green-soft text-green">스마트팜</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
@@ -129,7 +134,8 @@
 									</tr>
 									<tr>
 										<td>악취 민원 이번달에 몇 건 나오셨나요?</td>
-										<td style="text-align:center;">2024.09.06</td>
+										<td style="text-align:center;">리액트</td>
+										<td style="text-align:center;">2024.09.02</td>
 										<td style="text-align:center;"><div class="badge bg-green-soft text-dark">악취 고민</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
@@ -140,7 +146,8 @@
 									</tr>
 									<tr>
 										<td>Don't Gas 모니터링 데이터 축산환경관리원에 보내려면 어떻게 해야하나요?</td>
-										<td style="text-align:center;">2024.09.02</td>
+										<td style="text-align:center;">복숭아</td>
+										<td style="text-align:center;">2024.09.01</td>
 										<td style="text-align:center;"><div class="badge bg-green-soft text-red">Don't Gas 사용법</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
@@ -151,7 +158,8 @@
 									</tr>
 									<tr>
 										<td>센서 연결된거 확인했는데 센서 미연결로 뜹니다.</td>
-										<td style="text-align:center;">2024.09.07</td>
+										<td style="text-align:center;">임마루엘</td>
+										<td style="text-align:center;">2024.08.31</td>
 										<td style="text-align:center;"><div class="badge bg-green-soft text-red">Don't Gas 사용법</div></td>
 										<td style="text-align:center;"><a
 											class="btn btn-datatable btn-icon btn-transparent-dark me-2"
