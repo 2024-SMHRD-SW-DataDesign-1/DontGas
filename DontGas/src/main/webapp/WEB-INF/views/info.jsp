@@ -127,9 +127,9 @@
 						<div class="col-xxl-4 col-xl-12 mb-4">
 							<div class="card h-100-custom">
 								<div
-									class="${latestLog.ch4Value == null ? 'card-null' : 'card-default'}">
+									class="${latestLog.h2sValue == null ? 'card-null' : 'card-default'}">
 									<h1
-										class="${latestLog.ch4Value == null ? 'no-data-text' : 'yes-data-text'}">
+										class="${latestLog.h2sValue == null ? 'no-data-text' : 'yes-data-text'}">
 										No Data</h1>
 								</div>
 								<div class="card-body h-100 p-5">
@@ -211,9 +211,9 @@
 						<div class="col-xxl-4 col-xl-12 mb-4">
 							<div class="card h-100-custom">
 								<div
-									class="${latestLog.ch4Value == null ? 'card-null' : 'card-default'}">
+									class="${latestLog.nh3Value == null ? 'card-null' : 'card-default'}">
 									<h1
-										class="${latestLog.ch4Value == null ? 'no-data-text' : 'yes-data-text'}">
+										class="${latestLog.nh3Value == null ? 'no-data-text' : 'yes-data-text'}">
 										No Data</h1>
 								</div>
 								<div class="card-body h-100 p-5">
