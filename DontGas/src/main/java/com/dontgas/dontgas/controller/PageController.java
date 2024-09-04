@@ -31,6 +31,11 @@ public class PageController {
 		return "createpost";
 	}
 	
+	@GetMapping("/editpost")
+	public String editpostPage() {
+		return "editpost";
+	}
+	
 //	@GetMapping("/info")
 //	public String infoPage() {
 //		return "info";
