@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <nav
 	class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start navbar-light topnav-custom"
@@ -15,6 +16,57 @@
 		Gas</a><img class="pigpig" src="/images/pigpig.png" width="40px" height="40px">
 
 	<!-- header 악취 레벨 심함 정도, 센서 미연결 -->
+	
+	<c:set var="veryBadCount" value="0" />
+	<c:set var="badCount" value="0" />
+	<c:set var="disconnectedCount" value="0" />
+	
+	<c:forEach var="log" items="${sessionScope.logResultsNow}">
+	
+	        <c:forEach var="phouse" items="${sessionScope.pigHouseList}">
+	            <c:if test="${phouse.phouseId == log.phouseId}">
+	                <c:set var="pigHouse" value="${phouse}" />
+	            </c:if>
+	        </c:forEach>
+	        
+	        <c:set var="h2sLevel">
+	            <c:choose>
+	                <c:when test="${log.h2sValue >= 1.8}">VeryBad</c:when>
+	                <c:when test="${log.h2sValue >= 0.5}">Bad</c:when>
+	            </c:choose>
+	        </c:set>
+	
+	        <c:set var="nh3Level">
+	            <c:choose>
+	                <c:when test="${log.nh3Value >= 50}">VeryBad</c:when>
+	                <c:when test="${log.nh3Value >= 20}">Bad</c:when>
+	            </c:choose>
+	        </c:set>
+	
+	        <c:set var="highestLevel">
+	            <c:choose>
+	                <c:when test="${h2sLevel == 'VeryBad' || nh3Level == 'VeryBad'}">VeryBad</c:when>
+	                <c:when test="${h2sLevel == 'Bad' || nh3Level == 'Bad'}">Bad</c:when>
+	            </c:choose>
+	        </c:set>
+	
+	        <c:choose>
+	            <c:when test="${highestLevel == 'VeryBad'}">
+	                <c:set var="veryBadCount" value="${veryBadCount + 1}" />
+	            </c:when>
+	            <c:when test="${highestLevel == 'Bad'}">
+	                <c:set var="badCount" value="${badCount + 1}" />
+	            </c:when>
+	        </c:choose>
+	        
+	        <c:choose>
+	            <c:when test="${log.h2sValue == null || log.nh3Value == null}">
+	                <c:set var="disconnectedCount" value="${disconnectedCount + 1}" />
+	            </c:when>
+        	</c:choose>
+	
+	</c:forEach>
+	
 	<div>
       <table class="head-info">
          <thead>
@@ -26,9 +78,9 @@
          </thead>
          <tbody>
             <tr>
-               <td class="head-VeryBad-info">1</td>
-               <td class="head-Bad-info">3</td>
-               <td class="head-connect-info-td head-connect-info">4</td>
+               <td class="head-VeryBad-info">${veryBadCount}</td>
+               <td class="head-Bad-info">${badCount}</td>
+               <td class="head-connect-info-td head-connect-info">${disconnectedCount}</td>
             </tr>
          </tbody>
       </table>
