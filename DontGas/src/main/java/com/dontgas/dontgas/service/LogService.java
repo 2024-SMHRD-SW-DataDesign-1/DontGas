@@ -26,15 +26,4 @@ public class LogService {
 		return logRepository.findLogResultsNow();
 	}
 	
-//	public List<LogEntity> getLogResultsH2SNull() {
-//		return logRepository.findH2SNullTime();
-//	}
-//	
-//	public List<LogEntity> getLogResultsNH3Null() {
-//		return logRepository.findNH3NullTime();
-//	}
-//	
-//	public List<LogEntity> getLogResultsCH4Null() {
-//		return logRepository.findCH4NullTime();
-//	}
 }

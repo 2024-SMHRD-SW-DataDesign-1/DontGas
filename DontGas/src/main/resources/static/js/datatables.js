@@ -7,7 +7,8 @@ window.addEventListener('DOMContentLoaded', event => {
 			sortable : true,
 			labels: {
 				perPage: "개 씩 보기",
-				info: "{start} - {end} / {rows}"
+				info: "{start} - {end} / {rows}",
+				noRows: "데이터가 없습니다."
 			},
 			sortable: {
 				customSort: (a, b, column) => {
@@ -31,18 +32,16 @@ window.addEventListener('DOMContentLoaded', event => {
 	const datatablesModal = document.getElementById('datatablesModal');
 	if (datatablesModal) {
 		new simpleDatatables.DataTable(datatablesModal, {
-			perPage: Number.MAX_SAFE_INTEGER,  // 한 페이지에 표시할 항목 수
-			perPageSelect: "",
 			sortable: true,
-			searchable: false,
+			searchable: true,
 			info: false,
 			labels: {
-				perPage: "",
-				info: "",
+				perPage: "개 씩 보기",
+				info: "{start} - {end} / {rows}",
 				noRows: "데이터가 없습니다."
 			},
 			columns:[{
-					select: [0, 1, 2, 3], sortable: false
+					select: [2, 3], sortable: false
 			}]
 		});
 	}

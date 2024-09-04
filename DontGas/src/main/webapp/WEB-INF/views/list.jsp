@@ -73,29 +73,28 @@
 									<tr class="table-head-custom">
 										<th class="stink-custom">악취 상태</th>
 										<th class="pighouse-custom">돈사명</th>
-										<th class="connecting-custom">연결 상태 <img class="tooltip-link"
-											data-tooltip="황화수소-암모니아-메탄 순서"
-												src="/images/question1.png"
-												width="20px" height="20px">
-										</span></th>
+										<th class="connecting-custom"><span class="tooltip-link"
+											data-tooltip="황화수소-암모니아-메탄 순서">연결 상태</span> <img
+											src="/images/question1.png" width="20px" height="20px">
+										</th>
 										<th class="address-custom">주소</th>
 										<th class="contact-custom">연락처</th>
 									</tr>
 								</thead>
 
 								<tbody>
-								
+
 									<!-- 돈사 1개(반복) -->
 									<c:forEach var="log" items="${sessionScope.logResultsNow}">
 										<tr>
-											
+
 											<!-- 돈사 id 결정(돈사명, 돈사주소, 돈사 연락처 출력을 위함) -->
 											<c:forEach var="phouse" items="${sessionScope.pigHouseList}">
 												<c:if test="${phouse.phouseId == log.phouseId}">
 													<c:set var="pigHouse" value="${phouse}" />
 												</c:if>
 											</c:forEach>
-											
+
 
 											<!-- 악취 레벨 결정 알고리즘 -->
 											<c:set var="h2sLevel">
@@ -139,57 +138,64 @@
 													<c:otherwise>1</c:otherwise>
 												</c:choose>
 											</c:set>
-											
+
 											<!-- 악취 레벨 아이콘 -->
 											<td data-order="${dataOrder}"><img class="o-level"
 												src="/images/${highestLevel}.png" alt="${highestLevel}">
 											</td>
-											
+
 											<!-- 돈사 이름 -->
 											<td class="pighouse_name"><img class="user"
 												src="/images/user.png"> <a
 												href="info/${pigHouse.phouseId}"><c:out
-														value="${pigHouse.phouseName}" /></a>
-											</td>
-											
-											
+														value="${pigHouse.phouseName}" /></a></td>
+
+
 											<!-- 센서 연결 상태에 따른 정렬을 위한 dataOrder2 속성 지정 -->
 											<c:set var="dataOrder2">
-											    <c:choose>
-											        <c:when test="${log.h2sValue == null && log.nh3Value == null && log.ch4Value == null}">
+												<c:choose>
+													<c:when
+														test="${log.h2sValue == null && log.nh3Value == null && log.ch4Value == null}">
 											            0
 											        </c:when>
-											
-											        <c:when test="${log.h2sValue != null && log.nh3Value == null && log.ch4Value == null}">
+
+													<c:when
+														test="${log.h2sValue != null && log.nh3Value == null && log.ch4Value == null}">
 											            1
 											        </c:when>
-											
-											        <c:when test="${log.h2sValue == null && log.nh3Value != null && log.ch4Value == null}">
+
+													<c:when
+														test="${log.h2sValue == null && log.nh3Value != null && log.ch4Value == null}">
 											            2
 											        </c:when>
-											
-											        <c:when test="${log.h2sValue == null && log.nh3Value == null && log.ch4Value != null}">
+
+													<c:when
+														test="${log.h2sValue == null && log.nh3Value == null && log.ch4Value != null}">
 											            3
 											        </c:when>
-											
-											        <c:when test="${log.h2sValue != null && log.nh3Value != null && log.ch4Value == null}">
+
+													<c:when
+														test="${log.h2sValue != null && log.nh3Value != null && log.ch4Value == null}">
 											            4
 											        </c:when>
-											
-											        <c:when test="${log.h2sValue == null && log.nh3Value != null && log.ch4Value != null}">
+
+													<c:when
+														test="${log.h2sValue == null && log.nh3Value != null && log.ch4Value != null}">
 											            5
 											        </c:when>
-											
-											        <c:when test="${log.h2sValue != null && log.nh3Value == null && log.ch4Value != null}">
+
+													<c:when
+														test="${log.h2sValue != null && log.nh3Value == null && log.ch4Value != null}">
 											            6
 											        </c:when>
-											
-											        <c:when test="${log.h2sValue != null && log.nh3Value != null && log.ch4Value != null}">
+
+													<c:when
+														test="${log.h2sValue != null && log.nh3Value != null && log.ch4Value != null}">
 											            7
 											        </c:when>
-											    </c:choose>
+												</c:choose>
 											</c:set>
-											
+
 											<!-- 센서 연결 상태 -->
 											<td class="connecting-sort" data-order="${dataOrder2}">
 												<c:choose>
@@ -201,9 +207,7 @@
 														<img class="connect-1" src="/images/connect_o.png"
 															alt="H2S Connected">
 													</c:otherwise>
-												</c:choose>
-												
-												<c:choose>
+												</c:choose> <c:choose>
 													<c:when test="${log.nh3Value == null}">
 														<img class="connect-2" src="/images/connect_x.png"
 															alt="NH3 Disconnected">
@@ -212,8 +216,7 @@
 														<img class="connect-2" src="/images/connect_o.png"
 															alt="NH3 Connected">
 													</c:otherwise>
-												</c:choose>
-												<c:choose>
+												</c:choose> <c:choose>
 													<c:when test="${log.ch4Value == null}">
 														<img class="connect-3" src="/images/connect_x.png"
 															alt="CH4 Disconnected">
@@ -224,11 +227,11 @@
 													</c:otherwise>
 												</c:choose>
 											</td>
-											
+
 											<!-- 돈사 주소 -->
 											<td class="center-sort"><c:out
 													value="${pigHouse.phouseAddress}" /></td>
-													
+
 											<!-- 돈사 연락처 -->
 											<td class="center-sort"><c:out
 													value="${pigHouse.farmer.farmerPhoneNumber}" /></td>

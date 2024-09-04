@@ -1050,8 +1050,11 @@
 }
 
 .card-default {
-	background-color: #ffffff;
-	opacity: 1;
+	display: none;
+}
+
+.yes-data-text {
+	display: none;
 }
 
 .card-null {

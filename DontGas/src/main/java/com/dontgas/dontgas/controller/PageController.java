@@ -15,11 +15,6 @@ public class PageController {
 		return "login";
 	}
 	
-//	@GetMapping("/list")
-//	public String listPage() {
-//		return "list";
-//	}
-	
 	@GetMapping("/postlist")
 	public String postlistPage() {
 		return "postlist";
@@ -36,13 +31,9 @@ public class PageController {
 		return "editpost";
 	}
 	
-//	@GetMapping("/info")
-//	public String infoPage() {
-//		return "info";
-//	}
+	@GetMapping("/test_gemini")
+	public String test_geminiPage() {
+		return "test_gemini";
+	}
 	
-//    @GetMapping("/logout-success")
-//    public String logoutSuccess() {
-//        return "login";
-//    }
 }

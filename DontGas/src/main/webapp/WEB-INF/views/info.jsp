@@ -289,7 +289,7 @@
 						<div class="col-xxl-4 col-xl-12 mb-4">
 							<div class="card h-100-custom">
 							<div class="${latestLog.ch4Value == null ? 'card-null' : 'card-default'}">
-								<h1 class="no-data-text">
+								<h1 class="${latestLog.ch4Value == null ? 'no-data-text' : 'yes-data-text'}">
 									No Data
 								</h1>
 							</div>
