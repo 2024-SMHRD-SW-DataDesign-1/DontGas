@@ -337,14 +337,30 @@
 	text-align: center;
 	display: inline-block !important;
 }
-
-.btn-icon-sheet {
+.btn-icon-pigcare {
 	border-radius: 0%;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	margin-left: 6%;
 	margin-right: 2%;
 }
+
+.btn-icon-pig2 {
+	border-radius: 0%;
+	width: 40px;
+	height: 40px;
+	margin-left: 6%;
+	margin-right: 2%;
+}
+.btn-icon-pigslist{
+	border-radius: 0%;
+	width: 30px;
+	height: 30px;
+	margin-left: 5%;
+    margin-right: 2%;
+	
+}
+
 
 .btn-icon-board {
 	border-radius: 0%;
@@ -352,6 +368,7 @@
 	height: 30px;
 	margin-left: -27%;
 	margin-right: 4%;
+	
 }
 
 .btn-outline-green {
@@ -363,6 +380,17 @@
 	border: 2px solid;
 	margin-left: 12%;
 }
+
+.report-btn {
+	font-family: 'NanumSquareRound';
+	font-size: 15px;
+	font-weight: bolder;
+	transform: translate(28px, 99px);
+	width:177px;
+	margin-left: 12%;
+	
+}
+
 
 /*알림*/
 .alert-custom {
@@ -843,7 +871,24 @@
 	}
 }
 
+
+
+
+
+
+
 /*------------경계선-------------*/
+
+
+
+
+
+
+
+
+
+
+
 
 /* 태블릿 화면 대응 - ipad pro 기준 시작점 */
 @media ( min-width : 769px) and (max-width: 1024px) {

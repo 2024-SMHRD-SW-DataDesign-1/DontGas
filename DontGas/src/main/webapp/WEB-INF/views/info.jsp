@@ -456,7 +456,8 @@
 
 								</div>
 							</div>
-
+							<button class="btn btn-outline-green report-btn" type="button">악취
+								데이터 리포트 다운로드</button>
 						</div>
 
 						<!-- 차트 들어갈 부분 (아래 날짜 칸에 선택한 날짜 들어가게끔 넣기)-->
@@ -474,7 +475,7 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<!-- 내일 악취 요소 예측 차트 -->
 							<div class="col-xl-6 mb-4 chart-custom">
 								<div class="card card-header-actions h-100-custom">
@@ -492,6 +493,9 @@
 							<textarea rows="30" cols="20" id="Answer" readonly
 								style="height: 100px; border-radius: 3px; border: 1px solid #bfbfbf;">버튼을 누른 뒤 잠시만 기다려주세요!</textarea>	
 							<button id="search" class="btn btn-outline-info" type="button" style="width: 100px; margin-left: 40%; margin-top: 10px">버튼</button>
+
+
+
 						</div>
 						<!-- row 끝 -->
 						
