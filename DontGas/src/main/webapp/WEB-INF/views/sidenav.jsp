@@ -10,7 +10,7 @@
 		<div class="nav accordion" id="accordionSidenav">
 				<a class="nav-link collapsed sidemenu-custom" href="/list"
 					style="transform: translate(40px, 13px);"> 
-					<img class="btn-icon" src="/images/pigslist.png"></img> 돈사 리스트 이동
+					<img class="btn-icon" src="/images/pigslist.png"></img> 돈사 리스트
 				</a>
 			</div>
 			
