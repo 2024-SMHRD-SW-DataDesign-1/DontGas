@@ -18,7 +18,7 @@
 				<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
 					data-bs-target="#Modal" aria-expanded="false"
 					aria-controls="collapseDashboards">
-					<img class="btn-icon-sheet" src="/images/sheet.png"></img> 리포트 다운로드
+					<img class="btn-icon-sheet" src="/images/pigslist.png"></img> 돈사 이동
 				</p>
 			</div>
 
@@ -71,7 +71,7 @@
 										<td class="center-sort">${pigHouse.phouseAddress}</td>
 
 										<td class="center-sort">
-											"${pigHouse.farmer.farmerPhoneNumber}"</td>
+											${pigHouse.farmer.farmerPhoneNumber}</td>
 
 									</tr>
 								</c:forEach>
