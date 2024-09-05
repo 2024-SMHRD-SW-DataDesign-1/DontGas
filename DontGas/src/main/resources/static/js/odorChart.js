@@ -173,7 +173,7 @@ var odorChart2 = new Chart(ctx2, {
 				pointHoverBorderColor: 'rgba(0, 97, 242, 1)',
 				pointHitRadius: 10,
 				pointBorderWidth: 2,
-				data: []  // H2S Values
+				data: [1, 1, 2, 3, 4, 2, 1, 1]  // H2S Values
 			},
 			{
 				label: '암모니아',
@@ -188,7 +188,7 @@ var odorChart2 = new Chart(ctx2, {
 				pointHoverBorderColor: 'rgba(255, 193, 7, 1)',
 				pointHitRadius: 10,
 				pointBorderWidth: 2,
-				data: []  // NH3 Values
+				data: [1, 2, 2, 2, 3, 4, 4, 1]  // NH3 Values
 			},
 			{
 				label: '메탄',
@@ -203,7 +203,7 @@ var odorChart2 = new Chart(ctx2, {
 				pointHoverBorderColor: 'rgba(40, 167, 69, 1)',
 				pointHitRadius: 10,
 				pointBorderWidth: 2,
-				data: []  // CH4 Values
+				data: [2, 4, 4, 2, 1, 1, 2, 3]  // CH4 Values
 			}
 		]
 	},
@@ -436,13 +436,8 @@ function updateChart(startDate, endDate, logResultsJson) {
 	document.getElementById('nh3Checkbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
 	document.getElementById('ch4Checkbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
 
-	odorChart2.data.labels = labels;
-	odorChart2.data.datasets[0].data = document.getElementById('h2sCheckbox').checked ? h2sValues : [];
-	odorChart2.data.datasets[1].data = document.getElementById('nh3Checkbox').checked ? nh3Values : [];
-	odorChart2.data.datasets[2].data = document.getElementById('ch4Checkbox').checked ? ch4Values : [];
-	document.getElementById('h2sCheckbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
-	document.getElementById('nh3Checkbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
-	document.getElementById('ch4Checkbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
+	odorChart.update();
+	
 	odorChart2.update();
 
 

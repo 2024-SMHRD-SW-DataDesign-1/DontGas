@@ -503,35 +503,11 @@
 										</div>
 
 										<!-- 현재 페이지 데이터로 차트 그리기 -->
-										<div class="card table-body-custom">
-											<div class="card-body ">
-												<table id="questionTable">
-													<tr>
-														<td>
-															<div class="chart-area_modal">
-																<canvas id="odorChart-area_modal" width="100%"
-																	height="30"></canvas>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td >
-														<input type="text" id="Question" placeholder="질문 입력">
-														<textarea rows="30" cols="20" id="Answer"
-																readonly
-																style="width: 100%;height: 100px; border-radius: 3px; border: 1px solid #bfbfbf;">질문을 입력하고 [질문하기] 버튼을 클릭한 뒤 잠시만 기다려주세요!</textarea>
-														</td>
-													</tr>
-												</table>
-											</div>
-										</div>
+										
 									</div>
 
 									<div class="modal-footer">
-										<button id="search" class="btn btn-outline-info" type="button"
-											style="width: 100px; margin-left: 40%; margin-top: 10px">질문하기 (개발 중)</button>
-										<button id="chartbtn" class="btn btn-primary-custom"
-											type="button">차트 그리기 (개발 중)</button>
+										
 										<button class="btn btn-primary-custom" type="button"
 											onclick="exportTableToExcel()">엑셀로 다운로드 하기</button>
 										<button class="btn btn-primary-custom" type="button"
