@@ -469,6 +469,22 @@
 									</div>
 								</div>
 							</div>
+							
+							<!-- 내일 악취 요소 예측 차트 -->
+							<div class="col-xl-6 mb-4 chart-custom">
+								<div class="card card-header-actions h-100-custom">
+									<div class="card-header card-header-custom">
+										내일 악취 요소 예측 &nbsp;
+										<p id="dateRange"></p>
+									</div>
+									<div class="card-body">
+										<div class="chart-area">
+											<canvas id="odorChart-area" width="100%" height="30"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+							
 
 						</div>
 						<!-- row 끝 -->

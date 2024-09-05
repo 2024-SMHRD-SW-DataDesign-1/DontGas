@@ -6,11 +6,19 @@
 <div id="layoutSidenav_nav">
 	<nav class="sidenav shadow-right sidenav-light sidenav-custom">
 		<div class="sidenav-menu">
+		
+		<div class="nav accordion" id="accordionSidenav">
+				<a class="nav-link collapsed sidemenu-custom" href="/list"
+					style="transform: translate(40px, 13px);"> 
+					<img class="btn-icon" src="/images/piglist.png"></img> 돈사 리스트 이동
+				</a>
+			</div>
+			
 			<div class="nav accordion" id="accordionSidenav">
 				<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
 					data-bs-target="#Modal" aria-expanded="false"
 					aria-controls="collapseDashboards">
-					<img class="btn-icon-sheet" src="/images/pigslist.png"></img> 돈사 이동
+					<img class="btn-icon-sheet" src="/images/sheet.png"></img> 리포트 다운로드
 				</p>
 			</div>
 
