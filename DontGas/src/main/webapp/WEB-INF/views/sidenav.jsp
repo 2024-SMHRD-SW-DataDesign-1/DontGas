@@ -63,7 +63,7 @@
 										<td class="center-sort">${pigHouse.phouseAddress}</td>
 
 										<td class="center-sort">
-											"${pigHouse.farmer.farmerPhoneNumber}"</td>
+											${pigHouse.farmer.farmerPhoneNumber}</td>
 
 									</tr>
 								</c:forEach>
