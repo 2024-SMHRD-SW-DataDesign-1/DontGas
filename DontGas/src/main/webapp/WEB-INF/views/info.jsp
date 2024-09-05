@@ -501,14 +501,45 @@
 												</table>
 											</div>
 										</div>
+
+										<!-- 현재 페이지 데이터로 차트 그리기 -->
+										<div class="card table-body-custom">
+											<div class="card-body ">
+												<table id="questionTable">
+													<tr>
+														<td>
+															<div class="chart-area_modal">
+																<canvas id="odorChart-area_modal" width="100%"
+																	height="30"></canvas>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td >
+														<input type="text" id="Question" placeholder="질문 입력">
+														<textarea rows="30" cols="20" id="Answer"
+																readonly
+																style="width: 100%;height: 100px; border-radius: 3px; border: 1px solid #bfbfbf;">질문을 입력하고 [질문하기] 버튼을 클릭한 뒤 잠시만 기다려주세요!</textarea>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</div>
 									</div>
+
 									<div class="modal-footer">
-										<button class="btn btn-primary-custom" type="button" onclick="exportTableToExcel()">엑셀로 다운로드 하기</button>
+										<button id="search" class="btn btn-outline-info" type="button"
+											style="width: 100px; margin-left: 40%; margin-top: 10px">질문하기 (개발 중)</button>
+										<button id="chartbtn" class="btn btn-primary-custom"
+											type="button">차트 그리기 (개발 중)</button>
+										<button class="btn btn-primary-custom" type="button"
+											onclick="exportTableToExcel()">엑셀로 다운로드 하기</button>
 										<button class="btn btn-primary-custom" type="button"
 											data-bs-dismiss="modal">닫기</button>
 									</div>
-								</div>
 
+
+								</div>
 							</div>
 						</div>
 
@@ -531,7 +562,7 @@
 							<!-- 내일 악취 요소 예측 차트 -->
 							<div class="col-xl-6 mb-4 chart-custom">
 								<div class="card card-header-actions h-100-custom">
-									<div class="card-header card-header-custom">내일 악취 요소 예측
+									<div class="card-header card-header-custom">내일 악취 요소 예측 (개발 중)
 										&nbsp;</div>
 									<div class="card-body">
 										<div class="chart-area">
@@ -540,14 +571,6 @@
 									</div>
 								</div>
 							</div>
-
-							<textarea rows="30" cols="20" id="Answer" readonly
-								style="height: 100px; border-radius: 3px; border: 1px solid #bfbfbf;">버튼을 누른 뒤 잠시만 기다려주세요!</textarea>
-							<button id="search" class="btn btn-outline-info" type="button"
-								style="width: 100px; margin-left: 40%; margin-top: 10px">버튼</button>
-
-
-
 						</div>
 						<!-- row 끝 -->
 			</main>
@@ -588,6 +611,9 @@
         function exportTableToExcel() {
             let table = document.getElementById("reportTable");
             let wb = XLSX.utils.table_to_book(table, {sheet: "Sheet1"});
+            let table2 = document.getElementById("questionTable");
+            let ws2 = XLSX.utils.table_to_book(table2, {sheet: "Sheet2"});
+            XLSX.utils.book_append_sheet(wb, ws2, "Sheet2");
             XLSX.writeFile(wb, "table.xlsx");
         }
     </script>
@@ -607,7 +633,7 @@
 
    	$('#search').click(async ()=>{
    	$('#Answer').text('10초 정도 소요됩니다! 잠시만 기다려주세요!');
-	var prompt = "치킨 메뉴 추천";
+	var prompt = document.getElementById('Question').value;
 
                    
    	const result = await model.generateContent(prompt);
