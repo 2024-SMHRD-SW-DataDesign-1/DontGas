@@ -44,7 +44,7 @@
 
 
 
-<!-- 리포트 다운로드 모달창 -->
+<!-- 빠른 이동 모달창 -->
 <div class="modal fade" id="Modal" tabindex="-1" role="dialog"
 	aria-labelledby="myExtraLargeModalLabel" style="display: none;"
 	aria-hidden="true">

@@ -45,5 +45,20 @@ window.addEventListener('DOMContentLoaded', event => {
 			}]
 		});
 	}
+	
+	const reportTable = document.getElementById('reportTable');
+	if (reportTable) {
+		new simpleDatatables.DataTable(reportTable, {
+			sortable: true,
+			searchable: true,
+			perPageSelect: [["1개", 1], ["10개", 10], ["20개", 20], ["50개", 50], ["100개", 100], ["전부", 0]],
+			info: false,
+			labels: {
+				perPage: " 다운로드",
+				info: "{start} - {end} / {rows}",
+				noRows: "데이터가 없습니다."
+			}
+		});
+	}
 
 });

@@ -47,7 +47,6 @@
 </head>
 
 
-
 <body class="nav-fixed body-custom">
 
 
@@ -372,6 +371,7 @@
 								</div>
 							</div>
 						</div>
+
 						<!-- 메인 콘텐츠 끝점 -->
 
 
@@ -456,8 +456,60 @@
 
 								</div>
 							</div>
-							<button class="btn btn-outline-green report-btn" type="button">악취
+							<button class="btn btn-outline-green report-btn" type="button"
+								data-bs-toggle="modal" data-bs-target="#DownloadModal">악취
 								데이터 리포트 다운로드</button>
+						</div>
+
+
+						<!-- 리포트 다운로드 모달창 -->
+						<div class="modal fade" id="DownloadModal" tabindex="-1"
+							role="dialog" aria-labelledby="myExtraLargeModalLabel"
+							style="display: none;" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-scrollable modal-lg"
+								role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title">리포트 다운로드</h5>
+										<button class="btn-close" type="button"
+											data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="card table-body-custom">
+											<div class="card-body ">
+												<table id="reportTable">
+													<thead>
+														<tr class="table-head-custom">
+															<th style="text-align: center" width="24%">황화수소</th>
+															<th style="text-align: center" width="24%">암모니아</th>
+															<th style="text-align: center" width="24%">메탄</th>
+															<th style="text-align: center" width="24%">업데이트 시간</th>
+														</tr>
+													</thead>
+													<tbody>
+
+														<c:forEach var="log" items="${logResults}">
+															<tr>
+																<td class="center-sort">${log.h2sValue != null ? log.h2sValue : '-'}</td>
+																<td class="center-sort">${log.nh3Value != null ? log.nh3Value : '-'}</td>
+																<td class="center-sort">${log.ch4Value != null ? log.ch4Value : '-'}</td>
+																<td class="pighouse_name">${log.insertTime}</td>
+															</tr>
+														</c:forEach>
+
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-primary-custom" type="button" onclick="exportTableToExcel()">엑셀로 다운로드 하기</button>
+										<button class="btn btn-primary-custom" type="button"
+											data-bs-dismiss="modal">닫기</button>
+									</div>
+								</div>
+
+							</div>
 						</div>
 
 						<!-- 차트 들어갈 부분 (아래 날짜 칸에 선택한 날짜 들어가게끔 넣기)-->
@@ -479,9 +531,8 @@
 							<!-- 내일 악취 요소 예측 차트 -->
 							<div class="col-xl-6 mb-4 chart-custom">
 								<div class="card card-header-actions h-100-custom">
-									<div class="card-header card-header-custom">
-										내일 악취 요소 예측 &nbsp;
-									</div>
+									<div class="card-header card-header-custom">내일 악취 요소 예측
+										&nbsp;</div>
 									<div class="card-body">
 										<div class="chart-area">
 											<canvas id="odorChart-area2" width="100%" height="30"></canvas>
@@ -489,16 +540,16 @@
 									</div>
 								</div>
 							</div>
-							
+
 							<textarea rows="30" cols="20" id="Answer" readonly
-								style="height: 100px; border-radius: 3px; border: 1px solid #bfbfbf;">버튼을 누른 뒤 잠시만 기다려주세요!</textarea>	
-							<button id="search" class="btn btn-outline-info" type="button" style="width: 100px; margin-left: 40%; margin-top: 10px">버튼</button>
+								style="height: 100px; border-radius: 3px; border: 1px solid #bfbfbf;">버튼을 누른 뒤 잠시만 기다려주세요!</textarea>
+							<button id="search" class="btn btn-outline-info" type="button"
+								style="width: 100px; margin-left: 40%; margin-top: 10px">버튼</button>
 
 
 
 						</div>
 						<!-- row 끝 -->
-						
 			</main>
 
 
@@ -531,10 +582,19 @@
 	<script src="/js/weather.js"></script>
 	<script src="/js/odorChart.js"></script>
 	<script src="/js/darkmode.js"></script>
-	
-	
-	<!-- Scripts -->
 
+	<!-- 엑셀 다운로드 -->
+	<script>
+        function exportTableToExcel() {
+            let table = document.getElementById("reportTable");
+            let wb = XLSX.utils.table_to_book(table, {sheet: "Sheet1"});
+            XLSX.writeFile(wb, "table.xlsx");
+        }
+    </script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+	<!-- Gemini script -->
 	<script type="importmap"> {"imports": {"@google/generative-ai": "https://esm.run/@google/generative-ai"} } </script>
 	<script type="module">
    	import { GoogleGenerativeAI } from "@google/generative-ai";
@@ -557,7 +617,6 @@
 	$('#Answer').text(text);
 
     })
-         
    </script>
 </body>
 </html>
