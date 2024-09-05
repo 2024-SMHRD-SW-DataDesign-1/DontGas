@@ -302,6 +302,17 @@
 	margin-left: 12%;
 }
 
+.report-btn {
+	font-family: 'NanumSquareRound';
+	font-size: 15px;
+	font-weight: bolder;
+	transform: translate(28px, 99px);
+	width:177px;
+	margin-left: 12%;
+	
+}
+
+
 .page-header-custom {
 	background-color: white;
 }
@@ -635,13 +646,29 @@
 	font-family: 'NanumSquareRound';
 }
 
-.btn-icon-sheet {
+.btn-icon-pigcare {
 	border-radius: 0%;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	margin-left: 6%;
 	margin-right: 2%;
 }
+.btn-icon-pig2 {
+	border-radius: 0%;
+	width: 40px;
+	height: 40px;
+	margin-left: 6%;
+	margin-right: 2%;
+}
+.btn-icon-pigslist{
+	border-radius: 0%;
+	width: 30px;
+	height: 30px;
+	margin-left: 5%;
+    margin-right: 2%;
+	
+}
+
 
 .btn-icon-board {
 	border-radius: 0%;
@@ -649,6 +676,7 @@
 	height: 30px;
 	margin-left: -27%;
 	margin-right: 4%;
+	
 }
 
 .feather-edit {
