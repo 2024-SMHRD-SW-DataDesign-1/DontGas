@@ -60,7 +60,7 @@
 	        </c:choose>
 	        
 	        <c:choose>
-	            <c:when test="${log.h2sValue == null || log.nh3Value == null}">
+	            <c:when test="${log.h2sValue == null || log.nh3Value == null || log.ch4Value == null}">
 	                <c:set var="disconnectedCount" value="${disconnectedCount + 1}" />
 	            </c:when>
         	</c:choose>

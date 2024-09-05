@@ -116,15 +116,25 @@
 													<c:otherwise>VeryGood</c:otherwise>
 												</c:choose>
 											</c:set>
+											
+											<c:set var="ch4Level">
+												<c:choose>
+													<c:when test="${log.ch4Value >= 12000}">VeryBad</c:when>
+													<c:when test="${log.ch4Value >= 9000}">Bad</c:when>
+													<c:when test="${log.ch4Value >= 6000}">Soso</c:when>
+													<c:when test="${log.ch4Value >= 3000}">Good</c:when>
+													<c:otherwise>VeryGood</c:otherwise>
+												</c:choose>
+											</c:set>
 
 											<c:set var="highestLevel">
 												<c:choose>
 
 													<c:when
-														test="${h2sLevel == 'VeryBad' || nh3Level == 'VeryBad'}">VeryBad</c:when>
-													<c:when test="${h2sLevel == 'Bad' || nh3Level == 'Bad'}">Bad</c:when>
-													<c:when test="${h2sLevel == 'Soso' || nh3Level == 'Soso'}">Soso</c:when>
-													<c:when test="${h2sLevel == 'Good' || nh3Level == 'Good'}">Good</c:when>
+														test="${h2sLevel == 'VeryBad' || nh3Level == 'VeryBad' || ch4Level == 'VeryBad'}">VeryBad</c:when>
+													<c:when test="${h2sLevel == 'Bad' || nh3Level == 'Bad' || ch4Level == 'Bad'}">Bad</c:when>
+													<c:when test="${h2sLevel == 'Soso' || nh3Level == 'Soso' || ch4Level == 'Soso'}">Soso</c:when>
+													<c:when test="${h2sLevel == 'Good' || nh3Level == 'Good' || ch4Level == 'Good'}">Good</c:when>
 													<c:otherwise>VeryGood</c:otherwise>
 												</c:choose>
 											</c:set>

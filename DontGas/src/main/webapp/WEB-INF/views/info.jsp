@@ -26,6 +26,7 @@
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
 	crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
 	var city = "${pigHouse.phouseDistrict}";
 </script>
@@ -309,7 +310,11 @@
 													<!-- 악취 레벨 기준 -->
 													<!--
 													// 메탄
-													
+													0-3000 //
+													3000-6000 //
+													6000-9000 //
+													9000-12000 //
+													12000- //
 													-->
 
 													<!-- 기본 이미지 URL 및 텍스트 -->
@@ -319,30 +324,30 @@
 													<!-- h2sValue에 따라 이미지 URL 및 텍스트 설정 -->
 													<c:choose>
 
-														<c:when test="${latestLog.ch4Value lt 0.07}">
+														<c:when test="${latestLog.ch4Value lt 3000}">
 															<c:set var="imageUrl" value="/images/VeryGood.png" />
 															<c:set var="statusText" value="매우 좋음" />
 														</c:when>
 
 														<c:when
-															test="${latestLog.ch4Value ge 0.07 && latestLog.ch4Value lt 0.1}">
+															test="${latestLog.ch4Value ge 3000 && latestLog.ch4Value lt 6000}">
 															<c:set var="imageUrl" value="/images/Good.png" />
 															<c:set var="statusText" value="좋음" />
 														</c:when>
 
 														<c:when
-															test="${latestLog.ch4Value ge 0.1 && latestLog.ch4Value lt 0.5}">
+															test="${latestLog.ch4Value ge 6000 && latestLog.ch4Value lt 9000}">
 															<c:set var="imageUrl" value="/images/Soso.png" />
 															<c:set var="statusText" value="보통" />
 														</c:when>
 
 														<c:when
-															test="${latestLog.ch4Value ge 0.5 && latestLog.ch4Value lt 1.8}">
+															test="${latestLog.ch4Value ge 9000 && latestLog.ch4Value lt 12000}">
 															<c:set var="imageUrl" value="/images/Bad.png" />
 															<c:set var="statusText" value="나쁨" />
 														</c:when>
 
-														<c:when test="${latestLog.ch4Value ge 1.8}">
+														<c:when test="${latestLog.ch4Value ge 12000}">
 															<c:set var="imageUrl" value="/images/VeryBad.png" />
 															<c:set var="statusText" value="매우 나쁨" />
 														</c:when>
@@ -360,7 +365,7 @@
 										<!-- 수치, 상태 데이터 들어갈 자리  -->
 										<div>
 											<p class="text-gray-700-custom mb-0">${latestLog.ch4Value}
-												ppb</p>
+												ppm</p>
 											<p class="text-gray-700-custom mb-0">${statusText}</p>
 										</div>
 									</div>
@@ -475,19 +480,21 @@
 								<div class="card card-header-actions h-100-custom">
 									<div class="card-header card-header-custom">
 										내일 악취 요소 예측 &nbsp;
-										<p id="dateRange"></p>
 									</div>
 									<div class="card-body">
 										<div class="chart-area">
-											<canvas id="odorChart-area" width="100%" height="30"></canvas>
+											<canvas id="odorChart-area2" width="100%" height="30"></canvas>
 										</div>
 									</div>
 								</div>
 							</div>
 							
-
+							<textarea rows="30" cols="20" id="Answer" readonly
+								style="height: 100px; border-radius: 3px; border: 1px solid #bfbfbf;">버튼을 누른 뒤 잠시만 기다려주세요!</textarea>	
+							<button id="search" class="btn btn-outline-info" type="button" style="width: 100px; margin-left: 40%; margin-top: 10px">버튼</button>
 						</div>
 						<!-- row 끝 -->
+						
 			</main>
 
 
@@ -520,5 +527,33 @@
 	<script src="/js/weather.js"></script>
 	<script src="/js/odorChart.js"></script>
 	<script src="/js/darkmode.js"></script>
+	
+	
+	<!-- Scripts -->
+
+	<script type="importmap"> {"imports": {"@google/generative-ai": "https://esm.run/@google/generative-ai"} } </script>
+	<script type="module">
+   	import { GoogleGenerativeAI } from "@google/generative-ai";
+
+   	const API_KEY = "AIzaSyDZmX5MrJQ6RxGdqJa8CxrhbDB3PBmIZvw";
+
+   	const genAI = new GoogleGenerativeAI(API_KEY);
+   	const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
+
+
+   	$('#search').click(async ()=>{
+   	$('#Answer').text('10초 정도 소요됩니다! 잠시만 기다려주세요!');
+	var prompt = "치킨 메뉴 추천";
+
+                   
+   	const result = await model.generateContent(prompt);
+ 	const response = await result.response;
+ 	const text = response.text();
+
+	$('#Answer').text(text);
+
+    })
+         
+   </script>
 </body>
 </html>

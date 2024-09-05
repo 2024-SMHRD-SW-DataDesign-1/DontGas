@@ -18,7 +18,7 @@
 				<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
 					data-bs-target="#Modal" aria-expanded="false"
 					aria-controls="collapseDashboards">
-					<img class="btn-icon-sheet" src="/images/pigslist.png"></img> 돈사 이동
+					<img class="btn-icon-sheet" src="/images/pigslist.png"></img> 빠른 이동
 				</p>
 			</div>
 
