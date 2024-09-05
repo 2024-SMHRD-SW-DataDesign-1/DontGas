@@ -36,4 +36,8 @@ public class PageController {
 		return "test_gemini";
 	}
 	
+	@GetMapping("/document")
+	public String documentPage() {
+		return "document";
+	}
 }

@@ -51,7 +51,7 @@
 								<div class="col-auto mb-3">
 									<h1 class="page-header-title page-header-title-custom-list">
 										<div class="page-header-icon">
-											<i data-feather="list"></i>
+											<img class= board-icon src="/images/boardlist1.png" >
 										</div>
 										게시판
 									</h1>

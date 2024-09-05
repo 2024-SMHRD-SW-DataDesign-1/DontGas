@@ -8,31 +8,28 @@
 		<div class="sidenav-menu">
 		
 		<div class="nav accordion" id="accordionSidenav">
-				<a class="nav-link collapsed sidemenu-custom" href="/list"
-					style="transform: translate(-5px, 117px);"> 
+				<a class="nav-link collapsed sidemenu-custom sidebar-pigcare" href="/document"> 
 					<img class="btn-icon-pigcare" src="/images/pigcare.png"></img> 돼지 생애주기별 관리
 				</a>
 			</div>
 		
 
 			<div class="nav accordion" id="accordionSidenav">
-				<a class="nav-link collapsed sidemenu-custom" href="/postlist"
-					style="transform: translate(-17px, -10px);"> <img
-					class="btn-icon-board" src="/images/billboard.png"></img> 게시판
+				<a class="nav-link collapsed sidemenu-custom sidebar-boardlist" href="/postlist"> <img
+					class="btn-icon-board" src="/images/boardlist1.png"></img> 게시판
 				</a>
 			</div>
 			
 			<div class="nav accordion" id="accordionSidenav">
-				<p class="nav-link collapsed sidemenu-custom" data-bs-toggle="modal"
+				<p class="nav-link collapsed sidemenu-custom sidebar-pigspeed" data-bs-toggle="modal"
 					data-bs-target="#Modal" aria-expanded="false"
-					aria-controls="collapseDashboards" style="transform: translate(-44px, 54px);">
+					aria-controls="collapseDashboards" >
 					<img class="btn-icon-pig2" src="/images/pig2.png"></img> 빠른 이동
 				</p>
 			</div>
 			
 			<div class="nav accordion" id="accordionSidenav">
-				<a class="nav-link collapsed sidemenu-custom" href="/list"
-					style="transform: translate(-30px, -86px);"> 
+				<a class="nav-link collapsed sidemenu-custom sidebar-pigslist" href="/list"> 
 					<img class="btn-icon-pigslist" src="/images/pigslist.png"></img> 돈사 리스트
 				</a>
 			</div>

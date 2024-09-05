@@ -262,7 +262,15 @@
 	color: white;
 }
 
+
+
 .imoticon {
+	width: 30px;
+	height: 30px;
+	margin-right: 6%;
+}
+
+.board-icon{
 	width: 30px;
 	height: 30px;
 	margin-right: 6%;
@@ -288,7 +296,40 @@
 	color: orange;
 }
 
+/*document 페이지 관련 css*/
 
+.pigcare{
+	font-size: 20px;
+	font-family:'NanumSquareRound';
+	font-weight: bolder;
+	color: green;
+	text-align: center;
+
+}
+
+.pigcare-text{
+	font-family:'NanumSquareRound';
+	text-align: center;
+	color : orange;
+	
+}
+
+.pigcare-img{
+	
+	width: 30px;
+	height: 30px;
+	margin-left: 17%;
+}
+
+
+
+.pigpoo{
+	margin-left: 17%;
+}
+
+.pigpoo1{
+	margin-left: 17%;
+}
 
 .page-header-custom{
     background-color: rgb(54, 54, 54);
@@ -337,6 +378,8 @@
 	text-align: center;
 	display: inline-block !important;
 }
+
+/*sidebar*/
 .btn-icon-pigcare {
 	border-radius: 0%;
 	width: 40px;
@@ -370,6 +413,23 @@
 	margin-right: 4%;
 	
 }
+
+.sidebar-boardlist{
+	transform:translate(-17px, -77px);
+}
+
+.sidebar-pigcare{
+	transform:translate(-5px, 54px);
+}
+
+.sidebar-pigslist{
+	transform: translate(-30px, -148px);
+}
+
+.sidebar-pigspeed{
+	transform: translate(-44px, -2px);
+}
+
 
 .btn-outline-green {
 	font-family: 'NanumSquareRound';
@@ -567,10 +627,19 @@
 	border-color: #00FF7F;
 }
 
+.card-header-board{
+	color:  white !important;
+	font-size: 20px;
+}
 .card-body{
 	background-color:  rgb(95, 95, 95) !important;
 	
 }
+
+.col-lg-8-board{
+	margin-left: 16%;
+}
+
 .card-header-actions{
 	color: wheat;
   	font-family:'NanumSquareRound';

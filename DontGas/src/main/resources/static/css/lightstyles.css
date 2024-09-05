@@ -257,6 +257,7 @@
 }
 
 /* 게시판 관련 css*/
+
 .fw-500 {
 	font-weight: 700 !important;
 	font-family: 'NanumSquareRound';
@@ -264,6 +265,11 @@
 }
 
 .imoticon {
+	width: 30px;
+	height: 30px;
+	margin-right: 6%;
+}
+.board-icon{
 	width: 30px;
 	height: 30px;
 	margin-right: 6%;
@@ -280,7 +286,48 @@
 	text-align: center;
 }
 
-/* csv 다운로드 모달창 체크박스, 버튼 css*/
+
+/*document 페이지 관련 css*/
+
+.pigcare{
+	font-size: 20px;
+	font-family:'NanumSquareRound';
+	font-weight: bolder;
+	color: green;
+	text-align: center;
+
+}
+
+.pigcare-text{
+	font-family:'NanumSquareRound';
+	text-align: center;
+	color : black;
+	
+}
+
+.pigcare-img{
+	
+	width: 40px;
+	height: 40px;
+	margin-left: 17%;
+}
+
+
+
+.pigpoo{
+	margin-left: 17%;
+}
+
+
+.pigpoo1{
+	margin-left: 17%;
+}
+
+
+
+
+
+/* 버튼 css*/
 .form-check-input-custom {
 	margin-left: 9%;
 }
@@ -506,6 +553,14 @@
 	border-color: green;
 }
 
+.card-header-board{
+
+	font-size: 20px;
+}
+
+.col-lg-8-board{
+	margin-left: 16%;
+}
 .text-primary-custom {
 	--bs-text-opacity: 1;
 	color: black !important;
@@ -646,6 +701,7 @@
 	font-family: 'NanumSquareRound';
 }
 
+/*sidebar*/
 .btn-icon-pigcare {
 	border-radius: 0%;
 	width: 40px;
@@ -678,6 +734,24 @@
 	margin-right: 4%;
 	
 }
+
+.sidebar-boardlist{
+	transform:translate(-17px, -77px);
+}
+
+.sidebar-pigcare{
+	transform:translate(-5px, 54px);
+}
+
+.sidebar-pigslist{
+	transform: translate(-30px, -148px);
+}
+
+.sidebar-pigspeed{
+	transform: translate(-44px, -2px);
+}
+
+
 
 .feather-edit {
 	color: black;

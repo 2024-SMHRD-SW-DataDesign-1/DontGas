@@ -52,7 +52,7 @@
 								<div class="col-auto mb-3">
 									<h1 class="page-header-title page-header-title-custom-list">
 										<div class="page-header-icon">
-											<i data-feather="list"></i>
+											<img class=board-icon src="/images/document.png">
 										</div>
 										게시글 추가
 									</h1>
@@ -68,14 +68,14 @@
 					<div class="row gx-4">
 						<div class="col-lg-8">
 							<div class="card mb-4">
-								<div class="card-header">게시글 제목</div>
+								<div class="card-header card-header-board">게시글 제목</div>
 								<div class="card-body">
 									<input class="form-control" id="postTitleInput" type="text"
 										placeholder="제목을 입력해주세요" />
 								</div>
 							</div>
 							<div class="card card-header-actions mb-4">
-								<div class="card-header">
+								<div class="card-header card-header-board">
 									미리보기 <i class="text-muted" data-feather="info"
 										data-bs-toggle="tooltip" data-bs-placement="left"
 										title="게시물 미리보기 텍스트는 게시물 제목 아래에 표시됩니다!"></i>
@@ -86,7 +86,7 @@
 								</div>
 							</div>
 							<div class="card card-header-actions mb-4 mb-lg-0">
-								<div class="card-header">
+								<div class="card-header card-header-board">
 									게시글 내용 <i class="text-muted" data-feather="info"
 										data-bs-toggle="tooltip" data-bs-placement="left"
 										title="게시물 콘텐츠 편집기에서는 마크다운이 지원됩니다."></i>
@@ -100,7 +100,7 @@
 						</div>
 						<div class="col-lg-4">
 							<div class="card card-header-actions" style="width:300px">
-								<div class="card-header">
+								<div class="card-header card-header-board">
 									게시글 업로드 <i class="text-muted" data-feather="info"
 										data-bs-toggle="tooltip" data-bs-placement="left"
 										title="업로드 후, 관리자가 게시물을 승인하면 게시물이 게시됩니다."></i>
