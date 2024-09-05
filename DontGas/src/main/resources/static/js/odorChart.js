@@ -435,6 +435,7 @@ function updateChart(startDate, endDate, logResultsJson) {
 	document.getElementById('h2sCheckbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
 	document.getElementById('nh3Checkbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
 	document.getElementById('ch4Checkbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
+	odorChart.update();
 
 	odorChart2.data.labels = labels;
 	odorChart2.data.datasets[0].data = document.getElementById('h2sCheckbox').checked ? h2sValues : [];
