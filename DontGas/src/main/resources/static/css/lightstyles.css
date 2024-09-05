@@ -306,7 +306,7 @@
 	font-family: 'NanumSquareRound';
 	font-size: 15px;
 	font-weight: bolder;
-	transform: translate(28px, 99px);
+	transform: translate(28px, 159px);
 	width:177px;
 	margin-left: 12%;
 	
@@ -632,7 +632,7 @@
 
 .border-0-calendar {
     border: 0 !important;
-    transform: translate(10px, 28px);
+    transform: translate(10px, 88px);
     width: 18rem;
 }
 
