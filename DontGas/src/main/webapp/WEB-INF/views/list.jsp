@@ -74,8 +74,8 @@
 										<th class="stink-custom">악취 상태</th>
 										<th class="pighouse-custom">돈사명</th>
 										<th class="connecting-custom"><span class="tooltip-link"
-											data-tooltip="황화수소-암모니아-메탄 순서">연결 상태</span> <img
-											src="/images/question1.png" width="20px" height="20px">
+											data-tooltip="황화수소-암모니아-메탄 순서">연결 상태 <img
+											src="/images/question1.png" width="20px" height="20px"></span>
 										</th>
 										<th class="address-custom">주소</th>
 										<th class="contact-custom">연락처</th>
