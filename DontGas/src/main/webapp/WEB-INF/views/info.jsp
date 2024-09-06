@@ -601,6 +601,7 @@
 		crossorigin="anonymous"></script>
 	<script src="/js/litepicker.js"></script>
 	<script src="/js/weather.js"></script>
+	<script src="/js/predictWithWeatherData.js"></script>
 	<script src="/js/odorChart.js"></script>
 	<script src="/js/darkmode.js"></script>
 

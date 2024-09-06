@@ -1,18 +1,23 @@
 package com.dontgas.dontgas.controller;
 
 import com.dontgas.dontgas.service.OnnxModelPredictor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
+@CrossOrigin(origins = "*")
 public class PredictionController {
 
     private final OnnxModelPredictor predictor;
 
     public PredictionController() {
         try {
-            String modelPath = "/model/model.onnx";
+            String modelPath = "src/main/resources/static/model/pycaret_model_odorLevel.pkl";
             predictor = new OnnxModelPredictor(modelPath);
         } catch (Exception e) {
             throw new RuntimeException("Failed to initialize ONNX model predictor", e);
@@ -20,17 +25,32 @@ public class PredictionController {
     }
 
     @GetMapping("/predict")
-    public float[] predict(
-            @RequestParam float temp,
-            @RequestParam float hum,
-            @RequestParam float wind_deg,
-            @RequestParam float wind_sp) {
+    public int[] predict(
+            @RequestParam List<Float> temp,
+            @RequestParam List<Float> hum,
+            @RequestParam List<Float> wind_deg,
+            @RequestParam List<Float> wind_sp) {
         try {
-            float[] inputData = {temp, hum, wind_deg, wind_sp};
-            return predictor.predict(inputData);
+            // 예측 결과를 저장할 리스트
+            List<Integer> results = new ArrayList<>();
+            
+            // 각 데이터에 대해 예측 수행
+            for (int i = 0; i < temp.size(); i++) {
+                float[] inputData = {
+                    temp.get(i),
+                    hum.get(i),
+                    wind_deg.get(i),
+                    wind_sp.get(i)
+                };
+                // 예측 수행
+                int[] prediction = predictor.predict(inputData);
+                results.add(prediction[0]); // 필요에 따라 결과를 추가하거나 변형
+            }
+            
+            return results.stream().mapToInt(i -> i).toArray();
         } catch (Exception e) {
             e.printStackTrace();
-            return new float[]{};
+            return new int[]{};
         }
     }
 }
