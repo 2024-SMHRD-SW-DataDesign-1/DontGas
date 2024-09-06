@@ -425,9 +425,6 @@ function updateChart(startDate, endDate, logResultsJson) {
 	const nh3Values = filteredResults.map(log => log.nh3Value);
 	const ch4Values = filteredResults.map(log => log.ch4Value);
 
-	console.log(labels);
-	console.log(h2sValues);
-
 	odorChart.data.labels = labels;
 	odorChart.data.datasets[0].data = document.getElementById('h2sCheckbox').checked ? h2sValues : [];
 	odorChart.data.datasets[1].data = document.getElementById('nh3Checkbox').checked ? nh3Values : [];
@@ -470,6 +467,4 @@ function updateChart_modal(displayedData) {
 	odorChart_modal.data.datasets[1].data = nh3Values;
 	odorChart_modal.data.datasets[2].data = ch4Values;
 	odorChart_modal.update();
-	
-	console.log(odorChart_modal);
 }
