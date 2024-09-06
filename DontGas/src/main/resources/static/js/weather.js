@@ -53,6 +53,13 @@ async function getWeather(city) {
 		
 		        // Process results
 		        console.log("결과 :" + results); // Handle the prediction results as needed
+		        
+		        const labels = forecast.map(entry => new Date(entry.dt_txt));
+        		const h2sData = results.map(result => result[0]);
+        		const nh3Data = results.map(result => result[1]);
+        		const ch4Data = results.map(result => result[2]);
+        		
+        		updatePredictChart(labels, h2sData, nh3Data, ch4Data);
 		
 		    } catch (error) {
 		        console.error('Error fetching the weather forecast data:', error);

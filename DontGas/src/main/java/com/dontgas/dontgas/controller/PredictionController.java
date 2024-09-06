@@ -17,7 +17,7 @@ public class PredictionController {
 
     public PredictionController() {
         try {
-            String modelPath = "src/main/resources/static/model/pycaret_model_odorLevel.pkl";
+            String modelPath = "src/main/resources/static/model/model.onnx";
             predictor = new OnnxModelPredictor(modelPath);
         } catch (Exception e) {
             throw new RuntimeException("Failed to initialize ONNX model predictor", e);
@@ -25,14 +25,14 @@ public class PredictionController {
     }
 
     @GetMapping("/predict")
-    public int[] predict(
+    public List<int[]> predict(
             @RequestParam List<Float> temp,
             @RequestParam List<Float> hum,
             @RequestParam List<Float> wind_deg,
             @RequestParam List<Float> wind_sp) {
         try {
             // 예측 결과를 저장할 리스트
-            List<Integer> results = new ArrayList<>();
+            List<int[]> results = new ArrayList<>();
             
             // 각 데이터에 대해 예측 수행
             for (int i = 0; i < temp.size(); i++) {
@@ -44,13 +44,13 @@ public class PredictionController {
                 };
                 // 예측 수행
                 int[] prediction = predictor.predict(inputData);
-                results.add(prediction[0]); // 필요에 따라 결과를 추가하거나 변형
+                results.add(prediction); // 전체 배열을 리스트에 추가
             }
             
-            return results.stream().mapToInt(i -> i).toArray();
+            return results;
         } catch (Exception e) {
             e.printStackTrace();
-            return new int[]{};
+            return new ArrayList<>();
         }
     }
 }
