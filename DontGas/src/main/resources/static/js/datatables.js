@@ -71,8 +71,6 @@ window.addEventListener('DOMContentLoaded', event => {
 			const end = (currentPage*perPage);
 			const displayedData = data.data.slice(start, end);
 			
-			console.log(displayedData)
-			
 			updateChart_modal(displayedData);
 			return displayedData;
 		}

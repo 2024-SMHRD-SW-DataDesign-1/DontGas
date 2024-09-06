@@ -1161,3 +1161,12 @@
 	text-align: center;
 	color: white;
 }
+
+#odorChart-area_modal{
+	width: 100% !important;
+  	height: 400px !important;
+}
+
+#questionTable{
+	width: 100%;
+}

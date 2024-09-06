@@ -503,11 +503,39 @@
 										</div>
 
 										<!-- 현재 페이지 데이터로 차트 그리기 -->
-										
+
+										<div class="card table-body-custom">
+											<div class="card-body ">
+												<table id="questionTable">
+													<tbody>
+													
+														<tr>
+															<td>
+																<div class="chart-area_modal">
+																	<canvas id="odorChart-area_modal"></canvas>
+																</div>
+															</td>
+														</tr>
+														<tr>
+															<td id="Answer">보고서 자동 생성 중..</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
 									</div>
 
 									<div class="modal-footer">
+
 										
+
+										<button id="search" class="btn btn-outline-info" type="button"
+											style="width: 100px; margin-left: 40%; margin-top: 10px">질문하기
+											(개발 중)</button>
+										<button id="chartbtn" class="btn btn-primary-custom"
+											type="button">차트 그리기</button>
+
 										<button class="btn btn-primary-custom" type="button"
 											onclick="exportTableToExcel()">엑셀로 다운로드 하기</button>
 										<button class="btn btn-primary-custom" type="button"
@@ -538,8 +566,8 @@
 							<!-- 내일 악취 요소 예측 차트 -->
 							<div class="col-xl-6 mb-4 chart-custom">
 								<div class="card card-header-actions h-100-custom">
-									<div class="card-header card-header-custom">내일 악취 요소 예측 (개발 중)
-										&nbsp;</div>
+									<div class="card-header card-header-custom">내일 악취 요소 예측
+										(개발 중) &nbsp;</div>
 									<div class="card-body">
 										<div class="chart-area">
 											<canvas id="odorChart-area2" width="100%" height="30"></canvas>
@@ -609,7 +637,7 @@
 
    	$('#search').click(async ()=>{
    	$('#Answer').text('10초 정도 소요됩니다! 잠시만 기다려주세요!');
-	var prompt = document.getElementById('Question').value;
+	var prompt = "치킨 메뉴 추천";
 
                    
    	const result = await model.generateContent(prompt);
