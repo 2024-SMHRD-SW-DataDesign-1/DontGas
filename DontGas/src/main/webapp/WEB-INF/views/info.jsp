@@ -502,7 +502,12 @@
 											</div>
 										</div>
 
+<<<<<<< HEAD
+										<!-- 현재 페이지 데이터로 차트 그리기 -->
+
+=======
 										<!-- 보고서 자동 생성 -->
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 										<div class="card table-body-custom">
 											<div class="card-body ">
 												<table id="chartTable">
@@ -521,11 +526,11 @@
 												</table>
 											</div>
 										</div>
+
 									</div>
 
 									<div class="modal-footer">
-										<button id="search" class="btn btn-primary-custom"
-											type="button">보고서 생성</button>
+											type="button">보고서 작성</button>
 										<button class="btn btn-primary-custom" type="button"
 											onclick="exportTableToExcel()">수치 다운로드</button>
 										<button class="btn btn-primary-custom" type="button"
@@ -559,6 +564,7 @@
 									<div class="card-header card-header-custom">내일의 악취 예보</div>
 									<div class="card-body">
 										<div class="chart-area">
+										
 											<canvas id="odorChart-area2" width="100%" height="30"></canvas>
 										</div>
 									</div>

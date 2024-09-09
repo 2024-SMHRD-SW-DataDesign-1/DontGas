@@ -154,6 +154,7 @@ var odorChart = new Chart(ctx, {
 
 
 // 악취 예측
+
 function updatePredictChart(labels, h2sData, nh3Data, ch4Data) {
 
 	var ctx2 = document.getElementById("odorChart-area2");
