@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', event => {
 		});
 
 		
-		function getDisplayedData() {
+		window.getDisplayedData = function() {
 			const data = dataTable.data; // 전체 데이터 가져오기
 			const currentPage = dataTable._currentPage; // 현재 페이지
 			const perPage = dataTable.options.perPage; // 페이지당 항목 수
@@ -72,7 +72,6 @@ window.addEventListener('DOMContentLoaded', event => {
 			const displayedData = data.data.slice(start, end);
 
 			updateChart_modal(displayedData);
-			makeReport(displayedData);
 			return displayedData;
 		}
 
