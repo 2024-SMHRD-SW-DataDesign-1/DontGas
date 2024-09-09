@@ -508,7 +508,7 @@
 											<div class="card-body ">
 												<table id="questionTable">
 													<tbody>
-													
+
 														<tr>
 															<td>
 																<div class="chart-area_modal">
@@ -528,10 +528,12 @@
 
 									<div class="modal-footer">
 
-										
 
-										<button id="search" class="btn btn-primary-custom" type="button"
-											style="width: 100px; margin-left: 40%; margin-top: 10px">보고서 생성</button>
+
+										<button id="search" class="btn btn-primary-custom"
+											type="button"
+											style="width: 100px; margin-left: 40%; margin-top: 10px">보고서
+											생성</button>
 										<button class="btn btn-primary-custom" type="button"
 											onclick="exportTableToExcel()">악취 수치 다운로드</button>
 										<button class="btn btn-primary-custom" type="button"
@@ -563,12 +565,12 @@
 							<div class="col-xl-6 mb-4 chart-custom">
 								<div class="card card-header-actions h-100-custom">
 									<div class="card-header card-header-custom">
-									<span class="tooltip-link"
-											data-tooltip="악취 요소를 클릭하면 필터링 가능!" style="">
-									내일 악취 요소 예측 </span></div>
+										<span class="tooltip-link" data-tooltip="악취 요소를 클릭하면 필터링 가능!"
+											style=""> 내일 악취 요소 예측 </span>
+									</div>
 									<div class="card-body">
 										<div class="chart-area">
-										
+
 											<canvas id="odorChart-area2" width="100%" height="30"></canvas>
 										</div>
 									</div>
@@ -611,18 +613,66 @@
 	<script src="/js/darkmode.js"></script>
 
 	<!-- 엑셀 다운로드 -->
+	<script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
 	<script>
-        function exportTableToExcel() {
-            let table = document.getElementById("reportTable");
-            let wb = XLSX.utils.table_to_book(table, {sheet: "Sheet1"});
-            let table2 = document.getElementById("questionTable");
-            let ws2 = XLSX.utils.table_to_book(table2, {sheet: "Sheet2"});
-            XLSX.utils.book_append_sheet(wb, ws2, "Sheet2");
-            XLSX.writeFile(wb, "table.xlsx");
+    async function exportTableToExcel() {
+        let workbook = new ExcelJS.Workbook();
+        let sheet1 = workbook.addWorksheet('Sheet1');
+        let sheet2 = workbook.addWorksheet('Sheet2');
+
+        // 첫 번째 테이블을 Sheet1에 추가
+        let table1 = document.getElementById("reportTable");
+        let rows = Array.from(table1.rows).map(row => Array.from(row.cells).map(cell => cell.innerText));
+        sheet1.addRows(rows);
+
+        // 두 번째 테이블을 Sheet2에 추가
+        let table2 = document.getElementById("questionTable");
+        if (table2) {
+            let rows2 = Array.from(table2.rows).map(row => Array.from(row.cells).map(cell => cell.innerText));
+            sheet2.addRows(rows2);
+
+            // Canvas를 이미지로 변환
+            let canvas = document.getElementById("odorChart-area_modal");
+            let imgData = canvas.toDataURL("image/png");
+
+            // 이미지 삽입
+            let imageId = workbook.addImage({
+                base64: imgData,
+                extension: 'png',
+            });
+
+            sheet2.addImage(imageId, {
+                tl: { col: 0, row: 2 },
+                ext: { width: 600, height: 400 }
+            });
+        } else {
+            console.error("Table with id 'questionTable' not found.");
         }
-    </script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+        
+        sheet2.columns = [
+            { width: 1000 }, // 이미지가 포함될 공간을 고려하여 적절히 조정
+        ];
+        
+        sheet2.eachRow((row, rowNumber) => {
+            row.eachCell((cell, colNumber) => {
+                cell.alignment = {
+                    wrapText: true // 줄바꿈 활성화
+                };
+            });
+        });
+
+        // 엑셀 파일 저장
+        workbook.xlsx.writeBuffer().then(function (buffer) {
+            let blob = new Blob([buffer], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
+            let url = URL.createObjectURL(blob);
+            let a = document.createElement("a");
+            a.href = url;
+            a.download = "table.xlsx";
+            a.click();
+        });
+    }
+	</script>
+
 
 	<!-- Gemini script -->
 	<script type="importmap"> {"imports": {"@google/generative-ai": "https://esm.run/@google/generative-ai"} } </script>
@@ -640,16 +690,25 @@
 					+ JSON.stringify(displayedData)
 					+ ". 이는 각 시간(date)에 따라 황화수소, 암모니아, 메탄의 수치를 순서대로 나타낸 것 입니다."
 					+ "이 정보를 활용하여 적절한 분석을 진행하여 주세요.";
-		
-		console.log(JSON.stringify(displayedData));
                    
    		const result = await model.generateContent(prompt);
  		const response = await result.response;
  		const text = response.text();
-		const removeHTMLTags = (str) => str.replace(/[#*|]/g, "");
-        const cleanText = removeHTMLTags(text);
-        
-        $('#Answer').text(cleanText);  // HTML 태그가 제거된 텍스트 표시
+
+
+		// 특정 조건에서 줄바꿈 추가하기
+                const formattedText = text
+            .replace(/\*\*/g, '<b>') // **를 <b>로 변환
+            .replace(/\*\*/g, '</b>') // **를 </b>로 변환
+            .replace(/\*/g, '<i>') // *를 <i>로 변환
+            .replace(/\*/g, '</i>') // *를 </i>로 변환
+            .replace(/\n/g, '<br>'); // 줄바꿈을 <br>로 변환
+
+        // HTML 태그 제거 후 결과 업데이트
+        const removeHTMLTags = (str) => str.replace(/[#*|]/g, "");
+        const cleanText = removeHTMLTags(formattedText);
+
+        $('#Answer').html(cleanText);
     });
 	</script>
 </body>

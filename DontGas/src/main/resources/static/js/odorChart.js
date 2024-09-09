@@ -458,8 +458,6 @@ function updateChart(startDate, endDate, logResultsJson) {
 	document.getElementById('ch4Checkbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
 	odorChart.update();
 
-	console.log(labels);
-
 }
 
 function updateChart_modal(displayedData) {

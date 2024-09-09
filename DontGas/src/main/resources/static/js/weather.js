@@ -45,14 +45,9 @@ async function getWeather(city) {
 		            wind_sp: entry.wind.speed.toFixed(1),
 		            dt_txt: entry.dt_txt
 		        }));
-		        
-		        console.log(forecast);
 		
 		        // Send forecast data for prediction
 		        const results = await predictWithWeatherData(forecast);
-		
-		        // Process results
-		        console.log("결과 :" + results); // Handle the prediction results as needed
 		        
 		        const labels = forecast.map(entry => new Date(entry.dt_txt));
         		const h2sData = results.map(result => result[0]);
