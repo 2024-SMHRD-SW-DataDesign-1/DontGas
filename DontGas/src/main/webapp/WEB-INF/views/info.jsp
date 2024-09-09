@@ -502,13 +502,16 @@
 											</div>
 										</div>
 
+<<<<<<< HEAD
 										<!-- 현재 페이지 데이터로 차트 그리기 -->
 
+=======
+										<!-- 보고서 자동 생성 -->
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 										<div class="card table-body-custom">
 											<div class="card-body ">
-												<table id="questionTable">
+												<table id="chartTable">
 													<tbody>
-													
 														<tr>
 															<td>
 																<div class="chart-area_modal">
@@ -527,6 +530,7 @@
 									</div>
 
 									<div class="modal-footer">
+<<<<<<< HEAD
 
 										
 
@@ -536,8 +540,12 @@
 										<button id="chartbtn" class="btn btn-primary-custom"
 											type="button">차트 그리기</button>
 
+=======
+										<button id="search" class="btn btn-primary-custom"
+											type="button">보고서 작성</button>
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 										<button class="btn btn-primary-custom" type="button"
-											onclick="exportTableToExcel()">엑셀로 다운로드 하기</button>
+											onclick="exportTableToExcel()">수치 다운로드</button>
 										<button class="btn btn-primary-custom" type="button"
 											data-bs-dismiss="modal">닫기</button>
 									</div>
@@ -566,11 +574,15 @@
 							<!-- 내일 악취 요소 예측 차트 -->
 							<div class="col-xl-6 mb-4 chart-custom">
 								<div class="card card-header-actions h-100-custom">
+<<<<<<< HEAD
 									<div class="card-header card-header-custom">
 									<span class="tooltip-link"
 											data-tooltip="악취 요소를 클릭하면 필터링 가능!">
 									내일 악취 요소 예측
 										(개발 중) &nbsp;</span></div>
+=======
+									<div class="card-header card-header-custom">내일의 악취 예보</div>
+>>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 									<div class="card-body">
 										<div class="chart-area">
 										
@@ -609,6 +621,8 @@
 	<script src="/js/datatables.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"
 		crossorigin="anonymous"></script>
+	<script type="importmap"> {"imports": {"@google/generative-ai": "https://esm.run/@google/generative-ai"} } </script>
+	<script type="module" src="/js/gemini.js"></script>
 	<script src="/js/litepicker.js"></script>
 	<script src="/js/weather.js"></script>
 	<script src="/js/predictWithWeatherData.js"></script>
@@ -628,30 +642,8 @@
     </script>
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-
-	<!-- Gemini script -->
-	<script type="importmap"> {"imports": {"@google/generative-ai": "https://esm.run/@google/generative-ai"} } </script>
-	<script type="module">
-   	import { GoogleGenerativeAI } from "@google/generative-ai";
-
-   	const API_KEY = "AIzaSyDZmX5MrJQ6RxGdqJa8CxrhbDB3PBmIZvw";
-
-   	const genAI = new GoogleGenerativeAI(API_KEY);
-   	const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
-
-
-   	$('#search').click(async ()=>{
-   	$('#Answer').text('10초 정도 소요됩니다! 잠시만 기다려주세요!');
-	var prompt = "치킨 메뉴 추천";
-
-                   
-   	const result = await model.generateContent(prompt);
- 	const response = await result.response;
- 	const text = response.text();
-
-	$('#Answer').text(text);
-
-    })
-   </script>
+	
+	
+	
 </body>
 </html>
