@@ -517,7 +517,7 @@
 															</td>
 														</tr>
 														<tr>
-															<td id="Answer">보고서 생성 버튼을 누르고 잠시만 기다려 주세요!</td>
+															<td id="Answer" style="text-align: center;">보고서 생성 버튼을 누르고 잠시만 기다려 주세요!</td>
 														</tr>
 													</tbody>
 												</table>
