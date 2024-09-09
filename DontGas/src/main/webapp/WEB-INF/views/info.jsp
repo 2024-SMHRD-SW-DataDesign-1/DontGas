@@ -517,7 +517,7 @@
 															</td>
 														</tr>
 														<tr>
-															<td id="Answer">보고서 생성 버튼을 누르고 잠시만 기다려 주세요!</td>
+															<td id="Answer" style="text-align: center;">보고서 생성 버튼을 누르고 잠시만 기다려 주세요!</td>
 														</tr>
 													</tbody>
 												</table>
@@ -529,11 +529,8 @@
 									<div class="modal-footer">
 
 
-
-										<button id="search" class="btn btn-primary-custom"
-											type="button"
-											style="width: 100px; margin-left: 40%; margin-top: 10px">보고서
-											생성</button>
+										<button id="search" class="btn btn-primary-custom" type="button"
+											style="width: 109px; margin-left: 40%; margin-top: 5px">보고서 생성</button>
 										<button class="btn btn-primary-custom" type="button"
 											onclick="exportTableToExcel()">악취 수치 다운로드</button>
 										<button class="btn btn-primary-custom" type="button"
@@ -565,9 +562,9 @@
 							<div class="col-xl-6 mb-4 chart-custom">
 								<div class="card card-header-actions h-100-custom">
 									<div class="card-header card-header-custom">
-										<span class="tooltip-link" data-tooltip="악취 요소를 클릭하면 필터링 가능!"
-											style=""> 내일 악취 요소 예측 </span>
-									</div>
+									<span class="tooltip-link"
+											data-tooltip="악취 요소를 클릭하면 필터링 가능!" style="transform: translate(10%, -15%);">
+									내일 악취 요소 예측 </span></div>
 									<div class="card-body">
 										<div class="chart-area">
 
