@@ -564,7 +564,7 @@
 								<div class="card card-header-actions h-100-custom">
 									<div class="card-header card-header-custom">
 									<span class="tooltip-link"
-											data-tooltip="악취 요소를 클릭하면 필터링 가능!" style="">
+											data-tooltip="악취 요소를 클릭하면 필터링 가능!" style="transform: translate(10%, -15%);">
 									내일 악취 요소 예측 </span></div>
 									<div class="card-body">
 										<div class="chart-area">
