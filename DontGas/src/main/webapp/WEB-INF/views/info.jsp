@@ -531,7 +531,7 @@
 										
 
 										<button id="search" class="btn btn-primary-custom" type="button"
-											style="width: 100px; margin-left: 40%; margin-top: 10px">보고서 생성</button>
+											style="width: 109px; margin-left: 40%; margin-top: 5px">보고서 생성</button>
 										<button class="btn btn-primary-custom" type="button"
 											onclick="exportTableToExcel()">악취 수치 다운로드</button>
 										<button class="btn btn-primary-custom" type="button"
