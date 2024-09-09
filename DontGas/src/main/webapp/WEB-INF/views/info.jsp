@@ -566,10 +566,14 @@
 							<!-- 내일 악취 요소 예측 차트 -->
 							<div class="col-xl-6 mb-4 chart-custom">
 								<div class="card card-header-actions h-100-custom">
-									<div class="card-header card-header-custom">내일 악취 요소 예측
-										(개발 중) &nbsp;</div>
+									<div class="card-header card-header-custom">
+									<span class="tooltip-link"
+											data-tooltip="악취 요소를 클릭하면 필터링 가능!">
+									내일 악취 요소 예측
+										(개발 중) &nbsp;</span></div>
 									<div class="card-body">
 										<div class="chart-area">
+										
 											<canvas id="odorChart-area2" width="100%" height="30"></canvas>
 										</div>
 									</div>
@@ -607,6 +611,7 @@
 		crossorigin="anonymous"></script>
 	<script src="/js/litepicker.js"></script>
 	<script src="/js/weather.js"></script>
+	<script src="/js/predictWithWeatherData.js"></script>
 	<script src="/js/odorChart.js"></script>
 	<script src="/js/darkmode.js"></script>
 

@@ -26,8 +26,46 @@ async function getWeather(city) {
                 console.error('Error fetching the weather data:', error);
             }
         }
-
-        // Call the function to get weather data when the page loads
-        getWeather(city);
+        
         
         // 예측 : https://api.openweathermap.org/data/2.5/forecast?q=Jeju&appid=603aa562f93c1b6e5fb4e7596aa820d5
+        async function getWeatherForecast(city) {
+		    const apiKey = '603aa562f93c1b6e5fb4e7596aa820d5';
+		    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
+		
+		    try {
+		        const response = await fetch(url);
+		        const data = await response.json();
+		        
+		        // Extract data for prediction
+		        const forecast = data.list.slice(0, 5).map(entry => ({
+		            temp: parseInt(entry.main.temp - 273.15), // Convert from Kelvin to Celsius
+		            hum: entry.main.humidity,
+		            wind_deg: entry.wind.deg,
+		            wind_sp: entry.wind.speed.toFixed(1),
+		            dt_txt: entry.dt_txt
+		        }));
+		        
+		        console.log(forecast);
+		
+		        // Send forecast data for prediction
+		        const results = await predictWithWeatherData(forecast);
+		
+		        // Process results
+		        console.log("결과 :" + results); // Handle the prediction results as needed
+		        
+		        const labels = forecast.map(entry => new Date(entry.dt_txt));
+        		const h2sData = results.map(result => result[0]);
+        		const nh3Data = results.map(result => result[1]);
+        		const ch4Data = results.map(result => result[2]);
+        		
+        		updatePredictChart(labels, h2sData, nh3Data, ch4Data);
+		
+		    } catch (error) {
+		        console.error('Error fetching the weather forecast data:', error);
+		    }
+		}
+		
+		// Call the function to get weather data when the page loads
+        getWeather(city);
+        getWeatherForecast(city);

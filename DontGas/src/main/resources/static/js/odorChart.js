@@ -154,126 +154,130 @@ var odorChart = new Chart(ctx, {
 
 
 // 악취 예측
-var ctx2 = document.getElementById("odorChart-area2");
-var odorChart2 = new Chart(ctx2, {
-	type: "line",
-	data: {
-		labels: [],
-		datasets: [
-			{
-				label: '황화수소',
-				lineTension: 0.3,
-				backgroundColor: 'rgba(0, 97, 242, 0.05)',
-				borderColor: 'rgba(0, 97, 242, 1)',
-				pointRadius: 3,
-				pointBackgroundColor: 'rgba(0, 97, 242, 1)',
-				pointBorderColor: 'rgba(0, 97, 242, 1)',
-				pointHoverRadius: 3,
-				pointHoverBackgroundColor: 'rgba(0, 97, 242, 1)',
-				pointHoverBorderColor: 'rgba(0, 97, 242, 1)',
-				pointHitRadius: 10,
-				pointBorderWidth: 2,
-				data: [1, 1, 2, 3, 4, 2, 1, 1]  // H2S Values
-			},
-			{
-				label: '암모니아',
-				lineTension: 0.3,
-				backgroundColor: 'rgba(255, 193, 7, 0.05)',
-				borderColor: 'rgba(255, 193, 7, 1)',
-				pointRadius: 3,
-				pointBackgroundColor: 'rgba(255, 193, 7, 1)',
-				pointBorderColor: 'rgba(255, 193, 7, 1)',
-				pointHoverRadius: 3,
-				pointHoverBackgroundColor: 'rgba(255, 193, 7, 1)',
-				pointHoverBorderColor: 'rgba(255, 193, 7, 1)',
-				pointHitRadius: 10,
-				pointBorderWidth: 2,
-				data: [1, 2, 2, 2, 3, 4, 4, 1]  // NH3 Values
-			},
-			{
-				label: '메탄',
-				lineTension: 0.3,
-				backgroundColor: 'rgba(40, 167, 69, 0.05)',
-				borderColor: 'rgba(40, 167, 69, 1)',
-				pointRadius: 3,
-				pointBackgroundColor: 'rgba(40, 167, 69, 1)',
-				pointBorderColor: 'rgba(40, 167, 69, 1)',
-				pointHoverRadius: 3,
-				pointHoverBackgroundColor: 'rgba(40, 167, 69, 1)',
-				pointHoverBorderColor: 'rgba(40, 167, 69, 1)',
-				pointHitRadius: 10,
-				pointBorderWidth: 2,
-				data: [2, 4, 4, 2, 1, 1, 2, 3]  // CH4 Values
-			}
-		]
-	},
-	options: {
-		maintainAspectRatio: false,
-		layout: {
-			padding: {
-				left: 10,
-				right: 25,
-				top: 5,
-				bottom: 0
-			}
-		},
-		scales: {
-			xAxes: [{
-				time: {
-					unit: "date"
+
+function updatePredictChart(labels, h2sData, nh3Data, ch4Data) {
+
+	var ctx2 = document.getElementById("odorChart-area2");
+	var odorChart2 = new Chart(ctx2, {
+		type: "line",
+		data: {
+			labels: labels,
+			datasets: [
+				{
+					label: '황화수소',
+					lineTension: 0.3,
+					backgroundColor: 'rgba(0, 97, 242, 0.05)',
+					borderColor: 'rgba(0, 97, 242, 1)',
+					pointRadius: 3,
+					pointBackgroundColor: 'rgba(0, 97, 242, 1)',
+					pointBorderColor: 'rgba(0, 97, 242, 1)',
+					pointHoverRadius: 3,
+					pointHoverBackgroundColor: 'rgba(0, 97, 242, 1)',
+					pointHoverBorderColor: 'rgba(0, 97, 242, 1)',
+					pointHitRadius: 10,
+					pointBorderWidth: 2,
+					data: h2sData
 				},
-				gridLines: {
-					display: false,
-					drawBorder: false
+				{
+					label: '암모니아',
+					lineTension: 0.3,
+					backgroundColor: 'rgba(255, 193, 7, 0.05)',
+					borderColor: 'rgba(255, 193, 7, 1)',
+					pointRadius: 3,
+					pointBackgroundColor: 'rgba(255, 193, 7, 1)',
+					pointBorderColor: 'rgba(255, 193, 7, 1)',
+					pointHoverRadius: 3,
+					pointHoverBackgroundColor: 'rgba(255, 193, 7, 1)',
+					pointHoverBorderColor: 'rgba(255, 193, 7, 1)',
+					pointHitRadius: 10,
+					pointBorderWidth: 2,
+					data: nh3Data
 				},
-				ticks: {
-					maxTicksLimit: 7
+				{
+					label: '메탄',
+					lineTension: 0.3,
+					backgroundColor: 'rgba(40, 167, 69, 0.05)',
+					borderColor: 'rgba(40, 167, 69, 1)',
+					pointRadius: 3,
+					pointBackgroundColor: 'rgba(40, 167, 69, 1)',
+					pointBorderColor: 'rgba(40, 167, 69, 1)',
+					pointHoverRadius: 3,
+					pointHoverBackgroundColor: 'rgba(40, 167, 69, 1)',
+					pointHoverBorderColor: 'rgba(40, 167, 69, 1)',
+					pointHitRadius: 10,
+					pointBorderWidth: 2,
+					data: ch4Data
 				}
-			}],
-			yAxes: [{
-				ticks: {
-					maxTicksLimit: 5,
-					padding: 10,
-					callback: function(value, index, values) {
-						return number_format(value) + "ppm";
+			]
+		},
+		options: {
+			maintainAspectRatio: false,
+			layout: {
+				padding: {
+					left: 10,
+					right: 25,
+					top: 5,
+					bottom: 0
+				}
+			},
+			scales: {
+				xAxes: [{
+					time: {
+						unit: "date"
+					},
+					gridLines: {
+						display: false,
+						drawBorder: false
+					},
+					ticks: {
+						maxTicksLimit: 7
 					}
-				},
-				gridLines: {
-					color: "rgb(234, 236, 244)",
-					zeroLineColor: "rgb(234, 236, 244)",
-					drawBorder: false,
-					borderDash: [2],
-					zeroLineBorderDash: [2]
-				}
-			}]
-		},
-		legend: {
-			display: true
-		},
-		tooltips: {
-			backgroundColor: "rgb(255,255,255)",
-			bodyFontColor: "#858796",
-			titleMarginBottom: 10,
-			titleFontColor: "#6e707e",
-			titleFontSize: 14,
-			borderColor: "#dddfeb",
-			borderWidth: 1,
-			xPadding: 15,
-			yPadding: 15,
-			displayColors: false,
-			intersect: false,
-			mode: "index",
-			caretPadding: 10,
-			callbacks: {
-				label: function(tooltipItem, chart) {
-					var datasetLabel =
-						chart.datasets[tooltipItem.datasetIndex].label || "";
-					return datasetLabel + ": " + number_format(tooltipItem.yLabel) + "ppm";
+				}],
+				yAxes: [{
+					ticks: {
+						maxTicksLimit: 5,
+						padding: 10,
+						callback: function(value, index, values) {
+							return number_format(value) + "ppm";
+						}
+					},
+					gridLines: {
+						color: "rgb(234, 236, 244)",
+						zeroLineColor: "rgb(234, 236, 244)",
+						drawBorder: false,
+						borderDash: [2],
+						zeroLineBorderDash: [2]
+					}
+				}]
+			},
+			legend: {
+				display: true
+			},
+			tooltips: {
+				backgroundColor: "rgb(255,255,255)",
+				bodyFontColor: "#858796",
+				titleMarginBottom: 10,
+				titleFontColor: "#6e707e",
+				titleFontSize: 14,
+				borderColor: "#dddfeb",
+				borderWidth: 1,
+				xPadding: 15,
+				yPadding: 15,
+				displayColors: false,
+				intersect: false,
+				mode: "index",
+				caretPadding: 10,
+				callbacks: {
+					label: function(tooltipItem, chart) {
+						var datasetLabel =
+							chart.datasets[tooltipItem.datasetIndex].label || "";
+						return datasetLabel + ": " + number_format(tooltipItem.yLabel) + "ppm";
+					}
 				}
 			}
 		}
-	}
-});
+	});
+}
 
 
 // 악취 추이(다운로드)
@@ -434,10 +438,7 @@ function updateChart(startDate, endDate, logResultsJson) {
 	document.getElementById('ch4Checkbox').addEventListener('change', () => updateChart(startDate, endDate, logResultsJson));
 	odorChart.update();
 
-	odorChart.update();
-	
-	odorChart2.update();
-
+	console.log(labels);
 
 }
 

@@ -98,8 +98,13 @@
 			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
 			<version>3.0.1</version>
 		</dependency>
-
-
+		
+		<!-- onnx -->
+		<dependency>
+		    <groupId>com.microsoft.onnxruntime</groupId>
+		    <artifactId>onnxruntime</artifactId>
+		    <version>1.19.2</version>
+		</dependency>
 		
 	</dependencies>
 
