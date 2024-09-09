@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', event => {
-
+	
+	// list 페이지 테이블
 	const datatablesSimple = document.getElementById('datatablesSimple');
 	if (datatablesSimple) {
 		new simpleDatatables.DataTable(datatablesSimple, {
@@ -28,7 +29,9 @@ window.addEventListener('DOMContentLoaded', event => {
 		});
 	}
 
-
+	
+	
+	// 돈사 이동 테이블
 	const datatablesModal = document.getElementById('datatablesModal');
 	if (datatablesModal) {
 		new simpleDatatables.DataTable(datatablesModal, {
@@ -45,7 +48,9 @@ window.addEventListener('DOMContentLoaded', event => {
 			}]
 		});
 	}
-
+	
+	
+	// 리포트 모달 테이블
 	const reportTable = document.getElementById('reportTable');
 	if (reportTable) {
 		const dataTable = new simpleDatatables.DataTable(reportTable, {

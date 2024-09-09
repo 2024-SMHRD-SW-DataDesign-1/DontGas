@@ -1,11 +1,8 @@
-// Set new default font family and font color to mimic Bootstrap's default styling
 (Chart.defaults.global.defaultFontFamily = "Metropolis"),
 	'-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = "#858796";
 
 function number_format(number, decimals, dec_point, thousands_sep) {
-	// *     example: number_format(1234.56, 2, ',', ' ');
-	// *     return: '1 234,56'
 	number = (number + "").replace(",", "").replace(" ", "");
 	var n = !isFinite(+number) ? 0 : +number,
 		prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
@@ -153,8 +150,9 @@ var odorChart = new Chart(ctx, {
 });
 
 
-// 악취 예측
 
+
+// 악취 예측
 function updatePredictChart(labels, h2sData, nh3Data, ch4Data) {
 
 	var ctx2 = document.getElementById("odorChart-area2");
@@ -300,6 +298,8 @@ function updatePredictChart(labels, h2sData, nh3Data, ch4Data) {
 }
 
 
+
+
 // 악취 추이(다운로드)
 var ctx3 = document.getElementById("odorChart-area_modal");
 var odorChart_modal = new Chart(ctx3, {
@@ -422,6 +422,8 @@ var odorChart_modal = new Chart(ctx3, {
 	}
 });
 
+
+// 악취 추이 및 예측 업데이트
 function updateChart(startDate, endDate, logResultsJson) {
 
 	const filteredResults = logResultsJson.filter(log => {
@@ -460,6 +462,8 @@ function updateChart(startDate, endDate, logResultsJson) {
 
 }
 
+
+// 악취 추이(다운로드) 업데이트
 function updateChart_modal(displayedData) {
 
 	// 데이터를 담을 배열 초기화

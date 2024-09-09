@@ -13,12 +13,16 @@ public class PigHouseServiceImpl implements PigHouseService  {
 	
 	@Autowired
     private PigHouseRepository pigHouseRepository;
-
+	
+	
+	// 돈사 리스트 전부 찾기
 	@Override
 	public List<PigHouse> getAllPigHouses() {
 		 return pigHouseRepository.findAll();
 	}
 	
+	
+	// 돈사 아이디로 구분하여 찾기
 	@Override
     public PigHouse getPigHouseById(Long id) {
         return pigHouseRepository.findById(id).orElse(null);

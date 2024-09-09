@@ -14,7 +14,8 @@ import java.util.List;
 public class PredictionController {
 
     private final OnnxModelPredictor predictor;
-
+    
+    // 저장한 모델 호출
     public PredictionController() {
         try {
             String modelPath = "src/main/resources/static/model/model.onnx";

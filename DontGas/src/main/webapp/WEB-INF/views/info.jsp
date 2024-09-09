@@ -445,7 +445,7 @@
 							</div>
 
 							<div class=calendar-checkbox>
-								<div class="input-group input-group-joined border-0-calendar">
+								<div class="input-group border-0-calendar">
 
 									<label class=checkbox1><input type="checkbox"
 										id="h2sCheckbox" checked> H2S 황화수소</label> <label
@@ -532,7 +532,7 @@
 										<button id="search" class="btn btn-primary-custom" type="button"
 											style="width: 109px; margin-left: 40%; margin-top: 5px">보고서 생성</button>
 										<button class="btn btn-primary-custom" type="button"
-											onclick="exportTableToExcel()">악취 수치 다운로드</button>
+											onclick="exportTableToExcel()">리포트 다운로드</button>
 										<button class="btn btn-primary-custom" type="button"
 											data-bs-dismiss="modal">닫기</button>
 									</div>
@@ -564,7 +564,7 @@
 									<div class="card-header card-header-custom">
 									<span class="tooltip-link"
 											data-tooltip="악취 요소를 클릭하면 필터링 가능!" style="transform: translate(10%, -15%);">
-									내일 악취 요소 예측 </span></div>
+									내일 악취 예보 </span></div>
 									<div class="card-body">
 										<div class="chart-area">
 
