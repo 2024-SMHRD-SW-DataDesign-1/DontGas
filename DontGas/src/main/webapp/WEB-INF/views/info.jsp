@@ -664,7 +664,7 @@
             let url = URL.createObjectURL(blob);
             let a = document.createElement("a");
             a.href = url;
-            a.download = "table.xlsx";
+            a.download = "odorreport.xlsx";
             a.click();
         });
     }

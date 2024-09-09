@@ -289,7 +289,21 @@ function updatePredictChart(labels, h2sData, nh3Data, ch4Data) {
 					label: function(tooltipItem, chart) {
 						var datasetLabel =
 							chart.datasets[tooltipItem.datasetIndex].label || "";
-						return datasetLabel + ": " + number_format(tooltipItem.yLabel) + "ppm";
+							
+							switch (tooltipItem.yLabel) {
+								case 4:
+									return datasetLabel + ": " + '매우 좋음';
+								case 3:
+									return datasetLabel + ": " + '좋음';
+								case 2:
+									return datasetLabel + ": " + '보통';
+								case 1:
+									return datasetLabel + ": " + '나쁨';
+								case 0:
+									return datasetLabel + ": " + '매우 나쁨';
+								default:
+									return value; // 그 외의 경우, 기본값 반환
+							}
 					}
 				}
 			}
