@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', event => {
 				noRows: "데이터가 없습니다."
 			}
 		});
-		
+
 		
 		function getDisplayedData() {
 			const data = dataTable.data; // 전체 데이터 가져오기
@@ -67,18 +67,19 @@ window.addEventListener('DOMContentLoaded', event => {
 			const perPage = dataTable.options.perPage; // 페이지당 항목 수
 
 			// 현재 페이지에 표시된 데이터만 추출
-			const start = (currentPage-1) * perPage;
-			const end = (currentPage*perPage);
+			const start = (currentPage - 1) * perPage;
+			const end = (currentPage * perPage);
 			const displayedData = data.data.slice(start, end);
-			
+
 			updateChart_modal(displayedData);
+			makeReport(displayedData);
 			return displayedData;
 		}
 
-		document.getElementById('chartbtn').addEventListener('click', () => getDisplayedData());
+		document.getElementById('search').addEventListener('click', () => getDisplayedData());
 	}
-		
-		
-		
+
+
+
 
 });

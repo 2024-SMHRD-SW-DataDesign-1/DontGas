@@ -38,7 +38,7 @@ async function getWeather(city) {
 		        const data = await response.json();
 		        
 		        // Extract data for prediction
-		        const forecast = data.list.slice(0, 5).map(entry => ({
+		        const forecast = data.list.slice(7, 16).map(entry => ({
 		            temp: parseInt(entry.main.temp - 273.15), // Convert from Kelvin to Celsius
 		            hum: entry.main.humidity,
 		            wind_deg: entry.wind.deg,

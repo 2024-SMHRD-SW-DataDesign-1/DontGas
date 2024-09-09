@@ -229,7 +229,14 @@ function updatePredictChart(labels, h2sData, nh3Data, ch4Data) {
 						drawBorder: false
 					},
 					ticks: {
-						maxTicksLimit: 7
+						maxTicksLimit: 7,
+						callback: function(value, index, values) {
+							var date = new Date(value);
+							return date.toLocaleTimeString('ko-KR', {
+								hour: '2-digit',
+								minute: '2-digit'
+							});
+						}
 					}
 				}],
 				yAxes: [{
@@ -237,7 +244,20 @@ function updatePredictChart(labels, h2sData, nh3Data, ch4Data) {
 						maxTicksLimit: 5,
 						padding: 10,
 						callback: function(value, index, values) {
-							return number_format(value) + "ppm";
+							switch (index) {
+								case 4:
+									return '매우 좋음';
+								case 3:
+									return '좋음';
+								case 2:
+									return '보통';
+								case 1:
+									return '나쁨';
+								case 0:
+									return '매우 나쁨';
+								default:
+									return value; // 그 외의 경우, 기본값 반환
+							}
 						}
 					},
 					gridLines: {
