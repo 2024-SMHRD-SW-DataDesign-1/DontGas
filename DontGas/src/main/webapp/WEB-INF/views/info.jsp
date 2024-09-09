@@ -517,7 +517,7 @@
 															</td>
 														</tr>
 														<tr>
-															<td id="Answer">보고서 생성 버튼을 누르고 잠시만 기다려주세요!</td>
+															<td id="Answer">보고서 자동 생성 중..</td>
 														</tr>
 													</tbody>
 												</table>
@@ -527,7 +527,6 @@
 									</div>
 
 									<div class="modal-footer">
-<<<<<<< HEAD
 
 										
 
@@ -537,9 +536,6 @@
 										<button id="chartbtn" class="btn btn-primary-custom"
 											type="button">차트 그리기</button>
 
-=======
-											type="button">보고서 작성</button>
->>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 										<button class="btn btn-primary-custom" type="button"
 											onclick="exportTableToExcel()">엑셀로 다운로드 하기</button>
 										<button class="btn btn-primary-custom" type="button"
@@ -570,15 +566,11 @@
 							<!-- 내일 악취 요소 예측 차트 -->
 							<div class="col-xl-6 mb-4 chart-custom">
 								<div class="card card-header-actions h-100-custom">
-<<<<<<< HEAD
 									<div class="card-header card-header-custom">
 									<span class="tooltip-link"
-											data-tooltip="악취 요소를 클릭하면 필터링 가능!" style="transform:translate(10%, -15%);">
+											data-tooltip="악취 요소를 클릭하면 필터링 가능!" style="">
 									내일 악취 요소 예측
-										(개발 중) &nbsp;</span></div>
-=======
-									<div class="card-header card-header-custom">내일의 악취 예보</div>
->>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
+										&nbsp;</span></div>
 									<div class="card-body">
 										<div class="chart-area">
 										
@@ -617,10 +609,6 @@
 	<script src="/js/datatables.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/litepicker/dist/bundle.js"
 		crossorigin="anonymous"></script>
-<<<<<<< HEAD
-=======
-	
->>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 	<script src="/js/litepicker.js"></script>
 	<script src="/js/weather.js"></script>
 	<script src="/js/predictWithWeatherData.js"></script>
@@ -640,7 +628,6 @@
     </script>
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-<<<<<<< HEAD
 
 	<!-- Gemini script -->
 	<script type="importmap"> {"imports": {"@google/generative-ai": "https://esm.run/@google/generative-ai"} } </script>
@@ -666,41 +653,5 @@
 
     })
    </script>
-=======
-	
-	<script type="importmap"> {"imports": {"@google/generative-ai": "https://esm.run/@google/generative-ai"} } </script>
-	<script type="module">
-	import { GoogleGenerativeAI } from "@google/generative-ai";
-	
-	const API_KEY = "AIzaSyDZmX5MrJQ6RxGdqJa8CxrhbDB3PBmIZvw";
-
-   	const genAI = new GoogleGenerativeAI(API_KEY);
-   	const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
-	
-
-   	$('#search').click(async () => {
-   		$('#Answer').text('10초 정도 소요됩니다! 잠시만 기다려주세요!');
-
-		const displayedData = window.getDisplayedData();
-		var prompt = "시간 별 악취 요소 테이블의 현재 페이지의 데이터는 다음과 같습니다:"
-					+ JSON.stringify(displayedData)
-					+ ". 이는 각 시간(date)에 따라 황화수소, 암모니아, 메탄의 수치를 순서대로 나타낸 것 입니다."
-					+ "이 정보를 활용하여 적절한 분석을 진행하여 주세요.";
-		
-		console.log(JSON.stringify(displayedData));
-                   
-   		const result = await model.generateContent(prompt);
- 		const response = await result.response;
- 		const text = response.text();
-
-		const removeHTMLTags = (str) => str.replace(/[#*|]/g, "");
-        const cleanText = removeHTMLTags(text);
-        
-        $('#Answer').text(cleanText);  // HTML 태그가 제거된 텍스트 표시
-
-    });
-	</script>
-	
->>>>>>> branch 'master' of https://github.com/2024-SMHRD-SW-DataDesign-1/DontGas.git
 </body>
 </html>
