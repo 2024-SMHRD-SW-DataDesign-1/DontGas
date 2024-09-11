@@ -35,7 +35,7 @@
 <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 
 #### :space_invader: Machine Learning
-<img src="https://img.shields.io/badge/ONNX-#005CED?style=for-the-badge&logo=onnx&logoColor=white">
+<img src="https://img.shields.io/badge/onnx-#005CED?style=for-the-badge&logo=onnx&logoColor=white">
 <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white">
 
 #### :paperclip: etc
