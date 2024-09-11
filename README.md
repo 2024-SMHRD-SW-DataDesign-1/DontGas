@@ -35,11 +35,11 @@
 <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 
 #### :space_invader: Machine Learning
-<img src="https://img.shields.io/badge/Google Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white">
+<img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=ONNX&logoColor=white">
 <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white">
 
 #### :paperclip: etc
-
+<img src="https://img.shields.io/badge/Google Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white">
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white">
 
