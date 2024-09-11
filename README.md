@@ -15,8 +15,8 @@
 #### ✔️Frond-end
 
 ![VisualStudioCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
 ![Miro](https://img.shields.io/badge/Miro-050038?style=for-the-badge&logo=Miro&logoColor=white)
 <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
@@ -29,16 +29,16 @@
 <img src="https://img.shields.io/badge/Spring Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white">
 <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white">
 
- 
-
 #### :file_folder: DataBase
 <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
 
 #### :space_invader: Machine Learning
-<img src="https://img.shields.io/badge/onnx-#005CED?style=for-the-badge&logo=onnx&logoColor=white">
+<img src="https://img.shields.io/badge/Google Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white">
 <img src="https://img.shields.io/badge/scikitlearn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white">
+<img src="https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white">
 
 #### :paperclip: etc
+<img src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=for-the-badge&logo=eclipseide&logoColor=white">
 <img src="https://img.shields.io/badge/Google Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white">
 <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
 <img src="https://img.shields.io/badge/chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white">
@@ -146,8 +146,7 @@
 |--------|--------------|
 |김형동(Back-End)|팀장, Back-End 총괄 : Security Login 구현, 더미데이터 자동 생성 서버 구현,계정정보 DB 연동|
 |곽세진(PM, Front-End)| Project Manager, PPT 자료 및 PT, Front-End 돈사 리스트화면 및 돈사별 정보 화면 css, ui 그래픽|
-|이준서(Front-End, Back-End, M/L)|Front-End 총괄 :  DB 연동하여 데이터를 화면에 표시되도록 구현, Back-End & M/L : 악취 예측 모델 구축|
-
+|이준서(Front-End, Back-End, M/L)| 기획, 개발 전반 </br> - Back/Front-End : DB 연동 및 여러 라이브러리와 API를 사용하여 서비스 구현  </br> - Front-End : 기능 구현 및 페이지 구성 </br> - M/L : 악취 예측 모델 구축 및 활용|
 
 ### :dart: 트러블 슈팅
 
@@ -155,7 +154,10 @@
 |분야    |오류 내용               |오류 해결                                |
 |-------------|-----------------------|-----------------------------------------|
 |Back-End|List<SearchResult> 타입의 변수 result의 값을 Controller에서 View로 전달할 때 View에서 결과값 미출력|jstl 내 for each 태그의 items 속성값이 Collection(List or Map) 타입임을 확인 후 List 타입의 변수 result로 변경하여 해결|
+|Back-End|별도 jsp 파일로 분리한 공통 컴포넌트에서 DB 데이터를 요청하여 사용할 방법을 찾을 수 없음|필요한 데이터를 Session에 추가하여 전역적으로 사용|
+|Front-End|테이블에서 악취 레벨 아이콘(이미지)을 정렬할 수 없음|악취 레벨 별로 data-order 속성을 부여하여 정렬에 이용| 
 |Front-End|닫는 div 태그 누락으로 상세 검색창 내 지도 이미지, 유형 아이콘 혼재되는 상황 발생|닫는 div 태그 삽입하여 해결|
+|M/L|Pycaret으로 만들고 추출한 모델을 Spring에서 사용할 수 없음|sklearn으로 모델을 만들어 ONNX로 추출하여 활용|
 
 
 ### :books: 참고문헌
