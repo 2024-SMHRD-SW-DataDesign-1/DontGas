@@ -1,4 +1,4 @@
-# :pig:<span style="color:green">**WITHPAPA** </span>
+# :pig:<span style="color:green">**Don't Gas** </span>
 ## :pig: [Don't Gas] (팀명 : Don't Gas :dash:)
 ![001](https://github.com/user-attachments/assets/cb62fd3a-c8c0-4ef2-bf8b-e1dac5bc26f7)
 
@@ -25,7 +25,7 @@
 #### ✔️Back-end
 <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
 <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=green">
-<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=yellow">
+<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=SpringBoot&logoColor=yellow">
 <img src="https://img.shields.io/badge/Spring Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white">
 <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white">
 
